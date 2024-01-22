@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationRuntimeIOSystem Version="1.0"?>
+<IO xmlns="http://www.br-automation.com/AR/IO">
+<Links>
+<LN ID="%ID.SerialNumber_CPU" Type="UDINT">
+<Prod Device="$root" DPName="SerialNumber_CPU" Kind="io"/>
+</LN>
+<LN ID="%IW.ModuleID_CPU" Type="UINT">
+<Prod Device="$root" DPName="ModuleID_CPU" Kind="io"/>
+</LN>
+<LN ID="%ID.PowerOnCycles_CPU" Type="UDINT">
+<Prod Device="$root" DPName="PowerOnCycles_CPU" Kind="io"/>
+</LN>
+<LN ID="%ID.OperatingHours_CPU" Type="UDINT">
+<Prod Device="$root" DPName="OperatingHours_CPU" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureBoard" Type="UINT">
+<Prod Device="$root" DPName="TemperatureBoard" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureRAM" Type="UINT">
+<Prod Device="$root" DPName="TemperatureRAM" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureCPU" Type="UINT">
+<Prod Device="$root" DPName="TemperatureCPU" Kind="io"/>
+</LN>
+<LN ID="%ID.SystemTime" Type="DINT">
+<Prod Device="$root" DPName="SystemTime" Kind="io"/>
+</LN>
+<LN ID="%ID.SerialNumber" Type="UDINT">
+<Prod Device="$root" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%IW.ModuleID" Type="UINT">
+<Prod Device="$root" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%ID.PowerOnCycles" Type="UDINT">
+<Prod Device="$root" DPName="PowerOnCycles" Kind="io"/>
+</LN>
+<LN ID="%ID.OperatingHours" Type="UDINT">
+<Prod Device="$root" DPName="OperatingHours" Kind="io"/>
+</LN>
+<LN ID="%IB.BatteryStatus" Type="USINT">
+<Prod Device="$root" DPName="BatteryStatus" Kind="io"/>
+</LN>
+<LN ID="%IB.MtcxVersionMajor" Type="USINT">
+<Prod Device="$root" DPName="MtcxVersionMajor" Kind="io"/>
+</LN>
+<LN ID="%IB.MtcxVersionMinor" Type="USINT">
+<Prod Device="$root" DPName="MtcxVersionMinor" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureDisplay" Type="UINT">
+<Prod Device="$root" DPName="TemperatureDisplay" Kind="io"/>
+</LN>
+<LN ID="%IB.IF3.NodeSwitch" Type="USINT">
+<Prod Device="$root" DPName="IF3.NodeSwitch" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.ModuleOk" Type="BOOL">
+<Prod Device="SL1" DPName="ModuleOk" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.SerialNumber" Type="UDINT">
+<Prod Device="SL1" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%IW.SL1.ModuleID" Type="UINT">
+<Prod Device="SL1" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.PowerOnCycles" Type="UDINT">
+<Prod Device="SL1" DPName="PowerOnCycles" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.OperatingHours" Type="UDINT">
+<Prod Device="SL1" DPName="OperatingHours" Kind="io"/>
+</LN>
+<LN ID="%IW.SL1.HardwareVariant" Type="UINT">
+<Prod Device="SL1" DPName="HardwareVariant" Kind="io"/>
+</LN>
+<LN ID="%IW.SL1.FirmwareVersion" Type="UINT">
+<Prod Device="SL1" DPName="FirmwareVersion" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.NodeSwitch" Type="USINT">
+<Prod Device="SL1" DPName="IF1.NodeSwitch" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF1.LinkOk01" Type="BOOL">
+<Prod Device="SL1" DPName="IF1.LinkOk01" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF1.LinkOk02" Type="BOOL">
+<Prod Device="SL1" DPName="IF1.LinkOk02" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.OutputDMAMargin" Type="DINT">
+<Prod Device="SL1" DPName="IF1.OutputDMAMargin" Kind="io"/>
+</LN>
+<LN ID="%IB.SL1.IF1.NodeNumber" Type="USINT">
+<Prod Device="SL1" DPName="IF1.NodeNumber" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF1.CycleOk" Type="BOOL">
+<Prod Device="SL1" DPName="IF1.CycleOk" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF1.SyncOk" Type="BOOL">
+<Prod Device="SL1" DPName="IF1.SyncOk" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.TimeSeconds" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.TimeSeconds" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.TimeNanoseconds" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.TimeNanoseconds" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.NettimeSoC" Type="DINT">
+<Prod Device="SL1" DPName="IF1.NettimeSoC" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.NettimeOffset" Type="DINT">
+<Prod Device="SL1" DPName="IF1.NettimeOffset" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.CycleCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.CycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.FailedCycleCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.FailedCycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.CycleTimeViolationCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.CycleTimeViolationCount" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.CycleIdleTime" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.CycleIdleTime" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.CycleCongestionCount" Type="UDINT">
+<Prod Device="SL1" DPName="IF1.CycleCongestionCount" Kind="io"/>
+</LN>
+<LN ID="%IX.SL1.IF1.ST1.ModuleOk" Type="BOOL">
+<Prod Device="SL1.IF1.ST1" DPName="ModuleOk" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="cognex_1.sta.connected_plk" Kind="pv"/>
+</LN>
+<LN ID="%QD.SL1.IF1.ST1.Control_I2000_S01" Type="UDINT">
+<Prod Device="TC#8-CPYDEV" DPName="Cognex:cognex1cmd" Kind="pv"/>
+<Cons Device="SL1.IF1.ST1" DPName="Control_I2000_S01" Kind="io"/>
+</LN>
+<LN ID="%QW.SL1.IF1.ST1.JobLoadID_I2000_S02" Type="UINT">
+<Prod Device="TC#8-CPYDEV" DPName="cognex_1.cmd.job_id" Kind="pv"/>
+<Cons Device="SL1.IF1.ST1" DPName="JobLoadID_I2000_S02" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.Status_I2001_S01" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="Status_I2001_S01" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:cognex1sta" Kind="pv"/>
+</LN>
+<LN ID="%IW.SL1.IF1.ST1.CurrentJobID_I2001_S02" Type="UINT">
+<Prod Device="SL1.IF1.ST1" DPName="CurrentJobID_I2001_S02" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="cognex_1.sta.job_id" Kind="pv"/>
+</LN>
+<LN ID="%IW.SL1.IF1.ST1.InspectionID_I2010_S01" Type="UINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionID_I2010_S01" Kind="io"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S01" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S01" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpBarcodeRead1" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S02" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S02" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpBarcodeRead2" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S03" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S03" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpBarcodeRead3" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S04" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S04" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpTextRead1" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S05" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S05" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpTextRead2" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S06" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S06" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpTextRead3" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S07" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S07" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpData1" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S08" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S08" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpData2" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S09" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S09" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpData3" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S0A" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S0A" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpData4" Kind="pv"/>
+</LN>
+<LN ID="%ID.SL1.IF1.ST1.InspectionResults_I2011_S0B" Type="UDINT">
+<Prod Device="SL1.IF1.ST1" DPName="InspectionResults_I2011_S0B" Kind="io"/>
+<Cons Device="TC#8-CPYDEV" DPName="Cognex:tmpData5" Kind="pv"/>
+</LN>
+<LN ID="%QD.SL1.IF1.ST1.UserData_I2021_S01" Type="UDINT">
+<Prod Device="TC#8-CPYDEV" DPName="Cognex:tmpBarcodeWrite1" Kind="pv"/>
+<Cons Device="SL1.IF1.ST1" DPName="UserData_I2021_S01" Kind="io"/>
+</LN>
+<LN ID="%QD.SL1.IF1.ST1.UserData_I2021_S02" Type="UDINT">
+<Prod Device="TC#8-CPYDEV" DPName="Cognex:tmpBarcodeWrite2" Kind="pv"/>
+<Cons Device="SL1.IF1.ST1" DPName="UserData_I2021_S02" Kind="io"/>
+</LN>
+<LN ID="%QD.SL1.IF1.ST1.UserData_I2021_S03" Type="UDINT">
+<Prod Device="TC#8-CPYDEV" DPName="Cognex:tmpBarcodeWrite3" Kind="pv"/>
+<Cons Device="SL1.IF1.ST1" DPName="UserData_I2021_S03" Kind="io"/>
+</LN>
+</Links></IO>

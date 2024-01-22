@@ -1,0 +1,56 @@
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	vsCameraConnectedPlk : UINT;
+	vsCameraOnline : UINT;
+	vsCameraChangeJob : UINT;
+	vsCameraTrigger : UINT;
+	vsCameraJob1 : UINT;
+	vsErrorReset : UINT := 1;
+	vkErrorReset : BOOL;
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	step_pic : USINT := 0;
+	x : USINT := 0;
+	DirRead_0 : DirRead;
+	DirCreate_0 : DirCreate;
+	FileDelete_0 : FileDelete;
+	DevLink_0 : DevLink;
+	TON_10ms_0 : TON_10ms;
+	DTnow : DATE_AND_TIME;
+	DTGetTime_0 : DTGetTime;
+	DTGetTimeTollerance : UDINT;
+	file_converted : STRING[260];
+	file_newest : STRING[260];
+	dir_wait_time : UDINT := 0; (*Wait timer for camera picture*)
+	dir_timeout : UDINT := 5000; (*Picture timeout in ms*)
+	dir_cleanup : BOOL; (*Flag for folder clean up*)
+	dir_data_oldest : fiDIR_READ_DATA; (*File information for oldest file*)
+	dir_data_newest : fiDIR_READ_DATA; (*File information for newest file*)
+	dir_entry_max : USINT := 0; (*Max number of files, depends on next array size*)
+	dir_data : ARRAY[0..19] OF fiDIR_READ_DATA;
+	dir_entry : USINT;
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	VChandle : UDINT;
+	VCbitmap : REFERENCE TO sVCBitmap;
+	VCbitmap_tmp : UDINT;
+	VCerror : UINT;
+	BmpConvert_0 : BmpConvert;
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR CONSTANT
+	STP_INIT : USINT := 0;
+	STP_RESULT : USINT := 1;
+	STP_WAIT : USINT := 2;
+	STP_DIR_READ : USINT := 3;
+	STP_DIR_EVAL : USINT := 4;
+	STP_VC_CONVERT : USINT := 5;
+	STP_VC_LOAD : USINT := 6;
+	STP_VC_SHOW : USINT := 7;
+	STP_VC_FREE : USINT := 8;
+	STP_BMP_DELETE : USINT := 9;
+	STP_BMP_CLEANUP : USINT := 10;
+	STP_ERROR : USINT := 20;
+END_VAR

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.22 SP04?>
+<Library xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">BR_ATL_LOG.typ</File>
+    <File Description="Exported constants">BR_ATL_LOG.var</File>
+    <File Description="Exported functions and function blocks">BR_ATL_LOG.fun</File>
+    <File>BR_ATL_LOG.c</File>
+  </Files>
+</Library>

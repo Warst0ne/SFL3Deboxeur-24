@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="initPUPITRE" access="private" >
+    <Code><![CDATA[begin
+
+  while true
+
+    // Boucle Infini
+    vbleu=true
+    // voyant bleu s'allume
+    while (bbleu==false)
+
+      // tant que le boutuon est 0 ( 0 = valeur ON)(1 = Valeur OFF)
+      enablePower()
+      // Met le robot sous tension (Ne fonctionne pas avec Unival met permet une sécurité supplémentaire)
+      vbleu=false
+      // Voyant bleu s'éteint 
+
+
+      if (brouge==false and borange==true and bbleu==false)
+
+        // Si Bouton Rouge et bleu sont à 0 & que bouton ornage est a 1.
+        vrouge=true
+        // Voyant rouge à 1
+        vorange=false
+        safe3=false
+        // VOyant orange a 0
+      endIf
+
+      if (brouge==false and borange==false and bbleu==false)
+
+        // Si Bouton Rouge et orange et bleu sont à 0.
+        vrouge=false
+        // voyant rouge s'éteint
+        vorange=true
+        safe3=true
+        // voyant orange s'allume.
+
+      endIf
+      if (brouge==true and bbleu==false and borange==true)
+
+        // Bouton rouge et orange a 1 et bouton bleu a 0 (Bleu 0 = 1 car entrées inversé)
+        vrouge=false
+        // Voyant rouge s'éteint
+        call programmeMOVE()
+        // Appel du programme mouvement       
+      endIf
+
+    endWhile
+    disablePower()
+    // coupe le courant dans le TX40
+    vrouge=false
+    //voyant rouge éteint
+    vorange=false
+    safe3=false
+    //voyant orange éteint
+
+
+  endWhile
+
+end]]></Code>
+  </Program>
+</Programs>

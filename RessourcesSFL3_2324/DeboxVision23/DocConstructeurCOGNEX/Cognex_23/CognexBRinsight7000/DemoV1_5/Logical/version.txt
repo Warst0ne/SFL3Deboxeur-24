@@ -1,0 +1,35 @@
+----------------------------------------------------------------
+Version 1.5 (1.01.2014)
+- Fixed camera picture is not created sporadically. Changed camera trigger.
+- Fixed camera picture display function memory leak
+
+----------------------------------------------------------------
+Version 1.4 (1.03.2013)
+- When resetting an error on commissioning page all buttons are disabled
+- Native mode is auto disconnected when the camera disconnects from Powerlink
+
+----------------------------------------------------------------
+Version 1.3 (1.01.2013)
+- Added function to ping camera from the setup page
+- Automatic create missing folders on startup
+- Removed cancel transfer button because abort is not stable
+
+----------------------------------------------------------------
+Version 1.2 (1.10.2012)
+- Changed tolerance for picture transfer to 2s
+- Camera picture height and width is now global variable
+- New feature for camera native mode
+- Sample for sending camera jobs
+- Sample for sending camera commands
+- Sample for camera commissioning
+- Code cleanup and optimization
+
+----------------------------------------------------------------
+Version 1.1 (1.09.2012)
+- Added job execution times to camera jobs and AS project
+- Load job is now disabled when camera is not connected
+
+----------------------------------------------------------------
+Version 1.0 (1.07.2012)
+First release
+----------------------------------------------------------------

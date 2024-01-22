@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\arconfig.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asnxdb1.br">
+    <BuildReason>Target "asnxdb1.br" does not exist</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\ashwac.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\sysconf.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asfw.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\ashwd.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\iomap.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\pp500_15\plc1\iomap.iom" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\pp500_15\plc1\transfer.lst">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asfw.br" differs.
+</BuildReason>
+  </Rule>
+</BuildReasons>

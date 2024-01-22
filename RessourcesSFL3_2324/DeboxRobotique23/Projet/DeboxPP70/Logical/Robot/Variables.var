@@ -1,0 +1,4 @@
+VAR
+	BP_Bouteille_1 : BOOL;
+	BOOL_Bouteille_1 : BOOL;
+END_VAR

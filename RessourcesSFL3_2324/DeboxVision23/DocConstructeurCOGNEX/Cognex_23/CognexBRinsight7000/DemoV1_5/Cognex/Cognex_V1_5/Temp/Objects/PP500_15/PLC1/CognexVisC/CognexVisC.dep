@@ -1,0 +1,8 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/FileIO/FileIO.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/BR_ATL_COG/BR_ATL_COG.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/AsTCP/AsTCP.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/standard/standard.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/BR_ATL_COG/BR_ATL_COG.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/BR_ATL_LOG/BR_ATL_LOG.fun
+$(AS_PROJECT_PATH)/Logical/CognexVisCommissioning/CognexVisCommissioning.var
+$(AS_PROJECT_PATH)/Logical/Global.var

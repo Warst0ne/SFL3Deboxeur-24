@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.6.3.55 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1" />
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4" />
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8">
+    <Task
+      Name="Cognex"
+      Disable="false"
+      Source="Cognex"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Temp\Objects\PP500_15\PLC1\Cognex\Cognex.ab.var" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Cognex\Cognex.typ" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Cognex\Cognex.var" />
+    </Task>
+    <Task
+      Name="CognexVisN"
+      Disable="false"
+      Source="CognexVisNativeMode"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Temp\Objects\PP500_15\PLC1\CognexVisN\CognexVisNativeMode.ab.var" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisNativeMode\CognexVisNativeMode.typ" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisNativeMode\CognexVisNativeMode.var" />
+    </Task>
+    <Task
+      Name="CognexVisC"
+      Disable="false"
+      Source="CognexVisCommissioning"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Temp\Objects\PP500_15\PLC1\CognexVisC\CognexVisCommissioning.ab.var" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisCommissioning\CognexVisCommissioning.typ" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisCommissioning\CognexVisCommissioning.var" />
+    </Task>
+    <Task
+      Name="CognexVisA"
+      Disable="false"
+      Source="CognexVisArchive"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Temp\Objects\PP500_15\PLC1\CognexVisA\CognexVisArchive.ab.var" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisArchive\CognexVisArchive.typ" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisArchive\CognexVisArchive.var" />
+    </Task>
+    <Task
+      Name="CognexVisM"
+      Disable="false"
+      Source="CognexVisMain"
+      Language="IEC">
+      <InternalFile
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Temp\Objects\PP500_15\PLC1\CognexVisM\CognexVisMain.ab.var" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisMain\CognexVisMain.typ" />
+      <File
+        Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisMain\CognexVisMain.var" />
+    </Task>
+  </TaskClass>
+</ConfigInfo>

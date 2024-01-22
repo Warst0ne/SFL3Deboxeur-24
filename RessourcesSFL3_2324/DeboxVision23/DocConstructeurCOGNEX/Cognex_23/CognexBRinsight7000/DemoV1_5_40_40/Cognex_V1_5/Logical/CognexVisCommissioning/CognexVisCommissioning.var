@@ -1,0 +1,27 @@
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	data : ARRAY[0..999] OF USINT; (*Send and receive buffer (size must be even)*)
+	data_string : ARRAY[0..19] OF STRING[80]; (*Receive data split up as string*)
+	NativeModeCommandStatus : INT;
+	NaticeModeCommand : USINT;
+	NativeModeCommand_0 : NativeModeCommand;
+	NativeModeWriteFile_0 : NativeModeWriteFile;
+	DirCreate_0 : DirCreate;
+	DevLink_0 : DevLink;
+	TransferProgressStatus : UINT;
+	vsTransferProgress : USINT;
+END_VAR
+(*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	vkNativeModeConnect : BOOL;
+	NativeModeLoggedIn : UINT;
+	NativeModeStatus : UINT;
+	NativeModeLogin_0 : NativeModeLogin;
+	NativeModeLogout_0 : NativeModeLogout;
+END_VAR
+(*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	vkTransferWrite : USINT;
+	vsErrorReset : UINT := 1;
+	vkErrorReset : BOOL;
+END_VAR

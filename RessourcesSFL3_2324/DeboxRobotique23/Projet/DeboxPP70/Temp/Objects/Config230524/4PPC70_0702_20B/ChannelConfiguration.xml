@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
+  <Module ID="$root" Hardware="4PPC70.0702-20B" HardwareModuleName="4PPC70_0702_20B" ModuleID="1">
+    <Channel ID="SerialNumber" Description="Serial number" Ext="/HW" Address="0" Direction="IN" Type="UDINT" Sig_St_Udint="1" ChannelType="SerialNumber" />
+    <Channel ID="ModuleID" Description="Module ID" Ext="/HW" Address="1" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="ModuleID" />
+    <Channel ID="HardwareVariant" Description="Hardware variant" FromVersion="A4.23" Ext="/HW" Address="15" Direction="IN" Type="UINT" ChannelType="HardwareVariant" />
+    <Channel ID="FirmwareVersion" Description="Frimware version" FromVersion="A4.23" Ext="/HW" Address="16" Direction="IN" Type="UINT" ChannelType="FirmwareVersion" />
+    <Channel ID="TemperatureCPU" Description="Temperature CPU [0.1°C]" Ext="/HW" Address="4" Direction="IN" Type="UINT" Sig_Temp_CpuTemp="1" ChannelType="Temp" Ordinal="2" />
+    <Channel ID="TemperatureENV" Description="Temperature cooling plate [0.1°C]" Ext="/HW" Address="5" Direction="IN" Type="UINT" Sig_Temp_CpuTemp="1" ChannelType="Temp" Ordinal="1" />
+    <Channel ID="SystemTime" Description="System time at the start of the current task cycle [µs]" Ext="/HW" Address="9" Direction="IN" Type="DINT" Sig_St_Dint="1" ChannelType="SystemTime" />
+    <Channel ID="IF1.LinkOk" Description="Link state" Ext="/INFO" Address="0x8000001A" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.OutputDMAMargin" Description="Margin to output cycle deadline in microseconds" Ext="/INFO" Address="0x8000000C" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF1.NodeNumber" Description="Node number currently in use" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="USINT" Sig_St_Usint="1" />
+    <Channel ID="IF1.CycleOk" Description="Indication for proper cyclic operation (1 = operational)" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.SyncOk" Description="Indication for a synchronized POWERLINK-system (1 = synchronized)" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.TimeSeconds" Description="Absolute time extracted from current SoC-Frame (NetTime in POWERLINK V2) - Seconds" FromVersion="M2.90" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.TimeNanoseconds" Description="Absolute time extracted from current SoC-Frame (NetTime in POWERLINK V2) - Nanoseconds" FromVersion="M2.90" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.NettimeSoC" Description="Network time extracted from current SoC-Frame [µs] (RelativeTime in POWERLINK V2)" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF1.NettimeOffset" Description="Network time offset to local system time [µs]" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF1.CycleCount" Description="Overall number of bus cycles" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.FailedCycleCount" Description="Number of failed bus cycles" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.CycleTimeViolationCount" Description="Number of cycle time violations" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.CycleIdleTime" Description="Unoccupied time during one POWERLINK cycle [µs]" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.CycleCongestionCount" Description="allways 0, available for legacy projects" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF5.CycleCount" Description="Number of bus cycles" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.BreakCount" Description="Number of bus cycles with set break signal" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.Nettime" Description="Timestamp when the current input frame was started  [µs]" FromVersion="I2.90" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.SyncErrorCount" Description="Number of failed synchronous frames" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.SyncSramErrorCount" Description="Number of memory access errors within synchronous frame (overflow/underrun)" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.SyncBusyErrorCount" Description="Number of not sent synchronous frames (sender not ready)" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.SyncNoRxErrorCount" Description="Number of not received synchronous frames (timeout)" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.SyncFormatErrorCount" Description="Number of faulty synchronous frames" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.SyncPendingErrorCount" Description="Number of synchronous frames which could not be sent because of receiving a frame" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.AsyncErrorCount" Description="Number of failed asynchronous frames" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.AsyncSramErrorCount" Description="Number of memory access errors within asynchronous frame (overflow/underrun)" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.AsyncBusyErrorCount" Description="Number of not sent asynchronous frames (sender not ready)" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.AsyncNoRxErrorCount" Description="Number of not received asynchronous frames (timeout)" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.AsyncFormatErrorCount" Description="Number of faulty asynchronous frames" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.AsyncPendingErrorCount" Description="Number of asynchronous frames which could not be sent because of receiving a frame" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.DMALateOutputErrorCount" Description="Number of cycles when DMA for cyclic outputs was too late" FromVersion="G2.93" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF5.NrOfStationsMax" Description="Number of max. stations" FromVersion="A3.08" Ext="/INFO" Address="0x80000113" Direction="IN" Type="USINT" Sig_St_Usint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.NrOfStationsConfigured" Description="Number of configured stations" FromVersion="A3.08" Ext="/INFO" Address="0x80000114" Direction="IN" Type="USINT" Sig_St_Usint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.StationAtBusEnd" Description="Station at end of bus" FromVersion="A3.08" Ext="/INFO" Address="0x80000115" Direction="IN" Type="USINT" Sig_St_Usint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.StationAtBusEndChangeTime" Description="Time of last change at station on end of bus" FromVersion="A3.08" Ext="/INFO" Address="0xC0000115" Direction="IN" Type="DATE_AND_TIME" Sig_St_Dt="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.StationPastOutFrameError" Description="First station which recognizes output frame error" FromVersion="A3.08" Ext="/INFO" Address="0x80000116" Direction="IN" Type="USINT" Sig_St_Usint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.StationPastOutFrameErrorChangeTime" Description="Time of last change of channel StationPastOutFrameError" FromVersion="A3.08" Ext="/INFO" Address="0xC0000116" Direction="IN" Type="DATE_AND_TIME" Sig_St_Dt="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.StationPastInFrameError" Description="First station which recognizes input frame error" FromVersion="A3.08" Ext="/INFO" Address="0x80000117" Direction="IN" Type="USINT" Sig_St_Usint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.StationPastInFrameErrorChangeTime" Description="Time of last change of channel StationPastInFrameError" FromVersion="A3.08" Ext="/INFO" Address="0xC0000117" Direction="IN" Type="DATE_AND_TIME" Sig_St_Dt="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.SyncInFrameSize" Description="Size of synchronous input frame [Bytes]" FromVersion="A3.08" Ext="/INFO" Address="0x80000118" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.SyncOutFrameSize" Description="Size of synchronous output frame [Bytes]" FromVersion="A3.08" Ext="/INFO" Address="0x80000119" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.AsyncFrameSize" Description="Size of asynchronous frame [Bytes]" FromVersion="A3.08" Ext="/INFO" Address="0x8000011A" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.AsyncFrameSpareSize" Description="Size reserve within asynchronous frame [Bytes]" FromVersion="A3.08" Ext="/INFO" Address="0x8000011B" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
+    <Channel ID="IF5.BusLengthConfigured" Description="Configured bus length [m]" FromVersion="A3.08" Ext="/INFO" Address="0x8000011C" Direction="IN" Type="DINT" Sig_St_Dint="1" Diagnose="/DIAG" />
+  </Module>
+  <Module ID="IF1.ST1" Hardware="epl_any" HardwareModuleName="staubli_io" ModuleID="7" Simulatable="true">
+    <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" ArConfig="copy" />
+    <Channel ID="HPE1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="HPE2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="UEN1_DOOR1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="UEN2_DOOR2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BRS1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BRS2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="LSW1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="DF" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="0" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="SHORTR1_FAULT" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BRK_SEL" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BRK_REL" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="24V_FUS_FAULT" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="WDG1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="CHGMOD1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MANU" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="COMP" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="1" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="PARK1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BUS_ON1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BUS_ON2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="VALID" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MCPES1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MCPES2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="UESA1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="UESA2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="2" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="UESB1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="UESB2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BRK_REL_EN" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="PWR_OK" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="ALIM_OK" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="ESTOP1_MEM" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="ESTOP2_MEM" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="HPE1_DELAY" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="3" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="HPE2_DELAY" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="PHASING" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="SCR1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="SCR2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="LSW2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="SHORTR2_FAULT" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="WDG2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="WMSES1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="4" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="WMSES2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="COMPL1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="COMPR1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MANUS1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MANUF1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="usrIn0" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="usrIn1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="DEADMAN2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="5" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="CHGMOD2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="COMPL2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="COMPR2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MANUF2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MANUS2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWER_EN" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="PARK2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MOTOR_1_3_5" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="6" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="MOTOR_2_4_6" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="CASTING" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="DSI_BOARD" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="GLOBAL_PTC" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="fIn0" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="fIn1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="SECTEUR_OK" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I0" Description="BasicIO-1\%I0" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="7" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I1" Description="BasicIO-1\%I1" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I2" Description="BasicIO-1\%I2" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I3" Description="BasicIO-1\%I3" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I4" Description="BasicIO-1\%I4" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I5" Description="BasicIO-1\%I5" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I6" Description="BasicIO-1\%I6" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I7" Description="BasicIO-1\%I7" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I8" Description="BasicIO-1\%I8" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="8" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I9" Description="BasicIO-1\%I9" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I10" Description="BasicIO-1\%I10" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I11" Description="BasicIO-1\%I11" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I12" Description="BasicIO-1\%I12" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I13" Description="BasicIO-1\%I13" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I14" Description="BasicIO-1\%I14" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_I15" Description="BasicIO-1\%I15" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I0" Description="POWERLINK-1\%I0" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I1" Description="POWERLINK-1\%I1" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I2" Description="POWERLINK-1\%I2" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I3" Description="POWERLINK-1\%I3" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I4" Description="POWERLINK-1\%I4" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I5" Description="POWERLINK-1\%I5" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I6" Description="POWERLINK-1\%I6" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I7" Description="POWERLINK-1\%I7" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="padding" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="valve1Out" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="0" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="valve2Out" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="1" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="fOut0Out" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="2" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q0Out" Description="BasicIO-1\%Q0Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="3" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q1Out" Description="BasicIO-1\%Q1Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="4" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q2Out" Description="BasicIO-1\%Q2Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="5" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q3Out" Description="BasicIO-1\%Q3Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="6" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q4Out" Description="BasicIO-1\%Q4Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="7" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q5Out" Description="BasicIO-1\%Q5Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="0" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q6Out" Description="BasicIO-1\%Q6Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="1" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q7Out" Description="BasicIO-1\%Q7Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="2" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q8Out" Description="BasicIO-1\%Q8Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="3" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q9Out" Description="BasicIO-1\%Q9Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="4" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q10Out" Description="BasicIO-1\%Q10Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="5" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q11Out" Description="BasicIO-1\%Q11Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="6" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q12Out" Description="BasicIO-1\%Q12Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="1" BitOffset="7" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q13Out" Description="BasicIO-1\%Q13Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="0" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q14Out" Description="BasicIO-1\%Q14Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="1" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="BasicIO_1_Q15Out" Description="BasicIO-1\%Q15Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="2" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q0Out" Description="POWERLINK-1\%Q0Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="3" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q1Out" Description="POWERLINK-1\%Q1Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="4" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q2Out" Description="POWERLINK-1\%Q2Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="5" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q3Out" Description="POWERLINK-1\%Q3Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="6" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q4Out" Description="POWERLINK-1\%Q4Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="7" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q5Out" Description="POWERLINK-1\%Q5Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="0" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q6Out" Description="POWERLINK-1\%Q6Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="1" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_Q7Out" Description="POWERLINK-1\%Q7Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="2" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="paddingOut0" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="3" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="paddingOut1" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="4" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="paddingOut2" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="5" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="paddingOut3" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="6" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="paddingOut4" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="7" Direction="OUT" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="CBT_TEMP_I6403_S01" Description="" Ext="/FIXED" Address="0xB" Direction="IN" Type="REAL" ArConfig="Copy" />
+    <Channel ID="CPU_TEMP_I6403_S02" Description="" Ext="/FIXED" Address="0xF" Direction="IN" Type="REAL" ArConfig="Copy" />
+  </Module>
+</ChannelConfiguration>

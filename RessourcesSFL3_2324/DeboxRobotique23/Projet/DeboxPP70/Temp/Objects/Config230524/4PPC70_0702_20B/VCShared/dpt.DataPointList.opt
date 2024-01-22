@@ -1,0 +1,9 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="C:/projects/DeboxPP70/Physical/Config230524/4PPC70_0702_20B/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="Robot" Source="Robot.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

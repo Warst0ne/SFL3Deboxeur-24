@@ -1,0 +1,8 @@
+VAR
+	Diametre : INT;
+	tmpVar : REAL;
+	X : INT;
+	Y : INT;
+	Z : INT;
+	Angle : INT;
+END_VAR

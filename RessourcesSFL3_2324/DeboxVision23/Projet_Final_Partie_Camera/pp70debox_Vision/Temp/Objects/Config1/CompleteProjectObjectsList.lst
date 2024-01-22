@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.6.3.55 SP"?>
+<Objects>
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package.ParentUnknown"
+    LastWriteTime="133301696677499579" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="133301696677389550"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="133301696677389550"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="133301696677429581" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\operator\binary.lby"
+    LogicalPath="Libraries.operator"
+    Type="Library"
+    LastWriteTime="133301696677459551" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\operator\operator.fun"
+    LogicalPath="Libraries.operator.operator.fun"
+    Type="File"
+    LastWriteTime="133301696677469554"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\operator\operator.typ"
+    LogicalPath="Libraries.operator.operator.typ"
+    Type="File"
+    LastWriteTime="133301696677469554"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\operator\operator.var"
+    LogicalPath="Libraries.operator.operator.var"
+    Type="File"
+    LastWriteTime="133301696677469554"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\runtime\binary.lby"
+    LogicalPath="Libraries.runtime"
+    Type="Library"
+    LastWriteTime="133301696677489482" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\runtime\runtime.fun"
+    LogicalPath="Libraries.runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="133301696677489482"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\runtime\runtime.typ"
+    LogicalPath="Libraries.runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="133301696677499579"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\runtime\runtime.var"
+    LogicalPath="Libraries.runtime.runtime.var"
+    Type="File"
+    LastWriteTime="133301696677499579"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\astime\binary.lby"
+    LogicalPath="Libraries.astime"
+    Type="Library"
+    LastWriteTime="133301696677449554" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\astime\astime.fun"
+    LogicalPath="Libraries.astime.astime.fun"
+    Type="File"
+    LastWriteTime="133301696677439556"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\astime\astime.typ"
+    LogicalPath="Libraries.astime.astime.typ"
+    Type="File"
+    LastWriteTime="133301696677439556"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\astime\astime.var"
+    LogicalPath="Libraries.astime.astime.var"
+    Type="File"
+    LastWriteTime="133301696677449554"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\AsIecCon\binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="133301696677419477" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="133301696677399467"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\AsIecCon\AsIecCon.typ"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.typ"
+    Type="File"
+    LastWriteTime="133301696677399467"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Libraries\AsIecCon\AsIecCon.var"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.var"
+    Type="File"
+    LastWriteTime="133301696677409474"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Camera\IEC.prg"
+    LogicalPath="Camera"
+    Type="Program"
+    LastWriteTime="133301696677379556" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Camera\Cyclic.st"
+    LogicalPath="Camera.Cyclic.st"
+    Type="File"
+    LastWriteTime="133301696677379556"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Camera\Init.st"
+    LogicalPath="Camera.Init.st"
+    Type="File"
+    LastWriteTime="133301696677379556"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Camera\Exit.st"
+    LogicalPath="Camera.Exit.st"
+    Type="File"
+    LastWriteTime="133301696677379556"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Camera\Types.typ"
+    LogicalPath="Camera.Types.typ"
+    Type="File"
+    LastWriteTime="133301696677379556"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Camera\Variables.var"
+    LogicalPath="Camera.Variables.var"
+    Type="File"
+    LastWriteTime="133301696677389550"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\VisuPP70sync\Vc.dob"
+    LogicalPath="VisuPP70sync"
+    Type="DataObject"
+    LastWriteTime="133301696678304613" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\VisuPP70sync\VCObject.vc"
+    LogicalPath="VisuPP70sync.VCObject.vc"
+    Type="File"
+    LastWriteTime="133301696678304613"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Program\IEC.prg"
+    LogicalPath="Program"
+    Type="Program"
+    LastWriteTime="133301696677509476" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Program\Main.ab"
+    LogicalPath="Program.Main.ab"
+    Type="File"
+    LastWriteTime="133301696677509476"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Program\Types.typ"
+    LogicalPath="Program.Types.typ"
+    Type="File"
+    LastWriteTime="133301696677509476"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Logical\Program\Variables.var"
+    LogicalPath="Program.Variables.var"
+    Type="File"
+    LastWriteTime="133301696677519480"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\Config.pkg"
+    LogicalPath="Config1"
+    Type="Configuration.ParentUnknown"
+    LastWriteTime="133301696678674867" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\Hardware.hw"
+    LogicalPath="Config1.Hardware.hw"
+    Type="File"
+    LastWriteTime="133301696678704858"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\Hardware.hwl"
+    LogicalPath="Config1.Hardware.hwl"
+    Type="File"
+    LastWriteTime="133301696678715045"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\Cpu.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B"
+    Type="Cpu"
+    LastWriteTime="133301696678394617" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\Cpu.sw"
+    LogicalPath="Config1.4PPC70_0702_20B.Cpu.sw"
+    Type="File"
+    LastWriteTime="133301696678445412"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\Cpu.per"
+    LogicalPath="Config1.4PPC70_0702_20B.Cpu.per"
+    Type="File"
+    LastWriteTime="133301696678394617"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\IoMap.iom"
+    LogicalPath="Config1.4PPC70_0702_20B.IoMap.iom"
+    Type="File"
+    LastWriteTime="133301696678634950"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\PvMap.vvm"
+    LogicalPath="Config1.4PPC70_0702_20B.PvMap.vvm"
+    Type="File"
+    LastWriteTime="133301696678634950"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\Connectivity\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.Connectivity"
+    Type="Package"
+    LastWriteTime="133301696678384630" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\Connectivity\OpcUA\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.Connectivity.OpcUA"
+    Type="Package"
+    LastWriteTime="133301696678384630" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\TextSystem\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.TextSystem"
+    Type="Package"
+    LastWriteTime="133301696678634950" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\UnitSystem\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.UnitSystem"
+    Type="Package"
+    LastWriteTime="133301696678644968" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity"
+    Type="Package"
+    LastWriteTime="133301696678364615" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\UserRoleSystem\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.UserRoleSystem"
+    Type="Package"
+    LastWriteTime="133301696678374616" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\UserRoleSystem\Role.role"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.UserRoleSystem.Role.role"
+    Type="File"
+    LastWriteTime="133301696678374616"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\UserRoleSystem\User.user"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.UserRoleSystem.User.user"
+    Type="File"
+    LastWriteTime="133301696678384630"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore"
+    Type="Package"
+    LastWriteTime="133301696678344617" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\OwnCertificates\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.OwnCertificates"
+    Type="Package"
+    LastWriteTime="133301696678344617" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\OwnCertificates\Certificates\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.OwnCertificates.Certificates"
+    Type="Package"
+    LastWriteTime="133301696678334617" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\OwnCertificates\PrivateKeys\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.OwnCertificates.PrivateKeys"
+    Type="Package"
+    LastWriteTime="133301696678344617" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.ThirdPartyCertificates"
+    Type="Package"
+    LastWriteTime="133301696678354618" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\ThirdPartyCertificates\SoftwareCertificates\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.ThirdPartyCertificates.SoftwareCertificates"
+    Type="Package"
+    LastWriteTime="133301696678354618" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\CertificateRevocationLists\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.CertificateRevocationLists"
+    Type="Package"
+    LastWriteTime="133301696678324619" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\CertificateStore\CertificateSigningRequests\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.CertificateStore.CertificateSigningRequests"
+    Type="Package"
+    LastWriteTime="133301696678334617" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\TransportLayerSecurity\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.TransportLayerSecurity"
+    Type="Package"
+    LastWriteTime="133301696678364615" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\Firewall\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.Firewall"
+    Type="Package"
+    LastWriteTime="133301696678354618" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\AccessAndSecurity\Firewall\Rules.firewallRules"
+    LogicalPath="Config1.4PPC70_0702_20B.AccessAndSecurity.Firewall.Rules.firewallRules"
+    Type="File"
+    LastWriteTime="133301696678364615"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\mappControl\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.mappControl"
+    Type="Package"
+    LastWriteTime="133301696678654861" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\mappMotion\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.mappMotion"
+    Type="Package"
+    LastWriteTime="133301696678664878" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\mappServices\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.mappServices"
+    Type="Package"
+    LastWriteTime="133301696678664878" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\mappView\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.mappView"
+    Type="Package"
+    LastWriteTime="133301696678664878" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\mappCockpit\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.mappCockpit"
+    Type="Package"
+    LastWriteTime="133301696678654861" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\VC\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.VC"
+    Type="Package"
+    LastWriteTime="133301696678644968" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\VC\4PPC70_0702_20B.dis"
+    LogicalPath="Config1.4PPC70_0702_20B.VC.4PPC70_0702_20B.dis"
+    Type="File"
+    LastWriteTime="133301696678644968"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\ExternalHardware\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.ExternalHardware"
+    Type="Package"
+    LastWriteTime="133301696678584619" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\ExternalHardware\ZDBAN416.ext"
+    LogicalPath="Config1.4PPC70_0702_20B.ExternalHardware.ZDBAN416.ext"
+    Type="File"
+    LastWriteTime="133301696678594632"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\ExternalHardware\ExternalHardwareDevices.xml"
+    LogicalPath="Config1.4PPC70_0702_20B.ExternalHardware.ExternalHardwareDevices.xml"
+    Type="File"
+    LastWriteTime="133301696678584619"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM"
+    Type="Package"
+    LastWriteTime="133301696678445412" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1"
+    Type="Package"
+    LastWriteTime="133301696678454631" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\X20IF10D1_1.dtm"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.X20IF10D1_1.dtm"
+    Type="File"
+    LastWriteTime="133301696678524632"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\X20IF10D1_1_IF1\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.X20IF10D1_1_IF1"
+    Type="Package"
+    LastWriteTime="133301696678534618" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\X20IF10D1_1_IF1\X20IF10D1_1_IF1.dtmdre"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.X20IF10D1_1_IF1.X20IF10D1_1_IF1.dtmdre"
+    Type="File"
+    LastWriteTime="133301696678544616"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\X20IF10D1_1_IF1\X20IF10D1_1_IF1.dtmdra"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.X20IF10D1_1_IF1.X20IF10D1_1_IF1.dtmdra"
+    Type="File"
+    LastWriteTime="133301696678534618"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\X20IF10D1_1_IF1\X20IF10D1_1_IF1.dtmtre"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.X20IF10D1_1_IF1.X20IF10D1_1_IF1.dtmtre"
+    Type="File"
+    LastWriteTime="133301696678584619"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\X20IF10D1_1_IF1\X20IF10D1_1_IF1.dtmdri"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.X20IF10D1_1_IF1.X20IF10D1_1_IF1.dtmdri"
+    Type="File"
+    LastWriteTime="133301696678574698"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\VS70_Series_V11_1\Package.pkg"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.VS70_Series_V11_1"
+    Type="Package"
+    LastWriteTime="133301696678454631" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\VS70_Series_V11_1\VS70_Series_V11_1.dtmdre"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.VS70_Series_V11_1.VS70_Series_V11_1.dtmdre"
+    Type="File"
+    LastWriteTime="133301696678464647"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\VS70_Series_V11_1\VS70_Series_V11_1.dtmtre"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.VS70_Series_V11_1.VS70_Series_V11_1.dtmtre"
+    Type="File"
+    LastWriteTime="133301696678484754"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\4PPC70_0702_20B\DTM\X20IF10D1_1\VS70_Series_V11_1\VS70_Series_V11_1.dtmdri"
+    LogicalPath="Config1.4PPC70_0702_20B.DTM.X20IF10D1_1.VS70_Series_V11_1.VS70_Series_V11_1.dtmdri"
+    Type="File"
+    LastWriteTime="133301696678484754"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugop\Documents\GitHub\SN2_SFL3_Deboxeur_23\Hugo Pageaux\Projet_Final_Partie_Camera\pp70debox_Vision\Physical\Config1\Hardware.jpg"
+    LogicalPath="Config1.Hardware.jpg"
+    Type="File"
+    LastWriteTime="133301698313956008"
+    Private="false" />
+</Objects>

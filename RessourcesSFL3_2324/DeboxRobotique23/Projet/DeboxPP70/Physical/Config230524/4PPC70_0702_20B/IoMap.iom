@@ -1,0 +1,3 @@
+VAR_CONFIG
+	::Robot:BOOL_Bouteille_1 AT %QX."staubli_io".POWERLINK_1_Q0Out;
+END_VAR

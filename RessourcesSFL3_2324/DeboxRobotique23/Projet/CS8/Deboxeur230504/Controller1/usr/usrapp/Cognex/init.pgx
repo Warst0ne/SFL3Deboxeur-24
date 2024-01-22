@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="init" access="public" >
+    <Locals>
+      <Local name="l_nI" type="num" xsi:type="array" size="1" />
+      <Local name="l_bLoggedIn" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Initialize cognex communication library.
+  //  This routine must be called only once when the application is started.
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+  bDebugProgram=false
+  bDebugSocket=false
+  bCheckRowUpLim=true
+  bGetID=false
+  nLibErrorCode=0
+end]]></Code>
+  </Program>
+</Programs>

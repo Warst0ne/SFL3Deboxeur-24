@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\visuro\visuro.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\arconfig.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\iomap.iom" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\iomap.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\iomap.iom" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\visuro.br">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config230524\4ppc70_0702_20b\transfer.lst">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\iomap.br" differs.
+</BuildReason>
+  </Rule>
+</BuildReasons>

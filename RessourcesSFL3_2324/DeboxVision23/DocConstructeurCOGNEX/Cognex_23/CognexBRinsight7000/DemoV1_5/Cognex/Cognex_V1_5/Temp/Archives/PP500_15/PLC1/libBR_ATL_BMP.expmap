@@ -1,0 +1,6 @@
+{
+  global:
+    BmpConvert;
+  local:
+    *;
+ };

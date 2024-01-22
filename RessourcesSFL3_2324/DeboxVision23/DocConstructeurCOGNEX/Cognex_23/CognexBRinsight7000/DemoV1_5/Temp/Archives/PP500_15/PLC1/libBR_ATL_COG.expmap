@@ -1,0 +1,12 @@
+{
+  global:
+    NativeModeCRC;
+    NativeModeSeparateData;
+    NativeModeWriteFile;
+    NativeModeReadFile;
+    NativeModeCommand;
+    NativeModeLogin;
+    NativeModeLogout;
+  local:
+    *;
+ };

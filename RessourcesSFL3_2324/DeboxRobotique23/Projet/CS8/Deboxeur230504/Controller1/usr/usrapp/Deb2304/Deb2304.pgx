@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="Deb2304" access="private" >
+    <Code><![CDATA[begin
+
+  dPowerlinkSorti[0]=true
+
+  waitEndMove()
+  movej(ja[0],tstylo,mlent)
+  waitEndMove()
+  movej(ja[1],tstylo,mlent)
+  waitEndMove()
+  movej(ja[2],tstylo,mlent)
+  waitEndMove()
+  movej(ja[3],tstylo,mlent)
+  waitEndMove()
+  movej(ja[4],tstylo,mlent)
+  waitEndMove()
+  movej(ja[3],tstylo,mlent)
+  waitEndMove()
+  movej(ja[2],tstylo,mlent)
+  waitEndMove()
+  movej(ja[0],tstylo,mlent)
+  waitEndMove()
+
+  dPowerlinkSorti[0]=false
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.0.14.76?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="In-Sight" Type="FBE.0000031D_In-Sight-7000" Version="1.0" OrderNumber="In-Sight">
+    <Connection Connector="PLK1" TargetModule="PLC1" TargetConnector="IF3" NodeNumber="1" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="p2000s01_direction" Value="wo" />
+    <Parameter ID="p2000s02_direction" Value="wo" />
+    <Parameter ID="p2001s01_direction" Value="ro" />
+    <Parameter ID="p2001s02_direction" Value="ro" />
+    <Parameter ID="p2010s01_direction" Value="ro" />
+    <Parameter ID="p2011s01_direction" Value="ro" />
+    <Parameter ID="p2011s02_direction" Value="ro" />
+    <Parameter ID="p2011s03_direction" Value="ro" />
+    <Parameter ID="p2011s04_direction" Value="ro" />
+    <Parameter ID="p2011s05_direction" Value="ro" />
+    <Parameter ID="p2011s06_direction" Value="ro" />
+    <Parameter ID="p2011s07_direction" Value="ro" />
+    <Parameter ID="p2011s08_direction" Value="ro" />
+    <Parameter ID="p2011s09_direction" Value="ro" />
+    <Parameter ID="p2011s0A_direction" Value="ro" />
+    <Parameter ID="p2011s0B_direction" Value="ro" />
+    <Parameter ID="p2021s01_direction" Value="wo" />
+    <Parameter ID="p2021s02_direction" Value="wo" />
+    <Parameter ID="p2021s03_direction" Value="wo" />
+    <Parameter ID="p2030s01_value" Value="1500" />
+  </Module>
+  <Module Name="PLC1" Type="X20CP1486" Version="1.1.2.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="DHCP Server" />
+      <Parameter ID="InternetAddress" Value="192.168.0.10" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Lease1" />
+      <Parameter ID="LeaseName1" Value="Cognex" />
+      <Parameter ID="LeaseStartAddress1" Value="192.168.0.50" />
+      <Parameter ID="LeaseStopAddress1" Value="192.168.0.55" />
+      <Parameter ID="LeaseSubnetMask1" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncPortNumber1" Value="5900" />
+      <Parameter ID="VncMaxConnections1" Value="1" />
+      <Parameter ID="VncRefreshRate1" Value="500" />
+      <Parameter ID="VncConnectionTimeout1" Value="4" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="r" />
+      <Parameter ID="VncPasswordViewControl1" Value="w" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="MtuSize" Value="1500" />
+      <Parameter ID="CycleTime" Value="800" />
+      <Parameter ID="InternetAddress" Value="192.168.2.1" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Parameter ID="UserRamSize" Value="100000" />
+    <Parameter ID="RemMemSize" Value="32000" />
+    <Parameter ID="Connections" Value="6" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TaskClassIdleTime" Value="800" />
+    <Parameter ID="Cyclic1Duration" Value="2400" />
+    <Parameter ID="Cyclic1Tolerance" Value="12000" />
+    <Parameter ID="Cyclic3Duration" Value="50400" />
+    <Parameter ID="Cyclic3Tolerance" Value="50400" />
+    <Parameter ID="Cyclic8Duration" Value="4000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30004000" />
+    <Parameter ID="TimerDevice" Value="PLC1.IF3" />
+  </Module>
+</Hardware>

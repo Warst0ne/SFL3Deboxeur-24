@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Transfer xmlns="http://br-automation.co.at/AS/Transfer">
+  <OperatingSystem Version="B4.62"/>
+  <Hardware Target="SG4"/>
+  <Operation Delete="CognexVisM.br"/>
+  <Operation Delete="CognexVisA.br"/>
+  <Operation Delete="CognexVisC.br"/>
+  <Operation Delete="CognexVisN.br"/>
+  <Operation Delete="Cognex.br"/>
+  <Operation Delete="BR_ATL_BMP.br"/>
+  <Operation Delete="BR_ATL_COG.br"/>
+  <Operation Delete="AsICMP.br"/>
+  <Operation Delete="BR_ATL_LOG.br"/>
+  <Operation Delete="asieccon.br"/>
+  <Operation Delete="astime.br"/>
+  <Operation Delete="AsTCP.br"/>
+  <Operation Delete="sys_lib.br"/>
+  <Operation Delete="FileIO.br"/>
+  <Operation Download="asfw.br" Memory="SystemROM"/>
+  <Operation Download="ashwd.br" Memory="SystemROM"/>
+  <Operation Download="asnxdb1.br" Memory="SystemROM"/>
+  <Operation Download="arconfig.br" Memory="SystemROM"/>
+  <Operation Download="sysconf.br" Memory="SystemROM"/>
+  <Operation Restart="warm"/>
+  <Operation Download="iomap.br" Memory="UserROM"/>
+  <Operation Download="Visapi.br" Memory="UserROM"/>
+  <Operation Download="ashwac.br" Memory="UserROM"/>
+  <Operation Download="TCData.br" Memory="SystemROM"/>
+  <Operation Download="udbdef.br" Memory="UserROM"/>
+  <Operation Download="runtime.br" Memory="UserROM"/>
+  <Operation Download="asstring.br" Memory="UserROM"/>
+  <Operation Download="standard.br" Memory="UserROM"/>
+  <Operation Download="FileIO.br" Memory="UserROM"/>
+  <Operation Download="sys_lib.br" Memory="UserROM"/>
+  <Operation Download="AsTCP.br" Memory="UserROM"/>
+  <Operation Download="astime.br" Memory="UserROM"/>
+  <Operation Download="asieccon.br" Memory="UserROM"/>
+  <Operation Download="BR_ATL_LOG.br" Memory="UserROM"/>
+  <Operation Download="AsICMP.br" Memory="UserROM"/>
+  <Operation Download="BR_ATL_COG.br" Memory="UserROM"/>
+  <Operation Download="BR_ATL_BMP.br" Memory="UserROM"/>
+  <Operation Download="Cognex.br" Memory="UserROM"/>
+  <Operation Download="CognexVisN.br" Memory="UserROM"/>
+  <Operation Download="CognexVisC.br" Memory="UserROM"/>
+  <Operation Download="CognexVisA.br" Memory="UserROM"/>
+  <Operation Download="CognexVisM.br" Memory="UserROM"/>
+</Transfer>

@@ -1,0 +1,6 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/AsICMP/AsICMP.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/BR_ATL_LOG/BR_ATL_LOG.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/asstring/asstring.fun
+$(AS_PROJECT_PATH)/Logical/Cognex/Cognex.var
+$(AS_PROJECT_PATH)/Logical/Global.var
+$(AS_PROJECT_PATH)/Logical/Global.typ

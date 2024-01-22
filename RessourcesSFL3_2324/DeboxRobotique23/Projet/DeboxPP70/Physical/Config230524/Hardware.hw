@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.3.55?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="4PPC70_0702_20B" Type="4PPC70.0702-20B" Version="1.4.0.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="10.16.7.34" />
+      <Parameter ID="SubnetMask" Value="255.255.0.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="v" />
+      <Parameter ID="VncRefreshRate1" Value="100" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="DeboxPP70_Config230524" />
+    <Parameter ID="VcObjectName" Value="VisuRo" />
+    <Parameter ID="KeyMappingFile" Value="VC\4PPC70_0702_20B.dis" />
+  </Module>
+  <Module Name="staubli_io" Type="FBE.staubli_io" Version="1.0" OrderNumber="staubli_io">
+    <Connection Connector="PLK1" TargetModule="4PPC70_0702_20B" TargetConnector="IF1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+</Hardware>

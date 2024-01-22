@@ -1,0 +1,166 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Author: strickers
+ * Version: 1.0
+ * This task has the following purpose
+ * - Maintain a logbook with events coming from the camera
+ * - Check the directory \Cognex for new pictures from the camera
+ * - Convert the pictures from 8 Bit to 24 Bit so that they can be 
+ *   displayed in Visual Components
+ * - Limit the amount of pictures and delete old if necessary
+ * - Show picture archive and display old pictures
+ * - Handle basic VC tasks like show/hide objects etc.
+ ********************************************************************)
+
+PROGRAM _INIT
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create file device for Cognex files and configuration files *)
+	LOOP
+		DevLink_0.enable 	= 1
+		DevLink_0.pDevice 	= ADR("root")
+		DevLink_0.pParam 	= ADR("/DEVICE=C:\\")
+		DevLink_0 FUB DevLink()
+		EXITIF(DevLink_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create cognex folder for bitmaps on boot up *)
+	LOOP
+		DirCreate_0.enable 	= 1
+		DirCreate_0.pDevice = ADR("root")
+		DirCreate_0.pName 	= ADR("cognex_pics")
+		DirCreate_0 FUB DirCreate()
+		EXITIF(DirCreate_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create file device for Cognex files and configuration files *)
+	LOOP
+		DevLink_0.enable 	= 1
+		DevLink_0.pDevice 	= ADR("CognexPictures")
+		DevLink_0.pParam 	= ADR("/DEVICE=C:\\cognex_pics")
+		DevLink_0 FUB DevLink()
+		EXITIF(DevLink_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	VChandle = VA_Setup(1, "Visu")
+	dir_entry_max =  SIZEOF(dir_data)/SIZEOF(dir_data[0])-1
+END_PROGRAM
+
+
+PROGRAM _CYCLIC
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Display camera pictures from archieve *)
+	(* --------------------------------------------------------------------------------------------------------- *)
+	CASE step_diag OF
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_INIT:
+			(* Limit selection to last file name *)
+			IF((dir_name_selected <> dir_name_selected_old) AND (dir_name_selected >= dir_name_selected_max) AND (dir_name_selected_max > 0)) THEN
+				dir_name_selected		= dir_name_selected_max-1
+				dir_name_selected_old 	= dir_name_selected
+			(* Refresh file name list *)
+			ELSE IF (vkDirRefresh) THEN
+				memset(ADR(dir_names), 0, SIZEOF(dir_names))
+				dir_name_selected_max = 0
+				dir_entry = 0
+				step_diag = STP_DIR_READ		
+			(* Display new selected picture *)
+			ELSE IF (dir_name_selected <> dir_name_selected_old) THEN
+				dir_name_selected_old = dir_name_selected
+				VCbitmap_tmp = 0
+				step_diag = STP_VC_LOAD	
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_DIR_READ:
+			(* Read all file names and date stamps from directory *)
+			DirRead_0.enable 	= 1
+			DirRead_0.pDevice 	= ADR("CognexPictures")
+			DirRead_0.entry 	= dir_entry
+			DirRead_0.option 	= fiFILE 
+			DirRead_0.pData 	= ADR(dir_data[dir_entry])
+			DirRead_0.data_len 	= SIZEOF(dir_data[dir_entry])
+			DirRead_0 FUB DirRead()
+			(* Stop reading files when max number is reached *)
+			IF (DirRead_0.status = fiERR_NO_MORE_ENTRIES) OR ((DirRead_0.status = 0) AND (dir_entry = dir_entry_max)) THEN
+				step_diag = STP_DIR_EVAL
+			(* Its all good, read next entry *)
+			ELSE IF (DirRead_0.status = 0) THEN
+				dir_entry = dir_entry + 1
+				step_diag = STP_DIR_READ
+			(* Jump to error step when FB faults *)
+			ELSE IF (DirRead_0.status <> 65535) THEN
+				NewLogEntry("#Error: dir read", ADR(logbook), 20)
+				step_diag = STP_ERROR
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_DIR_EVAL:
+			IF (dir_entry <> 0) THEN
+				(* Extract file names from structure *)
+				LOOP x=0 TO dir_entry-1 DO
+					IF(memcmp(ADR(dir_data[x].Filename), ADR("cbrplc"), 6) = 0) THEN
+						strcpy(ADR(dir_names[dir_name_selected_max]), ADR(dir_data[x].Filename[0]))
+						dir_name_selected_max = dir_name_selected_max + 1
+					ENDIF			
+				ENDLOOP
+				(* Load first picture in list *)
+				dir_name_selected 	= 0
+				VCbitmap_tmp 		= 0
+				step_diag 			= STP_VC_LOAD
+			ELSE
+				step_diag = STP_INIT
+			ENDIF	
+			vkDirRefresh = 0
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_LOAD:
+			(* Load picture into memory *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_LoadBitmap(1, VChandle, "CognexPictures", dir_names[dir_name_selected], ADR(VCbitmap_tmp))
+				IF(VCerror = 0) THEN
+					VCbitmap ACCESS VCbitmap_tmp
+					step_diag = STP_VC_SHOW
+				ELSE IF (VCerror <> 7000) THEN
+					NewLogEntry("#Error: load bitmap", ADR(logbook), 20)
+					step_diag = STP_ERROR
+				ENDIF
+				VA_Srelease(1, VChandle)
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_SHOW:
+			(* Display new picture *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_BlitBitmap(1, VChandle, ADR(VCbitmap), 700, 145, 700, 145, 700+PictureWidth, 145+PictureHeight, 1)
+				IF(VCerror = 0) THEN
+					VCbitmap ACCESS VCbitmap_tmp
+					step_diag = STP_VC_FREE
+				ELSE IF (VCerror <> 7000) THEN
+					NewLogEntry("#Error: show bitmap", ADR(logbook), 20)
+					step_diag = STP_ERROR
+				ENDIF
+				VA_Srelease(1, VChandle)
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_FREE:
+			(* Free up memory *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_FreeBitmap(1, VChandle, ADR(VCbitmap))
+				IF(VCerror = 0) THEN
+					VCbitmap ACCESS VCbitmap_tmp
+					step_diag = STP_INIT
+				ELSE IF (VCerror <> 7000) THEN
+					NewLogEntry("#Error: free bitmap", ADR(logbook), 20)
+					step_diag = STP_ERROR
+				ENDIF
+				VA_Srelease(1, VChandle)
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_ERROR:
+
+		ENDACTION
+	ENDCASE
+END_PROGRAM

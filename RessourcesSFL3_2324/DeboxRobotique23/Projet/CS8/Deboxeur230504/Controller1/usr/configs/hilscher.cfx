@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Hilscher fieldbus="powerlink" hideOtherBoards="false" >
+  <Board name="POWERLINK-1" description="" >
+    <DInputs>
+      <Dio description="" channel="0" mode="notInverted" />
+      <Dio description="" channel="1" mode="notInverted" />
+      <Dio description="" channel="2" mode="notInverted" />
+      <Dio description="" channel="3" mode="notInverted" />
+      <Dio description="" channel="4" mode="notInverted" />
+    </DInputs>
+    <DOutputs>
+      <Dio description="" channel="0" mode="notInverted" />
+      <Dio description="" channel="1" mode="notInverted" />
+      <Dio description="" channel="2" mode="notInverted" />
+      <Dio description="" channel="3" mode="notInverted" />
+      <Dio description="" channel="4" mode="notInverted" />
+    </DOutputs>
+    <AInputs>
+    </AInputs>
+    <AOutputs>
+    </AOutputs>
+  </Board>
+</Hilscher>

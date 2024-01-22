@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBD.Hilscher.EIGenEDSAdapterDTM.VS70 Series V11.1" Version="11.1" OrderNumber="VS70 Series V11.1">
+      <SourceFile OriginalFile="VS70_v12.eds" TranslationFile="ZDBAN416.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

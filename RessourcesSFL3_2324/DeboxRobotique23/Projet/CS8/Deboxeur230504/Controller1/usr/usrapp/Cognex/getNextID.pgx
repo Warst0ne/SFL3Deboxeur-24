@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getNextID" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="reference" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_nIndex" type="num" xsi:type="array" size="1" />
+      <Local name="l_bFound" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Return an available camera's ID.
+  //  By default, maximum  number of camera connected at the same time is 10 (ID 0 to 9)
+  //  this can be changed by resizing cCamera array (this array must contain one more element 
+  //  than the maximum amount of cameras you want to allow).
+  //  
+  //Output parameters
+  //  num x_nCamID :
+  //    role : camera's ID (only use if no errors returned in x_bError)
+  //
+  //  bool x_bError :
+  //    role : returns true if an error occurred (no more ID available) 
+  //    and false otherwise, then call get error functions to recuperate 
+  //    error code / message
+  //
+  //Examples
+  //    call returnID(l_nCamID,l_bError)
+  //
+  //History
+  //  Creation : 15-05-12 - t.caille
+  //Header end
+  //-----------------------------------------------------------------------
+
+  l_nIndex=0
+  l_bFound=false
+  //program scan free camera's ID 
+  do
+    if cCamera[l_nIndex].bConnected==false
+      x_nCamID=l_nIndex
+      l_bFound=true
+    endIf
+    l_nIndex=l_nIndex+1
+  until l_nIndex==size(cCamera)-1 or l_bFound==true
+  //No more place for another camera
+  if l_nIndex==size(cCamera)-1 and l_bFound==false
+    x_bError=true
+    x_nCamID=size(cCamera)-1
+    nLibErrorCode=201
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

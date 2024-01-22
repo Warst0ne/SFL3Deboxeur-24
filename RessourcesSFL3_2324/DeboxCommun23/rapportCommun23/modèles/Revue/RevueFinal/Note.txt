@@ -1,0 +1,20 @@
+Hugo :
+-J'utilise le logiciel In-Sight Explorer pour paramétrer la caméra, j'ai configurer les trames de données pour qu'elles puissent envoyer exactement ce que je veux.
+-La caméra que j'utilise fonctionne avec la communication EthernetIP, le système est composé d'une caméra d'une passerelle EIP et d'une CPU. 
+(La passrelle sert à envoyer des trames EthernetIP à une CPU qui ne peux normalement recevoir que des trames Powerlink)
+-J'ai utilisé le logiciel AS pour configurer le sytème et pour créer l'IHM.
+
+Juju :
+- J'ai installer un LAMP sur un OS Linux Ubuntu (22.10) qui accueil une base de donnée MySQL avec 4 tables (User, Alarme, Gabarit, Recette)
+- J'ai créer un site web en HTML, CSS et PHP qui permet de créer des gabarit, de les modifier pour donné un point de prise et qui permet de créer des recettes
+qui sont enregistrer dans la base de données
+- J'ai tenté et presque réussi d'effectuer la connexion entre la BDD sur Linux et la CPU via un script python passant par Ethernet IP (normalement c'est bien Ethernet IP)
+grace au logiciel Automation Studio de B&R
+
+Quentin : 
+
+-J'ai appris le logiciel SRS2013 pour cela j'ai du configurer le robot avec les coordonnées de chaque points ainsi que la vitesse et enfin l'outil. Par la suite j'ai 
+donc appris a programmer avec le langage VAL3 avec les différents problèmes tels que movej ou movel avec le nom du points,la vitesse ainsi que l'outil utiliser a la 
+suite de cela j'ai du configurer sur le logiciel les entrées et sorties du robot POWERLINK. J'ai apres faire la liaison entre la CPU du robot et la CPU B&R. 
+Sur autmotaion studio j'ai trouvé le fichier XDD pour le mettre sur Automation Studio. Apres ceci j'ai configurer le module POWERLINK sur Automation Studio. 
+Puis après ceci j'ai fait un programme pour envoyer l'ordre au robot ensuite j'ai mis ce programme dans la sortie de la CPU B&R

@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="DPV">
+    <Folder Name="Drivers">
+      <Folder Name="POBJ">
+        <Object Name="DataSource" ClsId="0x200" Version="1" Type="DS" RefString="Source[global].DataSource[DataSource]">
+          <Reference Name="DriverID" Type="DS">Source[global].DataSource[DataSource]</Reference>
+          <Reference Name="TextGroup" Type="TG">None</Reference>
+          <UInt32 Name="PVCount">70</UInt32>
+          <UInt32 Name="ImageSize">5044</UInt32>
+          <Table Name="Variables" Cols="5">
+            <TableHeader>
+              <Column Name="PVID" />
+              <Column Name="PVType" />
+              <Column Name="PVOffset" />
+              <Column Name="PVDim" />
+              <Column Name="PVName" />
+            </TableHeader>
+            <Group Name="CognexVisM:vsCameraConnected">
+              <UInt16 Name="ID">0</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">0</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">0</Int32>
+            </Group>
+            <Group Name="CognexVisM:vsCameraChangeJob">
+              <UInt16 Name="ID">1</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">2</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">29</Int32>
+            </Group>
+            <Group Name="CognexVisM:vsCameraTrigger">
+              <UInt16 Name="ID">2</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">4</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">58</Int32>
+            </Group>
+            <Group Name="CognexVisM:vsCameraJob1">
+              <UInt16 Name="ID">3</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">6</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">85</Int32>
+            </Group>
+            <Group Name="CognexVisM:vsCameraConnectedPlk">
+              <UInt16 Name="ID">4</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">8</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">109</Int32>
+            </Group>
+            <Group Name="CognexVisM:vsErrorReset">
+              <UInt16 Name="ID">5</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">10</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">141</Int32>
+            </Group>
+            <Group Name="CognexVisM:vkErrorReset">
+              <UInt16 Name="ID">6</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">12</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">165</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.results_valid">
+              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">13</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">189</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.acquiring">
+              <UInt16 Name="ID">8</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">14</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">223</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.online">
+              <UInt16 Name="ID">9</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">15</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">253</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.trigger_ack">
+              <UInt16 Name="ID">10</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">16</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">280</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.job_load_failed">
+              <UInt16 Name="ID">11</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">17</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">312</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.inspecting">
+              <UInt16 Name="ID">12</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">18</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">348</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.missed_acq">
+              <UInt16 Name="ID">13</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">19</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">379</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.trigger_ready">
+              <UInt16 Name="ID">14</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">20</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">410</Int32>
+            </Group>
+            <Group Name="Cognex:cognex_1.sta.offline_reason">
+              <UInt16 Name="ID">15</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">21</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">444</Int32>
+            </Group>
+            <Group Name="Cognex:BarcodePass">
+              <UInt16 Name="ID">16</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">22</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">479</Int32>
+            </Group>
+            <Group Name="Cognex:BarcodeFixtureAngle">
+              <UInt16 Name="ID">17</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">23</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">498</Int32>
+            </Group>
+            <Group Name="Cognex:strBarcodeRead">
+              <UInt16 Name="ID">18</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">27</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">525</Int32>
+            </Group>
+            <Group Name="Cognex:JobExecutionTime">
+              <UInt16 Name="ID">19</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">48</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">547</Int32>
+            </Group>
+            <Group Name="Cognex:TextPass">
+              <UInt16 Name="ID">20</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">52</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">571</Int32>
+            </Group>
+            <Group Name="Cognex:JobPass">
+              <UInt16 Name="ID">21</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">53</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">587</Int32>
+            </Group>
+            <Group Name="Cognex:FixturePass">
+              <UInt16 Name="ID">22</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">54</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">602</Int32>
+            </Group>
+            <Group Name="Cognex:TextExecutionTime">
+              <UInt16 Name="ID">23</UInt16>
+              <UInt16 Name="PVType">6</UInt16>
+              <UInt32 Name="PVOffset">55</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
+              <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
+              <Int32 Name="Offset">621</Int32>
+            </Group>
+            <Group Name="Cognex:strTextRead">
+              <UInt16 Name="ID">24</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">59</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">646</Int32>
+            </Group>
+            <Group Name="Cognex:ComparePass">
+              <UInt16 Name="ID">25</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">80</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">665</Int32>
+            </Group>
+            <Group Name="Cognex:strBarcodeWrite">
+              <UInt16 Name="ID">26</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">81</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">684</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.job_id">
+              <UInt16 Name="ID">27</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">102</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">707</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.acquiring">
+              <UInt16 Name="ID">28</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">104</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">727</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.offline_reason">
+              <UInt16 Name="ID">29</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">105</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">750</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.online">
+              <UInt16 Name="ID">30</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">106</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">778</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.results_valid">
+              <UInt16 Name="ID">31</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">107</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">798</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.job_load_failed">
+              <UInt16 Name="ID">32</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">108</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">825</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.connected_plk">
+              <UInt16 Name="ID">33</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">109</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">854</Int32>
+            </Group>
+            <Group Name="cognex_1.sta.connected_eth">
+              <UInt16 Name="ID">34</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">110</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">881</Int32>
+            </Group>
+            <Group Name="cognex_1.cmd.set_offline">
+              <UInt16 Name="ID">35</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">111</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">908</Int32>
+            </Group>
+            <Group Name="cognex_1.cmd.init_job_load">
+              <UInt16 Name="ID">36</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">112</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">933</Int32>
+            </Group>
+            <Group Name="cognex_1.cmd.trigger_enable">
+              <UInt16 Name="ID">37</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">113</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">960</Int32>
+            </Group>
+            <Group Name="cognex_1.cmd.trigger">
+              <UInt16 Name="ID">38</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">114</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">988</Int32>
+            </Group>
+            <Group Name="cognex_1.cmd.job_id">
+              <UInt16 Name="ID">39</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">115</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1009</Int32>
+            </Group>
+            <Group Name="cognex_1.cmd.ping_camera">
+              <UInt16 Name="ID">40</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">117</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1029</Int32>
+            </Group>
+            <Group Name="CognexVisN:data_string">
+              <UInt16 Name="ID">41</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">118</UInt32>
+              <UInt32 Name="PVDim">20</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">1054</Int32>
+            </Group>
+            <Group Name="CognexVisN:CognexLoggedIn">
+              <UInt16 Name="ID">42</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1738</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1077</Int32>
+            </Group>
+            <Group Name="CognexVisN:NativeModeStatus">
+              <UInt16 Name="ID">43</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">1739</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1103</Int32>
+            </Group>
+            <Group Name="CognexVisN:ReadJobID1">
+              <UInt16 Name="ID">44</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1741</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1131</Int32>
+            </Group>
+            <Group Name="CognexVisN:vsErrorReset">
+              <UInt16 Name="ID">45</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">1742</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1153</Int32>
+            </Group>
+            <Group Name="CognexVisN:vkErrorReset">
+              <UInt16 Name="ID">46</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1744</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1177</Int32>
+            </Group>
+            <Group Name="CognexVisN:vkNativeModeConnect">
+              <UInt16 Name="ID">47</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1745</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1201</Int32>
+            </Group>
+            <Group Name="CognexVisN:NativeModeLoggedIn">
+              <UInt16 Name="ID">48</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">1746</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1232</Int32>
+            </Group>
+            <Group Name="CognexVisN:NaticeModeCommand">
+              <UInt16 Name="ID">49</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1748</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1262</Int32>
+            </Group>
+            <Group Name="CognexVisN:vkTransferCancel">
+              <UInt16 Name="ID">50</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1749</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1291</Int32>
+            </Group>
+            <Group Name="CognexVisN:vkTransferRead">
+              <UInt16 Name="ID">51</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1750</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1319</Int32>
+            </Group>
+            <Group Name="CognexVisN:vkTransferWrite">
+              <UInt16 Name="ID">52</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1751</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1345</Int32>
+            </Group>
+            <Group Name="CognexVisN:vsTransferProgress">
+              <UInt16 Name="ID">53</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">1752</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1372</Int32>
+            </Group>
+            <Group Name="CognexVisN:TransferProgressStatus">
+              <UInt16 Name="ID">54</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">1753</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1402</Int32>
+            </Group>
+            <Group Name="CognexVisA:dir_name_selected_max">
+              <UInt16 Name="ID">55</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">1755</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1436</Int32>
+            </Group>
+            <Group Name="CognexVisA:dir_name_selected">
+              <UInt16 Name="ID">56</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">1757</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1469</Int32>
+            </Group>
+            <Group Name="CognexVisA:dir_names">
+              <UInt16 Name="ID">57</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">1759</UInt32>
+              <UInt32 Name="PVDim">20</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">1498</Int32>
+            </Group>
+            <Group Name="CognexVisA:vkDirRefresh">
+              <UInt16 Name="ID">58</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3379</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1519</Int32>
+            </Group>
+            <Group Name="CognexVisC:vsTransferProgress">
+              <UInt16 Name="ID">59</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3380</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1543</Int32>
+            </Group>
+            <Group Name="CognexVisC:vkNativeModeConnect">
+              <UInt16 Name="ID">60</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3381</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1573</Int32>
+            </Group>
+            <Group Name="CognexVisC:NativeModeLoggedIn">
+              <UInt16 Name="ID">61</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">3382</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1604</Int32>
+            </Group>
+            <Group Name="CognexVisC:NativeModeStatus">
+              <UInt16 Name="ID">62</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">3384</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1634</Int32>
+            </Group>
+            <Group Name="CognexVisC:vkTransferWrite">
+              <UInt16 Name="ID">63</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3386</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">1662</Int32>
+            </Group>
+            <Group Name="CognexVisC:vsErrorReset">
+              <UInt16 Name="ID">64</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">3387</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1689</Int32>
+            </Group>
+            <Group Name="CognexVisC:vkErrorReset">
+              <UInt16 Name="ID">65</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">3389</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1713</Int32>
+            </Group>
+            <Group Name="CognexVisC:TransferProgressStatus">
+              <UInt16 Name="ID">66</UInt16>
+              <UInt16 Name="PVType">3</UInt16>
+              <UInt32 Name="PVOffset">3390</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">65535</Double>
+              <Int32 Name="Offset">1737</Int32>
+            </Group>
+            <Group Name="logbook">
+              <UInt16 Name="ID">67</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">3392</UInt32>
+              <UInt32 Name="PVDim">20</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">1771</Int32>
+            </Group>
+            <Group Name="vkErrorReset">
+              <UInt16 Name="ID">68</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">5012</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">1779</Int32>
+            </Group>
+            <Group Name="CognexEthIP">
+              <UInt16 Name="ID">69</UInt16>
+              <UInt16 Name="PVType">8</UInt16>
+              <UInt32 Name="PVOffset">5013</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">0</Double>
+              <Int32 Name="Offset">1792</Int32>
+            </Group>
+          </Table>
+          <Binary Name="Name" Encoding="Base64">Q29nbmV4VmlzTTp2c0NhbWVyYUNvbm5lY3RlZABDb2duZXhWaXNNOnZzQ2FtZXJhQ2hhbmdlSm9iAENvZ25leFZpc006dnNDYW1lcmFUcmlnZ2VyAENvZ25leFZpc006dnNDYW1lcmFKb2IxAENvZ25leFZpc006dnNDYW1lcmFDb25uZWN0ZWRQbGsAQ29nbmV4VmlzTTp2c0Vycm9yUmVzZXQAQ29nbmV4VmlzTTp2a0Vycm9yUmVzZXQAQ29nbmV4OmNvZ25leF8xLnN0YS5yZXN1bHRzX3ZhbGlkAENvZ25leDpjb2duZXhfMS5zdGEuYWNxdWlyaW5nAENvZ25leDpjb2duZXhfMS5zdGEub25saW5lAENvZ25leDpjb2duZXhfMS5zdGEudHJpZ2dlcl9hY2sAQ29nbmV4OmNvZ25leF8xLnN0YS5qb2JfbG9hZF9mYWlsZWQAQ29nbmV4OmNvZ25leF8xLnN0YS5pbnNwZWN0aW5nAENvZ25leDpjb2duZXhfMS5zdGEubWlzc2VkX2FjcQBDb2duZXg6Y29nbmV4XzEuc3RhLnRyaWdnZXJfcmVhZHkAQ29nbmV4OmNvZ25leF8xLnN0YS5vZmZsaW5lX3JlYXNvbgBDb2duZXg6QmFyY29kZVBhc3MAQ29nbmV4OkJhcmNvZGVGaXh0dXJlQW5nbGUAQ29nbmV4OnN0ckJhcmNvZGVSZWFkAENvZ25leDpKb2JFeGVjdXRpb25UaW1lAENvZ25leDpUZXh0UGFzcwBDb2duZXg6Sm9iUGFzcwBDb2duZXg6Rml4dHVyZVBhc3MAQ29nbmV4OlRleHRFeGVjdXRpb25UaW1lAENvZ25leDpzdHJUZXh0UmVhZABDb2duZXg6Q29tcGFyZVBhc3MAQ29nbmV4OnN0ckJhcmNvZGVXcml0ZQBjb2duZXhfMS5zdGEuam9iX2lkAGNvZ25leF8xLnN0YS5hY3F1aXJpbmcAY29nbmV4XzEuc3RhLm9mZmxpbmVfcmVhc29uAGNvZ25leF8xLnN0YS5vbmxpbmUAY29nbmV4XzEuc3RhLnJlc3VsdHNfdmFsaWQAY29nbmV4XzEuc3RhLmpvYl9sb2FkX2ZhaWxlZABjb2duZXhfMS5zdGEuY29ubmVjdGVkX3BsawBjb2duZXhfMS5zdGEuY29ubmVjdGVkX2V0aABjb2duZXhfMS5jbWQuc2V0X29mZmxpbmUAY29nbmV4XzEuY21kLmluaXRfam9iX2xvYWQAY29nbmV4XzEuY21kLnRyaWdnZXJfZW5hYmxlAGNvZ25leF8xLmNtZC50cmlnZ2VyAGNvZ25leF8xLmNtZC5qb2JfaWQAY29nbmV4XzEuY21kLnBpbmdfY2FtZXJhAENvZ25leFZpc046ZGF0YV9zdHJpbmcAQ29nbmV4VmlzTjpDb2duZXhMb2dnZWRJbgBDb2duZXhWaXNOOk5hdGl2ZU1vZGVTdGF0dXMAQ29nbmV4VmlzTjpSZWFkSm9iSUQxAENvZ25leFZpc046dnNFcnJvclJlc2V0AENvZ25leFZpc046dmtFcnJvclJlc2V0AENvZ25leFZpc046dmtOYXRpdmVNb2RlQ29ubmVjdABDb2duZXhWaXNOOk5hdGl2ZU1vZGVMb2dnZWRJbgBDb2duZXhWaXNOOk5hdGljZU1vZGVDb21tYW5kAENvZ25leFZpc046dmtUcmFuc2ZlckNhbmNlbABDb2duZXhWaXNOOnZrVHJhbnNmZXJSZWFkAENvZ25leFZpc046dmtUcmFuc2ZlcldyaXRlAENvZ25leFZpc046dnNUcmFuc2ZlclByb2dyZXNzAENvZ25leFZpc046VHJhbnNmZXJQcm9ncmVzc1N0YXR1cwBDb2duZXhWaXNBOmRpcl9uYW1lX3NlbGVjdGVkX21heABDb2duZXhWaXNBOmRpcl9uYW1lX3NlbGVjdGVkAENvZ25leFZpc0E6ZGlyX25hbWVzAENvZ25leFZpc0E6dmtEaXJSZWZyZXNoAENvZ25leFZpc0M6dnNUcmFuc2ZlclByb2dyZXNzAENvZ25leFZpc0M6dmtOYXRpdmVNb2RlQ29ubmVjdABDb2duZXhWaXNDOk5hdGl2ZU1vZGVMb2dnZWRJbgBDb2duZXhWaXNDOk5hdGl2ZU1vZGVTdGF0dXMAQ29nbmV4VmlzQzp2a1RyYW5zZmVyV3JpdGUAQ29nbmV4VmlzQzp2c0Vycm9yUmVzZXQAQ29nbmV4VmlzQzp2a0Vycm9yUmVzZXQAQ29nbmV4VmlzQzpUcmFuc2ZlclByb2dyZXNzU3RhdHVzAGxvZ2Jvb2sAdmtFcnJvclJlc2V0AENvZ25leEV0aElQAA==</Binary>
+        </Object>
+      </Folder>
+    </Folder>
+  </Folder>
+</Intermediate>

@@ -1,0 +1,43 @@
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	cognex1cmd : UDINT;
+	cognex1sta : UDINT;
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	strBarcodeWrite : STRING[20];
+	strBarcodeWriteOld : STRING[20];
+	strBarcodeRead : STRING[20];
+	tmpBarcodeRead1 : UDINT;
+	tmpBarcodeRead2 : UDINT;
+	tmpBarcodeRead3 : UDINT;
+	tmpBarcodeWrite1 : UDINT;
+	tmpBarcodeWrite2 : UDINT;
+	tmpBarcodeWrite3 : UDINT;
+	BarcodeFixtureAngle : REAL;
+	BarcodePass : USINT;
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	strTextRead : STRING[20];
+	TextExecutionTime : REAL;
+	tmpTextRead1 : UDINT;
+	tmpTextRead2 : UDINT;
+	tmpTextRead3 : UDINT;
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+VAR
+	tmpData1 : UDINT;
+	tmpData2 : UDINT;
+	tmpData3 : UDINT;
+	tmpData4 : UDINT;
+	tmpData5 : UDINT;
+	tmp_inspecting_complete : BOOL;
+	tmp_job_complete : BOOL;
+	JobPass : USINT;
+	JobExecutionTime : REAL;
+	ComparePass : USINT;
+	TextPass : USINT;
+	FixturePass : USINT;
+	ICMPping_0 : IcmpPing;
+END_VAR

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="exo11" access="private" >
+    <Code><![CDATA[begin
+  movej(jdepart,tstylo,mlent)
+  movej(ppa,tstylo,mlent)
+  movej(ppb,tstylo,mlent)
+  movej(ppc,tstylo,mlent)
+  movej(ppd,tstylo,mlent)
+  movej(ppe,tstylo,mlent)
+  movej(ppa,tstylo,mlent)
+  movej(jdepart,tstylo,mlent)
+  waitEndMove()
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://www.staubli.com/robotics/VAL3/Project/3">
+  <Parameters version="s7.4" stackSize="5000" millimeterUnit="true" />
+  <Programs>
+    <Program file="start.pgx" />
+    <Program file="stop.pgx" />
+  </Programs>
+  <Database>
+    <Data file="uniVALClean.dtx" />
+  </Database>
+  <Libraries>
+    <Library alias="lib" path="./uniVALProtect.zip" password="d5a8e388f0bba1da1d5aae9b562b5403" />
+  </Libraries>
+</Project>

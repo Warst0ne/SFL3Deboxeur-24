@@ -1,0 +1,6 @@
+Overrun tExtDev, priority 8
+14 NOV 06 13:20:59
+3a41ca vxTaskEntry    +a  : S_Task::entry(S_Task *) (2f21a00, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+3308421 S_Task::entry(S_Task *)+51 : SCH_Thread::body(void) (2f21a00, 3308426, 8, 206)
+383befb SCH_Thread::body(void)+1b : S_SemB::take(int) (2f21a34, ffffffff, 8, 246)
+33092d1 S_SemB::take(int)+11 : semQPut ([2f21a34, ffffffff, d3018800, 3f50624d, 8])

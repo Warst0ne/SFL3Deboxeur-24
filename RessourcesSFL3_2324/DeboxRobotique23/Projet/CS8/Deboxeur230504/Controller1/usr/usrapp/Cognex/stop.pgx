@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="stop" access="public" >
+    <Locals>
+      <Local name="l_nI" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Release all IDs.
+  //  This routine should be called once when ending main application.
+  //
+  //History
+  //  Creation : 12-12 - CROC
+  //Header end
+  //-----------------------------------------------------------------------
+  //Reset all cameras in the array
+  for l_nI=0 to size(cCamera)-1
+    cCamera[l_nI].bConnected=false
+  endFor
+  resetMotion()
+  disablePower()
+  vbleu=false
+  vvert=false
+  vorange=false
+  vrouge=false
+  nbPoint=0
+end]]></Code>
+  </Program>
+</Programs>

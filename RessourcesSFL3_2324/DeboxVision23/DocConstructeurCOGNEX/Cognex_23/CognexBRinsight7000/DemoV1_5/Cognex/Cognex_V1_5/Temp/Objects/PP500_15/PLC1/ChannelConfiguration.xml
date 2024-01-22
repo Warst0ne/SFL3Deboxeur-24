@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
+  <Module ID="$root" Hardware="5PP520.1043-00" HardwareModuleName="PLC1" ModuleID="41">
+    <Channel ID="SerialNumber_CPU" Description="Serial number of CPU board" Ext="/HW" Address="1" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetSerialNoPP500" FuncParam1="0" />
+    <Channel ID="ModuleID_CPU" Description="Module ID of CPU board" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetDeviceIdPP500" FuncParam1="0x0" />
+    <Channel ID="PowerOnCycles_CPU" Description="PowerOnCycles of CPU board" Ext="/HW" Address="3" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter1" FuncParam1="0x0" FuncParam2="0x0" />
+    <Channel ID="OperatingHours_CPU" Description="Operating hours of CPU board [h]" Ext="/HW" Address="4" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter0" FuncParam1="0x0" FuncParam2="0x0" CyclicUpdate="1" />
+    <Channel ID="TemperatureBoard" Description="Temperature of board in 1/10 degree Celsius" Ext="/HW" Address="5" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x0" CyclicUpdate="1" />
+    <Channel ID="TemperatureRAM" Description="Temperature of RAM modul in 1/10 degree Celsius" Ext="/HW" Address="6" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x1" CyclicUpdate="1" />
+    <Channel ID="TemperatureCPU" Description="Temperature of CPU in 1/10 degree Celsius" Ext="/HW" Address="7" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="0x0" FuncParam2="0x2" CyclicUpdate="1" />
+    <Channel ID="SystemTime" Description="System time at the start of the current task cycle [µs]" Ext="/HW" Address="8" Direction="IN" Type="DINT" ChannelType="SystemTime" />
+  </Module>
+  <Module ID="$root" Hardware="5PP520.1043-00" HardwareModuleName="5PP520.1043-00" ModuleID="26">
+    <Channel ID="SerialNumber" Description="Serial number of system unit" Ext="/HW" Address="1" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetSerialNoPP500" FuncParam1="1" />
+    <Channel ID="ModuleID" Description="Module ID of system unit" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetDeviceIdPP500" FuncParam1="1" />
+    <Channel ID="PowerOnCycles" Description="PowerOnCycles of system unit" Ext="/HW" Address="3" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter1" FuncParam1="0x1" FuncParam2="0x0" />
+    <Channel ID="OperatingHours" Description="Operating hours of system unit [h]" Ext="/HW" Address="4" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter0" FuncParam1="0x1" FuncParam2="0x0" CyclicUpdate="1" />
+    <Channel ID="BatteryStatus" Description="Battery status CPU (0 = battery low or missing, 1 = battery ok)" Ext="/HW" Address="5" Direction="IN" Type="USINT" ChannelType="Battery" BatteryDetectionMethod="1" Ordinal="2" CyclicUpdate="1" />
+    <Channel ID="MtcxVersionMajor" Description="MTCX version" Ext="/HW" Address="6" Direction="IN" Type="USINT" ChannelType="GenericFuncCall" Function="mtcxGetPx32Version2" FuncParam1="1" />
+    <Channel ID="MtcxVersionMinor" Description="MTCX version" Ext="/HW" Address="7" Direction="IN" Type="USINT" ChannelType="GenericFuncCall" Function="mtcxGetPx32Version2" FuncParam1="0" />
+    <Channel ID="TemperatureDisplay" Description="Temperature of display unit in 1/10 degree Celsius" Ext="/HW" Address="8" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetTempPP500" FuncParam1="1" FuncParam2="0" CyclicUpdate="1" />
+    <Channel ID="IF3.NodeSwitch" Description="Node switch" Ext="/HW" Address="11" Direction="IN" Type="USINT" ChannelType="Node" Device="PCI.IF3" />
+  </Module>
+  <Module ID="SL1" Hardware="5PP5IF.FPLM-00" HardwareModuleName="5PP5IF.FPLM-00" ModuleID="34">
+    <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Sig_St_Bool="1" Type="BOOL" />
+    <Channel ID="SerialNumber" Description="Serial number of IF board" Ext="/HW" Address="1" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetSerialNoPP500" FuncParam1="3" />
+    <Channel ID="ModuleID" Description="Module ID of IF board" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="GenericFuncCall" Function="mtcxGetDeviceIdPP500" FuncParam1="3" />
+    <Channel ID="PowerOnCycles" Description="PowerOnCycles of IF board" Ext="/HW" Address="3" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter1" FuncParam1="0x3" FuncParam2="0x0" />
+    <Channel ID="OperatingHours" Description="Operating hours of IF board [h]" Ext="/HW" Address="4" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="mtcxGetStatisticsCounter0" FuncParam1="0x3" FuncParam2="0x0" CyclicUpdate="1" />
+    <Channel ID="HardwareVariant" Description="Hardware variant of IF board" Ext="/HW" Address="2" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="HWTree" />
+    <Channel ID="FirmwareVersion" Description="Firmware version of IF board" Ext="/HW" Address="3" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="HWTree" />
+    <Channel ID="IF1.NodeSwitch" Description="Selected node switch value" Ext="/INFO" Address="0x80000019" Direction="IN" Type="USINT" Sig_St_Byte="1" />
+    <Channel ID="IF1.LinkOk01" Description="Link state interface 1" Ext="/INFO" Address="0x8000001A" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.LinkOk02" Description="Link state interface 2" Ext="/INFO" Address="0x8000001A" BitOffset="1" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.OutputDMAMargin" Description="Margin to output cycle deadline in microseconds" FromVersion="C3.08" Ext="/INFO" Address="0x8000000C" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF1.NodeNumber" Description="Node number currently in use" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="USINT" Sig_St_Usint="1" />
+    <Channel ID="IF1.CycleOk" Description="Indication for proper cyclic operation (1 = operational)" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.SyncOk" Description="Indication for a synchronized POWERLINK-system (1 = synchronized)" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF1.TimeSeconds" Description="Absolute time extracted from current SoC-Frame (NetTime in POWERLINK V2) - Seconds" FromVersion="M2.90" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.TimeNanoseconds" Description="Absolute time extracted from current SoC-Frame (NetTime in POWERLINK V2) - Nanoseconds" FromVersion="M2.90" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.NettimeSoC" Description="Network time extracted from current SoC-Frame [µs] (RelativeTime in POWERLINK V2)" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF1.NettimeOffset" Description="Network time offset to local system time [µs]" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF1.CycleCount" Description="Overall number of bus cycles" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.FailedCycleCount" Description="Number of failed bus cycles" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.CycleTimeViolationCount" Description="Number of cycle time violations" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.CycleIdleTime" Description="Unoccupied time during one POWERLINK cycle [µs]" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="IF1.CycleCongestionCount" Description="allways 0, available for legacy projects" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+  </Module>
+  <Module ID="SL1.IF1.ST1" Hardware="epl_any" HardwareModuleName="In-Sight" ModuleID="38" Simulatable="true">
+    <Channel ID="ModuleOk" Description="Module status (1 = module present)" Ext="/OK" Address="0" Direction="IN" Type="BOOL" ArConfig="copy" />
+    <Channel ID="Control_I2000_S01" Description="" Ext="/DYNAMIC" Address="0x00012000" Direction="OUT" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="JobLoadID_I2000_S02" Description="" Ext="/DYNAMIC" Address="0x00022000" Direction="OUT" Type="UINT" ArConfig="Copy" />
+    <Channel ID="Status_I2001_S01" Description="" Ext="/DYNAMIC" Address="0x00012001" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="CurrentJobID_I2001_S02" Description="" Ext="/DYNAMIC" Address="0x00022001" Direction="IN" Type="UINT" ArConfig="Copy" />
+    <Channel ID="InspectionID_I2010_S01" Description="" Ext="/DYNAMIC" Address="0x00012010" Direction="IN" Type="UINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S01" Description="" Ext="/DYNAMIC" Address="0x00012011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S02" Description="" Ext="/DYNAMIC" Address="0x00022011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S03" Description="" Ext="/DYNAMIC" Address="0x00032011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S04" Description="" Ext="/DYNAMIC" Address="0x00042011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S05" Description="" Ext="/DYNAMIC" Address="0x00052011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S06" Description="" Ext="/DYNAMIC" Address="0x00062011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S07" Description="" Ext="/DYNAMIC" Address="0x00072011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S08" Description="" Ext="/DYNAMIC" Address="0x00082011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S09" Description="" Ext="/DYNAMIC" Address="0x00092011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S0A" Description="" Ext="/DYNAMIC" Address="0x000A2011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="InspectionResults_I2011_S0B" Description="" Ext="/DYNAMIC" Address="0x000B2011" Direction="IN" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="UserData_I2021_S01" Description="" Ext="/DYNAMIC" Address="0x00012021" Direction="OUT" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="UserData_I2021_S02" Description="" Ext="/DYNAMIC" Address="0x00022021" Direction="OUT" Type="UDINT" ArConfig="Copy" />
+    <Channel ID="UserData_I2021_S03" Description="" Ext="/DYNAMIC" Address="0x00032021" Direction="OUT" Type="UDINT" ArConfig="Copy" />
+  </Module>
+</ChannelConfiguration>

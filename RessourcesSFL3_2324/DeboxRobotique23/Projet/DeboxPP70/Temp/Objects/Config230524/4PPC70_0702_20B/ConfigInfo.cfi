@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.6.3.55 SP"?>
+<ConfigInfo xmlns="http://br-automation.co.at/AS/BuildInfo">
+  <TaskClass
+    Name="Cyclic#1" />
+  <TaskClass
+    Name="Cyclic#2" />
+  <TaskClass
+    Name="Cyclic#3" />
+  <TaskClass
+    Name="Cyclic#4">
+    <Task
+      Name="Robot"
+      Disable="false"
+      Source="Robot"
+      Language="IEC">
+      <InternalFile
+        Path="C:\projects\DeboxPP70\Temp\Objects\Config230524\4PPC70_0702_20B\Robot\Main.st.var" />
+      <File
+        Path="C:\projects\DeboxPP70\Logical\Robot\Types.typ" />
+      <File
+        Path="C:\projects\DeboxPP70\Logical\Robot\Variables.var" />
+    </Task>
+  </TaskClass>
+  <TaskClass
+    Name="Cyclic#5" />
+  <TaskClass
+    Name="Cyclic#6" />
+  <TaskClass
+    Name="Cyclic#7" />
+  <TaskClass
+    Name="Cyclic#8" />
+</ConfigInfo>

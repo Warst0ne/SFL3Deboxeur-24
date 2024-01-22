@@ -1,0 +1,294 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Author: strickers
+ * Version: 1.0
+ * This task has the following purpose
+ * - Maintain a logbook with events coming from the camera
+ * - Check the directory \Cognex for new pictures from the camera
+ * - Convert the pictures from 8 Bit to 24 Bit so that they can be 
+ *   displayed in Visual Components
+ * - Limit the amount of pictures and delete old if necessary
+ * - Show picture archive and display old pictures
+ * - Handle basic VC tasks like show/hide objects etc.
+ ********************************************************************)
+
+PROGRAM _INIT
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create file device for Cognex files and configuration files *)
+	LOOP
+		DevLink_0.enable 	= 1
+		DevLink_0.pDevice 	= ADR("root")
+		DevLink_0.pParam 	= ADR("/DEVICE=C:\\")
+		DevLink_0 FUB DevLink()
+		EXITIF(DevLink_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create cognex folder for bitmaps on boot up *)
+	LOOP
+		DirCreate_0.enable 	= 1
+		DirCreate_0.pDevice = ADR("root")
+		DirCreate_0.pName 	= ADR("cognex_pics")
+		DirCreate_0 FUB DirCreate()
+		EXITIF(DirCreate_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create file device for Cognex files and configuration files *)
+	LOOP
+		DevLink_0.enable 	= 1
+		DevLink_0.pDevice 	= ADR("CognexPictures")
+		DevLink_0.pParam 	= ADR("/DEVICE=C:\\cognex_pics")
+		DevLink_0 FUB DevLink()
+		EXITIF(DevLink_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Enable camera trigger, get VC handle, calculate max number of pitcures *)
+	cognex_1.cmd.trigger_enable = TRUE
+	cognex_1.cmd.job_id = 1
+	VChandle = VA_Setup(1, "Visu")
+	dir_entry_max =  SIZEOF(dir_data)/SIZEOF(dir_data[0])-1
+END_PROGRAM
+
+
+PROGRAM _CYCLIC
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Enable/Disable vis object depending on cemera status connected, online ... *)
+	(* --------------------------------------------------------------------------------------------------------- *)
+	vsCameraConnectedPlk = UINT(NOT cognex_1.sta.connected_plk)*2
+	vsCameraOnline = UINT(NOT cognex_1.sta.connected_plk OR NOT cognex_1.sta.online)*2
+	vsCameraTrigger = UINT(NOT cognex_1.sta.connected_plk OR NOT cognex_1.sta.online OR NOT cognex_1.sta.trigger_ready OR (step_pic <> 0))*2
+	vsCameraChangeJob = UINT(NOT cognex_1.sta.connected_plk OR cognex_1.sta.online)*2
+	IF(edgeneg(cognex_1.sta.job_loading)) THEN
+		IF(cognex_1.sta.job_id = 1) THEN
+			vsCameraJob1 = VIS_ACTIVE
+		ELSE
+			vsCameraJob1 = VIS_HIDDEN
+		ENDIF
+	ENDIF
+
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Display camera pictures and maintain max number of pictures *)
+	(* --------------------------------------------------------------------------------------------------------- *)
+	CASE step_pic OF
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_INIT:
+			(* When new camera trigger is fired, create time stamp to detect new pictures, add 2 second tolerance *)
+			IF cognex_1.cmd.trigger THEN
+				cognex_1.cmd.trigger = 0
+				DTGetTime_0.enable = 1
+				DTGetTime_0 FUB DTGetTime()
+				DTGetTimeTollerance = UDINT(DTGetTime_0.DT1)
+				DTGetTimeTollerance = DTGetTimeTollerance - 2
+				DTnow = DT(DTGetTimeTollerance)
+				step_pic = STP_RESULT
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_RESULT:
+			(* When new result arrives, ceate lofg entry, load default values, erase previous picture *)
+			IF EDGEPOS(cognex_1.sta.results_valid) THEN
+				NewLogEntry("Looking for new picture", ADR(logbook), 20)
+				dir_wait_time 	= 0
+				dir_entry 		= 0
+				TON_10ms_0.IN 	= 0
+				TON_10ms_0 FUB TON_10ms()
+				step_pic = STP_WAIT			
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_WAIT:
+			(* Erase old picture *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_Rect(1, VChandle, 70, 505, PictureWidth, PictureHeight, 7, 0)
+				VA_Srelease(1, VChandle)
+			ENDIF
+			(* The camera needs time to store the picture on the PLC. Check after 0.5s if new picture arrived *)
+			TON_10ms_0.IN = 1
+			TON_10ms_0.PT = 50
+			TON_10ms_0 FUB TON_10ms()
+			IF(TON_10ms_0.Q) THEN
+				step_pic = STP_DIR_READ			
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_DIR_READ:
+			(* Read all file names and date stamps from directory *)
+			DirRead_0.enable 	= 1
+			DirRead_0.pDevice 	= ADR("CognexPictures")
+			DirRead_0.entry 	= dir_entry
+			DirRead_0.option 	= fiFILE 
+			DirRead_0.pData 	= ADR(dir_data[dir_entry])
+			DirRead_0.data_len 	= SIZEOF(dir_data[dir_entry])
+			DirRead_0 FUB DirRead()
+
+			(* Stop reading files when max number is reached *)
+			IF (DirRead_0.status = fiERR_NO_MORE_ENTRIES) OR ((DirRead_0.status = 0) AND (dir_entry = dir_entry_max)) THEN
+				step_pic = STP_DIR_EVAL		
+			(* Its all good, read next entry *)
+			ELSE IF DirRead_0.status = 0 THEN
+				dir_entry = dir_entry + 1
+			(* Jump to error step when FB faults *)
+			ELSE IF (DirRead_0.status <> 65535) THEN
+				NewLogEntry("#Error: dir read", ADR(logbook), 20)
+				step_pic = STP_ERROR	
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_DIR_EVAL:
+			(* Make sure we have at least one file entry, jump to wait state and wait another 0.5s before checking again *)
+			IF (dir_entry = 0) THEN
+				IF (dir_wait_time < dir_timeout) THEN
+					dir_wait_time = dir_wait_time + TON_10ms_0.PT*10
+					dir_entry = 0
+					TON_10ms_0.IN = 0
+					TON_10ms_0 FUB TON_10ms()
+					step_pic = STP_WAIT
+				(* Give up after timeout when no picture was found *)
+				ELSE
+					NewLogEntry("No new picture found", ADR(logbook), 20)
+					step_pic = STP_INIT	
+				ENDIF
+			ELSE
+				(* Search for newest file to display and oldest file to delete *)
+				memcpy(ADR(dir_data_newest), ADR(dir_data[0]), SIZEOF(dir_data_newest))
+				memcpy(ADR(dir_data_oldest), ADR(dir_data[0]), SIZEOF(dir_data_oldest))
+				LOOP x=1 TO dir_entry-1 DO
+					IF((dir_data_newest.Date < dir_data[x].Date) AND (memcmp(ADR(dir_data[x].Filename), ADR("brplc"), 5) = 0)) THEN
+						memcpy(ADR(dir_data_newest), ADR(dir_data[x]), SIZEOF(dir_data_newest))
+					ENDIF			
+					IF(dir_data_oldest.Date > dir_data[x].Date) THEN
+						memcpy(ADR(dir_data_oldest), ADR(dir_data[x]), SIZEOF(dir_data_newest))
+					ENDIF		
+				ENDLOOP
+				(* When doing folder cleanup jump back to file delete *)
+				IF (dir_cleanup) THEN
+					step_pic = STP_BMP_CLEANUP
+				(* Make sure newest file was created after trigger event *)
+				ELSE IF (dir_data_newest.Date >= DTnow) THEN
+					strcpy(ADR(file_newest), ADR(dir_data_newest.Filename))
+					NewLogEntry("Converting bitmap...", ADR(logbook), 20)
+					step_pic = STP_VC_CONVERT
+				(* Jump to wait state and wait another 0.5s before checking again *)
+				ELSE IF (dir_data_newest.Date < DTnow) AND (dir_wait_time < dir_timeout) THEN
+					dir_wait_time = dir_wait_time + 500
+					dir_entry = 0
+					TON_10ms_0.IN = 0
+					TON_10ms_0 FUB TON_10ms()
+					step_pic = STP_WAIT
+				(* Give up after timeout when no picture was found *)
+				ELSE IF (dir_data_newest.Date < DTnow) AND (dir_wait_time >= dir_timeout) THEN
+					NewLogEntry("No new picture found", ADR(logbook), 20)
+					step_pic = STP_BMP_CLEANUP
+				ENDIF
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_CONVERT:
+			(* Convert picture from 8 Bit to 24 Bit *)
+			strcpy(ADR(file_converted), ADR("c"))
+			strcat(ADR(file_converted), ADR(file_newest))
+			BmpConvert_0.enable 			= 1
+			BmpConvert_0.pDevice 			= ADR("CognexPictures")
+			BmpConvert_0.pFileSource 		= ADR(file_newest)
+			BmpConvert_0.pFileDestination 	= ADR(file_converted)
+			BmpConvert_0 FUB BmpConvert()
+
+			IF (BmpConvert_0.status = 0) THEN
+				NewLogEntry("Converting done", ADR(logbook), 20)
+				VCbitmap_tmp = 0		
+				step_pic = STP_VC_LOAD
+			(* Jump to error step when FB faults *)
+			ELSE IF (BmpConvert_0.status <> 65535) THEN
+				NewLogEntry("#Error: convert bitmap", ADR(logbook), 20)
+				step_pic = STP_ERROR
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_LOAD:
+			(* Load picture into memory *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_LoadBitmap(1, VChandle, "CognexPictures", file_converted, ADR(VCbitmap_tmp))
+				IF(VCerror = 0) THEN
+					VCbitmap ACCESS VCbitmap_tmp
+					step_pic = STP_VC_SHOW
+				ELSE IF (VCerror <> 7000) THEN
+					NewLogEntry("#Error: load bitmap", ADR(logbook), 20)
+					step_pic = STP_ERROR
+				ENDIF
+				VA_Srelease(1, VChandle)
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_SHOW:
+			(* Display new picture *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_BlitBitmap(1, VChandle, ADR(VCbitmap), 70, 505, 70, 505, 70+PictureWidth, 505+PictureHeight, 1)
+				IF(VCerror = 0) THEN
+					VCbitmap ACCESS VCbitmap_tmp
+					step_pic = STP_VC_FREE
+				ELSE IF (VCerror <> 7000) THEN
+					NewLogEntry("#Error: show bitmap", ADR(logbook), 20)
+					step_pic = STP_ERROR
+				ENDIF
+				VA_Srelease(1, VChandle)
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_VC_FREE:
+			(* Free up memory *)
+			IF(VA_Saccess(1, VChandle) = 0) THEN
+				VCerror = VA_FreeBitmap(1, VChandle, ADR(VCbitmap_tmp))
+				IF(VCerror = 0) THEN
+					VCbitmap ACCESS VCbitmap_tmp
+					step_pic = STP_BMP_DELETE
+				ELSE IF (VCerror <> 7000) then
+					NewLogEntry("#Error: free bitmap", ADR(logbook), 20)
+					step_pic = STP_ERROR
+				ENDIF
+				VA_Srelease(1, VChandle)
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_BMP_DELETE:
+			(* Delete old converted picture *)
+			FileDelete_0.enable 	= 1
+			FileDelete_0.pDevice 	= ADR("CognexPictures")
+			FileDelete_0.pName 		= ADR(file_newest)
+			FileDelete_0 FUB FileDelete()
+
+			IF (FileDelete_0.status <> 65535) THEN
+				step_pic = STP_BMP_CLEANUP
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_BMP_CLEANUP:
+			(* Make sure we limit the number of pictures and delete oldest if necessary *)
+			IF (dir_entry < dir_entry_max) THEN
+				dir_cleanup = FALSE
+				step_pic = STP_INIT
+			ELSE		
+				FileDelete_0.enable 	= 1
+				FileDelete_0.pDevice 	= ADR("CognexPictures")
+				FileDelete_0.pName 		= ADR(dir_data_oldest.Filename)
+				FileDelete_0 FUB FileDelete()
+				IF (FileDelete_0.status <> 65535) THEN
+					dir_entry	= 0
+					dir_cleanup = TRUE
+					step_pic = STP_DIR_READ
+				ENDIF
+			ENDIF
+		ENDACTION
+		(* --------------------------------------------------------------------------------------------------------- *)
+		ACTION STP_ERROR:
+			vsErrorReset = 0
+			BmpConvert_0.enable = 0
+			BmpConvert_0 FUB BmpConvert()
+			IF (vkErrorReset) THEN
+				memset(ADR(logbook), 0, SIZEOF(logbook))
+				vsErrorReset = 1
+				vkErrorReset = 0
+				step_pic = STP_INIT
+			ENDIF
+		ENDACTION
+	ENDCASE
+END_PROGRAM

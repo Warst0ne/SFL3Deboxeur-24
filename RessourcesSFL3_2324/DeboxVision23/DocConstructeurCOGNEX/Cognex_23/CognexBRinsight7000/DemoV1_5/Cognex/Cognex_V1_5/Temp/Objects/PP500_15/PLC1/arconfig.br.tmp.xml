@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="5PP520.1043-00">
+    <Parameter ID="HardwareModuleName" Value="PLC1" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="on" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+  </Module>
+  <Module ID="CPU" Hardware="5PP5CP.US15-02" />
+  <Module ID="IF3" Hardware="5PP520.1043-00">
+    <Parameter ID="DeviceDescription" Value="gei" />
+    <Parameter ID="EthInterfaceRedundant" Value="0" />
+    <Parameter ID="ActivateOSAFT" Value="0" />
+    <Parameter ID="NodeDetectionMethod" Value="5" Type="UDINT" />
+  </Module>
+  <Module ID="IF3.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF3.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="SL1" Hardware="5PP5IF.FPLM-00">
+    <Parameter ID="HardwareModuleName" Value="5PP5IF.FPLM-00" />
+  </Module>
+  <Module ID="SL1.IF1" Hardware="5PP5IF.FPLM-00">
+    <Parameter ID="Operation" Value="EPL-V2" />
+    <Parameter ID="MtuSize" Value="1500" Type="UDINT" />
+  </Module>
+  <Module ID="SL1.IF1.PLK" Hardware="EPL-V2">
+    <Parameter ID="CycleTime" Value="400" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="MuxPrescaler" Value="8" Type="UDINT" />
+    <Parameter ID="Mode" Value="MN" />
+    <Parameter ID="NodeID" Value="240" Type="DINT" />
+    <Parameter ID="AsyncTimeout" Value="25" Type="UDINT" />
+    <Parameter ID="TransferOnlyActive" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="off" />
+    <Parameter ID="BasicEthernetInServiceMode" Value="off" />
+    <Parameter ID="EplNatSubnet" Value="192.168.101.0" />
+    <Parameter ID="RingRedundancy" Value="0" Type="UDINT" />
+    <Parameter ID="EPL_LossFrameTolerance" Value="-1" Type="DINT" />
+    <Parameter ID="ApplSwDate" Value="0" Type="UDINT" />
+    <Parameter ID="ApplSwTime" Value="0" Type="UDINT" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="SL1.IF1.ST1" Hardware="epl_any">
+    <Parameter ID="HardwareModuleName" Value="In-Sight" />
+    <Parameter ID="OrderNumber" Value="In-Sight" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Mode" Value="CN" />
+    <Parameter ID="ResponseTimeout" Value="22" Type="UDINT" />
+    <Parameter ID="DummyDeviceType" Value="off" />
+    <Parameter ID="DummyVendorId" Value="off" />
+    <Parameter ID="DummyRevisionNo" Value="off" />
+    <Parameter ID="DummyModno" Value="off" />
+    <Parameter ID="IPGateway" Value="254" Type="UDINT" />
+    <Parameter ID="EPL_BootTimeNotActive" Value="8000000" Type="UDINT" />
+    <Parameter ID="EPL_MinCycleTime" Value="400" Type="UDINT" />
+    <Parameter ID="EPL_MinRedCycleTime" Value="0" Type="UDINT" />
+    <Parameter ID="ASndMaxLatency" Value="2" Type="UDINT" />
+    <Parameter ID="EPL_CnSoc2Preq" Value="0" Type="UDINT" />
+    <Parameter ID="EPL_ResetToDefault" Value="off" />
+    <Parameter ID="EPL_TellMuxSlot" Value="on" />
+    <Parameter ID="MuxNetworkSlot" Value="0" Type="UDINT" />
+    <Parameter ID="MinimalInputLatency" Value="off" />
+    <Parameter ID="EPL_Chained" Value="off" />
+    <Parameter ID="EPL_ResetPostLoad" Value="42" Type="UINT" />
+    <Parameter ID="EPL_ParamStrategy" Value="Load" />
+    <Channel ID="ModuleOk">
+      <Parameter ID="Ext" Value="/OK" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="Control_I2000_S01">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012000" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="JobLoadID_I2000_S02">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022000" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="Status_I2001_S01">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012001" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="CurrentJobID_I2001_S02">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022001" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="InspectionID_I2010_S01">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012010" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S01">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S02">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S03">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00032011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S04">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00042011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S05">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00052011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S06">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00062011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S07">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00072011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S08">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00082011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S09">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00092011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0A">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000A2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0B">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000B2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="UserData_I2021_S01">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="UserData_I2021_S02">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+    <Channel ID="UserData_I2021_S03">
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00032021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+    </Channel>
+  </Module>
+  <Module ID="SL1.IF1.ST1.OD" Hardware="epl_any">
+    <Parameter ID="p2030s01" Value="UINT#300" />
+  </Module>
+  <Module ID="SL1.IO" Hardware="5PP5IF.FPLM-00">
+    <Parameter ID="FunctionModel" Value="Standard" />
+  </Module>
+</IOCFG>

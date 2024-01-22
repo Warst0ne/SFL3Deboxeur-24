@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CellUserOptions>
+  <Controller Name="Controller1">
+    <Application>Disk://Deb2304/Deb2304.pjx</Application>
+  </Controller>
+  <Option Name="SynchronizerMode">
+    <Synchronizers>
+      <Synchronizer Controller="Controller1" Mode="Emulator" />
+    </Synchronizers>
+  </Option>
+  <Option Name="3DView">
+    <_3DView Visible="true" />
+  </Option>
+  <Option Name="DataTreeView">
+    <Nodes>
+      <Node Path="Deboxeur230504" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\dio" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\dio\dPowerlinkSorti" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\jointRx" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\jointRx\ja" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\mdesc" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\mdesc\mlent" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\mdesc\mNomSpeed" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\num" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\num\nPowerlink" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\tool" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\tool\tstylo" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="CellExplorer">
+    <Nodes>
+      <Node Path="Deboxeur230504" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\Deb2304" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\start" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="GeometryView">
+    <Nodes>
+      <Node Path="Deboxeur230504" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\flange[0]" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\flange[0]\tstylo" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\jointRx" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Deb2304\jointRx\ja" IsExpanded="true" />
+    </Nodes>
+  </Option>
+</CellUserOptions>

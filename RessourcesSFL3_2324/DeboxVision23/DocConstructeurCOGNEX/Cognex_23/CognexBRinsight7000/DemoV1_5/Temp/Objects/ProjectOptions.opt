@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.6.3.55 SP"?>
+<ProjectOptions
+  IecNamingConventions="true"
+  IecKeywordsAsStructureMembers="false"
+  IecExtendedConstants="true"
+  LogicalDirectory="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Logical\"
+  TempDirectory="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Temp\"
+  AutomationStudioVersion="4.6.3.55 SP"
+  AutomationStudioEdition="Standard"
+  BuildCrossReference="false"
+  ActiveConfiguration="PP500_15"
+  CreateAnsiCDeclarations="false" />

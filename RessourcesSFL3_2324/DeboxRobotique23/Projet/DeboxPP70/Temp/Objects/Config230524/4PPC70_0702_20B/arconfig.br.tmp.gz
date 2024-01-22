@@ -1,0 +1,952 @@
+<?xml version="1.0" ?>
+<?AutomationRuntimeIOSystem Version = 1.0?>
+<IOCFG xmlns="http://www.br-automation.com/AR/IO" Version="2.0">
+  <Module ID="$root" Hardware="4PPC70.0702-20B">
+    <Parameter ID="HardwareModuleName" Value="4PPC70_0702_20B" />
+    <Parameter ID="SimulationIPAddress" Value="127.0.0.1" />
+    <Parameter ID="SimulationInaPort" Value="11160" Type="UDINT" />
+    <Parameter ID="SimulationInaNodeNumber" Value="1" Type="UDINT" />
+    <Parameter ID="SimulationModeOpcUa" Value="on" />
+    <Parameter ID="ActivateDtmServer" Value="0" Type="UDINT" />
+  </Module>
+  <Module ID="IF1" Hardware="4PPC70.0702-20B">
+    <Parameter ID="Operation" Value="EPL-V2" />
+    <Parameter ID="MtuSize" Value="300" Type="UDINT" />
+  </Module>
+  <Module ID="IF1.PLK" Hardware="EPL-V2">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="MuxPrescaler" Value="8" Type="UDINT" />
+    <Parameter ID="Mode" Value="MN" />
+    <Parameter ID="NodeID" Value="240" Type="DINT" />
+    <Parameter ID="AsyncTimeout" Value="25" Type="UDINT" />
+    <Parameter ID="TransferOnlyActive" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="off" />
+    <Parameter ID="BasicEthernetInServiceMode" Value="off" />
+    <Parameter ID="EplNatSubnet" Value="192.168.101.0" />
+    <Parameter ID="EPL_LossFrameTolerance" Value="-1" Type="DINT" />
+    <Parameter ID="ApplSwDate" Value="0" Type="UDINT" />
+    <Parameter ID="ApplSwTime" Value="0" Type="UDINT" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+  <Module ID="IF1.ST1" Hardware="epl_any">
+    <Parameter ID="HardwareModuleName" Value="staubli_io" />
+    <Parameter ID="OrderNumber" Value="staubli_io" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="Mode" Value="CN" />
+    <Parameter ID="ResponseTimeout" Value="22" Type="UDINT" />
+    <Parameter ID="DummyDeviceType" Value="off" />
+    <Parameter ID="DummyVendorId" Value="off" />
+    <Parameter ID="DummyRevisionNo" Value="off" />
+    <Parameter ID="DummyModno" Value="off" />
+    <Parameter ID="IPGateway" Value="254" Type="UDINT" />
+    <Parameter ID="EPL_BootTimeNotActive" Value="8000000" Type="UDINT" />
+    <Parameter ID="EPL_MinCycleTime" Value="200" Type="UDINT" />
+    <Parameter ID="EPL_MinRedCycleTime" Value="0" Type="UDINT" />
+    <Parameter ID="ASndMaxLatency" Value="2" Type="UDINT" />
+    <Parameter ID="EPL_CnSoc2Preq" Value="0" Type="UDINT" />
+    <Parameter ID="EPL_ResetToDefault" Value="off" />
+    <Parameter ID="EPL_TellMuxSlot" Value="off" />
+    <Parameter ID="MuxNetworkSlot" Value="0" Type="UDINT" />
+    <Parameter ID="EPL_Chained" Value="off" />
+    <Parameter ID="MinimalInputLatency" Value="off" />
+    <Parameter ID="EPL_TxPdoVersion" Value="16" Type="UDINT" />
+    <Parameter ID="EPL_RxPdoVersion" Value="0" Type="UDINT" />
+    <Parameter ID="EPL_ResetPostLoad" Value="42" Type="UINT" />
+    <Parameter ID="EPL_ParamStrategy" Value="Load" />
+    <Channel ID="ModuleOk">
+      <Parameter ID="Ext" Value="/OK" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="_1_ReadDigitalInput1_bit_I6020">
+      <Parameter ID="Ext" Value="/FIXED" />
+      <Parameter ID="Address" Value="0x0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="OCTET" />
+      <Parameter ID="NrElements" Value="11" Type="UDINT" />
+    </Channel>
+    <Channel ID="HPE1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HPE2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="UEN1_DOOR1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="UEN2_DOOR2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BRS1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BRS2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="LSW1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="DF">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="SHORTR1_FAULT">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BRK_SEL">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BRK_REL">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="24V_FUS_FAULT">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="WDG1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="CHGMOD1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MANU">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="COMP">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="PARK1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BUS_ON1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BUS_ON2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="VALID">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MCPES1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MCPES2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="UESA1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="UESA2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="UESB1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="UESB2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BRK_REL_EN">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="PWR_OK">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ALIM_OK">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ESTOP1_MEM">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="ESTOP2_MEM">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HPE1_DELAY">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="HPE2_DELAY">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="PHASING">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="SCR1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="SCR2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="LSW2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="SHORTR2_FAULT">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="WDG2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="WMSES1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="4" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="WMSES2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="COMPL1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="COMPR1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MANUS1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MANUF1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="usrIn0">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="usrIn1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="DEADMAN2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="5" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="CHGMOD2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="COMPL2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="COMPR2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MANUF2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MANUS2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWER_EN">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="PARK2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MOTOR_1_3_5">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="6" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="MOTOR_2_4_6">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="CASTING">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="DSI_BOARD">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="GLOBAL_PTC">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="fIn0">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="fIn1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="SECTEUR_OK">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I0">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="7" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I3">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I4">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I5">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I6">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I7">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I8">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="8" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I9">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I10">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I11">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I12">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I13">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I14">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_I15">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I0">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="9" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I1">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I2">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I3">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I4">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I5">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I6">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_I7">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="padding">
+      <Parameter ID="Ext" Value="/SUB=_1_ReadDigitalInput1_bit_I6020" />
+      <Parameter ID="Address" Value="10" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="_1_WriteDigitalOutput1_bit_I6220Out">
+      <Parameter ID="Ext" Value="/FIXED" />
+      <Parameter ID="Address" Value="0x0" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="OCTET" />
+      <Parameter ID="NrElements" Value="4" Type="UDINT" />
+    </Channel>
+    <Channel ID="valve1Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="valve2Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="fOut0Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q0Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q1Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q2Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q3Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q4Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q5Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q6Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q7Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q8Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q9Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q10Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q11Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q12Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="1" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q13Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q14Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="BasicIO_1_Q15Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q0Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q1Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q2Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q3Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q4Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="2" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q5Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q6Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="1" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="POWERLINK_1_Q7Out">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="2" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="paddingOut0">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="3" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="paddingOut1">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="4" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="paddingOut2">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="5" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="paddingOut3">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="6" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="paddingOut4">
+      <Parameter ID="Ext" Value="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" />
+      <Parameter ID="Address" Value="3" Type="UDINT" />
+      <Parameter ID="BitOffset" Value="7" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="BOOL" />
+    </Channel>
+    <Channel ID="CBT_TEMP_I6403_S01">
+      <Parameter ID="Ext" Value="/FIXED" />
+      <Parameter ID="Address" Value="0xB" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="REAL" />
+    </Channel>
+    <Channel ID="CPU_TEMP_I6403_S02">
+      <Parameter ID="Ext" Value="/FIXED" />
+      <Parameter ID="Address" Value="0xF" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="REAL" />
+    </Channel>
+  </Module>
+  <Module ID="IF1.ST1.OD" Hardware="epl_any" />
+  <Module ID="IF2" Hardware="4PPC70.0702-20B">
+    <Parameter ID="ActivateOSAFT" Value="0" />
+  </Module>
+  <Module ID="IF2.OPCUA" Hardware="OPCUA">
+    <Parameter ID="ActivateOpcUa" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF2.SITEMAN" Hardware="SITEMAN">
+    <Parameter ID="ActivateSiteMan" Value="1" Type="INT" />
+  </Module>
+  <Module ID="IF5.X2X" Hardware="X2X">
+    <Parameter ID="CycleTime" Value="2000" Type="UDINT" />
+    <Parameter ID="Synchron" Value="on" />
+    <Parameter ID="BusLength" Value="1000" Type="UDINT" />
+    <Parameter ID="Stations" Value="64" Type="UDINT" />
+    <Parameter ID="AsyncPayload" Value="80" Type="UDINT" />
+    <Parameter ID="Asymmetric" Value="off" />
+    <Parameter ID="OutputJustInTime" Value="on" />
+    <Parameter ID="BusCycleTrigger" Value="auto" />
+    <Parameter ID="OutputCycleTrigger" Value="auto" />
+  </Module>
+</IOCFG>

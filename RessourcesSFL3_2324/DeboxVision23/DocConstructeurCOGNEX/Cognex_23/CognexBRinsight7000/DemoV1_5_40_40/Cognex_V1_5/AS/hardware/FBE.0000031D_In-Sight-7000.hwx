@@ -1,0 +1,1855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module xmlns="http://br-automation.co.at/AS/HardwareModule" OrderNumber="In-Sight" Description-en="In-Sight 7000 series camera" Description-de="   " Description-fr="   " Version="1.0" Height="90" Width="45">
+  <Aprol>
+    <Config ID="Supported" FromVersion="APROL R 1.0" Recommended="true" />
+  </Aprol>
+  <Channels Target="SG4">
+    <Channel ID="ModuleOk" Description-de="Modul Status (1 = Modul gesteckt)" Description-en="Module status (1 = module present)" Description-fr="Etat module (1 = module présent)">
+      <Parameter ID="Ext" Value="/OK" />
+      <Parameter ID="Address" Value="0" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="BOOL" />
+      <Parameter ID="ArConfig" Value="copy" />
+    </Channel>
+    <Channel ID="Control_I2000_S01">
+      <Filter Value="p2000s01_direction='wo' OR p2000s01_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012000" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="JobLoadID_I2000_S02">
+      <Filter Value="p2000s02_direction='wo' OR p2000s02_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022000" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="Status_I2001_S01">
+      <Filter Value="p2001s01_direction='ro' OR p2001s01_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012001" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="CurrentJobID_I2001_S02">
+      <Filter Value="p2001s02_direction='ro' OR p2001s02_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022001" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="AcquisitionID_I2001_S03">
+      <Filter Value="p2001s03_direction='ro' OR p2001s03_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00032001" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionID_I2010_S01">
+      <Filter Value="p2010s01_direction='ro' OR p2010s01_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012010" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResultCode_I2010_S02">
+      <Filter Value="p2010s02_direction='ro' OR p2010s02_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022010" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S01">
+      <Filter Value="p2011s01_direction='ro' OR p2011s01_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S02">
+      <Filter Value="p2011s02_direction='ro' OR p2011s02_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S03">
+      <Filter Value="p2011s03_direction='ro' OR p2011s03_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00032011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S04">
+      <Filter Value="p2011s04_direction='ro' OR p2011s04_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00042011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S05">
+      <Filter Value="p2011s05_direction='ro' OR p2011s05_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00052011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S06">
+      <Filter Value="p2011s06_direction='ro' OR p2011s06_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00062011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S07">
+      <Filter Value="p2011s07_direction='ro' OR p2011s07_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00072011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S08">
+      <Filter Value="p2011s08_direction='ro' OR p2011s08_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00082011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S09">
+      <Filter Value="p2011s09_direction='ro' OR p2011s09_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00092011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0A">
+      <Filter Value="p2011s0A_direction='ro' OR p2011s0A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000A2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0B">
+      <Filter Value="p2011s0B_direction='ro' OR p2011s0B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000B2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0C">
+      <Filter Value="p2011s0C_direction='ro' OR p2011s0C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000C2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0D">
+      <Filter Value="p2011s0D_direction='ro' OR p2011s0D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000D2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0E">
+      <Filter Value="p2011s0E_direction='ro' OR p2011s0E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000E2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S0F">
+      <Filter Value="p2011s0F_direction='ro' OR p2011s0F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000F2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S10">
+      <Filter Value="p2011s10_direction='ro' OR p2011s10_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00102011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S11">
+      <Filter Value="p2011s11_direction='ro' OR p2011s11_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00112011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S12">
+      <Filter Value="p2011s12_direction='ro' OR p2011s12_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00122011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S13">
+      <Filter Value="p2011s13_direction='ro' OR p2011s13_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00132011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S14">
+      <Filter Value="p2011s14_direction='ro' OR p2011s14_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00142011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S15">
+      <Filter Value="p2011s15_direction='ro' OR p2011s15_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00152011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S16">
+      <Filter Value="p2011s16_direction='ro' OR p2011s16_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00162011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S17">
+      <Filter Value="p2011s17_direction='ro' OR p2011s17_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00172011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S18">
+      <Filter Value="p2011s18_direction='ro' OR p2011s18_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00182011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S19">
+      <Filter Value="p2011s19_direction='ro' OR p2011s19_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00192011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S1A">
+      <Filter Value="p2011s1A_direction='ro' OR p2011s1A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001A2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S1B">
+      <Filter Value="p2011s1B_direction='ro' OR p2011s1B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001B2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S1C">
+      <Filter Value="p2011s1C_direction='ro' OR p2011s1C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001C2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S1D">
+      <Filter Value="p2011s1D_direction='ro' OR p2011s1D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001D2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S1E">
+      <Filter Value="p2011s1E_direction='ro' OR p2011s1E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001E2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S1F">
+      <Filter Value="p2011s1F_direction='ro' OR p2011s1F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001F2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S20">
+      <Filter Value="p2011s20_direction='ro' OR p2011s20_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00202011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S21">
+      <Filter Value="p2011s21_direction='ro' OR p2011s21_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00212011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S22">
+      <Filter Value="p2011s22_direction='ro' OR p2011s22_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00222011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S23">
+      <Filter Value="p2011s23_direction='ro' OR p2011s23_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00232011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S24">
+      <Filter Value="p2011s24_direction='ro' OR p2011s24_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00242011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S25">
+      <Filter Value="p2011s25_direction='ro' OR p2011s25_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00252011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S26">
+      <Filter Value="p2011s26_direction='ro' OR p2011s26_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00262011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S27">
+      <Filter Value="p2011s27_direction='ro' OR p2011s27_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00272011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S28">
+      <Filter Value="p2011s28_direction='ro' OR p2011s28_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00282011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S29">
+      <Filter Value="p2011s29_direction='ro' OR p2011s29_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00292011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S2A">
+      <Filter Value="p2011s2A_direction='ro' OR p2011s2A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002A2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S2B">
+      <Filter Value="p2011s2B_direction='ro' OR p2011s2B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002B2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S2C">
+      <Filter Value="p2011s2C_direction='ro' OR p2011s2C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002C2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S2D">
+      <Filter Value="p2011s2D_direction='ro' OR p2011s2D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002D2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S2E">
+      <Filter Value="p2011s2E_direction='ro' OR p2011s2E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002E2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S2F">
+      <Filter Value="p2011s2F_direction='ro' OR p2011s2F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002F2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S30">
+      <Filter Value="p2011s30_direction='ro' OR p2011s30_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00302011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S31">
+      <Filter Value="p2011s31_direction='ro' OR p2011s31_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00312011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S32">
+      <Filter Value="p2011s32_direction='ro' OR p2011s32_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00322011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S33">
+      <Filter Value="p2011s33_direction='ro' OR p2011s33_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00332011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S34">
+      <Filter Value="p2011s34_direction='ro' OR p2011s34_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00342011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S35">
+      <Filter Value="p2011s35_direction='ro' OR p2011s35_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00352011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S36">
+      <Filter Value="p2011s36_direction='ro' OR p2011s36_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00362011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S37">
+      <Filter Value="p2011s37_direction='ro' OR p2011s37_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00372011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S38">
+      <Filter Value="p2011s38_direction='ro' OR p2011s38_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00382011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S39">
+      <Filter Value="p2011s39_direction='ro' OR p2011s39_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00392011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S3A">
+      <Filter Value="p2011s3A_direction='ro' OR p2011s3A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003A2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S3B">
+      <Filter Value="p2011s3B_direction='ro' OR p2011s3B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003B2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S3C">
+      <Filter Value="p2011s3C_direction='ro' OR p2011s3C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003C2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S3D">
+      <Filter Value="p2011s3D_direction='ro' OR p2011s3D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003D2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S3E">
+      <Filter Value="p2011s3E_direction='ro' OR p2011s3E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003E2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S3F">
+      <Filter Value="p2011s3F_direction='ro' OR p2011s3F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003F2011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="InspectionResults_I2011_S40">
+      <Filter Value="p2011s40_direction='ro' OR p2011s40_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00402011" Type="UDINT" />
+      <Parameter ID="Direction" Value="IN" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S01">
+      <Filter Value="p2021s01_direction='wo' OR p2021s01_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00012021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S02">
+      <Filter Value="p2021s02_direction='wo' OR p2021s02_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00022021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S03">
+      <Filter Value="p2021s03_direction='wo' OR p2021s03_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00032021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S04">
+      <Filter Value="p2021s04_direction='wo' OR p2021s04_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00042021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S05">
+      <Filter Value="p2021s05_direction='wo' OR p2021s05_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00052021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S06">
+      <Filter Value="p2021s06_direction='wo' OR p2021s06_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00062021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S07">
+      <Filter Value="p2021s07_direction='wo' OR p2021s07_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00072021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S08">
+      <Filter Value="p2021s08_direction='wo' OR p2021s08_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00082021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S09">
+      <Filter Value="p2021s09_direction='wo' OR p2021s09_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00092021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S0A">
+      <Filter Value="p2021s0A_direction='wo' OR p2021s0A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000A2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S0B">
+      <Filter Value="p2021s0B_direction='wo' OR p2021s0B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000B2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S0C">
+      <Filter Value="p2021s0C_direction='wo' OR p2021s0C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000C2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S0D">
+      <Filter Value="p2021s0D_direction='wo' OR p2021s0D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000D2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S0E">
+      <Filter Value="p2021s0E_direction='wo' OR p2021s0E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000E2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S0F">
+      <Filter Value="p2021s0F_direction='wo' OR p2021s0F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x000F2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S10">
+      <Filter Value="p2021s10_direction='wo' OR p2021s10_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00102021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S11">
+      <Filter Value="p2021s11_direction='wo' OR p2021s11_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00112021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S12">
+      <Filter Value="p2021s12_direction='wo' OR p2021s12_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00122021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S13">
+      <Filter Value="p2021s13_direction='wo' OR p2021s13_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00132021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S14">
+      <Filter Value="p2021s14_direction='wo' OR p2021s14_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00142021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S15">
+      <Filter Value="p2021s15_direction='wo' OR p2021s15_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00152021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S16">
+      <Filter Value="p2021s16_direction='wo' OR p2021s16_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00162021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S17">
+      <Filter Value="p2021s17_direction='wo' OR p2021s17_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00172021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S18">
+      <Filter Value="p2021s18_direction='wo' OR p2021s18_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00182021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S19">
+      <Filter Value="p2021s19_direction='wo' OR p2021s19_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00192021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S1A">
+      <Filter Value="p2021s1A_direction='wo' OR p2021s1A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001A2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S1B">
+      <Filter Value="p2021s1B_direction='wo' OR p2021s1B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001B2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S1C">
+      <Filter Value="p2021s1C_direction='wo' OR p2021s1C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001C2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S1D">
+      <Filter Value="p2021s1D_direction='wo' OR p2021s1D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001D2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S1E">
+      <Filter Value="p2021s1E_direction='wo' OR p2021s1E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001E2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S1F">
+      <Filter Value="p2021s1F_direction='wo' OR p2021s1F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x001F2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S20">
+      <Filter Value="p2021s20_direction='wo' OR p2021s20_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00202021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S21">
+      <Filter Value="p2021s21_direction='wo' OR p2021s21_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00212021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S22">
+      <Filter Value="p2021s22_direction='wo' OR p2021s22_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00222021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S23">
+      <Filter Value="p2021s23_direction='wo' OR p2021s23_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00232021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S24">
+      <Filter Value="p2021s24_direction='wo' OR p2021s24_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00242021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S25">
+      <Filter Value="p2021s25_direction='wo' OR p2021s25_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00252021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S26">
+      <Filter Value="p2021s26_direction='wo' OR p2021s26_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00262021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S27">
+      <Filter Value="p2021s27_direction='wo' OR p2021s27_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00272021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S28">
+      <Filter Value="p2021s28_direction='wo' OR p2021s28_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00282021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S29">
+      <Filter Value="p2021s29_direction='wo' OR p2021s29_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00292021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S2A">
+      <Filter Value="p2021s2A_direction='wo' OR p2021s2A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002A2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S2B">
+      <Filter Value="p2021s2B_direction='wo' OR p2021s2B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002B2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S2C">
+      <Filter Value="p2021s2C_direction='wo' OR p2021s2C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002C2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S2D">
+      <Filter Value="p2021s2D_direction='wo' OR p2021s2D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002D2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S2E">
+      <Filter Value="p2021s2E_direction='wo' OR p2021s2E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002E2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S2F">
+      <Filter Value="p2021s2F_direction='wo' OR p2021s2F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x002F2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S30">
+      <Filter Value="p2021s30_direction='wo' OR p2021s30_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00302021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S31">
+      <Filter Value="p2021s31_direction='wo' OR p2021s31_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00312021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S32">
+      <Filter Value="p2021s32_direction='wo' OR p2021s32_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00322021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S33">
+      <Filter Value="p2021s33_direction='wo' OR p2021s33_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00332021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S34">
+      <Filter Value="p2021s34_direction='wo' OR p2021s34_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00342021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S35">
+      <Filter Value="p2021s35_direction='wo' OR p2021s35_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00352021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S36">
+      <Filter Value="p2021s36_direction='wo' OR p2021s36_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00362021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S37">
+      <Filter Value="p2021s37_direction='wo' OR p2021s37_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00372021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S38">
+      <Filter Value="p2021s38_direction='wo' OR p2021s38_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00382021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S39">
+      <Filter Value="p2021s39_direction='wo' OR p2021s39_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00392021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S3A">
+      <Filter Value="p2021s3A_direction='wo' OR p2021s3A_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003A2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S3B">
+      <Filter Value="p2021s3B_direction='wo' OR p2021s3B_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003B2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S3C">
+      <Filter Value="p2021s3C_direction='wo' OR p2021s3C_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003C2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S3D">
+      <Filter Value="p2021s3D_direction='wo' OR p2021s3D_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003D2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S3E">
+      <Filter Value="p2021s3E_direction='wo' OR p2021s3E_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003E2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S3F">
+      <Filter Value="p2021s3F_direction='wo' OR p2021s3F_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x003F2021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+    <Channel ID="UserData_I2021_S40">
+      <Filter Value="p2021s40_direction='wo' OR p2021s40_direction='rw'" />
+      <Parameter ID="Ext" Value="/DYNAMIC" />
+      <Parameter ID="Address" Value="0x00402021" Type="UDINT" />
+      <Parameter ID="Direction" Value="OUT" />
+      <Parameter ID="Type" Value="UDINT" />
+      <Parameter ID="ArConfig" Value="Copy" />
+    </Channel>
+  </Channels>
+  <Classification>
+    <FieldbusProtocol Value="Powerlink" />
+    <HardwareModuleFamily Value="CompactIOSystem" />
+    <HardwareModuleType Value="IO" />
+    <NetworkType Value="Powerlink" />
+  </Classification>
+  <Connectors>
+    <Connector Name="PLK1" AddressRule="NodeNumber" Male="true" NodeSwitch="true" Type="Cable">
+      <Connections>
+        <Connection Name="Powerlink" />
+      </Connections>
+      <Layout PositionX="15" PositionY="15" />
+    </Connector>
+    <Connector Name="PLK2" Male="true" Type="Cable">
+      <Connections>
+        <Connection Name="Powerlink" />
+      </Connections>
+      <Layout PositionX="35" PositionY="15" />
+    </Connector>
+  </Connectors>
+  <Editors>
+    <Editor Name="IoMapping" />
+    <Editor Name="Configuration" />
+  </Editors>
+  <Images>
+    <Image Type="FrontFoto" Name="epl.front.png" />
+    <Image Type="Icon" Name="hw_pl.ico" />
+  </Images>
+  <Properties Target="SG4">
+    <Group ID="General" Name-en="General" Name-de="Allgemein" Name-fr="Général">
+      <Parameter ID="Supervision" Name-en="Module supervised" Name-de="Modulüberwachung" Name-fr="Surveillance module" Value="on" Description-en="Service mode if there is no hardware module" Description-de="Service Mode auslösen, wenn Modul nicht vorhanden ist" Description-fr="Mode service si module absent">
+        <ComboBox>
+          <Item ID="off" Name-en="off" Name-de="Aus" Name-fr="Inactif" />
+          <Item ID="on" Name-en="on" Name-de="Ein" Name-fr="Actif" />
+        </ComboBox>
+      </Parameter>
+    </Group>
+    <Group ID="PL2" Name-en="Powerlink parameters" Name-de="Powerlink Parameter">
+      <!--########## Powerlink Parameter ##########-->
+      <Selector ID="Mode" Value="CN" Name-en="Mode" Name-de="Modus" Name-fr="Mode">
+        <Selection ID="CN" Name-en="controlled node" Name-de="Controlled Node" Name-fr="controlled node">
+          <Parameter ID="ResponseTimeout" Name-en="Response timeout [us]" Name-de="Antwort Timeout [us]" Name-fr="Response timeout [us]" MultiSelection="false" Type="UDINT" Value="22" Visible="true" Range="2-65000" />
+        </Selection>
+      </Selector>
+      <Parameter ID="ASndMaxLatency" Name-en="ASndMaxLatency [us]" Name-de="ASndMaxLatency [us]" Name-fr="ASndMaxLatency [us]" MultiSelection="false" Type="UDINT" Value="2" Visible="false" />
+      <Parameter ID="EPL_CnSoc2Preq" Name-en="EPL_CnSoc2Preq [us]" Name-de="EPL_CnSoc2Preq [us]" Name-fr="EPL_CnSoc2Preq [us]" MultiSelection="false" Type="UDINT" Value="0" Visible="false" />
+      <Parameter ID="EPL_PReqDataInPResMN" Name-en="Output in PResMN" Name-de="Ausgangsdaten im PResMN" Name-fr="Output in PResMN" MultiSelection="false" Value="off" Visible="true" Template="OnOffText" Description-en="Send output data at the beginning of the cycle in PRes frame from managing node" Description-de="Output Daten am Anfang des Zyklus im PRes-Frame des Managing-Node versenden" />
+      <Selector ID="Multiplexed" Value="0" Name-en="Multiplexed station" Name-de="Multiplexed Station" Name-fr="Multiplexed station" ArConfigSkip="true">
+        <Selection ID="0" Name-en="off" Name-de="Aus" Name-fr="off">
+          <Parameter ID="MuxNetworkSlot" Name-en="MuxNetworkSlot" Name-de="MuxNetworkSlot" Name-fr="MuxNetworkSlot" MultiSelection="false" Type="UDINT" Value="0" Visible="false" ArConfigSkip="false" />
+          <Parameter ID="EPL_Chained" Name-en="Chained station" Name-de="Verkettete Station" Name-fr="Chained station" MultiSelection="false" Value="off" Visible="false" Template="OnOffText" Description-en="" Description-de="" />
+        </Selection>
+        <Selection ID="1" Name-en="on" Name-de="Ein" Name-fr="on">
+          <Group ID="Advanced" Name-en="Advanced multiplexing" Name-de="Erweiterte Multiplexing Einstellungen" Name-fr="Advanced multiplexing" Collapsed="false" ArConfigSkip="false">
+            <Selector ID="ForceCycle" Value="0" Name-en="Force multiplexed station network cycle" Name-de="Netzwerkzyklus der multiplexed Station erzwingen" Name-fr="Force multiplexed station network cycle">
+              <Selection ID="0" Name-en="off" Name-de="Aus" Name-fr="off">
+                <Parameter ID="MuxNetworkSlot" Name-en="MuxNetworkSlot" Name-de="MuxNetworkSlot" Name-fr="MuxNetworkSlot" MultiSelection="false" Type="UDINT" Value="0" Visible="true" CanEdit="false" />
+              </Selection>
+              <Selection ID="1" Name-en="on" Name-de="Ein" Name-fr="on">
+                <Parameter ID="MuxNetworkSlot" Name-en="MuxNetworkSlot" Name-de="MuxNetworkSlot" Name-fr="MuxNetworkSlot" MultiSelection="false" Type="UDINT" Value="1" Visible="true" Range="1-253" />
+              </Selection>
+            </Selector>
+          </Group>
+          <Parameter ID="EPL_Chained" Name-en="Chained station" Name-de="Verkettete Station" Name-fr="Chained station" MultiSelection="false" Value="off" Visible="false" Template="OnOffText" Description-en="" Description-de="" ArConfigSkip="false" />
+        </Selection>
+      </Selector>
+      <Parameter ID="EPL_ResetToDefault" Name-en="EPL_ResetToDefault" Name-de="EPL_ResetToDefault" Name-fr="EPL_ResetToDefault" MultiSelection="false" Type="STRING" Value="off" Visible="false" />
+      <Parameter ID="EPL_TellMuxSlot" Name-en="EPL_TellMuxSlot" Name-de="EPL_TellMuxSlot" Name-fr="EPL_TellMuxSlot" MultiSelection="false" Type="STRING" Value="on" Visible="false" />
+      <Group ID="CNSettings" Name-en="Advanced" Name-de="Erweitert" Name-fr="Advanced" Collapsed="true">
+        <Parameter ID="IPGateway" Name-en="IP Gateway" Name-de="IP Gateway" Name-fr="IP Gateway" MultiSelection="false" Type="UDINT" Value="254" Visible="true" Range="1-254" Description-en="Node number of EPL station acting as IP default gateway" Description-de="Knotennummer der EPL Station die als IP Standard Gateway fungiert" Description-fr="" />
+        <Parameter ID="EPL_BootTimeNotActive" Name-en="EPL_BootTimeNotActive" Name-de="EPL_BootTimeNotActive" Name-fr="EPL_BootTimeNotActive" MultiSelection="false" Type="UDINT" Value="8000000" Visible="false" />
+        <Selector ID="DummyDeviceType" Value="off" Name-en="Verify Device Type" Name-de="Geraetetyp pruefen" Name-fr="Verify Device Type" Description-en="Verify correct Device Type" Description-de="Pruefe auf richtigen Geraetetyp" Description-fr="" FromVersion="S2.95">
+          <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+          <Selection ID="0x00000000" Name-en="on 0x00000000" Name-de="ein 0x00000000" Name-fr="on 0x00000000">
+            <Parameter ID="EPL_DeviceType" Name-en="EPL_DeviceType" Name-de="EPL_DeviceType" Name-fr="EPL_DeviceType" MultiSelection="false" Type="UDINT" Value="0" Visible="false" />
+          </Selection>
+        </Selector>
+        <Selector ID="DummyVendorId" Value="off" Name-en="Verify VendorID" Name-de="Pruefe Hersteller ID" Name-fr="Verify VendorID" Description-en="Verify correct VendorID" Description-de="Pruefe auf richtige Hersteller ID" Description-fr="" FromVersion="S2.95">
+          <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+          <Selection ID="0x0000031D" Name-en="on 0x0000031D" Name-de="ein 0x0000031D" Name-fr="on 0x0000031D">
+            <Parameter ID="VendorId" Name-en="VendorId" Name-de="VendorId" Name-fr="VendorId" MultiSelection="false" Type="UDINT" Value="797" Visible="false" />
+          </Selection>
+        </Selector>
+        <Selector ID="DummyRevisionNo" Value="off" Name-en="Verify RevisionNumber" Name-de="Pruefe Revisionsnummer" Name-fr="Verify RevisionNumber" Description-en="Verify correct Revision Number" Description-de="Pruefe auf richtige Revisionsnummer" Description-fr="" FromVersion="S2.95">
+          <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+          <Selection ID="0x1" Name-en="on 0x1" Name-de="ein 0x1" Name-fr="on 0x1">
+            <Parameter ID="EPL_RevisionNo" Name-en="EPL_RevisionNo" Name-de="EPL_RevisionNo" Name-fr="EPL_RevisionNo" MultiSelection="false" Type="UDINT" Value="1" Visible="false" />
+          </Selection>
+        </Selector>
+        <Selector ID="DummyModno" Value="off" Name-en="Verify Product Code" Name-de="Pruefe Produktcode" Name-fr="Verify Product Code" Description-en="Verify correct product code" Description-de="Pruefe auf richtigen Produktcode" Description-fr="" FromVersion="S2.95">
+          <Selection ID="off" Name-en="off" Name-de="Aus" Name-fr="off" />
+          <Selection ID="0x109" Name-en="on 0x109" Name-de="ein 0x109" Name-fr="on 0x109">
+            <Parameter ID="Modno" Name-en="Modno" Name-de="Modno" Name-fr="Modno" MultiSelection="false" Type="UDINT" Value="265" Visible="false" />
+          </Selection>
+        </Selector>
+        <Parameter ID="EPL_MinCycleTime" Name-en="EPL_MinCycleTime [us]" Name-de="EPL_MinCycleTime [us]" Name-fr="EPL_MinCycleTime [us]" MultiSelection="false" Type="UDINT" Value="400" Visible="false" />
+      </Group>
+      <!--########## Firmware ##########-->
+      <Group ID="invisible" Visible="false">
+        <Parameter ID="EPL_ResetPostLoad" Type="UINT" Value="42" />
+        <Parameter ID="EPL_ParamStrategy" Value="Load" />
+      </Group>
+    </Group>
+    <!--########## Templates ##########-->
+    <Template ID="rw">
+      <ComboBox>
+        <Item ID="no" Name-en="None" Name-de="Keine" Name-fr="TODO" />
+        <Item ID="ro" Name-en="Read" Name-de="Lesen" Name-fr="TODO" />
+        <Item ID="wo" Name-en="Write" Name-de="Schreiben" Name-fr="TODO" />
+        <Item ID="rw" Name-en="Read and Write" Name-de="Lesen und Schreiben" Name-fr="TODO" />
+        <Item ID="readonce" Name-en="Read once" Name-de="Einmal lesen" Name-fr="TODO" />
+      </ComboBox>
+    </Template>
+    <Template ID="ro">
+      <ComboBox>
+        <Item ID="no" Name-en="None" Name-de="Keine" Name-fr="TODO" />
+        <Item ID="ro" Name-en="Read" Name-de="Lesen" Name-fr="TODO" />
+        <Item ID="readonce" Name-en="Read once" Name-de="Einmal lesen" Name-fr="TODO" />
+      </ComboBox>
+    </Template>
+    <Template ID="wo">
+      <ComboBox>
+        <Item ID="no" Name-en="None" Name-de="Keine" Name-fr="TODO" />
+        <Item ID="wo" Name-en="Write" Name-de="Schreiben" Name-fr="TODO" />
+      </ComboBox>
+    </Template>
+    <!--########## Channels ##########-->
+    <Group ID="channels" Name-en="Channels" Name-de="Kanaele" Description-en="Objects for cyclic transmission" Description-de="Objekte fuer zyklische Uebertragung" Collapsed="true" ArConfigSkip="true">
+      <Group ID="g2000" Name-en="InspectionControl_I2000 RECORD[2]" Collapsed="true">
+        <Group ID="p2000s01" Name-en="Control_I2000_S01" Collapsed="true">
+          <Parameter ID="p2000s01_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2000s01_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2000s01_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2000s02" Name-en="JobLoadID_I2000_S02" Collapsed="true">
+          <Parameter ID="p2000s02_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2000s02_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UINT" Description-en="UNSIGNED16" CanEdit="false" />
+          <Parameter ID="p2000s02_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UINT" />
+        </Group>
+      </Group>
+      <Group ID="g2001" Name-en="InspectionStatus_I2001 RECORD[3]" Collapsed="true">
+        <Group ID="p2001s01" Name-en="Status_I2001_S01" Collapsed="true">
+          <Parameter ID="p2001s01_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2001s01_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2001s02" Name-en="CurrentJobID_I2001_S02" Collapsed="true">
+          <Parameter ID="p2001s02_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2001s02_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UINT" Description-en="UNSIGNED16" CanEdit="false" />
+        </Group>
+        <Group ID="p2001s03" Name-en="AcquisitionID_I2001_S03" Collapsed="true">
+          <Parameter ID="p2001s03_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2001s03_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UINT" Description-en="UNSIGNED16" CanEdit="false" />
+        </Group>
+      </Group>
+      <Group ID="g2010" Name-en="InspectionResults_I2010 RECORD[02]" Collapsed="true">
+        <Group ID="p2010s01" Name-en="InspectionID_I2010_S01" Collapsed="true">
+          <Parameter ID="p2010s01_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2010s01_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UINT" Description-en="UNSIGNED16" CanEdit="false" />
+        </Group>
+        <Group ID="p2010s02" Name-en="InspectionResultCode_I2010_S02" Collapsed="true">
+          <Parameter ID="p2010s02_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2010s02_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UINT" Description-en="UNSIGNED16" CanEdit="false" />
+        </Group>
+      </Group>
+      <Group ID="g2011" Name-en="InspectionResultsData_I2011 ARRAY[64]" Collapsed="true">
+        <Group ID="p2011s01" Name-en="InspectionResults_I2011_S01" Collapsed="true">
+          <Parameter ID="p2011s01_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s01_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s02" Name-en="InspectionResults_I2011_S02" Collapsed="true">
+          <Parameter ID="p2011s02_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s02_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s03" Name-en="InspectionResults_I2011_S03" Collapsed="true">
+          <Parameter ID="p2011s03_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s03_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s04" Name-en="InspectionResults_I2011_S04" Collapsed="true">
+          <Parameter ID="p2011s04_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s04_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s05" Name-en="InspectionResults_I2011_S05" Collapsed="true">
+          <Parameter ID="p2011s05_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s05_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s06" Name-en="InspectionResults_I2011_S06" Collapsed="true">
+          <Parameter ID="p2011s06_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s06_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s07" Name-en="InspectionResults_I2011_S07" Collapsed="true">
+          <Parameter ID="p2011s07_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s07_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s08" Name-en="InspectionResults_I2011_S08" Collapsed="true">
+          <Parameter ID="p2011s08_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s08_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s09" Name-en="InspectionResults_I2011_S09" Collapsed="true">
+          <Parameter ID="p2011s09_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s09_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s0A" Name-en="InspectionResults_I2011_S0A" Collapsed="true">
+          <Parameter ID="p2011s0A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s0A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s0B" Name-en="InspectionResults_I2011_S0B" Collapsed="true">
+          <Parameter ID="p2011s0B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s0B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s0C" Name-en="InspectionResults_I2011_S0C" Collapsed="true">
+          <Parameter ID="p2011s0C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s0C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s0D" Name-en="InspectionResults_I2011_S0D" Collapsed="true">
+          <Parameter ID="p2011s0D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s0D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s0E" Name-en="InspectionResults_I2011_S0E" Collapsed="true">
+          <Parameter ID="p2011s0E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s0E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s0F" Name-en="InspectionResults_I2011_S0F" Collapsed="true">
+          <Parameter ID="p2011s0F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s0F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s10" Name-en="InspectionResults_I2011_S10" Collapsed="true">
+          <Parameter ID="p2011s10_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s10_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s11" Name-en="InspectionResults_I2011_S11" Collapsed="true">
+          <Parameter ID="p2011s11_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s11_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s12" Name-en="InspectionResults_I2011_S12" Collapsed="true">
+          <Parameter ID="p2011s12_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s12_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s13" Name-en="InspectionResults_I2011_S13" Collapsed="true">
+          <Parameter ID="p2011s13_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s13_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s14" Name-en="InspectionResults_I2011_S14" Collapsed="true">
+          <Parameter ID="p2011s14_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s14_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s15" Name-en="InspectionResults_I2011_S15" Collapsed="true">
+          <Parameter ID="p2011s15_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s15_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s16" Name-en="InspectionResults_I2011_S16" Collapsed="true">
+          <Parameter ID="p2011s16_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s16_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s17" Name-en="InspectionResults_I2011_S17" Collapsed="true">
+          <Parameter ID="p2011s17_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s17_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s18" Name-en="InspectionResults_I2011_S18" Collapsed="true">
+          <Parameter ID="p2011s18_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s18_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s19" Name-en="InspectionResults_I2011_S19" Collapsed="true">
+          <Parameter ID="p2011s19_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s19_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s1A" Name-en="InspectionResults_I2011_S1A" Collapsed="true">
+          <Parameter ID="p2011s1A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s1A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s1B" Name-en="InspectionResults_I2011_S1B" Collapsed="true">
+          <Parameter ID="p2011s1B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s1B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s1C" Name-en="InspectionResults_I2011_S1C" Collapsed="true">
+          <Parameter ID="p2011s1C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s1C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s1D" Name-en="InspectionResults_I2011_S1D" Collapsed="true">
+          <Parameter ID="p2011s1D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s1D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s1E" Name-en="InspectionResults_I2011_S1E" Collapsed="true">
+          <Parameter ID="p2011s1E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s1E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s1F" Name-en="InspectionResults_I2011_S1F" Collapsed="true">
+          <Parameter ID="p2011s1F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s1F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s20" Name-en="InspectionResults_I2011_S20" Collapsed="true">
+          <Parameter ID="p2011s20_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s20_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s21" Name-en="InspectionResults_I2011_S21" Collapsed="true">
+          <Parameter ID="p2011s21_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s21_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s22" Name-en="InspectionResults_I2011_S22" Collapsed="true">
+          <Parameter ID="p2011s22_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s22_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s23" Name-en="InspectionResults_I2011_S23" Collapsed="true">
+          <Parameter ID="p2011s23_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s23_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s24" Name-en="InspectionResults_I2011_S24" Collapsed="true">
+          <Parameter ID="p2011s24_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s24_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s25" Name-en="InspectionResults_I2011_S25" Collapsed="true">
+          <Parameter ID="p2011s25_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s25_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s26" Name-en="InspectionResults_I2011_S26" Collapsed="true">
+          <Parameter ID="p2011s26_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s26_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s27" Name-en="InspectionResults_I2011_S27" Collapsed="true">
+          <Parameter ID="p2011s27_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s27_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s28" Name-en="InspectionResults_I2011_S28" Collapsed="true">
+          <Parameter ID="p2011s28_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s28_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s29" Name-en="InspectionResults_I2011_S29" Collapsed="true">
+          <Parameter ID="p2011s29_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s29_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s2A" Name-en="InspectionResults_I2011_S2A" Collapsed="true">
+          <Parameter ID="p2011s2A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s2A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s2B" Name-en="InspectionResults_I2011_S2B" Collapsed="true">
+          <Parameter ID="p2011s2B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s2B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s2C" Name-en="InspectionResults_I2011_S2C" Collapsed="true">
+          <Parameter ID="p2011s2C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s2C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s2D" Name-en="InspectionResults_I2011_S2D" Collapsed="true">
+          <Parameter ID="p2011s2D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s2D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s2E" Name-en="InspectionResults_I2011_S2E" Collapsed="true">
+          <Parameter ID="p2011s2E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s2E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s2F" Name-en="InspectionResults_I2011_S2F" Collapsed="true">
+          <Parameter ID="p2011s2F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s2F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s30" Name-en="InspectionResults_I2011_S30" Collapsed="true">
+          <Parameter ID="p2011s30_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s30_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s31" Name-en="InspectionResults_I2011_S31" Collapsed="true">
+          <Parameter ID="p2011s31_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s31_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s32" Name-en="InspectionResults_I2011_S32" Collapsed="true">
+          <Parameter ID="p2011s32_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s32_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s33" Name-en="InspectionResults_I2011_S33" Collapsed="true">
+          <Parameter ID="p2011s33_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s33_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s34" Name-en="InspectionResults_I2011_S34" Collapsed="true">
+          <Parameter ID="p2011s34_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s34_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s35" Name-en="InspectionResults_I2011_S35" Collapsed="true">
+          <Parameter ID="p2011s35_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s35_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s36" Name-en="InspectionResults_I2011_S36" Collapsed="true">
+          <Parameter ID="p2011s36_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s36_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s37" Name-en="InspectionResults_I2011_S37" Collapsed="true">
+          <Parameter ID="p2011s37_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s37_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s38" Name-en="InspectionResults_I2011_S38" Collapsed="true">
+          <Parameter ID="p2011s38_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s38_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s39" Name-en="InspectionResults_I2011_S39" Collapsed="true">
+          <Parameter ID="p2011s39_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s39_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s3A" Name-en="InspectionResults_I2011_S3A" Collapsed="true">
+          <Parameter ID="p2011s3A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s3A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s3B" Name-en="InspectionResults_I2011_S3B" Collapsed="true">
+          <Parameter ID="p2011s3B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s3B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s3C" Name-en="InspectionResults_I2011_S3C" Collapsed="true">
+          <Parameter ID="p2011s3C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s3C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s3D" Name-en="InspectionResults_I2011_S3D" Collapsed="true">
+          <Parameter ID="p2011s3D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s3D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s3E" Name-en="InspectionResults_I2011_S3E" Collapsed="true">
+          <Parameter ID="p2011s3E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s3E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s3F" Name-en="InspectionResults_I2011_S3F" Collapsed="true">
+          <Parameter ID="p2011s3F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s3F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+        <Group ID="p2011s40" Name-en="InspectionResults_I2011_S40" Collapsed="true">
+          <Parameter ID="p2011s40_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="ro" />
+          <Parameter ID="p2011s40_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+        </Group>
+      </Group>
+      <Group ID="g2021" Name-en="UserData_I2021 ARRAY[64]" Collapsed="true">
+        <Group ID="p2021s01" Name-en="UserData_I2021_S01" Collapsed="true">
+          <Parameter ID="p2021s01_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s01_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s01_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s02" Name-en="UserData_I2021_S02" Collapsed="true">
+          <Parameter ID="p2021s02_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s02_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s02_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s03" Name-en="UserData_I2021_S03" Collapsed="true">
+          <Parameter ID="p2021s03_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s03_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s03_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s04" Name-en="UserData_I2021_S04" Collapsed="true">
+          <Parameter ID="p2021s04_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s04_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s04_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s05" Name-en="UserData_I2021_S05" Collapsed="true">
+          <Parameter ID="p2021s05_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s05_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s05_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s06" Name-en="UserData_I2021_S06" Collapsed="true">
+          <Parameter ID="p2021s06_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s06_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s06_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s07" Name-en="UserData_I2021_S07" Collapsed="true">
+          <Parameter ID="p2021s07_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s07_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s07_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s08" Name-en="UserData_I2021_S08" Collapsed="true">
+          <Parameter ID="p2021s08_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s08_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s08_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s09" Name-en="UserData_I2021_S09" Collapsed="true">
+          <Parameter ID="p2021s09_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s09_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s09_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s0A" Name-en="UserData_I2021_S0A" Collapsed="true">
+          <Parameter ID="p2021s0A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s0A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s0A_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s0B" Name-en="UserData_I2021_S0B" Collapsed="true">
+          <Parameter ID="p2021s0B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s0B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s0B_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s0C" Name-en="UserData_I2021_S0C" Collapsed="true">
+          <Parameter ID="p2021s0C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s0C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s0C_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s0D" Name-en="UserData_I2021_S0D" Collapsed="true">
+          <Parameter ID="p2021s0D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s0D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s0D_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s0E" Name-en="UserData_I2021_S0E" Collapsed="true">
+          <Parameter ID="p2021s0E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s0E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s0E_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s0F" Name-en="UserData_I2021_S0F" Collapsed="true">
+          <Parameter ID="p2021s0F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s0F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s0F_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s10" Name-en="UserData_I2021_S10" Collapsed="true">
+          <Parameter ID="p2021s10_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s10_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s10_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s11" Name-en="UserData_I2021_S11" Collapsed="true">
+          <Parameter ID="p2021s11_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s11_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s11_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s12" Name-en="UserData_I2021_S12" Collapsed="true">
+          <Parameter ID="p2021s12_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s12_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s12_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s13" Name-en="UserData_I2021_S13" Collapsed="true">
+          <Parameter ID="p2021s13_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s13_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s13_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s14" Name-en="UserData_I2021_S14" Collapsed="true">
+          <Parameter ID="p2021s14_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s14_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s14_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s15" Name-en="UserData_I2021_S15" Collapsed="true">
+          <Parameter ID="p2021s15_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s15_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s15_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s16" Name-en="UserData_I2021_S16" Collapsed="true">
+          <Parameter ID="p2021s16_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s16_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s16_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s17" Name-en="UserData_I2021_S17" Collapsed="true">
+          <Parameter ID="p2021s17_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s17_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s17_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s18" Name-en="UserData_I2021_S18" Collapsed="true">
+          <Parameter ID="p2021s18_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s18_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s18_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s19" Name-en="UserData_I2021_S19" Collapsed="true">
+          <Parameter ID="p2021s19_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s19_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s19_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s1A" Name-en="UserData_I2021_S1A" Collapsed="true">
+          <Parameter ID="p2021s1A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s1A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s1A_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s1B" Name-en="UserData_I2021_S1B" Collapsed="true">
+          <Parameter ID="p2021s1B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s1B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s1B_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s1C" Name-en="UserData_I2021_S1C" Collapsed="true">
+          <Parameter ID="p2021s1C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s1C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s1C_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s1D" Name-en="UserData_I2021_S1D" Collapsed="true">
+          <Parameter ID="p2021s1D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s1D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s1D_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s1E" Name-en="UserData_I2021_S1E" Collapsed="true">
+          <Parameter ID="p2021s1E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s1E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s1E_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s1F" Name-en="UserData_I2021_S1F" Collapsed="true">
+          <Parameter ID="p2021s1F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s1F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s1F_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s20" Name-en="UserData_I2021_S20" Collapsed="true">
+          <Parameter ID="p2021s20_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s20_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s20_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s21" Name-en="UserData_I2021_S21" Collapsed="true">
+          <Parameter ID="p2021s21_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s21_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s21_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s22" Name-en="UserData_I2021_S22" Collapsed="true">
+          <Parameter ID="p2021s22_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s22_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s22_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s23" Name-en="UserData_I2021_S23" Collapsed="true">
+          <Parameter ID="p2021s23_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s23_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s23_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s24" Name-en="UserData_I2021_S24" Collapsed="true">
+          <Parameter ID="p2021s24_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s24_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s24_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s25" Name-en="UserData_I2021_S25" Collapsed="true">
+          <Parameter ID="p2021s25_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s25_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s25_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s26" Name-en="UserData_I2021_S26" Collapsed="true">
+          <Parameter ID="p2021s26_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s26_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s26_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s27" Name-en="UserData_I2021_S27" Collapsed="true">
+          <Parameter ID="p2021s27_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s27_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s27_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s28" Name-en="UserData_I2021_S28" Collapsed="true">
+          <Parameter ID="p2021s28_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s28_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s28_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s29" Name-en="UserData_I2021_S29" Collapsed="true">
+          <Parameter ID="p2021s29_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s29_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s29_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s2A" Name-en="UserData_I2021_S2A" Collapsed="true">
+          <Parameter ID="p2021s2A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s2A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s2A_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s2B" Name-en="UserData_I2021_S2B" Collapsed="true">
+          <Parameter ID="p2021s2B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s2B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s2B_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s2C" Name-en="UserData_I2021_S2C" Collapsed="true">
+          <Parameter ID="p2021s2C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s2C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s2C_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s2D" Name-en="UserData_I2021_S2D" Collapsed="true">
+          <Parameter ID="p2021s2D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s2D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s2D_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s2E" Name-en="UserData_I2021_S2E" Collapsed="true">
+          <Parameter ID="p2021s2E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s2E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s2E_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s2F" Name-en="UserData_I2021_S2F" Collapsed="true">
+          <Parameter ID="p2021s2F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s2F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s2F_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s30" Name-en="UserData_I2021_S30" Collapsed="true">
+          <Parameter ID="p2021s30_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s30_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s30_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s31" Name-en="UserData_I2021_S31" Collapsed="true">
+          <Parameter ID="p2021s31_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s31_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s31_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s32" Name-en="UserData_I2021_S32" Collapsed="true">
+          <Parameter ID="p2021s32_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s32_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s32_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s33" Name-en="UserData_I2021_S33" Collapsed="true">
+          <Parameter ID="p2021s33_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s33_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s33_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s34" Name-en="UserData_I2021_S34" Collapsed="true">
+          <Parameter ID="p2021s34_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s34_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s34_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s35" Name-en="UserData_I2021_S35" Collapsed="true">
+          <Parameter ID="p2021s35_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s35_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s35_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s36" Name-en="UserData_I2021_S36" Collapsed="true">
+          <Parameter ID="p2021s36_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s36_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s36_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s37" Name-en="UserData_I2021_S37" Collapsed="true">
+          <Parameter ID="p2021s37_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s37_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s37_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s38" Name-en="UserData_I2021_S38" Collapsed="true">
+          <Parameter ID="p2021s38_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s38_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s38_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s39" Name-en="UserData_I2021_S39" Collapsed="true">
+          <Parameter ID="p2021s39_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s39_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s39_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s3A" Name-en="UserData_I2021_S3A" Collapsed="true">
+          <Parameter ID="p2021s3A_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s3A_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s3A_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s3B" Name-en="UserData_I2021_S3B" Collapsed="true">
+          <Parameter ID="p2021s3B_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s3B_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s3B_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s3C" Name-en="UserData_I2021_S3C" Collapsed="true">
+          <Parameter ID="p2021s3C_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s3C_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s3C_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s3D" Name-en="UserData_I2021_S3D" Collapsed="true">
+          <Parameter ID="p2021s3D_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s3D_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s3D_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s3E" Name-en="UserData_I2021_S3E" Collapsed="true">
+          <Parameter ID="p2021s3E_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s3E_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s3E_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s3F" Name-en="UserData_I2021_S3F" Collapsed="true">
+          <Parameter ID="p2021s3F_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s3F_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s3F_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+        <Group ID="p2021s40" Name-en="UserData_I2021_S40" Collapsed="true">
+          <Parameter ID="p2021s40_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="no" Template="wo" />
+          <Parameter ID="p2021s40_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UDINT" Description-en="UNSIGNED32" CanEdit="false" />
+          <Parameter ID="p2021s40_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="" Type="UDINT" />
+        </Group>
+      </Group>
+    </Group>
+    <!--########## Device specific ##########-->
+    <Group ID="devicespecificparameters" Name-en="Device specific parameters" Name-de="Geraetespezifische Parameter" Description-en="Transmitted to the device at startup" Description-de="Werden beim Hochlauf an das Geraet uebertragen" Collapsed="true">
+      <Group ID="g2030" Name-en="AsynchronousMTUSize_I2030 RECORD[1]" Collapsed="true">
+        <Group ID="p2030s01" Name-en="AsynchronousMTUSize_I2030_S01" Collapsed="true">
+          <Parameter ID="p2030s01_direction" Name-en="Cyclic transmission" Name-de="Zyklische Uebertragung" Value="rw" Visible="false" />
+          <Parameter ID="p2030s01_datatype" Name-en="Datatype" Name-de="Datentyp" Value="UINT" Description-en="UNSIGNED16" CanEdit="false" />
+          <Parameter ID="p2030s01_value" Name-en="Init value" Name-de="Initialwert" Description-en="Set at bootup (clear to preserve value on device)" Description-de="Wird beim Hochlauf gesetzt (Loeschen um den Wert am Geraet zu erhalten)" ValueRequired="false" Value="300" Range="300-1500" Type="UINT" />
+        </Group>
+      </Group>
+    </Group>
+    <Group ID="Simulation" Name-en="Simulation" Name-de="Simulation" Name-fr="Simulation" FromVersion="C2.92" ArConfigResource="%NONE%">
+      <Parameter ID="SimSlave" Name-en="Simulation device" Name-de="Simulationsgerät" Name-fr="Simulation device" Description-en="Assigned simulation device" Description-de="Zugeordnetes Simulationsgerät" Description-fr="Assigned simulation device" Type="STRING" />
+    </Group>
+  </Properties>
+  <Runtime Target="SG4" HardwareID="epl_any" FromVersion="A2.90" BuildError="true" RPDOs="0" />
+</Module>

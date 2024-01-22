@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="In-Sight" Type="FBE.0000031D_In-Sight-7000" X="627" Y="-178" />
+    <Module Name="5PP520.1043-00" Type="5PP520.1043-00" X="85" Y="-244" />
+    <Module Name="5PP5IF.FPLM-00" Type="5PP5IF.FPLM-00" X="279.099976" Y="-211" />
+    <Module Name="PLC1" Type="5PP5CP.US15-02" X="279.099976" Y="-234" />
+    <Module Name="24PortHub" Type="24PortHub" X="428" Y="1" />
+  </Modules>
+  <Links>
+    <Link From="5PP5IF.FPLM-00" To="24PortHub" FromPort="IF1" ToPort="ETH1" IsRoutedByUser="False">
+      <Point X="320.099976" Y="-203" />
+      <Point X="320.099976" Y="-203" />
+      <Point X="325.099976" Y="-203" />
+      <Point X="442" Y="-203" />
+      <Point X="442" Y="0" />
+      <Point X="442" Y="14" />
+      <Point X="442" Y="14" />
+    </Link>
+    <Link From="In-Sight" To="24PortHub" FromPort="PLK1" ToPort="ETH2" IsRoutedByUser="False">
+      <Point X="660" Y="-134" />
+      <Point X="660" Y="-134" />
+      <Point X="660" Y="-127" />
+      <Point X="660" Y="-115" />
+      <Point X="455" Y="-115" />
+      <Point X="455" Y="0" />
+      <Point X="455" Y="14" />
+      <Point X="455" Y="14" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

@@ -1,0 +1,30 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: strickers
+ * Created: May 07, 2012
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	CognexVisM:CameraIsConnected AT %IX."In-Sight".ModuleOk;
+	Cognex:tmpBarcodeRead1 AT %ID."In-Sight".InspectionResults_I2011_S01;
+	Cognex:tmpBarcodeRead2 AT %ID."In-Sight".InspectionResults_I2011_S02;
+	Cognex:tmpBarcodeRead3 AT %ID."In-Sight".InspectionResults_I2011_S03;
+	Cognex:tmpBarcodeWrite1 AT %QD."In-Sight".UserData_I2021_S01;
+	Cognex:tmpBarcodeWrite2 AT %QD."In-Sight".UserData_I2021_S02;
+	Cognex:tmpBarcodeWrite3 AT %QD."In-Sight".UserData_I2021_S03;
+	Cognex:cognex1cmd AT %QD."In-Sight".Control_I2000_S01;
+	cognex_1.cmd.job_id AT %QW."In-Sight".JobLoadID_I2000_S02;
+	Cognex:cognex1sta AT %ID."In-Sight".Status_I2001_S01;
+	cognex_1.sta.job_id AT %IW."In-Sight".CurrentJobID_I2001_S02;
+	Cognex:tmpTextRead1 AT %ID."In-Sight".InspectionResults_I2011_S04;
+	Cognex:tmpTextRead2 AT %ID."In-Sight".InspectionResults_I2011_S05;
+	Cognex:tmpTextRead3 AT %ID."In-Sight".InspectionResults_I2011_S06;
+	Cognex:tmpData1 AT %ID."In-Sight".InspectionResults_I2011_S07;
+	Cognex:tmpData2 AT %ID."In-Sight".InspectionResults_I2011_S08;
+	Cognex:tmpData3 AT %ID."In-Sight".InspectionResults_I2011_S09;
+	Cognex:tmpData4 AT %ID."In-Sight".InspectionResults_I2011_S0A;
+	Cognex:tmpData5 AT %ID."In-Sight".InspectionResults_I2011_S0B;
+END_VAR

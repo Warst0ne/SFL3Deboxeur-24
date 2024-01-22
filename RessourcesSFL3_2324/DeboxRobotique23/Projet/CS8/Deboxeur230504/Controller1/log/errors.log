@@ -1,0 +1,2720 @@
+﻿[04/05/23 14:52:33]: -----------------------------------------------
+[04/05/23 14:52:33]: Logger started
+[04/05/23 14:52:37]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 14:52:37]: Cycle time set to 0.004s
+[04/05/23 14:52:37]: Simulation cycle time set to 0.1s
+[04/05/23 14:52:37]: Controller IP address could not be updated
+[04/05/23 14:52:37]: STARC : No STARC board detected on PCI.
+[04/05/23 14:52:37]: Power hour count = 0:00:00
+[04/05/23 14:52:37]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 14:52:37]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 14:52:37]: Error when starting: fieldbus IO
+[04/05/23 14:52:37]: COM-PC: server created on all interfaces [5653]
+[04/05/23 14:52:37]: System: s7.4 Jul  4 2012
+[04/05/23 14:52:37]: Configuration Version: c1.010 
+[04/05/23 14:52:37]: Option testMode: enabled 
+[04/05/23 14:52:37]: Option VAL 3: enabled 
+[04/05/23 14:52:37]: Machine Number: ? 
+[04/05/23 14:52:37]: Arm: tx40-S2-R2 floor
+[04/05/23 14:52:37]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 14:52:37]: Robot name:  
+[04/05/23 14:52:37]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 14:52:37]: EP: s7.4 Jul  4 2012
+[04/05/23 14:52:37]: SCA: s7.4 Jul  4 2012
+[04/05/23 14:52:37]: PLC: s7.4 Jul  4 2012
+[04/05/23 14:52:37]: New profile : default
+[04/05/23 14:52:37]: End of controller initialization
+[04/05/23 14:52:38]: COM-PC: create session 127.0.0.1 on port 53707 id=#45644000
+[04/05/23 14:52:38]: End of arm power shutdown phase.
+[04/05/23 14:52:40]: Internal error MCP-NoAnswer: char 1
+[04/05/23 14:52:43]: Saving controller context...
+[04/05/23 14:52:43]: Controller temperature: 28°C
+[04/05/23 14:52:43]: CPU temperature: 28°C
+[04/05/23 14:52:46]: MCP communication disconnected
+[04/05/23 14:52:48]: Mcp = TSimulated
+[04/05/23 14:52:48]: Mcp communication established
+[04/05/23 14:52:48]: Working mode:manual.
+[04/05/23 14:52:54]: COM-PC: destroy session 127.0.0.1 on port 53707 id=#45644000
+[04/05/23 14:53:10]: Deadman validated
+[04/05/23 14:53:11]: Settling arm power...
+[04/05/23 14:53:12]: Arm power settled.
+[04/05/23 14:53:14]: ex12 application started
+[04/05/23 14:53:16]: COM-PC: create session 127.0.0.1 on port 53717 id=#45643896
+[04/05/23 14:53:27]: Deadman enabled.
+[04/05/23 14:53:39]: ex12 application stopped
+[04/05/23 14:53:43]: Arm power shutdown...
+[04/05/23 15:01:00]: -----------------------------------------------
+[04/05/23 15:01:00]: Logger started
+[04/05/23 15:01:04]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:01:04]: Cycle time set to 0.004s
+[04/05/23 15:01:04]: Simulation cycle time set to 0.1s
+[04/05/23 15:01:04]: Controller IP address could not be updated
+[04/05/23 15:01:04]: STARC : No STARC board detected on PCI.
+[04/05/23 15:01:04]: Power hour count = 0:00:00
+[04/05/23 15:01:04]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:01:04]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:01:04]: Error when starting: fieldbus IO
+[04/05/23 15:01:04]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:01:04]: System: s7.4 Jul  4 2012
+[04/05/23 15:01:04]: Configuration Version: c1.010 
+[04/05/23 15:01:04]: Option testMode: enabled 
+[04/05/23 15:01:04]: Option VAL 3: enabled 
+[04/05/23 15:01:04]: Machine Number: ? 
+[04/05/23 15:01:04]: Arm: tx40-S2-R2 floor
+[04/05/23 15:01:04]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:01:04]: Robot name:  
+[04/05/23 15:01:04]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:01:04]: EP: s7.4 Jul  4 2012
+[04/05/23 15:01:04]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:01:04]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:01:04]: New profile : default
+[04/05/23 15:01:04]: End of controller initialization
+[04/05/23 15:01:04]: System event INTERFACE-Stopped  (Main menu)
+[04/05/23 15:01:04]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/05/23 15:01:05]: COM-PC: create session 127.0.0.1 on port 53779 id=#45258888
+[04/05/23 15:01:05]: End of arm power shutdown phase.
+[04/05/23 15:01:07]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:01:13]: MCP communication disconnected
+[04/05/23 15:01:15]: Mcp = TSimulated
+[04/05/23 15:01:15]: Mcp communication established
+[04/05/23 15:01:15]: Working mode:manual.
+[04/05/23 15:01:20]: COM-PC: destroy session 127.0.0.1 on port 53779 id=#45258888
+[04/05/23 15:01:30]: Deadman validated
+[04/05/23 15:01:32]: Settling arm power...
+[04/05/23 15:01:33]: Arm power settled.
+[04/05/23 15:01:35]: Deb230405 application started
+[04/05/23 15:01:35]: Deb230405 application stopped
+[04/05/23 15:01:37]: Deb230405 application started
+[04/05/23 15:01:37]: Deb230405 application stopped
+[04/05/23 15:01:45]: Deadman enabled.
+[04/05/23 15:01:51]: ex12 application started
+[04/05/23 15:01:55]: COM-PC: create session 127.0.0.1 on port 53794 id=#45259408
+[04/05/23 15:02:12]: ex12 application stopped
+[04/05/23 15:02:26]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:02:26]: Arm power shutdown: working mode change.
+[04/05/23 15:02:26]: Arm power shutdown...
+[04/05/23 15:04:28]: -----------------------------------------------
+[04/05/23 15:04:28]: Logger started
+[04/05/23 15:04:32]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:04:32]: Cycle time set to 0.004s
+[04/05/23 15:04:32]: Simulation cycle time set to 0.1s
+[04/05/23 15:04:32]: Controller IP address could not be updated
+[04/05/23 15:04:32]: STARC : No STARC board detected on PCI.
+[04/05/23 15:04:32]: Power hour count = 0:00:00
+[04/05/23 15:04:32]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:04:32]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:04:32]: Error when starting: fieldbus IO
+[04/05/23 15:04:32]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:04:32]: COM-PC: create session 127.0.0.1 on port 53822 id=#52598296
+[04/05/23 15:04:32]: System: s7.4 Jul  4 2012
+[04/05/23 15:04:32]: Configuration Version: c1.010 
+[04/05/23 15:04:32]: Option testMode: enabled 
+[04/05/23 15:04:32]: Option VAL 3: enabled 
+[04/05/23 15:04:32]: Machine Number: ? 
+[04/05/23 15:04:32]: Arm: tx40-S2-R2 floor
+[04/05/23 15:04:32]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:04:32]: Robot name:  
+[04/05/23 15:04:32]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:04:32]: EP: s7.4 Jul  4 2012
+[04/05/23 15:04:32]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:04:32]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:04:32]: New profile : default
+[04/05/23 15:04:32]: End of controller initialization
+[04/05/23 15:04:33]: End of arm power shutdown phase.
+[04/05/23 15:04:34]: COM-PC: destroy session 127.0.0.1 on port 53822 id=#52598296
+[04/05/23 15:05:29]: -----------------------------------------------
+[04/05/23 15:05:29]: Logger started
+[04/05/23 15:05:33]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:05:33]: Cycle time set to 0.004s
+[04/05/23 15:05:33]: Simulation cycle time set to 0.1s
+[04/05/23 15:05:33]: Controller IP address could not be updated
+[04/05/23 15:05:33]: STARC : No STARC board detected on PCI.
+[04/05/23 15:05:33]: Power hour count = 0:00:00
+[04/05/23 15:05:33]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:05:33]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:05:33]: Error when starting: fieldbus IO
+[04/05/23 15:05:33]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:05:33]: System: s7.4 Jul  4 2012
+[04/05/23 15:05:33]: Configuration Version: c1.010 
+[04/05/23 15:05:33]: Option testMode: enabled 
+[04/05/23 15:05:33]: Option VAL 3: enabled 
+[04/05/23 15:05:33]: Machine Number: ? 
+[04/05/23 15:05:33]: Arm: tx40-S2-R2 floor
+[04/05/23 15:05:33]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:05:33]: Robot name:  
+[04/05/23 15:05:33]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:05:33]: EP: s7.4 Jul  4 2012
+[04/05/23 15:05:33]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:05:33]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:05:33]: New profile : default
+[04/05/23 15:05:33]: End of controller initialization
+[04/05/23 15:05:33]: System event INTERFACE-Stopped  (Main menu)
+[04/05/23 15:05:33]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/05/23 15:05:33]: COM-PC: create session 127.0.0.1 on port 53837 id=#44405776
+[04/05/23 15:05:34]: End of arm power shutdown phase.
+[04/05/23 15:05:35]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:05:45]: -----------------------------------------------
+[04/05/23 15:05:45]: Logger started
+[04/05/23 15:05:49]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:05:49]: Cycle time set to 0.004s
+[04/05/23 15:05:49]: Simulation cycle time set to 0.1s
+[04/05/23 15:05:49]: Controller IP address could not be updated
+[04/05/23 15:05:49]: STARC : No STARC board detected on PCI.
+[04/05/23 15:05:49]: Power hour count = 0:00:00
+[04/05/23 15:05:49]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:05:49]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:05:49]: Error when starting: fieldbus IO
+[04/05/23 15:05:49]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:05:49]: System: s7.4 Jul  4 2012
+[04/05/23 15:05:49]: Configuration Version: c1.010 
+[04/05/23 15:05:49]: Option testMode: enabled 
+[04/05/23 15:05:49]: Option VAL 3: enabled 
+[04/05/23 15:05:49]: Machine Number: ? 
+[04/05/23 15:05:49]: Arm: tx40-S2-R2 floor
+[04/05/23 15:05:49]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:05:49]: Robot name:  
+[04/05/23 15:05:49]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:05:49]: EP: s7.4 Jul  4 2012
+[04/05/23 15:05:49]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:05:49]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:05:49]: New profile : default
+[04/05/23 15:05:49]: End of controller initialization
+[04/05/23 15:05:49]: System event INTERFACE-Stopped  (Main menu)
+[04/05/23 15:05:49]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/05/23 15:05:50]: End of arm power shutdown phase.
+[04/05/23 15:05:51]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:05:57]: MCP communication disconnected
+[04/05/23 15:05:59]: Mcp = TSimulated
+[04/05/23 15:05:59]: Mcp communication established
+[04/05/23 15:05:59]: Working mode:manual.
+[04/05/23 15:06:55]: Deadman validated
+[04/05/23 15:06:56]: Settling arm power...
+[04/05/23 15:06:56]: Arm power settled.
+[04/05/23 15:06:59]: Deb230405 application started
+[04/05/23 15:06:59]: Deb230405 application stopped
+[04/05/23 15:07:01]: Deb230405 application started
+[04/05/23 15:07:01]: Deb230405 application stopped
+[04/05/23 15:07:05]: COM-PC: create session 127.0.0.1 on port 53854 id=#53451200
+[04/05/23 15:07:10]: Deb230405 application started
+[04/05/23 15:07:10]: Deb230405 application stopped
+[04/05/23 15:07:12]: Deadman enabled.
+[04/05/23 15:07:25]: Arm power shutdown...
+[04/05/23 15:07:26]: End of arm power shutdown phase.
+[04/05/23 15:07:28]: Saving controller context...
+[04/05/23 15:07:29]: Controller temperature: 28°C
+[04/05/23 15:07:29]: CPU temperature: 28°C
+[04/05/23 15:07:45]: Cannot apply arm power: release & press deadman to enable arm power request.
+[04/05/23 15:07:48]: Deadman disabled.
+[04/05/23 15:07:49]: Deadman validated
+[04/05/23 15:07:50]: Settling arm power...
+[04/05/23 15:07:51]: Arm power settled.
+[04/05/23 15:07:53]: ex12 application started
+[04/05/23 15:07:53]: Cannot move: destination is out of software axis limits
+[04/05/23 15:07:53]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/05/23 15:07:57]: MCP communication disconnected
+[04/05/23 15:07:57]: Arm power shutdown: working mode change.
+[04/05/23 15:07:57]: Arm power shutdown...
+[04/05/23 15:09:13]: -----------------------------------------------
+[04/05/23 15:09:13]: Logger started
+[04/05/23 15:09:18]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:09:18]: Cycle time set to 0.004s
+[04/05/23 15:09:18]: Simulation cycle time set to 0.1s
+[04/05/23 15:09:18]: Controller IP address could not be updated
+[04/05/23 15:09:18]: STARC : No STARC board detected on PCI.
+[04/05/23 15:09:18]: Power hour count = 0:00:24
+[04/05/23 15:09:18]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:09:18]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:09:18]: Error when starting: fieldbus IO
+[04/05/23 15:09:18]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:09:18]: System: s7.4 Jul  4 2012
+[04/05/23 15:09:18]: Configuration Version: c1.010 
+[04/05/23 15:09:18]: Option testMode: enabled 
+[04/05/23 15:09:18]: Option VAL 3: enabled 
+[04/05/23 15:09:18]: Machine Number: ? 
+[04/05/23 15:09:18]: Arm: tx40-S2-R2 floor
+[04/05/23 15:09:18]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:09:18]: Robot name:  
+[04/05/23 15:09:18]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:09:18]: EP: s7.4 Jul  4 2012
+[04/05/23 15:09:18]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:09:18]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:09:18]: New profile : default
+[04/05/23 15:09:18]: End of controller initialization
+[04/05/23 15:09:18]: System event INTERFACE-Stopped  (Main menu)
+[04/05/23 15:09:18]: System event INTERFACE-Stopped  (Main menu). 2 events lost.
+[04/05/23 15:09:18]: COM-PC: create session 127.0.0.1 on port 53868 id=#51353944
+[04/05/23 15:09:19]: End of arm power shutdown phase.
+[04/05/23 15:09:20]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:09:27]: MCP communication disconnected
+[04/05/23 15:09:28]: Mcp = TSimulated
+[04/05/23 15:09:28]: Mcp communication established
+[04/05/23 15:09:28]: Working mode:manual.
+[04/05/23 15:09:35]: COM-PC: destroy session 127.0.0.1 on port 53868 id=#51353944
+[04/05/23 15:10:11]: Deadman validated
+[04/05/23 15:10:12]: Settling arm power...
+[04/05/23 15:10:12]: Arm power settled.
+[04/05/23 15:10:14]: ex12 application started
+[04/05/23 15:10:14]: Cannot move: destination is out of software axis limits
+[04/05/23 15:10:14]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/05/23 15:10:26]: Deadman enabled.
+[04/05/23 15:10:26]: COM-PC: create session 127.0.0.1 on port 53882 id=#51354256
+[04/05/23 15:12:05]: -----------------------------------------------
+[04/05/23 15:12:05]: Logger started
+[04/05/23 15:12:09]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:12:09]: Cycle time set to 0.004s
+[04/05/23 15:12:09]: Simulation cycle time set to 0.1s
+[04/05/23 15:12:09]: Controller IP address could not be updated
+[04/05/23 15:12:09]: STARC : No STARC board detected on PCI.
+[04/05/23 15:12:09]: Power hour count = 0:00:24
+[04/05/23 15:12:09]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:12:09]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:12:09]: Error when starting: fieldbus IO
+[04/05/23 15:12:09]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:12:09]: System: s7.4 Jul  4 2012
+[04/05/23 15:12:09]: Configuration Version: c1.010 
+[04/05/23 15:12:09]: Option testMode: enabled 
+[04/05/23 15:12:09]: Option VAL 3: enabled 
+[04/05/23 15:12:09]: Machine Number: ? 
+[04/05/23 15:12:09]: Arm: tx40-S2-R2 floor
+[04/05/23 15:12:09]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:12:09]: Robot name:  
+[04/05/23 15:12:09]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:12:09]: EP: s7.4 Jul  4 2012
+[04/05/23 15:12:09]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:12:09]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:12:09]: New profile : default
+[04/05/23 15:12:09]: End of controller initialization
+[04/05/23 15:12:09]: System event INTERFACE-Stopped  (Main menu)
+[04/05/23 15:12:09]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/05/23 15:12:10]: COM-PC: create session 127.0.0.1 on port 54064 id=#40867976
+[04/05/23 15:12:10]: End of arm power shutdown phase.
+[04/05/23 15:12:11]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:12:17]: MCP communication disconnected
+[04/05/23 15:12:20]: Mcp = TSimulated
+[04/05/23 15:12:20]: Mcp communication established
+[04/05/23 15:12:20]: Working mode:manual.
+[04/05/23 15:12:25]: COM-PC: destroy session 127.0.0.1 on port 54064 id=#40867976
+[04/05/23 15:13:04]: Deadman validated
+[04/05/23 15:13:19]: Deadman enabled.
+[04/05/23 15:13:35]: Cannot apply arm power: release & press deadman to enable arm power request.
+[04/05/23 15:13:38]: Deadman disabled.
+[04/05/23 15:13:39]: Deadman validated
+[04/05/23 15:13:40]: Settling arm power...
+[04/05/23 15:13:41]: Arm power settled.
+[04/05/23 15:13:43]: ex12 application started
+[04/05/23 15:13:43]: Cannot move: destination is out of software axis limits
+[04/05/23 15:13:43]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/05/23 15:13:52]: COM-PC: create session 127.0.0.1 on port 54081 id=#40867976
+[04/05/23 15:13:54]: Deadman enabled.
+[04/05/23 15:14:09]: ex12 application stopped
+[04/05/23 15:14:13]: ex12 application started
+[04/05/23 15:14:13]: Cannot move: destination is out of software axis limits
+[04/05/23 15:14:13]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/05/23 15:14:34]: ex12 application stopped
+[04/05/23 15:14:37]: ex12 application started
+[04/05/23 15:14:37]: Cannot move: destination is out of software axis limits
+[04/05/23 15:14:37]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/05/23 15:15:08]: -----------------------------------------------
+[04/05/23 15:15:08]: Logger started
+[04/05/23 15:15:12]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/05/23 15:15:12]: Cycle time set to 0.004s
+[04/05/23 15:15:12]: Simulation cycle time set to 0.1s
+[04/05/23 15:15:12]: Controller IP address could not be updated
+[04/05/23 15:15:12]: STARC : No STARC board detected on PCI.
+[04/05/23 15:15:12]: Power hour count = 0:00:24
+[04/05/23 15:15:12]: Mac Address = fc-aa-14-6f-b2-24
+[04/05/23 15:15:12]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/05/23 15:15:12]: Error when starting: fieldbus IO
+[04/05/23 15:15:12]: COM-PC: server created on all interfaces [5653]
+[04/05/23 15:15:12]: System: s7.4 Jul  4 2012
+[04/05/23 15:15:12]: Configuration Version: c1.010 
+[04/05/23 15:15:12]: Option testMode: enabled 
+[04/05/23 15:15:12]: Option VAL 3: enabled 
+[04/05/23 15:15:12]: Machine Number: ? 
+[04/05/23 15:15:12]: Arm: tx40-S2-R2 floor
+[04/05/23 15:15:12]: Arm serial number: F12_5M1XA1_A_01 
+[04/05/23 15:15:12]: Robot name:  
+[04/05/23 15:15:12]: Powerlink: s7.4 Jul  4 2012
+[04/05/23 15:15:12]: EP: s7.4 Jul  4 2012
+[04/05/23 15:15:12]: SCA: s7.4 Jul  4 2012
+[04/05/23 15:15:12]: PLC: s7.4 Jul  4 2012
+[04/05/23 15:15:12]: New profile : default
+[04/05/23 15:15:12]: End of controller initialization
+[04/05/23 15:15:12]: System event INTERFACE-Stopped  (Main menu)
+[04/05/23 15:15:12]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/05/23 15:15:12]: COM-PC: create session 127.0.0.1 on port 54165 id=#39360856
+[04/05/23 15:15:13]: End of arm power shutdown phase.
+[04/05/23 15:15:14]: Internal error MCP-NoAnswer: char 1
+[04/05/23 15:15:20]: MCP communication disconnected
+[04/05/23 15:15:22]: Mcp = TSimulated
+[04/05/23 15:15:22]: Mcp communication established
+[04/05/23 15:15:23]: Working mode:manual.
+[04/05/23 15:15:25]: COM-PC: destroy session 127.0.0.1 on port 54165 id=#39360856
+[04/05/23 15:15:40]: COM-PC: create session 127.0.0.1 on port 54175 id=#39360648
+[04/05/23 15:15:51]: ex12 application started
+[04/05/23 15:15:54]: Deadman validated
+[04/05/23 15:15:55]: Settling arm power...
+[04/05/23 15:15:56]: Arm power settled.
+[04/05/23 15:15:56]: Cannot move: destination is out of software axis limits
+[04/05/23 15:15:56]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/06/23 15:19:41]: -----------------------------------------------
+[04/06/23 15:19:41]: Logger started
+[04/06/23 15:19:47]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/06/23 15:19:47]: Cycle time set to 0.004s
+[04/06/23 15:19:47]: Simulation cycle time set to 0.1s
+[04/06/23 15:19:47]: Controller IP address could not be updated
+[04/06/23 15:19:47]: STARC : No STARC board detected on PCI.
+[04/06/23 15:19:47]: Power hour count = 0:00:24
+[04/06/23 15:19:47]: Mac Address = fc-aa-14-6f-b2-24
+[04/06/23 15:19:47]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/06/23 15:19:47]: Error when starting: fieldbus IO
+[04/06/23 15:19:47]: End of arm power shutdown phase.
+[04/06/23 15:19:47]: COM-PC: server created on all interfaces [5653]
+[04/06/23 15:19:47]: System: s7.4 Jul  4 2012
+[04/06/23 15:19:47]: Configuration Version: c1.010 
+[04/06/23 15:19:47]: Option testMode: enabled 
+[04/06/23 15:19:47]: Option VAL 3: enabled 
+[04/06/23 15:19:47]: Machine Number: ? 
+[04/06/23 15:19:47]: Arm: tx40-S2-R2 floor
+[04/06/23 15:19:47]: Arm serial number: F12_5M1XA1_A_01 
+[04/06/23 15:19:47]: Robot name:  
+[04/06/23 15:19:47]: Powerlink: s7.4 Jul  4 2012
+[04/06/23 15:19:47]: EP: s7.4 Jul  4 2012
+[04/06/23 15:19:47]: SCA: s7.4 Jul  4 2012
+[04/06/23 15:19:47]: PLC: s7.4 Jul  4 2012
+[04/06/23 15:19:47]: New profile : default
+[04/06/23 15:19:47]: End of controller initialization
+[04/06/23 15:19:47]: System event INTERFACE-Stopped  (Main menu)
+[04/06/23 15:19:47]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[04/06/23 15:19:48]: COM-PC: create session 127.0.0.1 on port 50935 id=#47553168
+[04/06/23 15:19:54]: Internal error MCP-NoAnswer: char 1
+[04/06/23 15:19:59]: COM-PC: destroy session 127.0.0.1 on port 50935 id=#47553168
+[04/06/23 15:20:00]: MCP communication disconnected
+[04/06/23 15:20:02]: Mcp = TSimulated
+[04/06/23 15:20:02]: Mcp communication established
+[04/06/23 15:20:02]: Working mode:manual.
+[04/06/23 15:22:44]: MCP communication disconnected
+[04/06/23 15:40:12]: -----------------------------------------------
+[04/06/23 15:40:12]: Logger started
+[04/06/23 15:40:16]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/06/23 15:40:16]: Cycle time set to 0.004s
+[04/06/23 15:40:16]: Simulation cycle time set to 0.1s
+[04/06/23 15:40:16]: Controller IP address could not be updated
+[04/06/23 15:40:16]: STARC : No STARC board detected on PCI.
+[04/06/23 15:40:16]: Power hour count = 0:00:24
+[04/06/23 15:40:16]: Mac Address = fc-aa-14-6f-b2-24
+[04/06/23 15:40:16]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/06/23 15:40:16]: Error when starting: fieldbus IO
+[04/06/23 15:40:16]: COM-PC: server created on all interfaces [5653]
+[04/06/23 15:40:16]: System: s7.4 Jul  4 2012
+[04/06/23 15:40:16]: Configuration Version: c1.010 
+[04/06/23 15:40:16]: Option testMode: enabled 
+[04/06/23 15:40:16]: Option VAL 3: enabled 
+[04/06/23 15:40:16]: Machine Number: ? 
+[04/06/23 15:40:16]: Arm: tx40-S2-R2 floor
+[04/06/23 15:40:16]: Arm serial number: F12_5M1XA1_A_01 
+[04/06/23 15:40:16]: Robot name:  
+[04/06/23 15:40:16]: Powerlink: s7.4 Jul  4 2012
+[04/06/23 15:40:16]: EP: s7.4 Jul  4 2012
+[04/06/23 15:40:16]: SCA: s7.4 Jul  4 2012
+[04/06/23 15:40:16]: PLC: s7.4 Jul  4 2012
+[04/06/23 15:40:16]: New profile : default
+[04/06/23 15:40:16]: End of controller initialization
+[04/06/23 15:40:17]: End of arm power shutdown phase.
+[04/06/23 15:40:18]: Internal error MCP-NoAnswer: char 1
+[04/06/23 15:40:24]: MCP communication disconnected
+[04/06/23 15:40:26]: Mcp = TSimulated
+[04/06/23 15:40:26]: Mcp communication established
+[04/06/23 15:40:27]: Working mode:manual.
+[04/06/23 15:43:48]: Deadman validated
+[04/06/23 15:43:49]: Settling arm power...
+[04/06/23 15:43:49]: Arm power settled.
+[04/06/23 15:44:03]: Deadman enabled.
+[04/06/23 15:44:20]: ex12 application started
+[04/06/23 15:44:20]: Cannot move: destination is out of software axis limits
+[04/06/23 15:44:20]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/06/23 15:44:51]: Manual motion mode:Point
+[04/06/23 15:47:46]: Point  ppe  modified
+[04/06/23 15:48:14]: Manual motion mode:Tool
+[04/06/23 15:48:21]: Manual motion mode:Frame
+[04/06/23 15:48:26]: Manual motion mode:Joint
+[04/06/23 15:51:25]: Joint  Jstart  modified
+[04/06/23 15:52:41]: COM-PC: create session 127.0.0.1 on port 51128 id=#45190856
+[04/06/23 15:53:06]: Deadman disabled.
+[04/06/23 15:53:06]: Arm power shutdown...
+[04/06/23 15:53:06]: Cannot apply arm power: press and hold the deadman switch.
+[04/06/23 15:53:07]: Deadman validated
+[04/06/23 15:53:08]: End of arm power shutdown phase.
+[04/06/23 15:53:11]: Settling arm power...
+[04/06/23 15:53:11]: Arm power settled.
+[04/06/23 15:53:16]: ex12 application stopped
+[04/06/23 15:53:22]: ex12 application started
+[04/06/23 15:53:26]: Deadman enabled.
+[04/06/23 15:53:27]: Manual motion mode:Disabled
+[04/06/23 15:53:27]: Cannot move: destination is out of software axis limits
+[04/06/23 15:53:27]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/06/23 15:55:45]: -----------------------------------------------
+[04/06/23 15:55:45]: Logger started
+[04/06/23 15:55:50]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/06/23 15:55:50]: Cycle time set to 0.004s
+[04/06/23 15:55:50]: Simulation cycle time set to 0.1s
+[04/06/23 15:55:50]: Controller IP address could not be updated
+[04/06/23 15:55:50]: STARC : No STARC board detected on PCI.
+[04/06/23 15:55:50]: Power hour count = 0:00:24
+[04/06/23 15:55:50]: Mac Address = fc-aa-14-6f-b2-24
+[04/06/23 15:55:50]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/06/23 15:55:50]: Error when starting: fieldbus IO
+[04/06/23 15:55:50]: COM-PC: server created on all interfaces [5653]
+[04/06/23 15:55:50]: System: s7.4 Jul  4 2012
+[04/06/23 15:55:50]: Configuration Version: c1.010 
+[04/06/23 15:55:50]: Option testMode: enabled 
+[04/06/23 15:55:50]: Option VAL 3: enabled 
+[04/06/23 15:55:50]: Machine Number: ? 
+[04/06/23 15:55:50]: Arm: tx40-S2-R2 floor
+[04/06/23 15:55:50]: Arm serial number: F12_5M1XA1_A_01 
+[04/06/23 15:55:50]: Robot name:  
+[04/06/23 15:55:50]: Powerlink: s7.4 Jul  4 2012
+[04/06/23 15:55:50]: EP: s7.4 Jul  4 2012
+[04/06/23 15:55:50]: SCA: s7.4 Jul  4 2012
+[04/06/23 15:55:50]: PLC: s7.4 Jul  4 2012
+[04/06/23 15:55:50]: New profile : default
+[04/06/23 15:55:50]: End of controller initialization
+[04/06/23 15:55:50]: COM-PC: create session 127.0.0.1 on port 51162 id=#44800552
+[04/06/23 15:55:50]: End of arm power shutdown phase.
+[04/06/23 15:55:52]: Internal error MCP-NoAnswer: char 1
+[04/06/23 15:55:58]: MCP communication disconnected
+[04/06/23 15:56:00]: Mcp = TSimulated
+[04/06/23 15:56:00]: Mcp communication established
+[04/06/23 15:56:00]: Working mode:manual.
+[04/06/23 15:56:10]: COM-PC: destroy session 127.0.0.1 on port 51162 id=#44800552
+[04/06/23 16:07:54]: MCP communication disconnected
+[04/06/23 16:25:47]: -----------------------------------------------
+[04/06/23 16:25:47]: Logger started
+[04/06/23 16:25:52]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/06/23 16:25:52]: Cycle time set to 0.004s
+[04/06/23 16:25:52]: Simulation cycle time set to 0.1s
+[04/06/23 16:25:52]: Controller IP address could not be updated
+[04/06/23 16:25:52]: STARC : No STARC board detected on PCI.
+[04/06/23 16:25:52]: Power hour count = 0:00:24
+[04/06/23 16:25:52]: Mac Address = fc-aa-14-6f-b2-24
+[04/06/23 16:25:52]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/06/23 16:25:52]: Error when starting: fieldbus IO
+[04/06/23 16:25:52]: COM-PC: server created on all interfaces [5653]
+[04/06/23 16:25:52]: System: s7.4 Jul  4 2012
+[04/06/23 16:25:52]: Configuration Version: c1.010 
+[04/06/23 16:25:52]: Option testMode: enabled 
+[04/06/23 16:25:52]: Option VAL 3: enabled 
+[04/06/23 16:25:52]: Machine Number: ? 
+[04/06/23 16:25:52]: Arm: tx40-S2-R2 floor
+[04/06/23 16:25:52]: Arm serial number: F12_5M1XA1_A_01 
+[04/06/23 16:25:52]: Robot name:  
+[04/06/23 16:25:52]: Powerlink: s7.4 Jul  4 2012
+[04/06/23 16:25:52]: EP: s7.4 Jul  4 2012
+[04/06/23 16:25:52]: SCA: s7.4 Jul  4 2012
+[04/06/23 16:25:52]: PLC: s7.4 Jul  4 2012
+[04/06/23 16:25:52]: New profile : default
+[04/06/23 16:25:52]: End of controller initialization
+[04/06/23 16:25:52]: End of arm power shutdown phase.
+[04/06/23 16:25:52]: COM-PC: create session 127.0.0.1 on port 51294 id=#44800240
+[04/06/23 16:25:53]: Internal error MCP-NoAnswer: char 1
+[04/06/23 16:25:59]: MCP communication disconnected
+[04/06/23 16:26:01]: Mcp = TSimulated
+[04/06/23 16:26:01]: Mcp communication established
+[04/06/23 16:26:01]: Working mode:manual.
+[04/06/23 16:26:12]: COM-PC: destroy session 127.0.0.1 on port 51294 id=#44800240
+[04/06/23 16:26:13]: Cannot apply arm power: release & press deadman to enable arm power request.
+[04/06/23 16:26:17]: Deadman validated
+[04/06/23 16:26:18]: Settling arm power...
+[04/06/23 16:26:18]: Arm power settled.
+[04/06/23 16:26:30]: ex12 application started
+[04/06/23 16:26:30]: Cannot move: destination is out of software axis limits
+[04/06/23 16:26:30]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[04/06/23 16:26:32]: Deadman enabled.
+[04/06/23 16:26:48]: COM-PC: create session 127.0.0.1 on port 51303 id=#44800344
+[04/06/23 16:27:24]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/ex12 saved.
+[04/06/23 16:27:59]: Manual motion mode:Joint
+[04/06/23 16:30:31]: Joint  jdepart  modified
+[04/06/23 16:31:07]: -----------------------------------------------
+[04/06/23 16:31:07]: Logger started
+[04/06/23 16:31:12]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/06/23 16:31:12]: Cycle time set to 0.004s
+[04/06/23 16:31:12]: Simulation cycle time set to 0.1s
+[04/06/23 16:31:12]: Controller IP address could not be updated
+[04/06/23 16:31:12]: STARC : No STARC board detected on PCI.
+[04/06/23 16:31:12]: Power hour count = 0:00:24
+[04/06/23 16:31:12]: Mac Address = fc-aa-14-6f-b2-24
+[04/06/23 16:31:12]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/06/23 16:31:12]: Error when starting: fieldbus IO
+[04/06/23 16:31:12]: COM-PC: server created on all interfaces [5653]
+[04/06/23 16:31:12]: System: s7.4 Jul  4 2012
+[04/06/23 16:31:12]: Configuration Version: c1.010 
+[04/06/23 16:31:12]: Option testMode: enabled 
+[04/06/23 16:31:12]: Option VAL 3: enabled 
+[04/06/23 16:31:12]: Machine Number: ? 
+[04/06/23 16:31:12]: Arm: tx40-S2-R2 floor
+[04/06/23 16:31:12]: Arm serial number: F12_5M1XA1_A_01 
+[04/06/23 16:31:12]: Robot name:  
+[04/06/23 16:31:12]: Powerlink: s7.4 Jul  4 2012
+[04/06/23 16:31:12]: EP: s7.4 Jul  4 2012
+[04/06/23 16:31:12]: SCA: s7.4 Jul  4 2012
+[04/06/23 16:31:12]: PLC: s7.4 Jul  4 2012
+[04/06/23 16:31:12]: New profile : default
+[04/06/23 16:31:12]: End of controller initialization
+[04/06/23 16:31:12]: System event INTERFACE-Stopped  (Main menu)
+[04/06/23 16:31:12]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/06/23 16:31:12]: COM-PC: create session 127.0.0.1 on port 51644 id=#53778984
+[04/06/23 16:31:13]: End of arm power shutdown phase.
+[04/06/23 16:31:14]: Internal error MCP-NoAnswer: char 1
+[04/06/23 16:31:21]: MCP communication disconnected
+[04/06/23 16:31:22]: Mcp = TSimulated
+[04/06/23 16:31:22]: Mcp communication established
+[04/06/23 16:31:22]: Working mode:test.
+[04/06/23 16:31:22]: COM-PC: destroy session 127.0.0.1 on port 51644 id=#53778984
+[04/06/23 16:31:27]: Saving controller context...
+[04/06/23 16:31:27]: Controller temperature: 28°C
+[04/06/23 16:31:27]: CPU temperature: 28°C
+[04/06/23 16:31:34]: ex12 application started
+[04/06/23 16:31:37]: Deadman validated
+[04/06/23 16:31:38]: Settling arm power...
+[04/06/23 16:31:38]: Arm power settled.
+[04/06/23 16:31:42]: COM-PC: create session 127.0.0.1 on port 51655 id=#53778776
+[04/06/23 16:31:56]: Deadman enabled.
+[04/06/23 16:32:21]: ex12 application stopped
+[04/06/23 16:32:32]: COM-PC: destroy session 127.0.0.1 on port 51655 id=#53778776
+[04/12/23 10:55:16]: -----------------------------------------------
+[04/12/23 10:55:16]: Logger started
+[04/12/23 10:55:24]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/12/23 10:55:24]: Cycle time set to 0.004s
+[04/12/23 10:55:24]: Simulation cycle time set to 0.1s
+[04/12/23 10:55:24]: Controller IP address could not be updated
+[04/12/23 10:55:24]: STARC : No STARC board detected on PCI.
+[04/12/23 10:55:24]: Power hour count = 0:00:24
+[04/12/23 10:55:24]: Mac Address = fc-aa-14-6f-b2-24
+[04/12/23 10:55:24]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/12/23 10:55:24]: Error when starting: fieldbus IO
+[04/12/23 10:55:24]: End of arm power shutdown phase.
+[04/12/23 10:55:24]: COM-PC: server created on all interfaces [5653]
+[04/12/23 10:55:24]: System: s7.4 Jul  4 2012
+[04/12/23 10:55:24]: Configuration Version: c1.010 
+[04/12/23 10:55:24]: Option testMode: enabled 
+[04/12/23 10:55:24]: Option VAL 3: enabled 
+[04/12/23 10:55:24]: Machine Number: ? 
+[04/12/23 10:55:24]: Arm: tx40-S2-R2 floor
+[04/12/23 10:55:24]: Arm serial number: F12_5M1XA1_A_01 
+[04/12/23 10:55:24]: Robot name:  
+[04/12/23 10:55:24]: Powerlink: s7.4 Jul  4 2012
+[04/12/23 10:55:24]: EP: s7.4 Jul  4 2012
+[04/12/23 10:55:24]: SCA: s7.4 Jul  4 2012
+[04/12/23 10:55:24]: PLC: s7.4 Jul  4 2012
+[04/12/23 10:55:24]: New profile : default
+[04/12/23 10:55:24]: End of controller initialization
+[04/12/23 10:55:24]: System event INTERFACE-Stopped  (Main menu)
+[04/12/23 10:55:24]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[04/12/23 10:55:24]: COM-PC: create session 127.0.0.1 on port 50567 id=#46635560
+[04/12/23 10:55:45]: COM-PC: destroy session 127.0.0.1 on port 50567 id=#46635560
+[04/12/23 10:55:58]: Internal error MCP-NoAnswer: char 1
+[04/12/23 10:56:04]: MCP communication disconnected
+[04/12/23 10:56:06]: Mcp = TSimulated
+[04/12/23 10:56:06]: Mcp communication established
+[04/12/23 10:56:07]: Working mode:test.
+[04/12/23 10:56:55]: COM-PC: create session 127.0.0.1 on port 50636 id=#46635248
+[04/12/23 10:56:59]: ex12 application started
+[04/12/23 10:57:02]: Deadman validated
+[04/12/23 10:57:04]: Settling arm power...
+[04/12/23 10:57:04]: Arm power settled.
+[04/12/23 10:57:21]: Deadman enabled.
+[04/12/23 10:57:25]: ex12 application stopped
+[04/12/23 11:26:39]: Arm power shutdown...
+[04/12/23 11:26:40]: End of arm power shutdown phase.
+[04/12/23 11:26:43]: COM-PC: destroy session 127.0.0.1 on port 50636 id=#46635248
+[04/12/23 13:50:19]: -----------------------------------------------
+[04/12/23 13:50:19]: Logger started
+[04/12/23 13:50:24]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/12/23 13:50:24]: Cycle time set to 0.004s
+[04/12/23 13:50:24]: Simulation cycle time set to 0.1s
+[04/12/23 13:50:24]: Controller IP address could not be updated
+[04/12/23 13:50:24]: STARC : No STARC board detected on PCI.
+[04/12/23 13:50:24]: Power hour count = 0:00:24
+[04/12/23 13:50:24]: Mac Address = fc-aa-14-6f-b2-24
+[04/12/23 13:50:24]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/12/23 13:50:24]: Error when starting: fieldbus IO
+[04/12/23 13:50:24]: COM-PC: server created on all interfaces [5653]
+[04/12/23 13:50:24]: COM-PC: create session 127.0.0.1 on port 51916 id=#43947024
+[04/12/23 13:50:24]: System: s7.4 Jul  4 2012
+[04/12/23 13:50:24]: Configuration Version: c1.010 
+[04/12/23 13:50:24]: Option testMode: enabled 
+[04/12/23 13:50:24]: Option VAL 3: enabled 
+[04/12/23 13:50:24]: Machine Number: ? 
+[04/12/23 13:50:24]: Arm: tx40-S2-R2 floor
+[04/12/23 13:50:24]: Arm serial number: F12_5M1XA1_A_01 
+[04/12/23 13:50:24]: Robot name:  
+[04/12/23 13:50:24]: Powerlink: s7.4 Jul  4 2012
+[04/12/23 13:50:24]: EP: s7.4 Jul  4 2012
+[04/12/23 13:50:24]: SCA: s7.4 Jul  4 2012
+[04/12/23 13:50:24]: PLC: s7.4 Jul  4 2012
+[04/12/23 13:50:24]: New profile : default
+[04/12/23 13:50:24]: End of controller initialization
+[04/12/23 13:50:24]: System event INTERFACE-Stopped  (Main menu)
+[04/12/23 13:50:24]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[04/12/23 13:50:25]: End of arm power shutdown phase.
+[04/12/23 13:50:25]: Internal error MCP-NoAnswer: char 1
+[04/12/23 13:50:31]: MCP communication disconnected
+[04/12/23 13:50:33]: Mcp = TSimulated
+[04/12/23 13:50:33]: Mcp communication established
+[04/12/23 13:50:34]: Working mode:test.
+[04/12/23 13:50:40]: COM-PC: destroy session 127.0.0.1 on port 51916 id=#43947024
+[04/12/23 13:51:48]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/ex12 saved.
+[04/12/23 13:52:14]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[04/12/23 13:53:25]: Deb2304 application started
+[04/12/23 13:53:32]: COM-PC: create session 127.0.0.1 on port 51935 id=#43947648
+[04/12/23 13:53:37]: Deadman validated
+[04/12/23 13:53:38]: Settling arm power...
+[04/12/23 13:53:39]: Arm power settled.
+[04/12/23 13:53:48]: Deb2304 application stopped
+[04/12/23 13:53:54]: Deb2304 application started
+[04/12/23 13:53:56]: Deadman enabled.
+[04/12/23 13:54:02]: Deb2304 application stopped
+[04/13/23 14:19:32]: -----------------------------------------------
+[04/13/23 14:19:32]: Logger started
+[04/13/23 14:19:37]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/13/23 14:19:37]: Cycle time set to 0.004s
+[04/13/23 14:19:37]: Simulation cycle time set to 0.1s
+[04/13/23 14:19:37]: Controller IP address could not be updated
+[04/13/23 14:19:37]: STARC : No STARC board detected on PCI.
+[04/13/23 14:19:37]: Power hour count = 0:00:24
+[04/13/23 14:19:37]: Mac Address = fc-aa-14-6f-b2-24
+[04/13/23 14:19:37]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/13/23 14:19:37]: Error when starting: fieldbus IO
+[04/13/23 14:19:37]: COM-PC: server created on all interfaces [5653]
+[04/13/23 14:19:37]: End of arm power shutdown phase.
+[04/13/23 14:19:37]: System: s7.4 Jul  4 2012
+[04/13/23 14:19:37]: Configuration Version: c1.010 
+[04/13/23 14:19:37]: Option testMode: enabled 
+[04/13/23 14:19:37]: Option VAL 3: enabled 
+[04/13/23 14:19:37]: Machine Number: ? 
+[04/13/23 14:19:37]: Arm: tx40-S2-R2 floor
+[04/13/23 14:19:37]: Arm serial number: F12_5M1XA1_A_01 
+[04/13/23 14:19:37]: Robot name:  
+[04/13/23 14:19:37]: Powerlink: s7.4 Jul  4 2012
+[04/13/23 14:19:37]: EP: s7.4 Jul  4 2012
+[04/13/23 14:19:37]: SCA: s7.4 Jul  4 2012
+[04/13/23 14:19:37]: PLC: s7.4 Jul  4 2012
+[04/13/23 14:19:37]: New profile : default
+[04/13/23 14:19:37]: End of controller initialization
+[04/13/23 14:19:37]: System event INTERFACE-Stopped  (Main menu)
+[04/13/23 14:19:37]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[04/13/23 14:19:37]: COM-PC: create session 127.0.0.1 on port 50508 id=#53123416
+[04/13/23 14:19:40]: Internal error MCP-NoAnswer: char 1
+[04/13/23 14:19:47]: MCP communication disconnected
+[04/13/23 14:19:48]: Mcp = TSimulated
+[04/13/23 14:19:48]: Mcp communication established
+[04/13/23 14:19:49]: Working mode:test.
+[04/13/23 14:20:00]: Deadman validated
+[04/13/23 14:20:01]: Settling arm power...
+[04/13/23 14:20:01]: Arm power settled.
+[04/13/23 14:20:03]: Deb2304 application started
+[04/13/23 14:20:16]: Deb2304 application stopped
+[04/13/23 14:20:19]: Deadman enabled.
+[04/13/23 14:20:21]: Arm power shutdown...
+[04/13/23 14:20:23]: End of arm power shutdown phase.
+[04/13/23 15:04:37]: -----------------------------------------------
+[04/13/23 15:04:37]: Logger started
+[04/13/23 15:04:42]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/13/23 15:04:42]: Cycle time set to 0.004s
+[04/13/23 15:04:42]: Simulation cycle time set to 0.1s
+[04/13/23 15:04:42]: Controller IP address could not be updated
+[04/13/23 15:04:42]: STARC : No STARC board detected on PCI.
+[04/13/23 15:04:42]: Power hour count = 0:00:24
+[04/13/23 15:04:42]: Mac Address = fc-aa-14-6f-b2-24
+[04/13/23 15:04:42]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/13/23 15:04:42]: Error when starting: fieldbus IO
+[04/13/23 15:04:42]: COM-PC: server created on all interfaces [5653]
+[04/13/23 15:04:42]: System: s7.4 Jul  4 2012
+[04/13/23 15:04:42]: Configuration Version: c1.010 
+[04/13/23 15:04:42]: Option testMode: enabled 
+[04/13/23 15:04:42]: Option VAL 3: enabled 
+[04/13/23 15:04:42]: Machine Number: ? 
+[04/13/23 15:04:42]: Arm: tx40-S2-R2 floor
+[04/13/23 15:04:42]: Arm serial number: F12_5M1XA1_A_01 
+[04/13/23 15:04:42]: Robot name:  
+[04/13/23 15:04:42]: Powerlink: s7.4 Jul  4 2012
+[04/13/23 15:04:42]: EP: s7.4 Jul  4 2012
+[04/13/23 15:04:42]: SCA: s7.4 Jul  4 2012
+[04/13/23 15:04:42]: PLC: s7.4 Jul  4 2012
+[04/13/23 15:04:42]: New profile : default
+[04/13/23 15:04:42]: End of controller initialization
+[04/13/23 15:04:42]: System event INTERFACE-Stopped  (Main menu)
+[04/13/23 15:04:42]: System event INTERFACE-Stopped  (Main menu). 3 events lost.
+[04/13/23 15:04:42]: COM-PC: create session 127.0.0.1 on port 51165 id=#49911944
+[04/13/23 15:04:43]: End of arm power shutdown phase.
+[04/13/23 15:04:45]: Internal error MCP-NoAnswer: char 1
+[04/13/23 15:04:51]: MCP communication disconnected
+[04/13/23 15:04:53]: Mcp = TSimulated
+[04/13/23 15:04:53]: Mcp communication established
+[04/13/23 15:04:53]: Working mode:test.
+[04/13/23 15:04:57]: Deadman validated
+[04/13/23 15:04:58]: COM-PC: destroy session 127.0.0.1 on port 51165 id=#49911944
+[04/13/23 15:05:12]: Settling arm power...
+[04/13/23 15:05:12]: Deadman enabled.
+[04/13/23 15:05:12]: Arm power settled.
+[04/13/23 15:05:16]: COM-PC: create session 127.0.0.1 on port 51178 id=#49912360
+[04/13/23 15:05:25]: Deb2304 application started
+[04/13/23 15:05:31]: Deb2304 application stopped
+[04/13/23 15:35:15]: Saving controller context...
+[04/13/23 15:35:15]: Controller temperature: 28°C
+[04/13/23 15:35:15]: CPU temperature: 28°C
+[04/13/23 16:05:18]: Saving controller context...
+[05/24/23 14:37:07]: -----------------------------------------------
+[05/24/23 14:37:07]: Logger started
+[05/24/23 14:37:12]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/24/23 14:37:12]: Cycle time set to 0.004s
+[05/24/23 14:37:12]: Simulation cycle time set to 0.1s
+[05/24/23 14:37:12]: Controller IP address could not be updated
+[05/24/23 14:37:12]: STARC : No STARC board detected on PCI.
+[05/24/23 14:37:12]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/24/23 14:37:12]: Power hour count = 0:48:53
+[05/24/23 14:37:12]: Mac Address = fc-aa-14-6f-b2-24
+[05/24/23 14:37:12]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/24/23 14:37:12]: Error when starting: fieldbus IO
+[05/24/23 14:37:12]: COM-PC: server created on all interfaces [5653]
+[05/24/23 14:37:12]: End of arm power shutdown phase.
+[05/24/23 14:37:12]: System: s7.4 Jul  4 2012
+[05/24/23 14:37:12]: Configuration Version: c1.010 
+[05/24/23 14:37:12]: Option testMode: enabled 
+[05/24/23 14:37:12]: Option VAL 3: enabled 
+[05/24/23 14:37:12]: Machine Number: ? 
+[05/24/23 14:37:12]: Arm: tx40-S2-R2 floor
+[05/24/23 14:37:12]: Arm serial number: F12_5M1XA1_A_01 
+[05/24/23 14:37:12]: Robot name:  
+[05/24/23 14:37:12]: Powerlink: s7.4 Jul  4 2012
+[05/24/23 14:37:12]: EP: s7.4 Jul  4 2012
+[05/24/23 14:37:12]: SCA: s7.4 Jul  4 2012
+[05/24/23 14:37:12]: PLC: s7.4 Jul  4 2012
+[05/24/23 14:37:12]: New profile : default
+[05/24/23 14:37:12]: End of controller initialization
+[05/24/23 14:37:13]: COM-PC: create session 127.0.0.1 on port 50028 id=#44993728
+[05/24/23 14:37:14]: Internal error MCP-NoAnswer: char 1
+[05/24/23 14:37:20]: MCP communication disconnected
+[05/24/23 14:37:22]: Mcp = TSimulated
+[05/24/23 14:37:22]: Mcp communication established
+[05/24/23 14:37:23]: Working mode:test.
+[05/24/23 14:37:28]: COM-PC: destroy session 127.0.0.1 on port 50028 id=#44993728
+[05/24/23 14:37:33]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/24/23 14:37:36]: Cannot apply arm power: release & press deadman to enable arm power request. (1)
+[05/24/23 14:37:38]: Jog mode cannot be selected: first enable arm power.
+[05/24/23 14:37:40]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/24/23 14:37:44]: Working mode:automatic.
+[05/24/23 14:37:45]: Settling arm power...
+[05/24/23 14:37:46]: Arm power settled.
+[05/24/23 14:37:51]: COM-PC: create session 127.0.0.1 on port 50054 id=#44993936
+[05/24/23 14:38:19]: Deb2304 application started
+[05/24/23 14:38:30]: Deb2304 application stopped
+[05/24/23 14:38:47]: Deb2304 application started
+[05/24/23 14:38:54]: Deb2304 application stopped
+[05/24/23 14:44:09]: -----------------------------------------------
+[05/24/23 14:44:09]: Logger started
+[05/24/23 14:44:24]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/24/23 14:44:24]: Cycle time set to 0.004s
+[05/24/23 14:44:24]: Simulation cycle time set to 0.1s
+[05/24/23 14:44:24]: Controller IP address could not be updated
+[05/24/23 14:44:24]: STARC : No STARC board detected on PCI.
+[05/24/23 14:44:24]: Mcp = TSimulated
+[05/24/23 14:44:24]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/24/23 14:44:24]: Mcp communication established
+[05/24/23 14:44:24]: Power hour count = 0:48:53
+[05/24/23 14:44:24]: Mac Address = fc-aa-14-6f-b2-24
+[05/24/23 14:44:24]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/24/23 14:44:24]: Error when starting: fieldbus IO
+[05/24/23 14:44:24]: Deadman enabled.
+[05/24/23 14:44:24]: Working mode:invalid.
+[05/24/23 14:44:24]: End of arm power shutdown phase.
+[05/24/23 14:44:24]: COM-PC: server created on all interfaces [5653]
+[05/24/23 14:44:24]: System: s7.4 Jul  4 2012
+[05/24/23 14:44:24]: Configuration Version: c1.010 
+[05/24/23 14:44:24]: Option testMode: enabled 
+[05/24/23 14:44:24]: Option VAL 3: enabled 
+[05/24/23 14:44:24]: Machine Number: ? 
+[05/24/23 14:44:24]: Arm: tx40-S2-R2 floor
+[05/24/23 14:44:24]: Arm serial number: F12_5M1XA1_A_01 
+[05/24/23 14:44:24]: Robot name:  
+[05/24/23 14:44:24]: Powerlink: s7.4 Jul  4 2012
+[05/24/23 14:44:24]: EP: s7.4 Jul  4 2012
+[05/24/23 14:44:24]: SCA: s7.4 Jul  4 2012
+[05/24/23 14:44:24]: PLC: s7.4 Jul  4 2012
+[05/24/23 14:44:24]: New profile : default
+[05/24/23 14:44:24]: End of controller initialization
+[05/24/23 14:44:24]: System event INTERFACE-Stopped  (Main menu)
+[05/24/23 14:44:24]: System event INTERFACE-Stopped  (Main menu). 9 events lost.
+[05/24/23 14:44:24]: Working mode:test.
+[05/24/23 14:44:24]: Deadman disabled.
+[05/24/23 14:44:25]: COM-PC: create session 127.0.0.1 on port 49949 id=#51812696
+[05/24/23 14:44:43]: COM-PC: destroy session 127.0.0.1 on port 49949 id=#51812696
+[05/24/23 14:44:43]: Deb2304 application started
+[05/24/23 14:44:48]: COM-PC: create session 127.0.0.1 on port 49964 id=#51809264
+[05/24/23 14:44:52]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/24/23 14:45:05]: Cannot apply arm power: release & press deadman to enable arm power request. (2)
+[05/24/23 14:45:09]: Deb2304 application stopped
+[05/24/23 14:45:11]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/24/23 14:45:28]: Working mode:automatic.
+[05/24/23 14:45:30]: Settling arm power...
+[05/24/23 14:45:31]: Arm power settled.
+[05/24/23 14:45:33]: Deb2304 application started
+[05/24/23 14:45:42]: Deb2304 application stopped
+[05/24/23 14:46:53]: Deb2304 application started
+[05/24/23 14:46:58]: Deb2304 application stopped
+[05/24/23 14:48:01]: Deb2304 application started
+[05/24/23 14:48:04]: Deb2304 application stopped
+[05/24/23 14:48:09]: Deb2304 application started
+[05/24/23 14:48:12]: Deb2304 application stopped
+[05/24/23 14:48:21]: Arm power shutdown...
+[05/24/23 14:48:22]: End of arm power shutdown phase.
+[05/24/23 14:48:27]: Saving controller context...
+[05/24/23 14:48:28]: Controller temperature: 28°C
+[05/24/23 14:48:28]: CPU temperature: 28°C
+[05/24/23 15:34:01]: Internal error MCP-NoAnswer: char 1
+[05/24/23 15:42:37]: Internal error MCP-ResetTimeout
+[05/24/23 15:42:37]: MCP communication disconnected
+[05/24/23 15:42:40]: Saving controller context...
+[05/24/23 15:51:54]: -----------------------------------------------
+[05/24/23 15:51:54]: Logger started
+[05/24/23 15:52:00]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/24/23 15:52:00]: Cycle time set to 0.004s
+[05/24/23 15:52:00]: Simulation cycle time set to 0.1s
+[05/24/23 15:52:00]: Controller IP address could not be updated
+[05/24/23 15:52:00]: STARC : No STARC board detected on PCI.
+[05/24/23 15:52:00]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/24/23 15:52:00]: Power hour count = 0:53:15
+[05/24/23 15:52:00]: Mac Address = fc-aa-14-6f-b2-24
+[05/24/23 15:52:00]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/24/23 15:52:00]: Error when starting: fieldbus IO
+[05/24/23 15:52:00]: End of arm power shutdown phase.
+[05/24/23 15:52:00]: COM-PC: server created on all interfaces [5653]
+[05/24/23 15:52:00]: Internal error MCP-NoAnswer: char 1
+[05/24/23 15:52:00]: System: s7.4 Jul  4 2012
+[05/24/23 15:52:00]: Configuration Version: c1.010 
+[05/24/23 15:52:00]: Option testMode: enabled 
+[05/24/23 15:52:00]: Option VAL 3: enabled 
+[05/24/23 15:52:00]: Machine Number: ? 
+[05/24/23 15:52:00]: Arm: tx40-S2-R2 floor
+[05/24/23 15:52:00]: Arm serial number: F12_5M1XA1_A_01 
+[05/24/23 15:52:00]: Robot name:  
+[05/24/23 15:52:00]: Powerlink: s7.4 Jul  4 2012
+[05/24/23 15:52:00]: EP: s7.4 Jul  4 2012
+[05/24/23 15:52:00]: SCA: s7.4 Jul  4 2012
+[05/24/23 15:52:00]: PLC: s7.4 Jul  4 2012
+[05/24/23 15:52:00]: New profile : default
+[05/24/23 15:52:00]: End of controller initialization
+[05/24/23 15:52:00]: System event INTERFACE-Stopped  (Main menu)
+[05/24/23 15:52:00]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[05/24/23 15:52:00]: COM-PC: create session 127.0.0.1 on port 50829 id=#43751976
+[05/24/23 15:52:06]: MCP communication disconnected
+[05/24/23 15:52:08]: Mcp = TSimulated
+[05/24/23 15:52:08]: Mcp communication established
+[05/24/23 15:52:08]: Working mode:automatic.
+[05/24/23 15:52:15]: COM-PC: destroy session 127.0.0.1 on port 50829 id=#43751976
+[05/24/23 15:52:36]: Deadman validated
+[05/24/23 15:52:39]: deb230405 application started
+[05/24/23 15:52:39]: deb230405 application stopped
+[05/24/23 15:52:41]: Deadman disabled.
+[05/24/23 15:52:41]: Working mode:test.
+[05/24/23 15:52:42]: Working mode:remote.
+[05/24/23 15:52:43]: Working mode:manual.
+[05/24/23 15:52:45]: Working mode:test.
+[05/24/23 15:52:46]: Saving controller context...
+[05/24/23 15:52:46]: Controller temperature: 28°C
+[05/24/23 15:52:46]: CPU temperature: 28°C
+[05/24/23 15:52:46]: Working mode:remote.
+[05/24/23 15:52:48]: Working mode:automatic.
+[05/24/23 15:52:48]: Settling arm power...
+[05/24/23 15:52:49]: Arm power settled.
+[05/24/23 15:52:51]: deb230405 application started
+[05/24/23 15:52:51]: deb230405 application stopped
+[05/24/23 15:52:55]: COM-PC: create session 127.0.0.1 on port 50845 id=#43751664
+[05/24/23 15:53:06]: deb230405 application started
+[05/24/23 15:53:06]: deb230405 application stopped
+[05/24/23 15:53:22]: Deb2304 application started
+[05/24/23 15:53:38]: Deb2304 application stopped
+[05/24/23 15:55:09]: -----------------------------------------------
+[05/24/23 15:55:09]: Logger started
+[05/24/23 15:55:13]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/24/23 15:55:13]: Cycle time set to 0.004s
+[05/24/23 15:55:13]: Simulation cycle time set to 0.1s
+[05/24/23 15:55:13]: Controller IP address could not be updated
+[05/24/23 15:55:13]: STARC : No STARC board detected on PCI.
+[05/24/23 15:55:13]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/24/23 15:55:13]: Power hour count = 0:53:15
+[05/24/23 15:55:13]: Mac Address = fc-aa-14-6f-b2-24
+[05/24/23 15:55:13]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/24/23 15:55:13]: Error when starting: fieldbus IO
+[05/24/23 15:55:13]: COM-PC: server created on all interfaces [5653]
+[05/24/23 15:55:13]: System: s7.4 Jul  4 2012
+[05/24/23 15:55:13]: Configuration Version: c1.010 
+[05/24/23 15:55:13]: Option testMode: enabled 
+[05/24/23 15:55:13]: Option VAL 3: enabled 
+[05/24/23 15:55:13]: Machine Number: ? 
+[05/24/23 15:55:13]: Arm: tx40-S2-R2 floor
+[05/24/23 15:55:13]: Arm serial number: F12_5M1XA1_A_01 
+[05/24/23 15:55:13]: Robot name:  
+[05/24/23 15:55:13]: Powerlink: s7.4 Jul  4 2012
+[05/24/23 15:55:13]: EP: s7.4 Jul  4 2012
+[05/24/23 15:55:13]: SCA: s7.4 Jul  4 2012
+[05/24/23 15:55:13]: PLC: s7.4 Jul  4 2012
+[05/24/23 15:55:13]: New profile : default
+[05/24/23 15:55:13]: End of controller initialization
+[05/24/23 15:55:13]: System event INTERFACE-Stopped  (Main menu)
+[05/24/23 15:55:13]: System event INTERFACE-Stopped  (Main menu). 2 events lost.
+[05/24/23 15:55:13]: COM-PC: create session 127.0.0.1 on port 50863 id=#49715440
+[05/24/23 15:55:14]: End of arm power shutdown phase.
+[05/24/23 15:55:16]: Internal error MCP-NoAnswer: char 1
+[05/24/23 15:55:22]: MCP communication disconnected
+[05/24/23 15:55:25]: COM-PC: destroy session 127.0.0.1 on port 50863 id=#49715440
+[05/24/23 15:56:15]: -----------------------------------------------
+[05/24/23 15:56:15]: Logger started
+[05/24/23 15:56:19]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/24/23 15:56:19]: Cycle time set to 0.004s
+[05/24/23 15:56:19]: Simulation cycle time set to 0.1s
+[05/24/23 15:56:19]: Controller IP address could not be updated
+[05/24/23 15:56:19]: STARC : No STARC board detected on PCI.
+[05/24/23 15:56:19]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/24/23 15:56:19]: Power hour count = 0:53:15
+[05/24/23 15:56:19]: Mac Address = fc-aa-14-6f-b2-24
+[05/24/23 15:56:19]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/24/23 15:56:19]: Error when starting: fieldbus IO
+[05/24/23 15:56:19]: COM-PC: server created on all interfaces [5653]
+[05/24/23 15:56:19]: System: s7.4 Jul  4 2012
+[05/24/23 15:56:19]: Configuration Version: c1.010 
+[05/24/23 15:56:19]: Option testMode: enabled 
+[05/24/23 15:56:19]: Option VAL 3: enabled 
+[05/24/23 15:56:19]: Machine Number: ? 
+[05/24/23 15:56:19]: Arm: tx40-S2-R2 floor
+[05/24/23 15:56:19]: Arm serial number: F12_5M1XA1_A_01 
+[05/24/23 15:56:19]: Robot name:  
+[05/24/23 15:56:19]: Powerlink: s7.4 Jul  4 2012
+[05/24/23 15:56:19]: EP: s7.4 Jul  4 2012
+[05/24/23 15:56:19]: SCA: s7.4 Jul  4 2012
+[05/24/23 15:56:19]: PLC: s7.4 Jul  4 2012
+[05/24/23 15:56:19]: New profile : default
+[05/24/23 15:56:19]: End of controller initialization
+[05/24/23 15:56:19]: System event INTERFACE-Stopped  (Main menu)
+[05/24/23 15:56:19]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/24/23 15:56:20]: End of arm power shutdown phase.
+[05/24/23 15:56:21]: Internal error MCP-NoAnswer: char 1
+[05/24/23 15:56:27]: MCP communication disconnected
+[05/24/23 15:56:29]: Mcp = TSimulated
+[05/24/23 15:56:29]: Mcp communication established
+[05/24/23 15:56:29]: Working mode:manual.
+[05/24/23 15:56:46]: (File start.pgx-line 2) 'Deb2304' : undefined program
+[05/26/23 11:35:04]: -----------------------------------------------
+[05/26/23 11:35:04]: Logger started
+[05/26/23 11:35:09]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:35:09]: Cycle time set to 0.004s
+[05/26/23 11:35:09]: Simulation cycle time set to 0.1s
+[05/26/23 11:35:09]: Controller IP address could not be updated
+[05/26/23 11:35:09]: STARC : No STARC board detected on PCI.
+[05/26/23 11:35:09]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:35:09]: Power hour count = 0:53:15
+[05/26/23 11:35:09]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:35:09]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:35:09]: Error when starting: fieldbus IO
+[05/26/23 11:35:09]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:35:09]: System: s7.4 Jul  4 2012
+[05/26/23 11:35:09]: Configuration Version: c1.010 
+[05/26/23 11:35:09]: Option testMode: enabled 
+[05/26/23 11:35:09]: Option VAL 3: enabled 
+[05/26/23 11:35:09]: Machine Number: ? 
+[05/26/23 11:35:09]: Arm: tx40-S2-R2 floor
+[05/26/23 11:35:09]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:35:09]: Robot name:  
+[05/26/23 11:35:09]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:35:09]: EP: s7.4 Jul  4 2012
+[05/26/23 11:35:09]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:35:09]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:35:09]: New profile : default
+[05/26/23 11:35:09]: End of controller initialization
+[05/26/23 11:35:09]: System event INTERFACE-Stopped  (Main menu)
+[05/26/23 11:35:09]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/26/23 11:35:09]: COM-PC: create session 127.0.0.1 on port 51805 id=#51353840
+[05/26/23 11:35:10]: End of arm power shutdown phase.
+[05/26/23 11:35:11]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:35:17]: MCP communication disconnected
+[05/26/23 11:35:19]: Mcp = TSimulated
+[05/26/23 11:35:19]: Mcp communication established
+[05/26/23 11:35:19]: Working mode:manual.
+[05/26/23 11:35:19]: Deadman validated
+[05/26/23 11:35:21]: Deadman disabled.
+[05/26/23 11:35:23]: Working mode:remote.
+[05/26/23 11:35:24]: Working mode:automatic.
+[05/26/23 11:35:25]: Settling arm power...
+[05/26/23 11:35:26]: Arm power settled.
+[05/26/23 11:35:27]: COM-PC: destroy session 127.0.0.1 on port 51805 id=#51353840
+[05/26/23 11:35:35]: (File Deb2304.pgx-line 2) 'dPowerlinkSorti' : invalid name
+[05/26/23 11:35:35]: (File Deb2304.pgx-line 15) 'dPowerlinkSorti' : invalid name
+[05/26/23 11:35:39]: (File Deb2304.pgx-line 2) 'dPowerlinkSorti' : invalid name
+[05/26/23 11:35:39]: (File Deb2304.pgx-line 15) 'dPowerlinkSorti' : invalid name
+[05/26/23 11:36:05]: -----------------------------------------------
+[05/26/23 11:36:05]: Logger started
+[05/26/23 11:36:09]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:36:09]: Cycle time set to 0.004s
+[05/26/23 11:36:09]: Simulation cycle time set to 0.1s
+[05/26/23 11:36:09]: Controller IP address could not be updated
+[05/26/23 11:36:09]: STARC : No STARC board detected on PCI.
+[05/26/23 11:36:09]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:36:09]: Power hour count = 0:53:15
+[05/26/23 11:36:09]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:36:09]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:36:09]: Error when starting: fieldbus IO
+[05/26/23 11:36:09]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:36:09]: System: s7.4 Jul  4 2012
+[05/26/23 11:36:09]: Configuration Version: c1.010 
+[05/26/23 11:36:09]: Option testMode: enabled 
+[05/26/23 11:36:09]: Option VAL 3: enabled 
+[05/26/23 11:36:09]: Machine Number: ? 
+[05/26/23 11:36:09]: Arm: tx40-S2-R2 floor
+[05/26/23 11:36:09]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:36:09]: Robot name:  
+[05/26/23 11:36:09]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:36:09]: EP: s7.4 Jul  4 2012
+[05/26/23 11:36:09]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:36:09]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:36:09]: New profile : default
+[05/26/23 11:36:09]: End of controller initialization
+[05/26/23 11:36:09]: System event INTERFACE-Stopped  (Main menu)
+[05/26/23 11:36:09]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/26/23 11:36:10]: End of arm power shutdown phase.
+[05/26/23 11:36:12]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:36:18]: MCP communication disconnected
+[05/26/23 11:36:20]: Mcp = TSimulated
+[05/26/23 11:36:20]: Mcp communication established
+[05/26/23 11:36:21]: Working mode:test.
+[05/26/23 11:36:24]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/26/23 11:36:24]: Saving controller context...
+[05/26/23 11:36:24]: Controller temperature: 28°C
+[05/26/23 11:36:24]: CPU temperature: 28°C
+[05/26/23 11:36:27]: Working mode:automatic.
+[05/26/23 11:36:28]: Settling arm power...
+[05/26/23 11:36:28]: Arm power settled.
+[05/26/23 11:36:32]: (File start.pgx-line 2) 'ex12' : undefined program
+[05/26/23 11:37:32]: -----------------------------------------------
+[05/26/23 11:37:32]: Logger started
+[05/26/23 11:37:36]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:37:36]: Cycle time set to 0.004s
+[05/26/23 11:37:36]: Simulation cycle time set to 0.1s
+[05/26/23 11:37:36]: Controller IP address could not be updated
+[05/26/23 11:37:36]: STARC : No STARC board detected on PCI.
+[05/26/23 11:37:36]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:37:36]: Power hour count = 0:53:15
+[05/26/23 11:37:36]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:37:36]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:37:36]: Error when starting: fieldbus IO
+[05/26/23 11:37:36]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:37:36]: System: s7.4 Jul  4 2012
+[05/26/23 11:37:36]: Configuration Version: c1.010 
+[05/26/23 11:37:36]: Option testMode: enabled 
+[05/26/23 11:37:36]: Option VAL 3: enabled 
+[05/26/23 11:37:36]: Machine Number: ? 
+[05/26/23 11:37:36]: Arm: tx40-S2-R2 floor
+[05/26/23 11:37:36]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:37:36]: Robot name:  
+[05/26/23 11:37:36]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:37:36]: EP: s7.4 Jul  4 2012
+[05/26/23 11:37:36]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:37:36]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:37:36]: New profile : default
+[05/26/23 11:37:36]: End of controller initialization
+[05/26/23 11:37:36]: System event INTERFACE-Stopped  (Main menu)
+[05/26/23 11:37:36]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/26/23 11:37:37]: COM-PC: create session 127.0.0.1 on port 51858 id=#47553168
+[05/26/23 11:37:37]: End of arm power shutdown phase.
+[05/26/23 11:37:38]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:37:45]: MCP communication disconnected
+[05/26/23 11:37:46]: Mcp = TSimulated
+[05/26/23 11:37:46]: Mcp communication established
+[05/26/23 11:37:47]: Working mode:test.
+[05/26/23 11:37:47]: COM-PC: destroy session 127.0.0.1 on port 51858 id=#47553168
+[05/26/23 11:37:52]: (File start.pgx-line 2) 'ex12' : undefined program
+[05/26/23 11:38:48]: -----------------------------------------------
+[05/26/23 11:38:48]: Logger started
+[05/26/23 11:38:52]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:38:52]: Cycle time set to 0.004s
+[05/26/23 11:38:52]: Simulation cycle time set to 0.1s
+[05/26/23 11:38:52]: Controller IP address could not be updated
+[05/26/23 11:38:52]: STARC : No STARC board detected on PCI.
+[05/26/23 11:38:52]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:38:52]: Power hour count = 0:53:15
+[05/26/23 11:38:52]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:38:52]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:38:52]: Error when starting: fieldbus IO
+[05/26/23 11:38:52]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:38:52]: System: s7.4 Jul  4 2012
+[05/26/23 11:38:52]: Configuration Version: c1.010 
+[05/26/23 11:38:52]: Option testMode: enabled 
+[05/26/23 11:38:52]: Option VAL 3: enabled 
+[05/26/23 11:38:52]: Machine Number: ? 
+[05/26/23 11:38:52]: Arm: tx40-S2-R2 floor
+[05/26/23 11:38:52]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:38:52]: Robot name:  
+[05/26/23 11:38:52]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:38:52]: EP: s7.4 Jul  4 2012
+[05/26/23 11:38:52]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:38:52]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:38:52]: New profile : default
+[05/26/23 11:38:52]: End of controller initialization
+[05/26/23 11:38:52]: System event INTERFACE-Stopped  (Calibration)
+[05/26/23 11:38:52]: System event INTERFACE-Stopped  (Calibration). 6 events lost.
+[05/26/23 11:38:53]: End of arm power shutdown phase.
+[05/26/23 11:38:54]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:39:00]: MCP communication disconnected
+[05/26/23 11:39:02]: Mcp = TSimulated
+[05/26/23 11:39:02]: Mcp communication established
+[05/26/23 11:39:02]: Working mode:test.
+[05/26/23 11:39:12]: (File start.pgx-line 2) 'ex12' : undefined program
+[05/26/23 11:40:06]: -----------------------------------------------
+[05/26/23 11:40:06]: Logger started
+[05/26/23 11:40:11]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:40:11]: Cycle time set to 0.004s
+[05/26/23 11:40:11]: Simulation cycle time set to 0.1s
+[05/26/23 11:40:11]: Controller IP address could not be updated
+[05/26/23 11:40:11]: STARC : No STARC board detected on PCI.
+[05/26/23 11:40:11]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:40:11]: Power hour count = 0:53:15
+[05/26/23 11:40:11]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:40:11]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:40:11]: Error when starting: fieldbus IO
+[05/26/23 11:40:11]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:40:11]: System: s7.4 Jul  4 2012
+[05/26/23 11:40:11]: Configuration Version: c1.010 
+[05/26/23 11:40:11]: Option testMode: enabled 
+[05/26/23 11:40:11]: Option VAL 3: enabled 
+[05/26/23 11:40:11]: Machine Number: ? 
+[05/26/23 11:40:11]: Arm: tx40-S2-R2 floor
+[05/26/23 11:40:11]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:40:11]: Robot name:  
+[05/26/23 11:40:11]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:40:11]: EP: s7.4 Jul  4 2012
+[05/26/23 11:40:11]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:40:11]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:40:11]: New profile : default
+[05/26/23 11:40:11]: End of controller initialization
+[05/26/23 11:40:11]: System event INTERFACE-Stopped  (Main menu)
+[05/26/23 11:40:11]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/26/23 11:40:12]: End of arm power shutdown phase.
+[05/26/23 11:40:13]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:40:19]: MCP communication disconnected
+[05/26/23 11:40:21]: Mcp = TSimulated
+[05/26/23 11:40:21]: Mcp communication established
+[05/26/23 11:40:21]: Working mode:test.
+[05/26/23 11:41:50]: Working mode:automatic.
+[05/26/23 11:41:51]: Settling arm power...
+[05/26/23 11:41:51]: Arm power settled.
+[05/26/23 11:41:54]: Deb2304 application started
+[05/26/23 11:41:54]: Cannot move: destination is out of software axis limits
+[05/26/23 11:41:54]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/26/23 11:42:03]: COM-PC: create session 127.0.0.1 on port 51903 id=#52271448
+[05/26/23 11:42:21]: Deb2304 application stopped
+[05/26/23 11:42:29]: Deb2304 application started
+[05/26/23 11:42:29]: Cannot move: destination is out of software axis limits
+[05/26/23 11:42:29]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/26/23 11:42:58]: Deb2304 application stopped
+[05/26/23 11:43:02]: Deb2304 application started
+[05/26/23 11:43:02]: Cannot move: destination is out of software axis limits
+[05/26/23 11:43:02]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/26/23 11:43:24]: Deb2304 application stopped
+[05/26/23 11:43:33]: Watchdog occurs in Cs8 priority:75
+[05/26/23 11:43:33]: Deb2304 application started
+[05/26/23 11:43:33]: Cannot move: destination is out of software axis limits
+[05/26/23 11:43:33]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/26/23 11:43:57]: -----------------------------------------------
+[05/26/23 11:43:57]: Logger started
+[05/26/23 11:44:01]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:44:01]: Cycle time set to 0.004s
+[05/26/23 11:44:01]: Simulation cycle time set to 0.1s
+[05/26/23 11:44:01]: Controller IP address could not be updated
+[05/26/23 11:44:01]: STARC : No STARC board detected on PCI.
+[05/26/23 11:44:01]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:44:01]: Power hour count = 0:53:15
+[05/26/23 11:44:01]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:44:01]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:44:01]: Error when starting: fieldbus IO
+[05/26/23 11:44:01]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:44:01]: System: s7.4 Jul  4 2012
+[05/26/23 11:44:01]: Configuration Version: c1.010 
+[05/26/23 11:44:01]: Option testMode: enabled 
+[05/26/23 11:44:01]: Option VAL 3: enabled 
+[05/26/23 11:44:01]: Machine Number: ? 
+[05/26/23 11:44:01]: Arm: tx40-S2-R2 floor
+[05/26/23 11:44:01]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:44:01]: Robot name:  
+[05/26/23 11:44:01]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:44:01]: EP: s7.4 Jul  4 2012
+[05/26/23 11:44:01]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:44:01]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:44:01]: New profile : default
+[05/26/23 11:44:01]: End of controller initialization
+[05/26/23 11:44:01]: System event INTERFACE-Stopped  (Calibration)
+[05/26/23 11:44:01]: System event INTERFACE-Stopped  (Calibration). 6 events lost.
+[05/26/23 11:44:02]: End of arm power shutdown phase.
+[05/26/23 11:44:33]: COM-PC: create session 127.0.0.1 on port 52027 id=#45848816
+[05/26/23 11:44:48]: COM-PC: destroy session 127.0.0.1 on port 52027 id=#45848816
+[05/26/23 11:46:35]: -----------------------------------------------
+[05/26/23 11:46:35]: Logger started
+[05/26/23 11:46:39]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:46:39]: Cycle time set to 0.004s
+[05/26/23 11:46:39]: Simulation cycle time set to 0.1s
+[05/26/23 11:46:39]: Controller IP address could not be updated
+[05/26/23 11:46:39]: STARC : No STARC board detected on PCI.
+[05/26/23 11:46:39]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:46:39]: Power hour count = 0:53:15
+[05/26/23 11:46:39]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:46:39]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:46:39]: Error when starting: fieldbus IO
+[05/26/23 11:46:39]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:46:39]: System: s7.4 Jul  4 2012
+[05/26/23 11:46:39]: Configuration Version: c1.010 
+[05/26/23 11:46:39]: Option testMode: enabled 
+[05/26/23 11:46:39]: Option VAL 3: enabled 
+[05/26/23 11:46:39]: Machine Number: ? 
+[05/26/23 11:46:39]: Arm: tx40-S2-R2 floor
+[05/26/23 11:46:39]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:46:39]: Robot name:  
+[05/26/23 11:46:39]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:46:39]: EP: s7.4 Jul  4 2012
+[05/26/23 11:46:39]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:46:39]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:46:39]: New profile : default
+[05/26/23 11:46:39]: End of controller initialization
+[05/26/23 11:46:39]: System event INTERFACE-Stopped  (Main menu)
+[05/26/23 11:46:39]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/26/23 11:46:40]: COM-PC: create session 127.0.0.1 on port 52051 id=#43094224
+[05/26/23 11:46:40]: End of arm power shutdown phase.
+[05/26/23 11:46:41]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:46:47]: MCP communication disconnected
+[05/26/23 11:46:49]: Mcp = TSimulated
+[05/26/23 11:46:49]: Mcp communication established
+[05/26/23 11:46:50]: Working mode:test.
+[05/26/23 11:46:59]: COM-PC: destroy session 127.0.0.1 on port 52051 id=#43094224
+[05/26/23 11:47:05]: COM-PC: create session 127.0.0.1 on port 52061 id=#43095264
+[05/26/23 11:47:09]: Deadman validated
+[05/26/23 11:47:11]: Settling arm power...
+[05/26/23 11:47:11]: Arm power settled.
+[05/26/23 11:47:14]: Deb2304 application started
+[05/26/23 11:47:32]: Deadman enabled.
+[05/26/23 11:47:51]: Deb2304 application stopped
+[05/26/23 11:58:22]: -----------------------------------------------
+[05/26/23 11:58:22]: Logger started
+[05/26/23 11:58:26]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/26/23 11:58:26]: Cycle time set to 0.004s
+[05/26/23 11:58:26]: Simulation cycle time set to 0.1s
+[05/26/23 11:58:26]: Controller IP address could not be updated
+[05/26/23 11:58:26]: STARC : No STARC board detected on PCI.
+[05/26/23 11:58:26]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/26/23 11:58:26]: Power hour count = 0:53:15
+[05/26/23 11:58:26]: Mac Address = fc-aa-14-6f-b2-24
+[05/26/23 11:58:26]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/26/23 11:58:26]: Error when starting: fieldbus IO
+[05/26/23 11:58:26]: COM-PC: server created on all interfaces [5653]
+[05/26/23 11:58:26]: COM-PC: create session 127.0.0.1 on port 53336 id=#44537784
+[05/26/23 11:58:26]: System: s7.4 Jul  4 2012
+[05/26/23 11:58:26]: Configuration Version: c1.010 
+[05/26/23 11:58:26]: Option testMode: enabled 
+[05/26/23 11:58:26]: Option VAL 3: enabled 
+[05/26/23 11:58:26]: Machine Number: ? 
+[05/26/23 11:58:26]: Arm: tx40-S2-R2 floor
+[05/26/23 11:58:26]: Arm serial number: F12_5M1XA1_A_01 
+[05/26/23 11:58:26]: Robot name:  
+[05/26/23 11:58:26]: Powerlink: s7.4 Jul  4 2012
+[05/26/23 11:58:26]: EP: s7.4 Jul  4 2012
+[05/26/23 11:58:26]: SCA: s7.4 Jul  4 2012
+[05/26/23 11:58:26]: PLC: s7.4 Jul  4 2012
+[05/26/23 11:58:26]: New profile : default
+[05/26/23 11:58:26]: End of controller initialization
+[05/26/23 11:58:27]: End of arm power shutdown phase.
+[05/26/23 11:58:28]: Internal error MCP-NoAnswer: char 1
+[05/26/23 11:58:34]: MCP communication disconnected
+[05/26/23 11:58:36]: Mcp = TSimulated
+[05/26/23 11:58:36]: Mcp communication established
+[05/26/23 11:58:37]: Working mode:test.
+[05/26/23 11:58:39]: COM-PC: destroy session 127.0.0.1 on port 53336 id=#44537784
+[05/26/23 11:58:50]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/26/23 11:58:52]: Deadman validated
+[05/26/23 11:58:56]: Settling arm power...
+[05/26/23 11:58:57]: Arm power settled.
+[05/26/23 11:59:00]: Deb2304 application started
+[05/26/23 11:59:07]: COM-PC: create session 127.0.0.1 on port 53347 id=#44537472
+[05/26/23 11:59:07]: Deadman enabled.
+[05/26/23 12:06:48]: COM-PC: destroy session 127.0.0.1 on port 53347 id=#44537472
+[05/30/23 14:40:01]: -----------------------------------------------
+[05/30/23 14:40:02]: Logger started
+[05/30/23 14:40:10]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 14:40:10]: Cycle time set to 0.004s
+[05/30/23 14:40:10]: Simulation cycle time set to 0.1s
+[05/30/23 14:40:10]: Controller IP address could not be updated
+[05/30/23 14:40:10]: STARC : No STARC board detected on PCI.
+[05/30/23 14:40:10]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 14:40:10]: Power hour count = 0:53:15
+[05/30/23 14:40:10]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 14:40:10]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 14:40:10]: Error when starting: fieldbus IO
+[05/30/23 14:40:10]: End of arm power shutdown phase.
+[05/30/23 14:40:10]: COM-PC: server created on all interfaces [5653]
+[05/30/23 14:40:10]: System: s7.4 Jul  4 2012
+[05/30/23 14:40:10]: Configuration Version: c1.010 
+[05/30/23 14:40:10]: Option testMode: enabled 
+[05/30/23 14:40:10]: Option VAL 3: enabled 
+[05/30/23 14:40:10]: Machine Number: ? 
+[05/30/23 14:40:10]: Arm: tx40-S2-R2 floor
+[05/30/23 14:40:10]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 14:40:10]: Robot name:  
+[05/30/23 14:40:10]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 14:40:10]: EP: s7.4 Jul  4 2012
+[05/30/23 14:40:10]: SCA: s7.4 Jul  4 2012
+[05/30/23 14:40:10]: PLC: s7.4 Jul  4 2012
+[05/30/23 14:40:10]: New profile : default
+[05/30/23 14:40:10]: End of controller initialization
+[05/30/23 14:40:10]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 14:40:10]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[05/30/23 14:40:15]: COM-PC: create session 127.0.0.1 on port 49890 id=#44735120
+[05/30/23 14:40:24]: Internal error MCP-NoAnswer: char 1
+[05/30/23 14:40:30]: COM-PC: destroy session 127.0.0.1 on port 49890 id=#44735120
+[05/30/23 14:40:30]: MCP communication disconnected
+[05/30/23 14:40:32]: Mcp = TSimulated
+[05/30/23 14:40:32]: Mcp communication established
+[05/30/23 14:40:33]: Working mode:test.
+[05/30/23 14:40:35]: Deadman validated
+[05/30/23 14:40:37]: Deadman disabled.
+[05/30/23 14:40:38]: Working mode:remote.
+[05/30/23 14:40:39]: Working mode:automatic.
+[05/30/23 14:40:40]: Working mode:manual.
+[05/30/23 14:40:41]: Working mode:test.
+[05/30/23 14:40:41]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/30/23 14:40:43]: Saving controller context...
+[05/30/23 14:40:43]: Controller temperature: 28°C
+[05/30/23 14:40:43]: CPU temperature: 28°C
+[05/30/23 14:40:45]: Working mode:remote.
+[05/30/23 14:40:45]: Working mode:automatic.
+[05/30/23 14:40:46]: Settling arm power...
+[05/30/23 14:40:46]: Arm power settled.
+[05/30/23 14:41:38]: Deb2304 application started
+[05/30/23 14:41:40]: COM-PC: create session 127.0.0.1 on port 49925 id=#44734704
+[05/30/23 14:42:00]: Deb2304 application stopped
+[05/30/23 14:42:06]: Arm power shutdown: working mode change.
+[05/30/23 14:42:06]: Arm power shutdown...
+[05/30/23 14:42:06]: Working mode:manual.
+[05/30/23 14:42:07]: End of arm power shutdown phase.
+[05/30/23 14:42:08]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/30/23 14:42:11]: Saving controller context...
+[05/30/23 14:42:13]: Working mode:test.
+[05/30/23 14:42:15]: Deb2304 application started
+[05/30/23 14:42:16]: Saving controller context...
+[05/30/23 14:42:17]: Jog mode cannot be selected: first enable arm power.
+[05/30/23 14:42:29]: Cannot apply arm power: release & press deadman to enable arm power request.
+[05/30/23 14:42:34]: Jog mode cannot be selected: first enable arm power.
+[05/30/23 14:42:35]: Jog mode cannot be selected: first enable arm power. (1)
+[05/30/23 14:42:40]: Deb2304 application stopped
+[05/30/23 14:42:44]: Deb2304 application started
+[05/30/23 14:42:48]: Working mode:remote.
+[05/30/23 14:42:48]: Working mode:automatic.
+[05/30/23 14:42:50]: Deadman validated
+[05/30/23 14:42:50]: Settling arm power...
+[05/30/23 14:42:50]: Arm power settled.
+[05/30/23 14:43:04]: Deb2304 application stopped
+[05/30/23 14:43:09]: Deadman enabled.
+[05/30/23 14:43:18]: Deb2304 application started
+[05/30/23 14:43:32]: Deb2304 application stopped
+[05/30/23 14:44:11]: Deb2304 application started
+[05/30/23 14:44:26]: Deb2304 application stopped
+[05/30/23 14:51:09]: -----------------------------------------------
+[05/30/23 14:51:09]: Logger started
+[05/30/23 14:51:21]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 14:51:21]: Cycle time set to 0.004s
+[05/30/23 14:51:21]: Simulation cycle time set to 0.1s
+[05/30/23 14:51:21]: Controller IP address could not be updated
+[05/30/23 14:51:21]: STARC : No STARC board detected on PCI.
+[05/30/23 14:51:21]: Mcp = TSimulated
+[05/30/23 14:51:21]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 14:51:21]: Mcp communication established
+[05/30/23 14:51:21]: Power hour count = 0:54:28
+[05/30/23 14:51:21]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 14:51:21]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 14:51:21]: Error when starting: fieldbus IO
+[05/30/23 14:51:21]: Working mode:invalid.
+[05/30/23 14:51:21]: End of arm power shutdown phase.
+[05/30/23 14:51:21]: COM-PC: server created on all interfaces [5653]
+[05/30/23 14:51:21]: System: s7.4 Jul  4 2012
+[05/30/23 14:51:21]: Configuration Version: c1.010 
+[05/30/23 14:51:21]: Option testMode: enabled 
+[05/30/23 14:51:21]: Option VAL 3: enabled 
+[05/30/23 14:51:21]: Machine Number: ? 
+[05/30/23 14:51:21]: Arm: tx40-S2-R2 floor
+[05/30/23 14:51:21]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 14:51:21]: Robot name:  
+[05/30/23 14:51:21]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 14:51:21]: EP: s7.4 Jul  4 2012
+[05/30/23 14:51:21]: SCA: s7.4 Jul  4 2012
+[05/30/23 14:51:21]: PLC: s7.4 Jul  4 2012
+[05/30/23 14:51:21]: New profile : default
+[05/30/23 14:51:21]: End of controller initialization
+[05/30/23 14:51:21]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 14:51:21]: System event INTERFACE-Stopped  (Main menu). 9 events lost.
+[05/30/23 14:51:21]: Working mode:test.
+[05/30/23 14:51:24]: COM-PC: create session 127.0.0.1 on port 49966 id=#38967952
+[05/30/23 14:51:43]: COM-PC: destroy session 127.0.0.1 on port 49966 id=#38967952
+[05/30/23 14:51:46]: Working mode:remote.
+[05/30/23 14:51:47]: Working mode:automatic.
+[05/30/23 14:51:51]: Deadman validated
+[05/30/23 14:51:52]: Saving controller context...
+[05/30/23 14:51:52]: Settling arm power...
+[05/30/23 14:51:52]: Controller temperature: 28°C
+[05/30/23 14:51:52]: CPU temperature: 28°C
+[05/30/23 14:51:52]: Arm power settled.
+[05/30/23 14:51:54]: Deb2304 application started
+[05/30/23 14:52:02]: COM-PC: create session 127.0.0.1 on port 49978 id=#38967744
+[05/30/23 14:52:08]: Deadman enabled.
+[05/30/23 14:52:13]: Deb2304 application stopped
+[05/30/23 14:54:31]: -----------------------------------------------
+[05/30/23 14:54:31]: Logger started
+[05/30/23 14:54:36]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 14:54:36]: Cycle time set to 0.004s
+[05/30/23 14:54:36]: Simulation cycle time set to 0.1s
+[05/30/23 14:54:36]: Controller IP address could not be updated
+[05/30/23 14:54:36]: STARC : No STARC board detected on PCI.
+[05/30/23 14:54:36]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 14:54:36]: Power hour count = 0:54:28
+[05/30/23 14:54:36]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 14:54:36]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 14:54:36]: Error when starting: fieldbus IO
+[05/30/23 14:54:36]: COM-PC: server created on all interfaces [5653]
+[05/30/23 14:54:36]: System: s7.4 Jul  4 2012
+[05/30/23 14:54:36]: Configuration Version: c1.010 
+[05/30/23 14:54:36]: Option testMode: enabled 
+[05/30/23 14:54:36]: Option VAL 3: enabled 
+[05/30/23 14:54:36]: Machine Number: ? 
+[05/30/23 14:54:36]: Arm: tx40-S2-R2 floor
+[05/30/23 14:54:36]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 14:54:36]: Robot name:  
+[05/30/23 14:54:36]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 14:54:36]: EP: s7.4 Jul  4 2012
+[05/30/23 14:54:36]: SCA: s7.4 Jul  4 2012
+[05/30/23 14:54:36]: PLC: s7.4 Jul  4 2012
+[05/30/23 14:54:36]: New profile : default
+[05/30/23 14:54:36]: End of controller initialization
+[05/30/23 14:54:36]: COM-PC: create session 127.0.0.1 on port 50068 id=#42375304
+[05/30/23 14:54:37]: End of arm power shutdown phase.
+[05/30/23 14:54:38]: Internal error MCP-NoAnswer: char 1
+[05/30/23 14:54:44]: MCP communication disconnected
+[05/30/23 14:54:46]: Mcp = TSimulated
+[05/30/23 14:54:46]: Mcp communication established
+[05/30/23 14:54:46]: Working mode:automatic.
+[05/30/23 14:54:54]: COM-PC: destroy session 127.0.0.1 on port 50068 id=#42375304
+[05/30/23 15:17:22]: Internal error MCP-NoAnswer: char 1
+[05/30/23 15:17:28]: Internal error MCP-ResetTimeout
+[05/30/23 15:17:28]: MCP communication disconnected
+[05/30/23 16:00:51]: -----------------------------------------------
+[05/30/23 16:00:51]: Logger started
+[05/30/23 16:00:56]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:00:56]: Cycle time set to 0.004s
+[05/30/23 16:00:56]: Simulation cycle time set to 0.1s
+[05/30/23 16:00:56]: Controller IP address could not be updated
+[05/30/23 16:00:56]: STARC : No STARC board detected on PCI.
+[05/30/23 16:00:56]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:00:56]: Power hour count = 0:54:28
+[05/30/23 16:00:56]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:00:56]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:00:56]: Error when starting: fieldbus IO
+[05/30/23 16:00:56]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:00:56]: System: s7.4 Jul  4 2012
+[05/30/23 16:00:56]: Configuration Version: c1.010 
+[05/30/23 16:00:56]: Option testMode: enabled 
+[05/30/23 16:00:56]: Option VAL 3: enabled 
+[05/30/23 16:00:56]: Machine Number: ? 
+[05/30/23 16:00:56]: Arm: tx40-S2-R2 floor
+[05/30/23 16:00:56]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:00:56]: Robot name:  
+[05/30/23 16:00:56]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:00:56]: EP: s7.4 Jul  4 2012
+[05/30/23 16:00:56]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:00:56]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:00:56]: New profile : default
+[05/30/23 16:00:56]: End of controller initialization
+[05/30/23 16:00:56]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 16:00:56]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/30/23 16:00:57]: End of arm power shutdown phase.
+[05/30/23 16:00:58]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:01:04]: MCP communication disconnected
+[05/30/23 16:01:06]: Mcp = TSimulated
+[05/30/23 16:01:06]: Mcp communication established
+[05/30/23 16:01:06]: Working mode:automatic.
+[05/30/23 16:01:27]: Deadman validated
+[05/30/23 16:01:27]: Settling arm power...
+[05/30/23 16:01:28]: Arm power settled.
+[05/30/23 16:01:33]: Deb2304 application started
+[05/30/23 16:01:33]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:01:33]: Cannot move: destination is out of software axis limits
+[05/30/23 16:01:40]: COM-PC: create session 127.0.0.1 on port 50704 id=#48863680
+[05/30/23 16:01:45]: Saving controller context...
+[05/30/23 16:01:45]: Controller temperature: 28°C
+[05/30/23 16:01:45]: CPU temperature: 28°C
+[05/30/23 16:01:46]: Deadman enabled.
+[05/30/23 16:01:51]: Deb2304 application stopped
+[05/30/23 16:01:54]: Deb2304 application started
+[05/30/23 16:01:54]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:01:54]: Cannot move: destination is out of software axis limits
+[05/30/23 16:02:15]: Deb2304 application stopped
+[05/30/23 16:02:46]: Deb2304 application started
+[05/30/23 16:02:46]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:02:46]: Cannot move: destination is out of software axis limits
+[05/30/23 16:03:15]: Deb2304 application stopped
+[05/30/23 16:03:18]: Deb2304 application started
+[05/30/23 16:03:18]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:03:18]: Cannot move: destination is out of software axis limits
+[05/30/23 16:04:38]: -----------------------------------------------
+[05/30/23 16:04:38]: Logger started
+[05/30/23 16:04:43]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:04:43]: Cycle time set to 0.004s
+[05/30/23 16:04:43]: Simulation cycle time set to 0.1s
+[05/30/23 16:04:43]: Controller IP address could not be updated
+[05/30/23 16:04:43]: STARC : No STARC board detected on PCI.
+[05/30/23 16:04:43]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:04:43]: Power hour count = 0:54:42
+[05/30/23 16:04:43]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:04:43]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:04:43]: Error when starting: fieldbus IO
+[05/30/23 16:04:43]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:04:43]: System: s7.4 Jul  4 2012
+[05/30/23 16:04:43]: Configuration Version: c1.010 
+[05/30/23 16:04:43]: Option testMode: enabled 
+[05/30/23 16:04:43]: Option VAL 3: enabled 
+[05/30/23 16:04:43]: Machine Number: ? 
+[05/30/23 16:04:43]: Arm: tx40-S2-R2 floor
+[05/30/23 16:04:43]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:04:43]: Robot name:  
+[05/30/23 16:04:43]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:04:43]: EP: s7.4 Jul  4 2012
+[05/30/23 16:04:43]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:04:43]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:04:43]: New profile : default
+[05/30/23 16:04:43]: End of controller initialization
+[05/30/23 16:04:43]: COM-PC: create session 127.0.0.1 on port 50869 id=#41130120
+[05/30/23 16:04:43]: End of arm power shutdown phase.
+[05/30/23 16:04:44]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:04:50]: MCP communication disconnected
+[05/30/23 16:04:53]: Mcp = TSimulated
+[05/30/23 16:04:53]: Mcp communication established
+[05/30/23 16:04:53]: Working mode:automatic.
+[05/30/23 16:05:15]: COM-PC: destroy session 127.0.0.1 on port 50869 id=#41130120
+[05/30/23 16:05:21]: COM-PC: create session 127.0.0.1 on port 50886 id=#41130432
+[05/30/23 16:05:29]: Deadman validated
+[05/30/23 16:05:29]: Settling arm power...
+[05/30/23 16:05:30]: Arm power settled.
+[05/30/23 16:05:35]: Deb2304 application started
+[05/30/23 16:05:35]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:05:49]: Deadman enabled.
+[05/30/23 16:07:07]: Deb2304 application stopped
+[05/30/23 16:07:09]: Deb2304 application started
+[05/30/23 16:07:09]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:08:10]: -----------------------------------------------
+[05/30/23 16:08:10]: Logger started
+[05/30/23 16:08:15]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:08:15]: Cycle time set to 0.004s
+[05/30/23 16:08:15]: Simulation cycle time set to 0.1s
+[05/30/23 16:08:15]: Controller IP address could not be updated
+[05/30/23 16:08:15]: STARC : No STARC board detected on PCI.
+[05/30/23 16:08:15]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:08:15]: Power hour count = 0:54:42
+[05/30/23 16:08:15]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:08:15]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:08:15]: Error when starting: fieldbus IO
+[05/30/23 16:08:15]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:08:15]: System: s7.4 Jul  4 2012
+[05/30/23 16:08:15]: Configuration Version: c1.010 
+[05/30/23 16:08:15]: Option testMode: enabled 
+[05/30/23 16:08:15]: Option VAL 3: enabled 
+[05/30/23 16:08:15]: Machine Number: ? 
+[05/30/23 16:08:15]: Arm: tx40-S2-R2 floor
+[05/30/23 16:08:15]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:08:15]: Robot name:  
+[05/30/23 16:08:15]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:08:15]: EP: s7.4 Jul  4 2012
+[05/30/23 16:08:15]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:08:15]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:08:15]: New profile : default
+[05/30/23 16:08:15]: End of controller initialization
+[05/30/23 16:08:15]: COM-PC: create session 127.0.0.1 on port 51054 id=#38509200
+[05/30/23 16:08:15]: End of arm power shutdown phase.
+[05/30/23 16:08:17]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:08:23]: MCP communication disconnected
+[05/30/23 16:08:25]: Mcp = TSimulated
+[05/30/23 16:08:25]: Mcp communication established
+[05/30/23 16:08:25]: Working mode:automatic.
+[05/30/23 16:08:25]: COM-PC: destroy session 127.0.0.1 on port 51054 id=#38509200
+[05/30/23 16:08:32]: Deadman validated
+[05/30/23 16:08:32]: Settling arm power...
+[05/30/23 16:08:33]: Arm power settled.
+[05/30/23 16:08:38]: COM-PC: create session 127.0.0.1 on port 51062 id=#38508888
+[05/30/23 16:08:42]: Deb2304 application started
+[05/30/23 16:08:50]: Deadman enabled.
+[05/30/23 16:08:56]: Deb2304 application stopped
+[05/30/23 16:10:00]: -----------------------------------------------
+[05/30/23 16:10:00]: Logger started
+[05/30/23 16:10:04]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:10:04]: Cycle time set to 0.004s
+[05/30/23 16:10:04]: Simulation cycle time set to 0.1s
+[05/30/23 16:10:04]: Controller IP address could not be updated
+[05/30/23 16:10:04]: STARC : No STARC board detected on PCI.
+[05/30/23 16:10:04]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:10:04]: Power hour count = 0:54:42
+[05/30/23 16:10:04]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:10:04]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:10:04]: Error when starting: fieldbus IO
+[05/30/23 16:10:04]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:10:04]: System: s7.4 Jul  4 2012
+[05/30/23 16:10:04]: Configuration Version: c1.010 
+[05/30/23 16:10:04]: Option testMode: enabled 
+[05/30/23 16:10:04]: Option VAL 3: enabled 
+[05/30/23 16:10:04]: Machine Number: ? 
+[05/30/23 16:10:04]: Arm: tx40-S2-R2 floor
+[05/30/23 16:10:04]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:10:04]: Robot name:  
+[05/30/23 16:10:04]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:10:04]: EP: s7.4 Jul  4 2012
+[05/30/23 16:10:04]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:10:04]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:10:04]: New profile : default
+[05/30/23 16:10:04]: End of controller initialization
+[05/30/23 16:10:04]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 16:10:04]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/30/23 16:10:04]: COM-PC: create session 127.0.0.1 on port 51085 id=#43358968
+[05/30/23 16:10:05]: End of arm power shutdown phase.
+[05/30/23 16:10:06]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:10:12]: MCP communication disconnected
+[05/30/23 16:10:14]: Mcp = TSimulated
+[05/30/23 16:10:14]: Mcp communication established
+[05/30/23 16:10:14]: Working mode:automatic.
+[05/30/23 16:10:15]: COM-PC: destroy session 127.0.0.1 on port 51085 id=#43358968
+[05/30/23 16:10:22]: Deadman validated
+[05/30/23 16:10:23]: Settling arm power...
+[05/30/23 16:10:23]: Arm power settled.
+[05/30/23 16:10:27]: Deb2304 application started
+[05/30/23 16:10:27]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:10:31]: COM-PC: create session 127.0.0.1 on port 51092 id=#43358864
+[05/30/23 16:10:34]: Deb2304 application stopped
+[05/30/23 16:10:36]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/30/23 16:10:38]: Deb2304 application started
+[05/30/23 16:10:38]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:10:39]: Deadman enabled.
+[05/30/23 16:10:40]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/30/23 16:10:42]: Deb2304 application stopped
+[05/30/23 16:11:31]: Deb2304 application started
+[05/30/23 16:11:31]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:13:28]: -----------------------------------------------
+[05/30/23 16:13:28]: Logger started
+[05/30/23 16:13:32]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:13:32]: Cycle time set to 0.004s
+[05/30/23 16:13:32]: Simulation cycle time set to 0.1s
+[05/30/23 16:13:32]: Controller IP address could not be updated
+[05/30/23 16:13:32]: STARC : No STARC board detected on PCI.
+[05/30/23 16:13:32]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:13:32]: Power hour count = 0:54:42
+[05/30/23 16:13:32]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:13:32]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:13:32]: Error when starting: fieldbus IO
+[05/30/23 16:13:32]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:13:32]: System: s7.4 Jul  4 2012
+[05/30/23 16:13:32]: Configuration Version: c1.010 
+[05/30/23 16:13:32]: Option testMode: enabled 
+[05/30/23 16:13:32]: Option VAL 3: enabled 
+[05/30/23 16:13:32]: Machine Number: ? 
+[05/30/23 16:13:32]: Arm: tx40-S2-R2 floor
+[05/30/23 16:13:32]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:13:32]: Robot name:  
+[05/30/23 16:13:32]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:13:32]: EP: s7.4 Jul  4 2012
+[05/30/23 16:13:32]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:13:32]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:13:32]: New profile : default
+[05/30/23 16:13:32]: End of controller initialization
+[05/30/23 16:13:32]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 16:13:32]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/30/23 16:13:32]: COM-PC: create session 127.0.0.1 on port 51155 id=#52402312
+[05/30/23 16:13:33]: End of arm power shutdown phase.
+[05/30/23 16:13:34]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:13:40]: MCP communication disconnected
+[05/30/23 16:13:42]: Mcp = TSimulated
+[05/30/23 16:13:42]: Mcp communication established
+[05/30/23 16:13:42]: Working mode:automatic.
+[05/30/23 16:13:47]: COM-PC: destroy session 127.0.0.1 on port 51155 id=#52402312
+[05/30/23 16:14:09]: Deadman validated
+[05/30/23 16:14:09]: Settling arm power...
+[05/30/23 16:14:09]: Arm power settled.
+[05/30/23 16:14:14]: COM-PC: create session 127.0.0.1 on port 51165 id=#52402520
+[05/30/23 16:14:17]: Deb2304 application started
+[05/30/23 16:14:17]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:14:21]: Arm power shutdown...
+[05/30/23 16:14:22]: End of arm power shutdown phase.
+[05/30/23 16:14:23]: Saving controller context...
+[05/30/23 16:14:23]: Controller temperature: 28°C
+[05/30/23 16:14:23]: CPU temperature: 28°C
+[05/30/23 16:14:25]: Deadman enabled.
+[05/30/23 16:14:37]: COM-PC: destroy session 127.0.0.1 on port 51165 id=#52402520
+[05/30/23 16:15:29]: Deb2304 application stopped
+[05/30/23 16:15:33]: Deadman disabled.
+[05/30/23 16:15:33]: Deadman validated
+[05/30/23 16:15:34]: Settling arm power...
+[05/30/23 16:15:34]: Arm power settled.
+[05/30/23 16:15:37]: COM-PC: create session 127.0.0.1 on port 51175 id=#52402312
+[05/30/23 16:15:40]: Deb2304 application started
+[05/30/23 16:15:40]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:15:52]: Deadman enabled.
+[05/30/23 16:16:04]: Arm power shutdown...
+[05/30/23 16:16:06]: End of arm power shutdown phase.
+[05/30/23 16:16:07]: Saving controller context...
+[05/30/23 16:16:15]: Deb2304 application stopped
+[05/30/23 16:16:21]: Deadman disabled.
+[05/30/23 16:16:21]: Deadman validated
+[05/30/23 16:16:21]: Settling arm power...
+[05/30/23 16:16:22]: Arm power settled.
+[05/30/23 16:16:23]: Deb2304 application started
+[05/30/23 16:16:23]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:16:40]: Deadman enabled.
+[05/30/23 16:16:54]: Deb2304 application stopped
+[05/30/23 16:16:57]: Arm power shutdown...
+[05/30/23 16:16:58]: MCP communication disconnected
+[05/30/23 16:17:51]: -----------------------------------------------
+[05/30/23 16:17:51]: Logger started
+[05/30/23 16:17:55]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:17:55]: Cycle time set to 0.004s
+[05/30/23 16:17:55]: Simulation cycle time set to 0.1s
+[05/30/23 16:17:55]: Controller IP address could not be updated
+[05/30/23 16:17:55]: STARC : No STARC board detected on PCI.
+[05/30/23 16:17:55]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:17:55]: Power hour count = 0:55:16
+[05/30/23 16:17:55]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:17:55]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:17:55]: Error when starting: fieldbus IO
+[05/30/23 16:17:55]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:17:55]: System: s7.4 Jul  4 2012
+[05/30/23 16:17:55]: Configuration Version: c1.010 
+[05/30/23 16:17:55]: Option testMode: enabled 
+[05/30/23 16:17:55]: Option VAL 3: enabled 
+[05/30/23 16:17:55]: Machine Number: ? 
+[05/30/23 16:17:55]: Arm: tx40-S2-R2 floor
+[05/30/23 16:17:55]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:17:55]: Robot name:  
+[05/30/23 16:17:55]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:17:55]: EP: s7.4 Jul  4 2012
+[05/30/23 16:17:55]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:17:55]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:17:55]: New profile : default
+[05/30/23 16:17:55]: End of controller initialization
+[05/30/23 16:17:56]: End of arm power shutdown phase.
+[05/30/23 16:17:57]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:18:03]: MCP communication disconnected
+[05/30/23 16:18:05]: Mcp = TSimulated
+[05/30/23 16:18:05]: Mcp communication established
+[05/30/23 16:18:06]: Working mode:automatic.
+[05/30/23 16:18:15]: Deadman validated
+[05/30/23 16:18:15]: Settling arm power...
+[05/30/23 16:18:16]: Arm power settled.
+[05/30/23 16:18:19]: Deb2304 application started
+[05/30/23 16:18:19]: Cannot move: destination is out of software axis limits
+[05/30/23 16:18:19]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/30/23 16:18:29]: COM-PC: create session 127.0.0.1 on port 51198 id=#52402520
+[05/30/23 16:18:32]: Deadman enabled.
+[05/30/23 16:18:36]: Arm power shutdown...
+[05/30/23 16:18:38]: End of arm power shutdown phase.
+[05/30/23 16:18:40]: Deb2304 application stopped
+[05/30/23 16:18:41]: Saving controller context...
+[05/30/23 16:18:41]: Controller temperature: 28°C
+[05/30/23 16:18:41]: CPU temperature: 28°C
+[05/30/23 16:18:43]: Deadman disabled.
+[05/30/23 16:18:43]: Deadman validated
+[05/30/23 16:18:43]: Settling arm power...
+[05/30/23 16:18:43]: Arm power settled.
+[05/30/23 16:18:47]: Deb2304 application started
+[05/30/23 16:18:47]: Cannot move: destination is out of software axis limits
+[05/30/23 16:18:47]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/30/23 16:19:00]: Deadman enabled.
+[05/30/23 16:19:06]: Deb2304 application stopped
+[05/30/23 16:19:14]: Deb2304 application started
+[05/30/23 16:19:14]: Cannot move: destination is out of software axis limits
+[05/30/23 16:19:14]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[05/30/23 16:19:52]: Deb2304 application stopped
+[05/30/23 16:20:11]: -----------------------------------------------
+[05/30/23 16:20:11]: Logger started
+[05/30/23 16:20:15]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:20:15]: Cycle time set to 0.004s
+[05/30/23 16:20:15]: Simulation cycle time set to 0.1s
+[05/30/23 16:20:15]: Controller IP address could not be updated
+[05/30/23 16:20:15]: STARC : No STARC board detected on PCI.
+[05/30/23 16:20:15]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:20:15]: Power hour count = 0:55:34
+[05/30/23 16:20:15]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:20:15]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:20:15]: Error when starting: fieldbus IO
+[05/30/23 16:20:15]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:20:15]: COM-PC: create session 127.0.0.1 on port 51298 id=#52072552
+[05/30/23 16:20:15]: System: s7.4 Jul  4 2012
+[05/30/23 16:20:15]: Configuration Version: c1.010 
+[05/30/23 16:20:15]: Option testMode: enabled 
+[05/30/23 16:20:15]: Option VAL 3: enabled 
+[05/30/23 16:20:15]: Machine Number: ? 
+[05/30/23 16:20:15]: Arm: tx40-S2-R2 floor
+[05/30/23 16:20:15]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:20:15]: Robot name:  
+[05/30/23 16:20:15]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:20:15]: EP: s7.4 Jul  4 2012
+[05/30/23 16:20:15]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:20:15]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:20:15]: New profile : default
+[05/30/23 16:20:15]: End of controller initialization
+[05/30/23 16:20:15]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 16:20:15]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[05/30/23 16:20:16]: End of arm power shutdown phase.
+[05/30/23 16:20:17]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:20:23]: MCP communication disconnected
+[05/30/23 16:20:25]: Mcp = TSimulated
+[05/30/23 16:20:25]: Mcp communication established
+[05/30/23 16:20:26]: Working mode:automatic.
+[05/30/23 16:20:27]: COM-PC: destroy session 127.0.0.1 on port 51298 id=#52072552
+[05/30/23 16:21:05]: Deadman validated
+[05/30/23 16:21:05]: Settling arm power...
+[05/30/23 16:21:05]: Arm power settled.
+[05/30/23 16:21:07]: Deadman disabled.
+[05/30/23 16:21:11]: Deb2304 application started
+[05/30/23 16:21:14]: COM-PC: create session 127.0.0.1 on port 51318 id=#52075256
+[05/30/23 16:21:30]: Deb2304 application stopped
+[05/30/23 16:23:23]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/30/23 16:24:46]: -----------------------------------------------
+[05/30/23 16:24:46]: Logger started
+[05/30/23 16:24:50]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:24:50]: Cycle time set to 0.004s
+[05/30/23 16:24:50]: Simulation cycle time set to 0.1s
+[05/30/23 16:24:50]: Controller IP address could not be updated
+[05/30/23 16:24:50]: STARC : No STARC board detected on PCI.
+[05/30/23 16:24:50]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:24:50]: Power hour count = 0:55:34
+[05/30/23 16:24:50]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:24:50]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:24:50]: Error when starting: fieldbus IO
+[05/30/23 16:24:50]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:24:50]: System: s7.4 Jul  4 2012
+[05/30/23 16:24:50]: Configuration Version: c1.010 
+[05/30/23 16:24:50]: Option testMode: enabled 
+[05/30/23 16:24:50]: Option VAL 3: enabled 
+[05/30/23 16:24:50]: Machine Number: ? 
+[05/30/23 16:24:50]: Arm: tx40-S2-R2 floor
+[05/30/23 16:24:50]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:24:50]: Robot name:  
+[05/30/23 16:24:50]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:24:50]: EP: s7.4 Jul  4 2012
+[05/30/23 16:24:50]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:24:50]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:24:50]: New profile : default
+[05/30/23 16:24:50]: End of controller initialization
+[05/30/23 16:24:51]: COM-PC: create session 127.0.0.1 on port 51353 id=#47356040
+[05/30/23 16:24:51]: End of arm power shutdown phase.
+[05/30/23 16:24:52]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:24:58]: MCP communication disconnected
+[05/30/23 16:25:00]: Mcp = TSimulated
+[05/30/23 16:25:00]: Mcp communication established
+[05/30/23 16:25:01]: Working mode:automatic.
+[05/30/23 16:25:07]: COM-PC: destroy session 127.0.0.1 on port 51353 id=#47356040
+[05/30/23 16:26:20]: Mouvement [0]  modified
+[05/30/23 16:26:53]: Mouvement [1]  modified
+[05/30/23 16:27:37]: Mouvement [2]  modified
+[05/30/23 16:28:11]: Mouvement [3]  modified
+[05/30/23 16:28:58]: Mouvement [4]  modified
+[05/30/23 16:29:00]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/30/23 16:29:10]: Deadman validated
+[05/30/23 16:29:11]: Settling arm power...
+[05/30/23 16:29:11]: Arm power settled.
+[05/30/23 16:29:16]: COM-PC: create session 127.0.0.1 on port 51377 id=#47356560
+[05/30/23 16:29:19]: Deb2304 application started
+[05/30/23 16:29:19]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:29:28]: Deadman enabled.
+[05/30/23 16:34:06]: -----------------------------------------------
+[05/30/23 16:34:06]: Logger started
+[05/30/23 16:34:10]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:34:10]: Cycle time set to 0.004s
+[05/30/23 16:34:10]: Simulation cycle time set to 0.1s
+[05/30/23 16:34:10]: Controller IP address could not be updated
+[05/30/23 16:34:10]: STARC : No STARC board detected on PCI.
+[05/30/23 16:34:10]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:34:10]: Power hour count = 0:55:34
+[05/30/23 16:34:10]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:34:10]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:34:10]: Error when starting: fieldbus IO
+[05/30/23 16:34:10]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:34:10]: System: s7.4 Jul  4 2012
+[05/30/23 16:34:10]: Configuration Version: c1.010 
+[05/30/23 16:34:10]: Option testMode: enabled 
+[05/30/23 16:34:10]: Option VAL 3: enabled 
+[05/30/23 16:34:10]: Machine Number: ? 
+[05/30/23 16:34:10]: Arm: tx40-S2-R2 floor
+[05/30/23 16:34:10]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:34:10]: Robot name:  
+[05/30/23 16:34:10]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:34:10]: EP: s7.4 Jul  4 2012
+[05/30/23 16:34:10]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:34:10]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:34:10]: New profile : default
+[05/30/23 16:34:10]: End of controller initialization
+[05/30/23 16:34:10]: System event INTERFACE-Stopped  (Main menu)
+[05/30/23 16:34:10]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/30/23 16:34:10]: COM-PC: create session 127.0.0.1 on port 51429 id=#41589288
+[05/30/23 16:34:11]: End of arm power shutdown phase.
+[05/30/23 16:34:12]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:34:18]: MCP communication disconnected
+[05/30/23 16:34:20]: Mcp = TSimulated
+[05/30/23 16:34:20]: Mcp communication established
+[05/30/23 16:34:21]: Working mode:automatic.
+[05/30/23 16:34:27]: COM-PC: destroy session 127.0.0.1 on port 51429 id=#41589288
+[05/30/23 16:34:28]: Deadman validated
+[05/30/23 16:34:28]: Settling arm power...
+[05/30/23 16:34:29]: Arm power settled.
+[05/30/23 16:34:32]: Deb2304 application started
+[05/30/23 16:34:33]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:40:08]: -----------------------------------------------
+[05/30/23 16:40:08]: Logger started
+[05/30/23 16:40:13]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/30/23 16:40:13]: Cycle time set to 0.004s
+[05/30/23 16:40:13]: Simulation cycle time set to 0.1s
+[05/30/23 16:40:13]: Controller IP address could not be updated
+[05/30/23 16:40:13]: STARC : No STARC board detected on PCI.
+[05/30/23 16:40:13]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/30/23 16:40:13]: Power hour count = 0:55:34
+[05/30/23 16:40:13]: Mac Address = fc-aa-14-6f-b2-24
+[05/30/23 16:40:13]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/30/23 16:40:13]: Error when starting: fieldbus IO
+[05/30/23 16:40:13]: COM-PC: server created on all interfaces [5653]
+[05/30/23 16:40:13]: System: s7.4 Jul  4 2012
+[05/30/23 16:40:13]: Configuration Version: c1.010 
+[05/30/23 16:40:13]: Option testMode: enabled 
+[05/30/23 16:40:13]: Option VAL 3: enabled 
+[05/30/23 16:40:13]: Machine Number: ? 
+[05/30/23 16:40:13]: Arm: tx40-S2-R2 floor
+[05/30/23 16:40:13]: Arm serial number: F12_5M1XA1_A_01 
+[05/30/23 16:40:13]: Robot name:  
+[05/30/23 16:40:13]: Powerlink: s7.4 Jul  4 2012
+[05/30/23 16:40:13]: EP: s7.4 Jul  4 2012
+[05/30/23 16:40:13]: SCA: s7.4 Jul  4 2012
+[05/30/23 16:40:13]: PLC: s7.4 Jul  4 2012
+[05/30/23 16:40:13]: New profile : default
+[05/30/23 16:40:13]: End of controller initialization
+[05/30/23 16:40:13]: End of arm power shutdown phase.
+[05/30/23 16:40:15]: Internal error MCP-NoAnswer: char 1
+[05/30/23 16:40:21]: MCP communication disconnected
+[05/30/23 16:40:24]: Mcp = TSimulated
+[05/30/23 16:40:24]: Mcp communication established
+[05/30/23 16:40:24]: Working mode:automatic.
+[05/30/23 16:40:31]: Deadman validated
+[05/30/23 16:40:31]: Settling arm power...
+[05/30/23 16:40:32]: Arm power settled.
+[05/30/23 16:40:33]: Deb2304 application started
+[05/30/23 16:40:33]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/30/23 16:40:33]: Cannot move: destination is out of software axis limits
+[05/31/23 09:25:09]: -----------------------------------------------
+[05/31/23 09:25:09]: Logger started
+[05/31/23 09:25:14]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/31/23 09:25:14]: Cycle time set to 0.004s
+[05/31/23 09:25:14]: Simulation cycle time set to 0.1s
+[05/31/23 09:25:14]: Controller IP address could not be updated
+[05/31/23 09:25:14]: STARC : No STARC board detected on PCI.
+[05/31/23 09:25:14]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/31/23 09:25:14]: Power hour count = 0:55:34
+[05/31/23 09:25:14]: Mac Address = fc-aa-14-6f-b2-24
+[05/31/23 09:25:14]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/31/23 09:25:14]: Error when starting: fieldbus IO
+[05/31/23 09:25:14]: COM-PC: server created on all interfaces [5653]
+[05/31/23 09:25:14]: COM-PC: create session 127.0.0.1 on port 50154 id=#48010776
+[05/31/23 09:25:14]: System: s7.4 Jul  4 2012
+[05/31/23 09:25:14]: Configuration Version: c1.010 
+[05/31/23 09:25:14]: Option testMode: enabled 
+[05/31/23 09:25:14]: Option VAL 3: enabled 
+[05/31/23 09:25:14]: Machine Number: ? 
+[05/31/23 09:25:14]: Arm: tx40-S2-R2 floor
+[05/31/23 09:25:14]: Arm serial number: F12_5M1XA1_A_01 
+[05/31/23 09:25:14]: Robot name:  
+[05/31/23 09:25:14]: Powerlink: s7.4 Jul  4 2012
+[05/31/23 09:25:14]: EP: s7.4 Jul  4 2012
+[05/31/23 09:25:14]: SCA: s7.4 Jul  4 2012
+[05/31/23 09:25:14]: PLC: s7.4 Jul  4 2012
+[05/31/23 09:25:14]: New profile : default
+[05/31/23 09:25:14]: End of controller initialization
+[05/31/23 09:25:14]: End of arm power shutdown phase.
+[05/31/23 09:25:17]: Internal error MCP-NoAnswer: char 1
+[05/31/23 09:25:23]: MCP communication disconnected
+[05/31/23 09:25:25]: Mcp = TSimulated
+[05/31/23 09:25:25]: Mcp communication established
+[05/31/23 09:25:25]: Working mode:automatic.
+[05/31/23 09:25:28]: COM-PC: destroy session 127.0.0.1 on port 50154 id=#48010776
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 5) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 6) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 7) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 8) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 9) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 10) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 11) 'jJointRx' : invalid name
+[05/31/23 09:25:32]: (File Deb2304.pgx-line 12) 'jJointRx' : invalid name
+[05/31/23 09:27:30]: Deadman validated
+[05/31/23 09:27:31]: Settling arm power...
+[05/31/23 09:27:31]: Arm power settled.
+[05/31/23 09:27:35]: COM-PC: create session 127.0.0.1 on port 50173 id=#48011192
+[05/31/23 09:27:36]: Deadman enabled.
+[05/31/23 09:27:39]: Deb2304 application started
+[05/31/23 09:27:39]: ERR 20 Access to an array with index larger than the array's size.. Deb2304~. 
+[05/31/23 09:33:04]: jJointRx [0]  modified
+[05/31/23 09:33:11]: jJointRx [1]  modified
+[05/31/23 09:33:20]: jJointRx [0]  modified
+[05/31/23 09:34:21]: jJointRx [1]  modified
+[05/31/23 09:35:09]: jJointRx [2]  modified
+[05/31/23 09:35:41]: jJointRx [3]  modified
+[05/31/23 09:36:11]: jJointRx [4]  modified
+[05/31/23 09:36:14]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/31/23 09:36:23]: MCP communication disconnected
+[05/31/23 09:36:23]: Arm power shutdown: working mode change.
+[05/31/23 09:36:23]: Arm power shutdown...
+[05/31/23 09:36:33]: -----------------------------------------------
+[05/31/23 09:36:33]: Logger started
+[05/31/23 09:36:37]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/31/23 09:36:37]: Cycle time set to 0.004s
+[05/31/23 09:36:37]: Simulation cycle time set to 0.1s
+[05/31/23 09:36:37]: Controller IP address could not be updated
+[05/31/23 09:36:37]: STARC : No STARC board detected on PCI.
+[05/31/23 09:36:37]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/31/23 09:36:37]: Power hour count = 0:55:34
+[05/31/23 09:36:37]: Mac Address = fc-aa-14-6f-b2-24
+[05/31/23 09:36:37]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/31/23 09:36:37]: Error when starting: fieldbus IO
+[05/31/23 09:36:37]: COM-PC: server created on all interfaces [5653]
+[05/31/23 09:36:37]: System: s7.4 Jul  4 2012
+[05/31/23 09:36:37]: Configuration Version: c1.010 
+[05/31/23 09:36:37]: Option testMode: enabled 
+[05/31/23 09:36:37]: Option VAL 3: enabled 
+[05/31/23 09:36:37]: Machine Number: ? 
+[05/31/23 09:36:37]: Arm: tx40-S2-R2 floor
+[05/31/23 09:36:37]: Arm serial number: F12_5M1XA1_A_01 
+[05/31/23 09:36:37]: Robot name:  
+[05/31/23 09:36:37]: Powerlink: s7.4 Jul  4 2012
+[05/31/23 09:36:37]: EP: s7.4 Jul  4 2012
+[05/31/23 09:36:37]: SCA: s7.4 Jul  4 2012
+[05/31/23 09:36:37]: PLC: s7.4 Jul  4 2012
+[05/31/23 09:36:37]: New profile : default
+[05/31/23 09:36:37]: End of controller initialization
+[05/31/23 09:36:38]: COM-PC: create session 127.0.0.1 on port 50254 id=#46766320
+[05/31/23 09:36:38]: End of arm power shutdown phase.
+[05/31/23 09:36:39]: Internal error MCP-NoAnswer: char 1
+[05/31/23 09:36:45]: MCP communication disconnected
+[05/31/23 09:36:48]: Mcp = TSimulated
+[05/31/23 09:36:48]: Mcp communication established
+[05/31/23 09:36:48]: COM-PC: destroy session 127.0.0.1 on port 50254 id=#46766320
+[05/31/23 09:36:48]: Working mode:automatic.
+[05/31/23 09:38:32]: Joint  ja [0]  modified
+[05/31/23 09:39:12]: Joint  ja [1]  modified
+[05/31/23 09:40:06]: Joint  ja [2]  modified
+[05/31/23 09:40:38]: Joint  ja [3]  modified
+[05/31/23 09:41:19]: Joint  ja [4]  modified
+[05/31/23 09:41:23]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/31/23 09:43:47]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved. (1)
+[05/31/23 09:43:54]: Deadman validated
+[05/31/23 09:43:55]: Settling arm power...
+[05/31/23 09:43:55]: Arm power settled.
+[05/31/23 09:44:02]: COM-PC: create session 127.0.0.1 on port 50297 id=#46766736
+[05/31/23 09:44:05]: Deb2304 application started
+[05/31/23 09:44:11]: Deadman enabled.
+[05/31/23 09:44:23]: Deb2304 application stopped
+[05/31/23 09:44:59]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/31/23 09:45:12]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved. (1)
+[05/31/23 09:45:29]: Deb2304 application started
+[05/31/23 09:45:44]: Deb2304 application stopped
+[05/31/23 09:53:51]: -----------------------------------------------
+[05/31/23 09:53:51]: Logger started
+[05/31/23 09:53:55]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/31/23 09:53:55]: Cycle time set to 0.004s
+[05/31/23 09:53:55]: Simulation cycle time set to 0.1s
+[05/31/23 09:53:55]: Controller IP address could not be updated
+[05/31/23 09:53:55]: STARC : No STARC board detected on PCI.
+[05/31/23 09:53:55]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/31/23 09:53:55]: Power hour count = 0:55:34
+[05/31/23 09:53:55]: Mac Address = fc-aa-14-6f-b2-24
+[05/31/23 09:53:55]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/31/23 09:53:55]: Error when starting: fieldbus IO
+[05/31/23 09:53:55]: COM-PC: server created on all interfaces [5653]
+[05/31/23 09:53:55]: System: s7.4 Jul  4 2012
+[05/31/23 09:53:55]: Configuration Version: c1.010 
+[05/31/23 09:53:55]: Option testMode: enabled 
+[05/31/23 09:53:55]: Option VAL 3: enabled 
+[05/31/23 09:53:55]: Machine Number: ? 
+[05/31/23 09:53:55]: Arm: tx40-S2-R2 floor
+[05/31/23 09:53:55]: Arm serial number: F12_5M1XA1_A_01 
+[05/31/23 09:53:55]: Robot name:  
+[05/31/23 09:53:55]: Powerlink: s7.4 Jul  4 2012
+[05/31/23 09:53:55]: EP: s7.4 Jul  4 2012
+[05/31/23 09:53:55]: SCA: s7.4 Jul  4 2012
+[05/31/23 09:53:55]: PLC: s7.4 Jul  4 2012
+[05/31/23 09:53:55]: New profile : default
+[05/31/23 09:53:55]: End of controller initialization
+[05/31/23 09:53:55]: System event INTERFACE-Stopped  (Main menu)
+[05/31/23 09:53:55]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[05/31/23 09:53:55]: COM-PC: create session 127.0.0.1 on port 50363 id=#38508888
+[05/31/23 09:53:56]: End of arm power shutdown phase.
+[05/31/23 09:53:57]: Internal error MCP-NoAnswer: char 1
+[05/31/23 09:54:03]: MCP communication disconnected
+[05/31/23 09:54:05]: Mcp = TSimulated
+[05/31/23 09:54:05]: Mcp communication established
+[05/31/23 09:54:05]: Working mode:automatic.
+[05/31/23 09:54:07]: Deadman validated
+[05/31/23 09:54:08]: COM-PC: destroy session 127.0.0.1 on port 50363 id=#38508888
+[05/31/23 09:54:22]: Deadman enabled.
+[05/31/23 09:54:33]: Deadman disabled.
+[05/31/23 09:54:33]: Deadman validated
+[05/31/23 09:54:33]: Settling arm power...
+[05/31/23 09:54:33]: Arm power settled.
+[05/31/23 09:54:35]: Deb2304 application started
+[05/31/23 09:54:37]: COM-PC: create session 127.0.0.1 on port 50376 id=#38508992
+[05/31/23 09:54:50]: Deadman enabled.
+[05/31/23 09:54:54]: Deb2304 application stopped
+[05/31/23 09:55:07]: Deb2304 application started
+[05/31/23 09:55:22]: Deb2304 application stopped
+[05/31/23 09:55:24]: Deb2304 application started
+[05/31/23 09:55:38]: Deb2304 application stopped
+[05/31/23 09:57:31]: Joint  ja [1]  modified
+[05/31/23 09:57:32]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/31/23 09:57:43]: Deb2304 application started
+[05/31/23 09:57:58]: Deb2304 application stopped
+[05/31/23 09:58:03]: Deb2304 application started
+[05/31/23 09:58:19]: Deb2304 application stopped
+[05/31/23 09:59:11]: Joint  ja [1]  modified
+[05/31/23 09:59:12]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[05/31/23 09:59:24]: Deb2304 application started
+[05/31/23 09:59:40]: Deb2304 application stopped
+[05/31/23 09:59:52]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[06/01/23 14:47:14]: -----------------------------------------------
+[06/01/23 14:47:14]: Logger started
+[06/01/23 14:47:20]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/01/23 14:47:20]: Cycle time set to 0.004s
+[06/01/23 14:47:20]: Simulation cycle time set to 0.1s
+[06/01/23 14:47:20]: Controller IP address could not be updated
+[06/01/23 14:47:20]: STARC : No STARC board detected on PCI.
+[06/01/23 14:47:20]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/01/23 14:47:20]: Power hour count = 0:55:34
+[06/01/23 14:47:20]: Mac Address = fc-aa-14-6f-b2-24
+[06/01/23 14:47:20]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/01/23 14:47:20]: Error when starting: fieldbus IO
+[06/01/23 14:47:20]: COM-PC: server created on all interfaces [5653]
+[06/01/23 14:47:20]: COM-PC: create session 127.0.0.1 on port 54517 id=#44339096
+[06/01/23 14:47:20]: System: s7.4 Jul  4 2012
+[06/01/23 14:47:20]: Configuration Version: c1.010 
+[06/01/23 14:47:20]: Option testMode: enabled 
+[06/01/23 14:47:20]: Option VAL 3: enabled 
+[06/01/23 14:47:20]: Machine Number: ? 
+[06/01/23 14:47:20]: Arm: tx40-S2-R2 floor
+[06/01/23 14:47:20]: Arm serial number: F12_5M1XA1_A_01 
+[06/01/23 14:47:20]: Robot name:  
+[06/01/23 14:47:20]: Powerlink: s7.4 Jul  4 2012
+[06/01/23 14:47:20]: EP: s7.4 Jul  4 2012
+[06/01/23 14:47:20]: SCA: s7.4 Jul  4 2012
+[06/01/23 14:47:20]: PLC: s7.4 Jul  4 2012
+[06/01/23 14:47:20]: New profile : default
+[06/01/23 14:47:20]: End of controller initialization
+[06/01/23 14:47:20]: End of arm power shutdown phase.
+[06/01/23 14:47:22]: Internal error MCP-NoAnswer: char 1
+[06/01/23 14:47:29]: MCP communication disconnected
+[06/01/23 14:47:30]: Mcp = TSimulated
+[06/01/23 14:47:30]: Mcp communication established
+[06/01/23 14:47:31]: Working mode:automatic.
+[06/01/23 14:47:32]: COM-PC: destroy session 127.0.0.1 on port 54517 id=#44339096
+[06/01/23 14:47:42]: Deadman validated
+[06/01/23 14:47:42]: Settling arm power...
+[06/01/23 14:47:43]: Arm power settled.
+[06/01/23 14:47:45]: COM-PC: create session 127.0.0.1 on port 54524 id=#44341592
+[06/01/23 14:47:48]: Deb2304 application started
+[06/01/23 14:48:05]: Deadman enabled.
+[06/01/23 14:48:07]: Deb2304 application stopped
+[06/01/23 15:17:46]: Saving controller context...
+[06/01/23 15:17:46]: Controller temperature: 28°C
+[06/01/23 15:17:46]: CPU temperature: 28°C
+[06/01/23 15:33:43]: MCP communication disconnected
+[06/01/23 15:33:43]: Arm power shutdown: working mode change.
+[06/01/23 15:33:43]: Arm power shutdown...
+[06/01/23 15:33:44]: End of arm power shutdown phase.
+[06/01/23 15:33:46]: Saving controller context...
+[06/01/23 15:34:03]: COM-PC: destroy session 127.0.0.1 on port 54524 id=#44341592
+[06/01/23 15:34:26]: -----------------------------------------------
+[06/01/23 15:34:26]: Logger started
+[06/01/23 15:34:31]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/01/23 15:34:31]: Cycle time set to 0.004s
+[06/01/23 15:34:31]: Simulation cycle time set to 0.1s
+[06/01/23 15:34:31]: Controller IP address could not be updated
+[06/01/23 15:34:31]: STARC : No STARC board detected on PCI.
+[06/01/23 15:34:31]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/01/23 15:34:31]: Power hour count = 1:30:31
+[06/01/23 15:34:31]: Mac Address = fc-aa-14-6f-b2-24
+[06/01/23 15:34:31]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/01/23 15:34:31]: Error when starting: fieldbus IO
+[06/01/23 15:34:31]: COM-PC: server created on all interfaces [5653]
+[06/01/23 15:34:31]: System: s7.4 Jul  4 2012
+[06/01/23 15:34:31]: Configuration Version: c1.010 
+[06/01/23 15:34:31]: Option testMode: enabled 
+[06/01/23 15:34:31]: Option VAL 3: enabled 
+[06/01/23 15:34:31]: Machine Number: ? 
+[06/01/23 15:34:31]: Arm: tx40-S2-R2 floor
+[06/01/23 15:34:31]: Arm serial number: F12_5M1XA1_A_01 
+[06/01/23 15:34:31]: Robot name:  
+[06/01/23 15:34:31]: Powerlink: s7.4 Jul  4 2012
+[06/01/23 15:34:31]: EP: s7.4 Jul  4 2012
+[06/01/23 15:34:31]: SCA: s7.4 Jul  4 2012
+[06/01/23 15:34:31]: PLC: s7.4 Jul  4 2012
+[06/01/23 15:34:31]: New profile : default
+[06/01/23 15:34:31]: End of controller initialization
+[06/01/23 15:34:31]: System event INTERFACE-Stopped  (Main menu)
+[06/01/23 15:34:31]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[06/01/23 15:34:32]: End of arm power shutdown phase.
+[06/01/23 15:34:32]: Internal error MCP-NoAnswer: char 1
+[06/01/23 15:34:38]: MCP communication disconnected
+[06/01/23 15:34:40]: Mcp = TSimulated
+[06/01/23 15:34:41]: Mcp communication established
+[06/01/23 15:34:41]: Working mode:automatic.
+[06/01/23 15:34:47]: COM-PC: create session 127.0.0.1 on port 56671 id=#40999360
+[06/01/23 15:34:48]: COM-CLIENT: Connected to http://127.0.0.1:5656
+[06/01/23 15:36:26]: Deb2304 application started
+[06/01/23 15:36:29]: Deadman validated
+[06/01/23 15:36:29]: Settling arm power...
+[06/01/23 15:36:29]: Arm power settled.
+[06/01/23 15:36:30]: Cannot move: destination is out of software axis limits
+[06/01/23 15:36:30]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[06/01/23 15:36:44]: Deadman enabled.
+[06/01/23 15:37:01]: Deb2304 application stopped
+[06/01/23 15:37:35]: Arm power shutdown...
+[06/01/23 15:37:36]: End of arm power shutdown phase.
+[06/01/23 15:37:36]: Deadman disabled.
+[06/01/23 15:37:36]: Deadman validated
+[06/01/23 15:37:36]: Settling arm power...
+[06/01/23 15:37:37]: Arm power settled.
+[06/01/23 15:37:37]: Saving controller context...
+[06/01/23 15:37:37]: Controller temperature: 28°C
+[06/01/23 15:37:37]: CPU temperature: 28°C
+[06/01/23 15:37:51]: Deadman enabled.
+[06/01/23 15:38:08]: Arm power shutdown...
+[06/01/23 15:38:08]: Cannot apply arm power: arm power is still in disabling phase.
+[06/01/23 15:38:09]: End of arm power shutdown phase.
+[06/01/23 15:38:10]: Deadman disabled.
+[06/01/23 15:38:10]: Deadman validated
+[06/01/23 15:38:11]: Settling arm power...
+[06/01/23 15:38:11]: Arm power settled.
+[06/01/23 15:38:25]: Deadman enabled.
+[06/01/23 15:38:26]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[06/01/23 15:40:39]: -----------------------------------------------
+[06/01/23 15:40:39]: Logger started
+[06/01/23 15:40:43]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/01/23 15:40:43]: Cycle time set to 0.004s
+[06/01/23 15:40:43]: Simulation cycle time set to 0.1s
+[06/01/23 15:40:43]: Controller IP address could not be updated
+[06/01/23 15:40:43]: STARC : No STARC board detected on PCI.
+[06/01/23 15:40:43]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/01/23 15:40:43]: Power hour count = 1:31:36
+[06/01/23 15:40:43]: Mac Address = fc-aa-14-6f-b2-24
+[06/01/23 15:40:43]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/01/23 15:40:43]: Error when starting: fieldbus IO
+[06/01/23 15:40:43]: COM-PC: server created on all interfaces [5653]
+[06/01/23 15:40:43]: System: s7.4 Jul  4 2012
+[06/01/23 15:40:43]: Configuration Version: c1.010 
+[06/01/23 15:40:43]: Option testMode: enabled 
+[06/01/23 15:40:43]: Option VAL 3: enabled 
+[06/01/23 15:40:43]: Machine Number: ? 
+[06/01/23 15:40:43]: Arm: tx40-S2-R2 floor
+[06/01/23 15:40:43]: Arm serial number: F12_5M1XA1_A_01 
+[06/01/23 15:40:43]: Robot name:  
+[06/01/23 15:40:43]: Powerlink: s7.4 Jul  4 2012
+[06/01/23 15:40:43]: EP: s7.4 Jul  4 2012
+[06/01/23 15:40:43]: SCA: s7.4 Jul  4 2012
+[06/01/23 15:40:43]: PLC: s7.4 Jul  4 2012
+[06/01/23 15:40:43]: New profile : default
+[06/01/23 15:40:43]: End of controller initialization
+[06/01/23 15:40:43]: System event INTERFACE-Stopped  (Main menu)
+[06/01/23 15:40:43]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[06/01/23 15:40:44]: End of arm power shutdown phase.
+[06/01/23 15:40:45]: Internal error MCP-NoAnswer: char 1
+[06/01/23 15:40:51]: MCP communication disconnected
+[06/01/23 15:40:53]: Mcp = TSimulated
+[06/01/23 15:40:53]: Mcp communication established
+[06/01/23 15:40:54]: Working mode:automatic.
+[06/01/23 15:50:00]: COM-PC: create session 127.0.0.1 on port 57230 id=#53647504
+[06/01/23 15:50:43]: COM-PC: destroy session 127.0.0.1 on port 57230 id=#53647504
+[06/01/23 16:20:45]: Internal error MCP-NoAnswer: char 1
+[06/01/23 16:41:16]: Internal error MCP-ResetTimeout
+[06/01/23 16:41:16]: MCP communication disconnected
+[06/01/23 16:41:17]: Saving controller context...
+[06/01/23 16:41:17]: Controller temperature: 28°C
+[06/01/23 16:41:17]: CPU temperature: 28°C
+[06/01/23 17:12:12]: -----------------------------------------------
+[06/01/23 17:12:12]: Logger started
+[06/01/23 17:12:17]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/01/23 17:12:17]: Cycle time set to 0.004s
+[06/01/23 17:12:17]: Simulation cycle time set to 0.1s
+[06/01/23 17:12:17]: Controller IP address could not be updated
+[06/01/23 17:12:17]: STARC : No STARC board detected on PCI.
+[06/01/23 17:12:17]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/01/23 17:12:17]: Power hour count = 1:31:36
+[06/01/23 17:12:17]: Mac Address = fc-aa-14-6f-b2-24
+[06/01/23 17:12:17]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/01/23 17:12:17]: Error when starting: fieldbus IO
+[06/01/23 17:12:17]: COM-PC: server created on all interfaces [5653]
+[06/01/23 17:12:17]: COM-PC: create session 127.0.0.1 on port 57644 id=#45651072
+[06/01/23 17:12:17]: System: s7.4 Jul  4 2012
+[06/01/23 17:12:17]: Configuration Version: c1.010 
+[06/01/23 17:12:17]: Option testMode: enabled 
+[06/01/23 17:12:17]: Option VAL 3: enabled 
+[06/01/23 17:12:17]: Machine Number: ? 
+[06/01/23 17:12:17]: Arm: tx40-S2-R2 floor
+[06/01/23 17:12:17]: Arm serial number: F12_5M1XA1_A_01 
+[06/01/23 17:12:17]: Robot name:  
+[06/01/23 17:12:17]: Powerlink: s7.4 Jul  4 2012
+[06/01/23 17:12:17]: EP: s7.4 Jul  4 2012
+[06/01/23 17:12:17]: SCA: s7.4 Jul  4 2012
+[06/01/23 17:12:17]: PLC: s7.4 Jul  4 2012
+[06/01/23 17:12:17]: New profile : default
+[06/01/23 17:12:17]: End of controller initialization
+[06/01/23 17:12:17]: End of arm power shutdown phase.
+[06/01/23 17:12:19]: Internal error MCP-NoAnswer: char 1
+[06/01/23 17:12:25]: MCP communication disconnected
+[06/01/23 17:12:27]: Mcp = TSimulated
+[06/01/23 17:12:27]: Mcp communication established
+[06/01/23 17:12:27]: Working mode:automatic.
+[06/01/23 17:12:29]: COM-PC: destroy session 127.0.0.1 on port 57644 id=#45651072
+[06/01/23 17:12:53]: MCP communication disconnected
+[06/01/23 17:13:35]: -----------------------------------------------
+[06/01/23 17:13:35]: Logger started
+[06/01/23 17:13:39]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/01/23 17:13:39]: Cycle time set to 0.004s
+[06/01/23 17:13:39]: Simulation cycle time set to 0.1s
+[06/01/23 17:13:39]: Controller IP address could not be updated
+[06/01/23 17:13:39]: STARC : No STARC board detected on PCI.
+[06/01/23 17:13:39]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/01/23 17:13:39]: Power hour count = 1:31:36
+[06/01/23 17:13:39]: Mac Address = fc-aa-14-6f-b2-24
+[06/01/23 17:13:39]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/01/23 17:13:39]: Error when starting: fieldbus IO
+[06/01/23 17:13:39]: COM-PC: server created on all interfaces [5653]
+[06/01/23 17:13:39]: System: s7.4 Jul  4 2012
+[06/01/23 17:13:39]: Configuration Version: c1.010 
+[06/01/23 17:13:39]: Option testMode: enabled 
+[06/01/23 17:13:39]: Option VAL 3: enabled 
+[06/01/23 17:13:39]: Machine Number: ? 
+[06/01/23 17:13:39]: Arm: tx40-S2-R2 floor
+[06/01/23 17:13:39]: Arm serial number: F12_5M1XA1_A_01 
+[06/01/23 17:13:39]: Robot name:  
+[06/01/23 17:13:39]: Powerlink: s7.4 Jul  4 2012
+[06/01/23 17:13:39]: EP: s7.4 Jul  4 2012
+[06/01/23 17:13:39]: SCA: s7.4 Jul  4 2012
+[06/01/23 17:13:39]: PLC: s7.4 Jul  4 2012
+[06/01/23 17:13:39]: New profile : default
+[06/01/23 17:13:39]: End of controller initialization
+[06/01/23 17:13:40]: End of arm power shutdown phase.
+[06/01/23 17:13:41]: Internal error MCP-NoAnswer: char 1
+[06/01/23 17:13:48]: MCP communication disconnected
+[06/01/23 17:13:50]: Mcp = TSimulated
+[06/01/23 17:13:50]: Mcp communication established
+[06/01/23 17:13:50]: Working mode:automatic.
+[06/01/23 17:13:57]: Deadman validated
+[06/01/23 17:13:57]: Settling arm power...
+[06/01/23 17:13:58]: Arm power settled.
+[06/01/23 17:14:03]: Deb2304 application started
+[06/01/23 17:14:03]: Cannot move: destination is out of software axis limits
+[06/01/23 17:14:03]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[06/01/23 17:14:09]: Deadman disabled.
+[06/01/23 17:14:09]: Arm power shutdown: working mode change.
+[06/01/23 17:14:09]: Arm power shutdown...
+[06/01/23 17:14:09]: Working mode:manual.
+[06/01/23 17:14:10]: End of arm power shutdown phase.
+[06/01/23 17:14:15]: Saving controller context...
+[06/01/23 17:14:15]: Controller temperature: 28°C
+[06/01/23 17:14:15]: CPU temperature: 28°C
+[06/01/23 17:14:17]: COM-PC: create session 127.0.0.1 on port 57714 id=#46373112
+[06/01/23 17:14:26]: Jog mode cannot be selected: first enable arm power.
+[06/01/23 17:14:29]: COM-PC: destroy session 127.0.0.1 on port 57714 id=#46373112
+[06/01/23 17:14:29]: Deb2304 application stopped
+[06/01/23 17:14:30]: Working mode:test.
+[06/01/23 17:14:33]: Saving controller context...
+[06/01/23 17:14:34]: Deb2304 application started
+[06/01/23 17:14:35]: Deadman validated
+[06/01/23 17:14:35]: Settling arm power...
+[06/01/23 17:14:36]: Arm power settled.
+[06/01/23 17:14:39]: COM-PC: create session 127.0.0.1 on port 57718 id=#46373528
+[06/01/23 17:14:57]: Deadman enabled.
+[06/01/23 17:15:19]: Deb2304 application stopped
+[06/02/23 11:57:21]: -----------------------------------------------
+[06/02/23 11:57:21]: Logger started
+[06/02/23 11:57:26]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/02/23 11:57:26]: Cycle time set to 0.004s
+[06/02/23 11:57:26]: Simulation cycle time set to 0.1s
+[06/02/23 11:57:26]: Controller IP address could not be updated
+[06/02/23 11:57:26]: STARC : No STARC board detected on PCI.
+[06/02/23 11:57:26]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/02/23 11:57:26]: Power hour count = 1:31:47
+[06/02/23 11:57:26]: Mac Address = fc-aa-14-6f-b2-24
+[06/02/23 11:57:26]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/02/23 11:57:26]: Error when starting: fieldbus IO
+[06/02/23 11:57:26]: COM-PC: server created on all interfaces [5653]
+[06/02/23 11:57:26]: System: s7.4 Jul  4 2012
+[06/02/23 11:57:26]: Configuration Version: c1.010 
+[06/02/23 11:57:26]: Option testMode: enabled 
+[06/02/23 11:57:26]: Option VAL 3: enabled 
+[06/02/23 11:57:26]: Machine Number: ? 
+[06/02/23 11:57:26]: Arm: tx40-S2-R2 floor
+[06/02/23 11:57:26]: Arm serial number: F12_5M1XA1_A_01 
+[06/02/23 11:57:26]: Robot name:  
+[06/02/23 11:57:26]: Powerlink: s7.4 Jul  4 2012
+[06/02/23 11:57:26]: EP: s7.4 Jul  4 2012
+[06/02/23 11:57:26]: SCA: s7.4 Jul  4 2012
+[06/02/23 11:57:26]: PLC: s7.4 Jul  4 2012
+[06/02/23 11:57:26]: New profile : default
+[06/02/23 11:57:26]: End of controller initialization
+[06/02/23 11:57:27]: COM-PC: create session 127.0.0.1 on port 51976 id=#43293120
+[06/02/23 11:57:27]: End of arm power shutdown phase.
+[06/02/23 11:57:27]: Internal error MCP-NoAnswer: char 1
+[06/02/23 11:57:33]: MCP communication disconnected
+[06/02/23 11:57:36]: Mcp = TSimulated
+[06/02/23 11:57:36]: Mcp communication established
+[06/02/23 11:57:36]: Working mode:remote.
+[06/02/23 11:57:39]: Saving controller context...
+[06/02/23 11:57:39]: Controller temperature: 28°C
+[06/02/23 11:57:39]: CPU temperature: 28°C
+[06/02/23 11:57:40]: COM-PC: destroy session 127.0.0.1 on port 51976 id=#43293120
+[06/02/23 11:58:23]: COM-PC: create session 127.0.0.1 on port 51994 id=#43292912
+[06/02/23 11:58:30]: Deadman validated
+[06/02/23 11:58:30]: Arm power enable request refused: cabinet working mode is remote or invalid.
+[06/02/23 11:58:33]: Deadman disabled.
+[06/02/23 11:58:34]: Working mode:automatic.
+[06/02/23 11:58:35]: Deadman validated
+[06/02/23 11:58:35]: Settling arm power...
+[06/02/23 11:58:35]: Arm power settled.
+[06/02/23 11:58:38]: Deb2304 application started
+[06/02/23 11:58:53]: Deb2304 application stopped
+[06/02/23 11:58:54]: Deadman enabled.
+[06/02/23 12:00:25]: Deb2304 application started
+[06/02/23 12:00:39]: Deb2304 application stopped
+[06/02/23 12:00:43]: Deb2304 application started
+[06/02/23 12:00:57]: Deb2304 application stopped
+[06/02/23 12:07:26]: Internal error MCP-NoAnswer: char 1
+[06/02/23 12:07:26]: Arm power shutdown: working mode change.
+[06/02/23 12:07:26]: Arm power shutdown...
+[06/02/23 12:07:28]: End of arm power shutdown phase.
+[06/02/23 12:07:31]: Saving controller context...
+[06/02/23 12:07:33]: Internal error MCP-ResetTimeout
+[06/02/23 12:07:33]: MCP communication disconnected
+[06/02/23 13:10:12]: Saving controller context...
+[06/02/23 14:54:37]: -----------------------------------------------
+[06/02/23 14:54:37]: Logger started
+[06/02/23 14:54:42]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/02/23 14:54:42]: Cycle time set to 0.004s
+[06/02/23 14:54:42]: Simulation cycle time set to 0.1s
+[06/02/23 14:54:42]: Controller IP address could not be updated
+[06/02/23 14:54:42]: STARC : No STARC board detected on PCI.
+[06/02/23 14:54:42]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/02/23 14:54:42]: Power hour count = 1:38:29
+[06/02/23 14:54:42]: Mac Address = fc-aa-14-6f-b2-24
+[06/02/23 14:54:42]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/02/23 14:54:42]: Error when starting: fieldbus IO
+[06/02/23 14:54:42]: COM-PC: server created on all interfaces [5653]
+[06/02/23 14:54:42]: System: s7.4 Jul  4 2012
+[06/02/23 14:54:42]: Configuration Version: c1.010 
+[06/02/23 14:54:42]: Option testMode: enabled 
+[06/02/23 14:54:42]: Option VAL 3: enabled 
+[06/02/23 14:54:42]: Machine Number: ? 
+[06/02/23 14:54:42]: Arm: tx40-S2-R2 floor
+[06/02/23 14:54:42]: Arm serial number: F12_5M1XA1_A_01 
+[06/02/23 14:54:42]: Robot name:  
+[06/02/23 14:54:42]: Powerlink: s7.4 Jul  4 2012
+[06/02/23 14:54:42]: EP: s7.4 Jul  4 2012
+[06/02/23 14:54:42]: SCA: s7.4 Jul  4 2012
+[06/02/23 14:54:42]: PLC: s7.4 Jul  4 2012
+[06/02/23 14:54:42]: New profile : default
+[06/02/23 14:54:42]: End of controller initialization
+[06/02/23 14:54:42]: System event INTERFACE-Stopped  (Main menu)
+[06/02/23 14:54:42]: System event INTERFACE-Stopped  (Main menu). 4 events lost.
+[06/02/23 14:54:42]: COM-PC: create session 127.0.0.1 on port 55303 id=#46174104
+[06/02/23 14:54:42]: End of arm power shutdown phase.
+[06/02/23 14:54:43]: Internal error MCP-NoAnswer: char 1
+[06/02/23 14:54:49]: MCP communication disconnected
+[06/02/23 14:54:51]: Mcp = TSimulated
+[06/02/23 14:54:51]: Mcp communication established
+[06/02/23 14:54:52]: Working mode:automatic.
+[06/02/23 14:54:54]: Deadman validated
+[06/02/23 14:54:55]: Deadman disabled.
+[06/02/23 14:54:55]: Deadman validated
+[06/02/23 14:54:55]: Settling arm power...
+[06/02/23 14:54:56]: Arm power settled.
+[06/02/23 14:55:01]: COM-PC: destroy session 127.0.0.1 on port 55303 id=#46174104
+[06/02/23 14:55:06]: Deb2304 application started
+[06/02/23 14:55:09]: COM-PC: create session 127.0.0.1 on port 55310 id=#46174000
+[06/02/23 14:55:11]: Deadman enabled.
+[06/02/23 14:56:39]: -----------------------------------------------
+[06/02/23 14:56:39]: Logger started
+[06/02/23 14:56:43]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/02/23 14:56:43]: Cycle time set to 0.004s
+[06/02/23 14:56:43]: Simulation cycle time set to 0.1s
+[06/02/23 14:56:43]: Controller IP address could not be updated
+[06/02/23 14:56:43]: STARC : No STARC board detected on PCI.
+[06/02/23 14:56:43]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/02/23 14:56:43]: Power hour count = 1:38:29
+[06/02/23 14:56:43]: Mac Address = fc-aa-14-6f-b2-24
+[06/02/23 14:56:43]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/02/23 14:56:43]: Error when starting: fieldbus IO
+[06/02/23 14:56:43]: COM-PC: server created on all interfaces [5653]
+[06/02/23 14:56:43]: System: s7.4 Jul  4 2012
+[06/02/23 14:56:43]: Configuration Version: c1.010 
+[06/02/23 14:56:43]: Option testMode: enabled 
+[06/02/23 14:56:43]: Option VAL 3: enabled 
+[06/02/23 14:56:43]: Machine Number: ? 
+[06/02/23 14:56:43]: Arm: tx40-S2-R2 floor
+[06/02/23 14:56:43]: Arm serial number: F12_5M1XA1_A_01 
+[06/02/23 14:56:43]: Robot name:  
+[06/02/23 14:56:43]: Powerlink: s7.4 Jul  4 2012
+[06/02/23 14:56:43]: EP: s7.4 Jul  4 2012
+[06/02/23 14:56:43]: SCA: s7.4 Jul  4 2012
+[06/02/23 14:56:43]: PLC: s7.4 Jul  4 2012
+[06/02/23 14:56:43]: New profile : default
+[06/02/23 14:56:43]: End of controller initialization
+[06/02/23 14:56:43]: System event INTERFACE-Stopped  (Calibration)
+[06/02/23 14:56:43]: System event INTERFACE-Stopped  (Calibration). 6 events lost.
+[06/02/23 14:56:44]: End of arm power shutdown phase.
+[06/02/23 14:56:45]: Internal error MCP-NoAnswer: char 1
+[06/02/23 14:56:51]: MCP communication disconnected
+[06/02/23 14:56:53]: Mcp = TSimulated
+[06/02/23 14:56:53]: Mcp communication established
+[06/02/23 14:56:54]: Working mode:automatic.
+[06/02/23 14:57:07]: Deadman validated
+[06/02/23 14:57:07]: Settling arm power...
+[06/02/23 14:57:08]: Arm power settled.
+[06/02/23 14:57:10]: Deb2304 application started
+[06/02/23 14:57:10]: ERR 122 Cannot write to an input. Deb2304~. 
+[06/02/23 14:57:22]: Deadman enabled.
+[06/02/23 14:57:34]: Project C:\Users\quentin.poloubinski\Documents\Staubli\CS8\Deboxeur230504\Controller1\usr/usrapp/Deb2304 saved.
+[06/02/23 14:57:41]: COM-PC: create session 127.0.0.1 on port 55336 id=#49256272
+[06/02/23 14:57:48]: Deb2304 application stopped
+[06/02/23 14:58:03]: Deb2304 application started
+[06/02/23 14:58:03]: ERR 122 Cannot write to an input. Deb2304~. 
+[06/02/23 14:58:21]: Deb2304 application stopped
+[06/02/23 14:58:57]: Deb2304 application started
+[06/02/23 14:58:57]: ERR 122 Cannot write to an input. Deb2304~. 
+[06/02/23 15:01:28]: -----------------------------------------------
+[06/02/23 15:01:28]: Logger started
+[06/02/23 15:01:32]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/02/23 15:01:32]: Cycle time set to 0.004s
+[06/02/23 15:01:32]: Simulation cycle time set to 0.1s
+[06/02/23 15:01:32]: Controller IP address could not be updated
+[06/02/23 15:01:32]: STARC : No STARC board detected on PCI.
+[06/02/23 15:01:32]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/02/23 15:01:32]: Power hour count = 1:38:29
+[06/02/23 15:01:32]: Mac Address = fc-aa-14-6f-b2-24
+[06/02/23 15:01:32]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/02/23 15:01:32]: Error when starting: fieldbus IO
+[06/02/23 15:01:32]: COM-PC: server created on all interfaces [5653]
+[06/02/23 15:01:32]: System: s7.4 Jul  4 2012
+[06/02/23 15:01:32]: Configuration Version: c1.010 
+[06/02/23 15:01:32]: Option testMode: enabled 
+[06/02/23 15:01:32]: Option VAL 3: enabled 
+[06/02/23 15:01:32]: Machine Number: ? 
+[06/02/23 15:01:32]: Arm: tx40-S2-R2 floor
+[06/02/23 15:01:32]: Arm serial number: F12_5M1XA1_A_01 
+[06/02/23 15:01:32]: Robot name:  
+[06/02/23 15:01:32]: Powerlink: s7.4 Jul  4 2012
+[06/02/23 15:01:32]: EP: s7.4 Jul  4 2012
+[06/02/23 15:01:32]: SCA: s7.4 Jul  4 2012
+[06/02/23 15:01:32]: PLC: s7.4 Jul  4 2012
+[06/02/23 15:01:32]: New profile : default
+[06/02/23 15:01:32]: End of controller initialization
+[06/02/23 15:01:32]: System event INTERFACE-Stopped  (Calibration)
+[06/02/23 15:01:32]: System event INTERFACE-Stopped  (Calibration). 6 events lost.
+[06/02/23 15:01:32]: COM-PC: create session 127.0.0.1 on port 55440 id=#51485328
+[06/02/23 15:01:33]: End of arm power shutdown phase.
+[06/02/23 15:01:34]: Internal error MCP-NoAnswer: char 1
+[06/02/23 15:01:40]: MCP communication disconnected
+[06/02/23 15:01:42]: Mcp = TSimulated
+[06/02/23 15:01:42]: Mcp communication established
+[06/02/23 15:01:42]: Working mode:automatic.
+[06/02/23 15:01:48]: COM-PC: destroy session 127.0.0.1 on port 55440 id=#51485328
+[06/02/23 15:02:06]: Deb2304 application started
+[06/02/23 15:02:09]: Deadman validated
+[06/02/23 15:02:09]: Settling arm power...
+[06/02/23 15:02:10]: Arm power settled.
+[06/02/23 15:02:10]: Cannot move: destination is out of software axis limits
+[06/02/23 15:02:10]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). Deb2304~. 
+[06/02/23 15:02:17]: COM-PC: create session 127.0.0.1 on port 55462 id=#51484912
+[06/02/23 15:02:24]: Deadman enabled.
+[06/02/23 15:06:04]: Deadman disabled.
+[06/02/23 15:06:04]: Arm power shutdown: working mode change.
+[06/02/23 15:06:04]: Arm power shutdown...
+[06/02/23 15:06:04]: Working mode:manual.
+[06/02/23 15:06:05]: End of arm power shutdown phase.
+[06/02/23 15:06:07]: Deadman validated
+[06/02/23 15:06:07]: Settling arm power...
+[06/02/23 15:06:07]: Arm power settled.
+[06/02/23 15:06:08]: Manual motion mode:Connect
+[06/02/23 15:06:08]: Cannot move: destination is out of software axis limits
+[06/02/23 15:06:08]: Manual motion mode:Disabled
+[06/02/23 15:06:08]: Arm power shutdown...
+[06/02/23 15:06:09]: End of arm power shutdown phase.
+[06/02/23 15:06:11]: Saving controller context...
+[06/02/23 15:06:11]: Controller temperature: 28°C
+[06/02/23 15:06:11]: CPU temperature: 28°C
+[06/02/23 15:06:22]: Deadman enabled.
+[06/02/23 15:06:31]: Jog mode cannot be selected: first enable arm power.
+[06/02/23 15:06:33]: Deadman disabled.
+[06/02/23 15:06:33]: Deadman validated
+[06/02/23 15:06:33]: Settling arm power...
+[06/02/23 15:06:34]: Arm power settled.
+[06/02/23 15:06:34]: Manual motion mode:Connect
+[06/02/23 15:06:34]: Cannot move: destination is out of software axis limits
+[06/02/23 15:06:53]: Deadman enabled.
+[06/02/23 15:07:10]: Deb2304 application stopped
+[06/02/23 15:07:10]: Manual motion mode:Disabled
+[06/02/23 15:07:10]: End of connection move.
+[06/02/23 15:07:14]: Deb2304 application started
+[06/02/23 15:08:00]: Deb2304 application stopped
+[06/02/23 15:08:16]: -----------------------------------------------
+[06/02/23 15:08:16]: Logger started
+[06/02/23 15:08:20]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[06/02/23 15:08:20]: Cycle time set to 0.004s
+[06/02/23 15:08:20]: Simulation cycle time set to 0.1s
+[06/02/23 15:08:20]: Controller IP address could not be updated
+[06/02/23 15:08:20]: STARC : No STARC board detected on PCI.
+[06/02/23 15:08:20]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[06/02/23 15:08:20]: Power hour count = 1:42:14
+[06/02/23 15:08:20]: Mac Address = fc-aa-14-6f-b2-24
+[06/02/23 15:08:20]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[06/02/23 15:08:20]: Error when starting: fieldbus IO
+[06/02/23 15:08:20]: COM-PC: server created on all interfaces [5653]
+[06/02/23 15:08:20]: System: s7.4 Jul  4 2012
+[06/02/23 15:08:20]: Configuration Version: c1.010 
+[06/02/23 15:08:20]: Option testMode: enabled 
+[06/02/23 15:08:20]: Option VAL 3: enabled 
+[06/02/23 15:08:20]: Machine Number: ? 
+[06/02/23 15:08:20]: Arm: tx40-S2-R2 floor
+[06/02/23 15:08:20]: Arm serial number: F12_5M1XA1_A_01 
+[06/02/23 15:08:20]: Robot name:  
+[06/02/23 15:08:20]: Powerlink: s7.4 Jul  4 2012
+[06/02/23 15:08:20]: EP: s7.4 Jul  4 2012
+[06/02/23 15:08:20]: SCA: s7.4 Jul  4 2012
+[06/02/23 15:08:20]: PLC: s7.4 Jul  4 2012
+[06/02/23 15:08:20]: New profile : default
+[06/02/23 15:08:20]: End of controller initialization
+[06/02/23 15:08:20]: System event INTERFACE-Stopped  (Calibration)
+[06/02/23 15:08:20]: System event INTERFACE-Stopped  (Calibration). 6 events lost.
+[06/02/23 15:08:20]: COM-PC: create session 127.0.0.1 on port 56008 id=#50371320
+[06/02/23 15:08:21]: End of arm power shutdown phase.
+[06/02/23 15:08:22]: Internal error MCP-NoAnswer: char 1
+[06/02/23 15:08:28]: MCP communication disconnected
+[06/02/23 15:08:30]: Mcp = TSimulated
+[06/02/23 15:08:30]: Mcp communication established
+[06/02/23 15:08:30]: Working mode:manual.
+[06/02/23 15:08:31]: Deadman validated
+[06/02/23 15:08:38]: COM-PC: destroy session 127.0.0.1 on port 56008 id=#50371320
+[06/02/23 15:08:44]: Deadman disabled.
+[06/02/23 15:08:44]: Deadman validated
+[06/02/23 15:08:44]: Settling arm power...
+[06/02/23 15:08:45]: Arm power settled.
+[06/02/23 15:08:48]: Deb2304 application started
+[06/02/23 15:08:51]: COM-PC: create session 127.0.0.1 on port 56016 id=#50369656
+[06/02/23 15:09:03]: Deadman enabled.
+[06/02/23 15:09:15]: Deb2304 application stopped

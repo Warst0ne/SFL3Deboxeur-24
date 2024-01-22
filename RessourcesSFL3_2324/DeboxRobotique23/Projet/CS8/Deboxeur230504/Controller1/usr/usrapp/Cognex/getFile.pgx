@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getFile" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sActiveJob" type="string" use="reference" xsi:type="array" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Returns the filename of the active job on the In-Sight sensor attached
+  //  to camera's ID .
+  //
+  //  !!!The active job must be saved before this command can be executed
+  //  successfully. !!!
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : Camera's ID
+  //
+  //Output parameters
+  //  string x_sActiveJob :
+  //    role : name of the current active job
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call getFile(nCamID,l_ActiveJob,x_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  nProgram[x_nCamID]=5
+  call sendCommand(x_nCamID,"GF",x_bError)
+  //No errors
+  if !x_bError
+    //Read current active job
+    call readSocket(x_nCamID,x_sActiveJob,x_bError)
+  else
+    //Error, no read current active job
+    x_sActiveJob=""
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

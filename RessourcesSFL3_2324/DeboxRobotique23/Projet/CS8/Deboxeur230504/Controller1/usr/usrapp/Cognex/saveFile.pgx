@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="saveFile" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sJob" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Saves the current job in flash memory on the In-Sight sensor
+  //  attached to camera's ID.
+  //
+  //!!! The In-Sight sensor must be Offline  !!!
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  string x_sJob :
+  //    role : The name of the job. The file extension must be .JOB.
+  //
+  //Output parameters
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call saveFile(nCamID,"example.job",l_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  nProgram[x_nCamID]=6
+  call sendCommand(x_nCamID,"TF"+x_sJob,x_bError)
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetOptions>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" LastWriteTime="2023-03-27 17:01:42" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\ashwac.br&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -c &quot;PP500_15&quot; -Z &quot;SafetyRelease: 1.6.0, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -M IA32 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;PP500_15&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" LastWriteTime="2023-03-27 17:01:42" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\Hardware.hw&quot;  -c &quot;PP500_15&quot; -sysconf -S &quot;PLC1&quot; -Z &quot;SafetyRelease: 1.6.0, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\sysconf.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;PP500_15&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" LastWriteTime="2023-03-27 17:01:42" />
+    <Prerequisite ID="c:\brautomation\as46\upgrades\modified.txt" LastWriteTime="2019-06-24 12:47:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\Hardware.hw&quot;  -v V1.00.0 -S &quot;PLC1&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\asfw.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;PP500_15&quot; -zip -s &quot;PP500_15&quot; -firmware -Z &quot;SafetyRelease: 1.6.0, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" LastWriteTime="2023-03-27 17:01:42" />
+    <Prerequisite ID="c:\brautomation\as46\upgrades\modified.txt" LastWriteTime="2019-06-24 12:47:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\Hardware.hw&quot;  -v V1.00.0 -S &quot;PLC1&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\ashwd.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;PP500_15&quot; -zip -s &quot;PP500_15&quot; -hwd -Z &quot;SafetyRelease: 1.6.0, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" LastWriteTime="2023-03-27 17:01:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\iomap.iom" LastWriteTime="2023-03-27 16:54:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\dtm\x20if10d1_1a\x20if10d1_1a.dtm" LastWriteTime="2023-03-27 17:00:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\PP500_15\PLC1\IoMap.iom&quot;  -arconfig -C &quot;/RT=1000 /AM=* /SDT=5 /DA=2 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;PP500_15&quot; -v V1.00.0 -S &quot;PLC1&quot; -Z &quot;SafetyRelease: 1.6.0, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;PP500_15&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as46\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="C:\BrAutomation\AS46\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\iomap.iom" LastWriteTime="2023-03-27 16:54:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\pvmap.vvm" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\hardware.hw" LastWriteTime="2023-03-27 17:01:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.sw" LastWriteTime="2023-03-23 15:01:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\channelconfiguration.xml" LastWriteTime="2023-03-27 17:07:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\PLC1\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\PP500_15\PLC1\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\iomap.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;PP500_15.PLC1&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\brautomation\as46\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS46\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\B0462&quot; &quot;C:\BrAutomation\AS46\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\tcdata\tcdata.imx" LastWriteTime="2023-03-23 15:07:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\tcdata\tcdata.s18d" LastWriteTime="2023-03-23 15:07:18" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\cognex.ox" LastWriteTime="2023-03-23 15:06:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.per" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asicmp\asicmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\Cognex.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic8 -p 2 -s &quot;Cognex&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\cognex.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\a.out" LastWriteTime="2023-03-23 15:06:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asicmp\asicmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\Cognex.ox&quot; -T SG4 -r Cyclic8 -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\cognex.ab.o" LastWriteTime="2023-03-23 15:06:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\_bur_pvdef.st.o" LastWriteTime="2023-03-23 15:06:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asicmp\asicmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\Cognex.ab.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\cognex.ab.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.ab" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asicmp\asicmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Cognex\Cognex.ab&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\Cognex.ab.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;Cognex&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Cognex\Cognex.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Cognex\Cognex.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex\cognex.ab.o" LastWriteTime="2023-03-23 15:06:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asicmp\asicmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognex\cognex.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS46\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Cognex\_bur_pvdef.st.o&quot; -S &quot;Cognex.ab&quot;  -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;Cognex&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\Cognex\Cognex.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Cognex\Cognex.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\cognexvisn.ox" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.per" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisnativemode\cognexvisnativemode.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\CognexVisN.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic8 -p 3 -s &quot;CognexVisNativeMode&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\cognexvisn.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\a.out" LastWriteTime="2023-03-23 15:07:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisnativemode\cognexvisnativemode.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\CognexVisN.ox&quot; -T SG4 -r Cyclic8 -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\cognexvisnativemode.ab.o" LastWriteTime="2023-03-23 15:07:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\_bur_pvdef.st.o" LastWriteTime="2023-03-23 15:07:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisnativemode\cognexvisnativemode.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\CognexVisNativeMode.ab.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\cognexvisnativemode.ab.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisnativemode\cognexvisnativemode.ab" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisnativemode\cognexvisnativemode.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\CognexVisNativeMode\CognexVisNativeMode.ab&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\CognexVisNativeMode.ab.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisNativeMode&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisNativeMode\CognexVisNativeMode.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisNativeMode\CognexVisNativeMode.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn\cognexvisnativemode.ab.o" LastWriteTime="2023-03-23 15:07:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisnativemode\cognexvisnativemode.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS46\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisN\_bur_pvdef.st.o&quot; -S &quot;CognexVisNativeMode.ab&quot;  -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisNativeMode&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisNativeMode\CognexVisNativeMode.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisNativeMode\CognexVisNativeMode.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\cognexvisc.ox" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.per" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexviscommissioning\cognexviscommissioning.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\CognexVisC.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic8 -p 4 -s &quot;CognexVisCommissioning&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\cognexvisc.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\a.out" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexviscommissioning\cognexviscommissioning.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\CognexVisC.ox&quot; -T SG4 -r Cyclic8 -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\cognexviscommissioning.ab.o" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\_bur_pvdef.st.o" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexviscommissioning\cognexviscommissioning.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\CognexVisCommissioning.ab.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\cognexviscommissioning.ab.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexviscommissioning\cognexviscommissioning.ab" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexviscommissioning\cognexviscommissioning.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\CognexVisCommissioning\CognexVisCommissioning.ab&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\CognexVisCommissioning.ab.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisCommissioning&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisCommissioning\CognexVisCommissioning.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisCommissioning\CognexVisCommissioning.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc\cognexviscommissioning.ab.o" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexviscommissioning\cognexviscommissioning.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS46\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisC\_bur_pvdef.st.o&quot; -S &quot;CognexVisCommissioning.ab&quot;  -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisCommissioning&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisCommissioning\CognexVisCommissioning.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisCommissioning\CognexVisCommissioning.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\cognexvisa.ox" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.per" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisarchive\cognexvisarchive.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\CognexVisA.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic8 -p 5 -s &quot;CognexVisArchive&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\cognexvisa.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\a.out" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisarchive\cognexvisarchive.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\CognexVisA.ox&quot; -T SG4 -r Cyclic8 -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\cognexvisarchive.ab.o" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\_bur_pvdef.st.o" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisarchive\cognexvisarchive.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\CognexVisArchive.ab.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\cognexvisarchive.ab.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisarchive\cognexvisarchive.ab" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisarchive\cognexvisarchive.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\CognexVisArchive\CognexVisArchive.ab&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\CognexVisArchive.ab.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisArchive&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisArchive\CognexVisArchive.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisArchive\CognexVisArchive.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa\cognexvisarchive.ab.o" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvisarchive\cognexvisarchive.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS46\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisA\_bur_pvdef.st.o&quot; -S &quot;CognexVisArchive.ab&quot;  -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisArchive&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisArchive\CognexVisArchive.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisArchive\CognexVisArchive.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\cognexvism.ox" LastWriteTime="2023-03-23 15:07:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.per" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astime\astime.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvismain\cognexvismain.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\CognexVisM.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic8 -p 6 -s &quot;CognexVisMain&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="0" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\cognexvism.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\a.out" LastWriteTime="2023-03-23 15:07:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astime\astime.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvismain\cognexvismain.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\CognexVisM.ox&quot; -T SG4 -r Cyclic8 -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\cognexvismain.ab.o" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\_bur_pvdef.st.o" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astime\astime.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvismain\cognexvismain.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\CognexVisMain.ab.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\cognexvismain.ab.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvismain\cognexvismain.ab" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astime\astime.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvismain\cognexvismain.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\CognexVisMain\CognexVisMain.ab&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\CognexVisMain.ab.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisMain&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisMain\CognexVisMain.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisMain\CognexVisMain.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism\cognexvismain.ab.o" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astime\astime.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\cognexvismain\cognexvismain.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.var" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\visapi\visapi.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS46\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\CognexVisM\_bur_pvdef.st.o&quot; -S &quot;CognexVisMain.ab&quot;  -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;CognexVisMain&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -pointers -extComments -extBitAccess -extConstants -D _SG4 -l &quot;$(AS_PROJECT_PATH)\Logical\CognexVisMain\CognexVisMain.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\CognexVisMain\CognexVisMain.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\asstring\asstring.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\standard\standard.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\FileIO\FileIO.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\Visapi\Visapi.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsTCP\AsTCP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsICMP\AsICMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\fileio.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0462\sg4\ia32\fileio.br" LastWriteTime="2019-05-20 20:37:08" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0462\SG4\Ia32\FileIO.br, $(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\FileIO.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\visapi.br">
+    <Prerequisite ID="c:\brautomation\as46\as\vc\firmware\v4.62.0\sg4\ia32\visapi.br" LastWriteTime="2019-05-02 09:02:14" />
+    <CommandLine Parameter="C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\Visapi.br, $(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Visapi.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp\br_atl_bmp.ox" LastWriteTime="2023-03-23 15:07:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\ansic.lby" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp_loc.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP\BR_ATL_BMP.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;FileIO: V* - V*&quot; -r Library -R &quot;Convert bitmaps from 8 to 24 bit color&quot; -s &quot;Libraries.BR_ATL_BMP&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp\br_atl_bmp.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp\a.out" LastWriteTime="2023-03-23 15:07:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp_loc.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP\BR_ATL_BMP.ox&quot; -T SG4 -r Library -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp\br_atl_bmp.c.o" LastWriteTime="2023-03-23 15:07:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP\BR_ATL_BMP.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp\br_atl_bmp.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\br_atl_bmp.h" LastWriteTime="2023-03-23 15:06:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\fileio.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\runtime.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_bmp\br_atl_bmp_loc.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asstring.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\sys_lib.h" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_BMP\BR_ATL_BMP.c.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;Libraries.BR_ATL_BMP&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_BMP&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\BR_ATL_BMP&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Libraries.h&quot; -D _BR_ATL_BMP_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log\br_atl_log.ox" LastWriteTime="2023-03-23 15:07:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\ansic.lby" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG\BR_ATL_LOG.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -r Library -s &quot;Libraries.BR_ATL_LOG&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log\br_atl_log.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log\a.out" LastWriteTime="2023-03-23 15:07:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG\BR_ATL_LOG.ox&quot; -T SG4 -r Library -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log\br_atl_log.c.o" LastWriteTime="2023-03-23 15:07:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG\BR_ATL_LOG.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log\br_atl_log.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_log\br_atl_log.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\br_atl_log.h" LastWriteTime="2023-03-23 15:06:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asstring.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\sys_lib.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\runtime.h" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_LOG\BR_ATL_LOG.c.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;Libraries.BR_ATL_LOG&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_LOG&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\BR_ATL_LOG&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Libraries.h&quot; -D _BR_ATL_LOG_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog\br_atl_cog.ox" LastWriteTime="2023-03-23 15:07:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\ansic.lby" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog_loc.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG\BR_ATL_COG.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG.br&quot; -v V1.10.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\PP500_15\PLC1\LT.ofs&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -extConstants -d &quot;AsTCP: V* - V*,standard: V* - V*,FileIO: V* - V*&quot; -r Library -R &quot;Cognex camera addon library&quot; -s &quot;Libraries.BR_ATL_COG&quot; -L &quot;AsICMP: V*, AsIecCon: V*, asstring: V*, AsTCP: V*, AsTime: V*, BR_ATL_BMP: V*, BR_ATL_COG: V1.10.0, BR_ATL_LOG: V*, FileIO: V*, Operator: V*, Runtime: V*, standard: V*, sys_lib: V*, Visapi: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog\br_atl_cog.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog\a.out" LastWriteTime="2023-03-23 15:07:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog_loc.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG\BR_ATL_COG.ox&quot; -T SG4 -r Library -G V4.1.2  -B B4.62 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog\br_atl_cog.c.o" LastWriteTime="2023-03-23 15:07:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\astcp\astcp.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.typ" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\standard\standard.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\fileio\fileio.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asstring\asstring.fun" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG\BR_ATL_COG.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_COG.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_BMP.a&quot; &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\PP500_15\PLC1\libBR_ATL_LOG.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsICMP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libFileIO.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libAsTime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libstandard.a&quot; &quot;-Wl,C:\BrAutomation\AS46\AS\VC\Firmware\V4.62.0\SG4\Ia32\libVisapi.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libasstring.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libRuntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\B0462\SG4\Ia32\libOperator.a&quot; -specs=I386specs_brelf" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog\br_atl_cog.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog.c" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\br_atl_cog.h" LastWriteTime="2023-03-23 15:06:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\fileio.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\runtime.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\astcp.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\standard.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\br_atl_cog\br_atl_cog_loc.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\asstring.h" LastWriteTime="2023-03-13 17:19:54" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="c:\brautomation\as46\as\gnuinst\v4.1.2\i386-elf\include\sys\string.h" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\sys_lib.h" LastWriteTime="2023-03-13 17:19:54" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\BR_ATL_COG\BR_ATL_COG.c.o&quot; -T SG4 -M IA32 -B B4.62 -G V4.1.2  -s &quot;Libraries.BR_ATL_COG&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\BR_ATL_COG&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\BR_ATL_COG&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -g -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\Libraries.h&quot; -D _BR_ATL_COG_EXPORT -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\astcp.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0462\sg4\ia32\astcp.br" LastWriteTime="2019-05-20 20:37:04" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0462\SG4\Ia32\AsTCP.br, $(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\AsTCP.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asicmp.br">
+    <Prerequisite ID="c:\brautomation\as\system\b0462\sg4\ia32\asicmp.br" LastWriteTime="2019-05-20 20:36:56" />
+    <CommandLine Parameter="C:\BrAutomation\AS\System\B0462\SG4\Ia32\AsICMP.br, $(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\AsICMP.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asnxdb1.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\dtm\x20if10d1_1a\x20if10d1_1a.dtm" LastWriteTime="2023-03-27 17:00:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\PP500_15\PLC1\DTM\X20IF10D1_1a\X20IF10D1_1a.dtm&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\asnxdb1.br&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;PP500_15&quot; " />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\PP500_15\PLC1\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\pp500_15\plc1\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\ashwac.br" LastWriteTime="2023-03-23 15:07:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\sysconf.br" LastWriteTime="2023-03-23 15:07:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asfw.br" LastWriteTime="2023-03-27 17:07:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\ashwd.br" LastWriteTime="2023-03-27 17:07:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\arconfig.br" LastWriteTime="2023-03-27 17:07:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\udbdef.br" LastWriteTime="2019-04-26 08:10:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\iomap.br" LastWriteTime="2023-03-27 17:07:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\tcdata.br" LastWriteTime="2023-03-23 15:07:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognex.br" LastWriteTime="2023-03-23 15:07:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisn.br" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisc.br" LastWriteTime="2023-03-23 15:07:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvisa.br" LastWriteTime="2023-03-23 15:07:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\cognexvism.br" LastWriteTime="2023-03-23 15:07:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\fileio.br" LastWriteTime="2019-05-20 20:37:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\visapi.br" LastWriteTime="2019-05-02 09:02:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_bmp.br" LastWriteTime="2023-03-23 15:07:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_log.br" LastWriteTime="2023-03-23 15:07:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\br_atl_cog.br" LastWriteTime="2023-03-23 15:07:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\astcp.br" LastWriteTime="2019-05-20 20:37:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asicmp.br" LastWriteTime="2019-05-20 20:36:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\pp500_15\plc1\asnxdb1.br" LastWriteTime="2023-03-27 17:07:42" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\pp500_15\plc1\cpu.sw" LastWriteTime="2023-03-23 15:01:04" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\Cognex_V1_5.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;PP500_15&quot; -i &quot;C:\BrAutomation\AS46&quot; -S &quot;PLC1&quot; -A &quot;PP500&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\PP500_15\PLC1\Cpu.sw&quot; -Z &quot;SafetyRelease: 1.6.0, Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=* /SDT=5 /DA=2 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

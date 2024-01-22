@@ -1,0 +1,192 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Author: strickers
+ * Version: 1.0
+ * This task has the following purpose
+ * - Connect to Cognex telnet (Native interface)
+ * - Read command_status information
+ * - Read and write camera jobs
+ * - Read and write camera settings
+ ********************************************************************)
+
+PROGRAM _INIT
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create file device for Cognex files and configuration files *)
+	LOOP
+		DevLink_0.enable 	= 1
+		DevLink_0.pDevice 	= ADR("root")
+		DevLink_0.pParam 	= ADR("/DEVICE=C:\\")
+		DevLink_0 FUB DevLink()
+		EXITIF(DevLink_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create folder for Cognex files and configuration files *)
+	LOOP
+		DirCreate_0.enable 	= 1
+		DirCreate_0.pDevice = ADR("root")
+		DirCreate_0.pName 	= ADR("cognex_files")
+		DirCreate_0 FUB DirCreate()
+		EXITIF(DirCreate_0.status <> 65535)
+	ENDLOOP
+	(* --------------------------------------------------------------------------------------------------------- *)
+	(* Create file device for Cognex files and configuration files *)
+	LOOP
+		DevLink_0.enable 	= 1
+		DevLink_0.pDevice 	= ADR("CognexFiles")
+		DevLink_0.pParam 	= ADR("/DEVICE=C:\\cognex_files")
+		DevLink_0 FUB DevLink()
+		EXITIF(DevLink_0.status <> 65535)
+	ENDLOOP
+	NativeModeStatus = VIS_INACTIVE
+	TransferProgressStatus = VIS_HIDDEN
+END_PROGRAM
+
+PROGRAM _CYCLIC
+
+(* --------------------------------------------------------------------------------------------------------- *)
+(* Connect to camera
+(* --------------------------------------------------------------------------------------------------------- *)
+IF(EDGEPOS(vkNativeModeConnect)) THEN
+	NewLogEntry("Connecting to camera...", ADR(logbook), 20)
+ENDIF
+IF(vkNativeModeConnect = TRUE) THEN
+	IF(NativeModeLoggedIn = FALSE) THEN
+		NativeModeLogin_0.enable = 1
+		NativeModeLogin_0.ip = ADR(CognexEthIP)
+		NativeModeLogin_0 FUB NativeModeLogin()
+		IF(NativeModeLogin_0.status <> 65535) THEN
+			IF(NativeModeLogin_0.status = 0) THEN
+				NewLogEntry("Loggged into camera", ADR(logbook), 20)
+				NativeModeLoggedIn	= TRUE
+				NativeModeStatus 	= VIS_ACTIVE
+				NaticeModeCommand 	= CMD_SET_OFFLINE
+			ELSE
+				NewLogEntry("Failed to log into camera", ADR(logbook), 20)
+				NativeModeStatus 	= VIS_INACTIVE
+				vsErrorReset 		= VIS_ACTIVE
+			ENDIF
+			vkNativeModeConnect = FALSE
+		endif
+	ELSE
+(* --------------------------------------------------------------------------------------------------------- *)
+(* Disconnect from camera
+(* --------------------------------------------------------------------------------------------------------- *)
+		NativeModeLogout_0.enable = 1
+		NativeModeLogout_0.ident = NativeModeLogin_0.ident
+		NativeModeLogout_0 FUB NativeModeLogout()
+		IF(NativeModeLogout_0.status <> 65535) THEN
+			NewLogEntry("Loggged out of camera", ADR(logbook), 20)
+			NativeModeWriteFile_0.enable = 0
+			NativeModeWriteFile_0 FUB NativeModeWriteFile()
+
+			vsTransferProgress 		= 0
+			TransferProgressStatus  = VIS_HIDDEN
+			vkTransferWrite 		= NONE
+
+			NativeModeLogin_0.enable = 0
+			NativeModeLogin_0 FUB NativeModeLogin()
+			NativeModeStatus 	= VIS_INACTIVE
+			NativeModeLoggedIn	= FALSE
+			vkNativeModeConnect	= FALSE
+		ENDIF
+	ENDIF
+ENDIF
+
+(* --------------------------------------------------------------------------------------------------------- *)
+(* Use command interface for Cognex camera
+(* --------------------------------------------------------------------------------------------------------- *)
+IF EDGEPOS(NaticeModeCommand = CMD_SET_OFFLINE) THEN
+	NativeModeCommand_0.command = ADR("SO0")
+	NewLogEntry("Set camera offline", ADR(logbook), 20)
+ENDIF
+IF(NaticeModeCommand <> NONE) THEN
+	NativeModeCommand_0.enable 		= 1
+	NativeModeCommand_0.ident 		= NativeModeLogin_0.ident
+	NativeModeCommand_0.out_data 	= ADR(data)
+	NativeModeCommand_0.out_size 	= SIZEOF(data)
+	NativeModeCommand_0 FUB NativeModeCommand()
+	NativeModeStatus = VIS_INACTIVE
+	IF(NativeModeCommand_0.status <> 65535) THEN
+		IF(NativeModeCommand_0.status = 0) THEN
+			NewLogEntry("Command finished", ADR(logbook), 20)
+			(* Separate data stream by \r\n and split into strings *)
+			NativeModeCommandStatus = NativeModeSeparateData(ADR(data), NativeModeCommand_0.in_size, ADR(data_string), SIZEOF(data_string[0]), SIZEOF(data_string)/SIZEOF(data_string[0]))
+			(* Check camera responds (1 = The command was executed successfully. 0=Unrecognized command. -2=The command could not be executed. *)
+ 			IF(NativeModeCommandStatus = 1) THEN
+				NativeModeStatus = VIS_ACTIVE
+			ELSE
+				NewLogEntry("Camera responded with error", ADR(logbook), 20)
+				vsErrorReset = VIS_ACTIVE
+			ENDIF
+		ELSE
+			NewLogEntry("Command failed", ADR(logbook), 20)
+			vsErrorReset = VIS_ACTIVE
+		ENDIF
+		NaticeModeCommand = NONE
+	ENDIF
+ENDIF
+
+(* --------------------------------------------------------------------------------------------------------- *)
+(* Write file to Cognex camera
+(* --------------------------------------------------------------------------------------------------------- *)
+IF EDGEPOS(vkTransferWrite = WRITE_ID1) THEN
+	NativeModeWriteFile_0.command 	= ADR("WJ1")
+	NativeModeWriteFile_0.file_name = ADR("1_Powerlink.job")
+	NewLogEntry("Write job file ID1", ADR(logbook), 20)
+ENDIF
+IF EDGEPOS(vkTransferWrite = WRITE_ID2) THEN
+	NativeModeWriteFile_0.command 	= ADR("WJ2")
+	NativeModeWriteFile_0.file_name = ADR("2_Powerlink.job")
+	NewLogEntry("Write job file ID2", ADR(logbook), 20)
+ENDIF
+IF EDGEPOS(vkTransferWrite = WRITE_CFG) THEN
+	NativeModeWriteFile_0.command 	= ADR("WS")
+	NativeModeWriteFile_0.file_name = ADR("proc.set")
+	NewLogEntry("Write configuration file", ADR(logbook), 20)
+ENDIF
+IF(vkTransferWrite <> NONE) THEN
+	NativeModeWriteFile_0.enable 	= 1
+	NativeModeWriteFile_0.ident 	= NativeModeLogin_0.ident
+	NativeModeWriteFile_0.device 	= ADR("CognexFiles")
+	NativeModeWriteFile_0 FUB NativeModeWriteFile()
+	vsTransferProgress 		= NativeModeWriteFile_0.progress
+	TransferProgressStatus  = VIS_ACTIVE
+	NativeModeStatus 		= VIS_INACTIVE
+	IF(NativeModeWriteFile_0.status <> 65535) THEN
+		IF(NativeModeWriteFile_0.status = 0) THEN
+			NewLogEntry("Write file finished", ADR(logbook), 20)
+			NativeModeStatus = VIS_ACTIVE
+		ELSE
+			NewLogEntry("Write file failed", ADR(logbook), 20)
+			vsErrorReset = VIS_ACTIVE
+		ENDIF
+		TransferProgressStatus = VIS_HIDDEN
+		vkTransferWrite = NONE
+	ENDIF
+ENDIF
+
+(* --------------------------------------------------------------------------------------------------------- *)
+(* Error handling and reset
+(* --------------------------------------------------------------------------------------------------------- *)
+IF (vkErrorReset) THEN
+	IF(NativeModeLogin_0.status <> 0) THEN
+		NativeModeLogin_0.enable = 0
+		NativeModeLogin_0 FUB NativeModeLogin()
+		NativeModeLogout_0.enable = 1
+		NativeModeLogout_0.ident = NativeModeLogin_0.ident
+		NativeModeLogout_0 FUB NativeModeLogout()
+	ENDIF
+	vsTransferProgress = 0
+	vkNativeModeConnect = FALSE
+	NativeModeWriteFile_0.enable = 0
+	NativeModeWriteFile_0 FUB NativeModeWriteFile()
+	NativeModeCommand_0.enable = 0
+	NativeModeCommand_0 FUB NativeModeCommand()
+	memset(ADR(logbook), 0, SIZEOF(logbook))
+	NativeModeStatus 	= VIS_INACTIVE
+	vsErrorReset 		= VIS_HIDDEN
+	vkErrorReset 		= 0
+ENDIF
+
+END_PROGRAM

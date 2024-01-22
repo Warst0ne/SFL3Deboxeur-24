@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/BR_ATL_BMP/BR_ATL_BMP.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/FileIO/FileIO.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/BR_ATL_BMP/BR_ATL_BMP.typ
+$(AS_PROJECT_PATH)/Logical/Libraries/asstring/asstring.fun

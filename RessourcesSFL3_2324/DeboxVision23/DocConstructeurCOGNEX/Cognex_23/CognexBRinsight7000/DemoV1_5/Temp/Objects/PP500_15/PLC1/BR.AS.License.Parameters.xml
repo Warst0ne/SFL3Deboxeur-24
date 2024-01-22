@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=* /SDT=5 /DA=2 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5.apj</ApjFullFileName>
+    <ProjectName>Cognex_V1_5</ProjectName>
+    <ActiveConfigurationName>PP500_15</ActiveConfigurationName>
+    <LicenseDataFolder>C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Temp\Objects\PP500_15\PLC1</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

@@ -1,0 +1,21 @@
+Thu Jun 01 09:38:36 2023
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Thu Jun 01 09:38:36 2023
+No ARsim registration found!
+
+Thu Jun 01 09:38:36 2023
+InstanceName: 01d9945c138389f0
+
+Thu Jun 01 09:38:36 2023
+WorkingDirectory: C:\projects\DeboxPP70\Temp\Simulation\Config230524\4PPC70_0702_20B\
+
+Thu Jun 01 09:38:36 2023
+COMMAND_COLDSTART
+
+Thu Jun 01 09:38:39 2023
+Version: B4.62
+
+Thu Jun 01 12:04:30 2023
+COMMAND_TERMINATE
+

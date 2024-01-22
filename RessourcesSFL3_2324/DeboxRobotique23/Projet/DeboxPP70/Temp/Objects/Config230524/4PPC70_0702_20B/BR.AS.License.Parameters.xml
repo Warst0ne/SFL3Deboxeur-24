@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
+    <ConnectionParameters>/AM=* /DAIP=10.16.7.34 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>C:\projects\DeboxPP70\DeboxPP70.apj</ApjFullFileName>
+    <ProjectName>DeboxPP70</ProjectName>
+    <ActiveConfigurationName>Config230524</ActiveConfigurationName>
+    <LicenseDataFolder>C:\projects\DeboxPP70\Temp\Objects\Config230524\4PPC70_0702_20B</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

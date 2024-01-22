@@ -1,0 +1,13 @@
+<BuildOptions>
+  <BuildOption>
+    <SourceFile Value="C:/Users/hugo.pageaux/Documents/GitHub/SN2_SFL3_Deboxeur_23/Ressource_sfl3/Cognex_23/CognexBRinsight7000/DemoV1_5/Cognex_V1_5/Physical/PP500_15/PLC1/Cpu.sw" />
+    <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
+    <Xml>
+      <Task Name="Cognex" Source="Cognex.prg" />
+      <Task Name="CognexVisN" Source="CognexVisNativeMode.prg" />
+      <Task Name="CognexVisC" Source="CognexVisCommissioning.prg" />
+      <Task Name="CognexVisA" Source="CognexVisArchive.prg" />
+      <Task Name="CognexVisM" Source="CognexVisMain.prg" />
+    </Xml>
+  </BuildOption>
+</BuildOptions>

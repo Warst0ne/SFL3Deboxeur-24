@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.6.3.55 SP"?>
+<Objects>
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Package.pkg"
+    LogicalPath=""
+    Type="Package.ParentUnknown"
+    LastWriteTime="133231979943200788" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Global.typ"
+    LogicalPath="Global.typ"
+    Type="File"
+    LastWriteTime="133231979942721077"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Global.var"
+    LogicalPath="Global.var"
+    Type="File"
+    LastWriteTime="133231979942731071"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Package.pkg"
+    LogicalPath="Libraries"
+    Type="Package"
+    LastWriteTime="133231979943040888" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Operator\Binary.lby"
+    LogicalPath="Libraries.Operator"
+    Type="Library"
+    LastWriteTime="133231979943020894" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Operator\operator.fun"
+    LogicalPath="Libraries.Operator.operator.fun"
+    Type="File"
+    LastWriteTime="133231979943030883"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Runtime\Binary.lby"
+    LogicalPath="Libraries.Runtime"
+    Type="Library"
+    LastWriteTime="133231979943040888" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Runtime\runtime.var"
+    LogicalPath="Libraries.Runtime.runtime.var"
+    Type="File"
+    LastWriteTime="133231979943060869"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Runtime\runtime.typ"
+    LogicalPath="Libraries.Runtime.runtime.typ"
+    Type="File"
+    LastWriteTime="133231979943060869"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Runtime\runtime.fun"
+    LogicalPath="Libraries.Runtime.runtime.fun"
+    Type="File"
+    LastWriteTime="133231979943060869"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTime\Binary.lby"
+    LogicalPath="Libraries.AsTime"
+    Type="Library"
+    LastWriteTime="133231979942811018" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTime\astime.var"
+    LogicalPath="Libraries.AsTime.astime.var"
+    Type="File"
+    LastWriteTime="133231979942890975"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTime\astime.typ"
+    LogicalPath="Libraries.AsTime.astime.typ"
+    Type="File"
+    LastWriteTime="133231979942890975"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTime\astime.fun"
+    LogicalPath="Libraries.AsTime.astime.fun"
+    Type="File"
+    LastWriteTime="133231979942880983"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsIecCon\Binary.lby"
+    LogicalPath="Libraries.AsIecCon"
+    Type="Library"
+    LastWriteTime="133231979942771053" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsIecCon\AsIecCon.fun"
+    LogicalPath="Libraries.AsIecCon.AsIecCon.fun"
+    Type="File"
+    LastWriteTime="133231979942771053"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\sys_lib\Binary.lby"
+    LogicalPath="Libraries.sys_lib"
+    Type="Library"
+    LastWriteTime="133231979943180798" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\sys_lib\sys_lib.var"
+    LogicalPath="Libraries.sys_lib.sys_lib.var"
+    Type="File"
+    LastWriteTime="133231979943200788"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\sys_lib\sys_lib.typ"
+    LogicalPath="Libraries.sys_lib.sys_lib.typ"
+    Type="File"
+    LastWriteTime="133231979943200788"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\sys_lib\sys_lib.fun"
+    LogicalPath="Libraries.sys_lib.sys_lib.fun"
+    Type="File"
+    LastWriteTime="133231979943200788"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\asstring\Binary.lby"
+    LogicalPath="Libraries.asstring"
+    Type="Library"
+    LastWriteTime="133231979943130842" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\asstring\asstring.fun"
+    LogicalPath="Libraries.asstring.asstring.fun"
+    Type="File"
+    LastWriteTime="133231979943150814"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\FileIO\Binary.lby"
+    LogicalPath="Libraries.FileIO"
+    Type="Library"
+    LastWriteTime="133231979943000904" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\FileIO\FileIO.var"
+    LogicalPath="Libraries.FileIO.FileIO.var"
+    Type="File"
+    LastWriteTime="133231979943010902"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\FileIO\FileIO.typ"
+    LogicalPath="Libraries.FileIO.FileIO.typ"
+    Type="File"
+    LastWriteTime="133231979943010902"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\FileIO\FileIO.fun"
+    LogicalPath="Libraries.FileIO.FileIO.fun"
+    Type="File"
+    LastWriteTime="133231979943000904"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Visapi\Binary.lby"
+    LogicalPath="Libraries.Visapi"
+    Type="Library"
+    LastWriteTime="133231979943070869" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Visapi\Visapi.typ"
+    LogicalPath="Libraries.Visapi.Visapi.typ"
+    Type="File"
+    LastWriteTime="133231979943110860"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Visapi\Visapi.fun"
+    LogicalPath="Libraries.Visapi.Visapi.fun"
+    Type="File"
+    LastWriteTime="133231979943110860"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\Visapi\Visapi.var"
+    LogicalPath="Libraries.Visapi.Visapi.var"
+    Type="File"
+    LastWriteTime="133231979943120851"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTCP\Binary.lby"
+    LogicalPath="Libraries.AsTCP"
+    Type="Library"
+    LastWriteTime="133231979942801029" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTCP\AsTCP.var"
+    LogicalPath="Libraries.AsTCP.AsTCP.var"
+    Type="File"
+    LastWriteTime="133231979942791032"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTCP\AsTCP.typ"
+    LogicalPath="Libraries.AsTCP.AsTCP.typ"
+    Type="File"
+    LastWriteTime="133231979942791032"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsTCP\AsTCP.fun"
+    LogicalPath="Libraries.AsTCP.AsTCP.fun"
+    Type="File"
+    LastWriteTime="133231979942791032"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsICMP\Binary.lby"
+    LogicalPath="Libraries.AsICMP"
+    Type="Library"
+    LastWriteTime="133231979942741058" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsICMP\AsICMP.var"
+    LogicalPath="Libraries.AsICMP.AsICMP.var"
+    Type="File"
+    LastWriteTime="133231979942741058"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\AsICMP\AsICMP.fun"
+    LogicalPath="Libraries.AsICMP.AsICMP.fun"
+    Type="File"
+    LastWriteTime="133231979942731071"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\standard\Binary.lby"
+    LogicalPath="Libraries.standard"
+    Type="Library"
+    LastWriteTime="133231979943150814" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\standard\standard.fun"
+    LogicalPath="Libraries.standard.standard.fun"
+    Type="File"
+    LastWriteTime="133231979943170807"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_LOG\ANSIC.lby"
+    LogicalPath="Libraries.BR_ATL_LOG"
+    Type="Library"
+    LastWriteTime="133231979942960932" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.typ"
+    LogicalPath="Libraries.BR_ATL_LOG.BR_ATL_LOG.typ"
+    Type="File"
+    LastWriteTime="133231979942990916"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.var"
+    LogicalPath="Libraries.BR_ATL_LOG.BR_ATL_LOG.var"
+    Type="File"
+    LastWriteTime="133231979943000904"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.fun"
+    LogicalPath="Libraries.BR_ATL_LOG.BR_ATL_LOG.fun"
+    Type="File"
+    LastWriteTime="133231979942960932"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_LOG\BR_ATL_LOG.c"
+    LogicalPath="Libraries.BR_ATL_LOG.BR_ATL_LOG.c"
+    Type="File"
+    LastWriteTime="133231979942960932"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_BMP\ANSIC.lby"
+    LogicalPath="Libraries.BR_ATL_BMP"
+    Type="Library"
+    LastWriteTime="133231979942900966" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.typ"
+    LogicalPath="Libraries.BR_ATL_BMP.BR_ATL_BMP.typ"
+    Type="File"
+    LastWriteTime="133231979942910963"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.var"
+    LogicalPath="Libraries.BR_ATL_BMP.BR_ATL_BMP.var"
+    Type="File"
+    LastWriteTime="133231979942910963"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.fun"
+    LogicalPath="Libraries.BR_ATL_BMP.BR_ATL_BMP.fun"
+    Type="File"
+    LastWriteTime="133231979942900966"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP.c"
+    LogicalPath="Libraries.BR_ATL_BMP.BR_ATL_BMP.c"
+    Type="File"
+    LastWriteTime="133231979942900966"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_BMP\BR_ATL_BMP_LOC.h"
+    LogicalPath="Libraries.BR_ATL_BMP.BR_ATL_BMP_LOC.h"
+    Type="File"
+    LastWriteTime="133231979942920953"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_COG\ANSIC.lby"
+    LogicalPath="Libraries.BR_ATL_COG"
+    Type="Library"
+    LastWriteTime="133231979942920953" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.typ"
+    LogicalPath="Libraries.BR_ATL_COG.BR_ATL_COG.typ"
+    Type="File"
+    LastWriteTime="133231979942950947"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.var"
+    LogicalPath="Libraries.BR_ATL_COG.BR_ATL_COG.var"
+    Type="File"
+    LastWriteTime="133231979942950947"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.fun"
+    LogicalPath="Libraries.BR_ATL_COG.BR_ATL_COG.fun"
+    Type="File"
+    LastWriteTime="133231979942940945"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_COG\BR_ATL_COG.c"
+    LogicalPath="Libraries.BR_ATL_COG.BR_ATL_COG.c"
+    Type="File"
+    LastWriteTime="133231979942940945"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Libraries\BR_ATL_COG\BR_ATL_COG_LOC.h"
+    LogicalPath="Libraries.BR_ATL_COG.BR_ATL_COG_LOC.h"
+    Type="File"
+    LastWriteTime="133231979942960932"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\Package.pkg"
+    LogicalPath="AdditionalFiles"
+    Type="Package"
+    LastWriteTime="133231979942370563" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\1_Powerlink.job"
+    LogicalPath="AdditionalFiles.1_Powerlink.job"
+    Type="File"
+    LastWriteTime="133231979941976006"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\2_Powerlink.job"
+    LogicalPath="AdditionalFiles.2_Powerlink.job"
+    Type="File"
+    LastWriteTime="133231979942107295"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\3_Powerlink.job"
+    LogicalPath="AdditionalFiles.3_Powerlink.job"
+    Type="File"
+    LastWriteTime="133231979942180649"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\settings.dat"
+    LogicalPath="AdditionalFiles.settings.dat"
+    Type="File"
+    LastWriteTime="133231979942370563"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\DemoUserGuideV1_2.pdf"
+    LogicalPath="AdditionalFiles.DemoUserGuideV1_2.pdf"
+    Type="File"
+    LastWriteTime="133231979942340582"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\AdditionalFiles\LibraryUserGuideV1_0.pdf"
+    LogicalPath="AdditionalFiles.LibraryUserGuideV1_0.pdf"
+    Type="File"
+    LastWriteTime="133231979942370563"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Cognex\IEC.prg"
+    LogicalPath="Cognex"
+    Type="Program"
+    LastWriteTime="133231979942390564" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Cognex\Cognex.ab"
+    LogicalPath="Cognex.Cognex.ab"
+    Type="File"
+    LastWriteTime="133231979942380560"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Cognex\Cognex.typ"
+    LogicalPath="Cognex.Cognex.typ"
+    Type="File"
+    LastWriteTime="133231979942380560"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Cognex\Cognex.var"
+    LogicalPath="Cognex.Cognex.var"
+    Type="File"
+    LastWriteTime="133231979942380560"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisCommissioning\IEC.prg"
+    LogicalPath="CognexVisCommissioning"
+    Type="Program"
+    LastWriteTime="133231979942672422" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisCommissioning\CognexVisCommissioning.ab"
+    LogicalPath="CognexVisCommissioning.CognexVisCommissioning.ab"
+    Type="File"
+    LastWriteTime="133231979942428038"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisCommissioning\CognexVisCommissioning.typ"
+    LogicalPath="CognexVisCommissioning.CognexVisCommissioning.typ"
+    Type="File"
+    LastWriteTime="133231979942428038"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisCommissioning\CognexVisCommissioning.var"
+    LogicalPath="CognexVisCommissioning.CognexVisCommissioning.var"
+    Type="File"
+    LastWriteTime="133231979942672422"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisNativeMode\IEC.prg"
+    LogicalPath="CognexVisNativeMode"
+    Type="Program"
+    LastWriteTime="133231979942721077" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisNativeMode\CognexVisNativeMode.ab"
+    LogicalPath="CognexVisNativeMode.CognexVisNativeMode.ab"
+    Type="File"
+    LastWriteTime="133231979942690940"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisNativeMode\CognexVisNativeMode.typ"
+    LogicalPath="CognexVisNativeMode.CognexVisNativeMode.typ"
+    Type="File"
+    LastWriteTime="133231979942701088"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisNativeMode\CognexVisNativeMode.var"
+    LogicalPath="CognexVisNativeMode.CognexVisNativeMode.var"
+    Type="File"
+    LastWriteTime="133231979942721077"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisArchive\IEC.prg"
+    LogicalPath="CognexVisArchive"
+    Type="Program"
+    LastWriteTime="133231979942418015" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisArchive\CognexVisArchive.ab"
+    LogicalPath="CognexVisArchive.CognexVisArchive.ab"
+    Type="File"
+    LastWriteTime="133231979942390564"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisArchive\CognexVisArchive.typ"
+    LogicalPath="CognexVisArchive.CognexVisArchive.typ"
+    Type="File"
+    LastWriteTime="133231979942400577"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisArchive\CognexVisArchive.var"
+    LogicalPath="CognexVisArchive.CognexVisArchive.var"
+    Type="File"
+    LastWriteTime="133231979942418015"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisMain\IEC.prg"
+    LogicalPath="CognexVisMain"
+    Type="Program"
+    LastWriteTime="133231979942690940" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisMain\CognexVisMain.ab"
+    LogicalPath="CognexVisMain.CognexVisMain.ab"
+    Type="File"
+    LastWriteTime="133231979942682450"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisMain\CognexVisMain.typ"
+    LogicalPath="CognexVisMain.CognexVisMain.typ"
+    Type="File"
+    LastWriteTime="133231979942682450"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\CognexVisMain\CognexVisMain.var"
+    LogicalPath="CognexVisMain.CognexVisMain.var"
+    Type="File"
+    LastWriteTime="133231979942690940"
+    Private="true" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Visu\Vc.dob"
+    LogicalPath="Visu"
+    Type="DataObject"
+    LastWriteTime="133231979944364183" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\Visu\VCObject.vc"
+    LogicalPath="Visu.VCObject.vc"
+    Type="File"
+    LastWriteTime="133231979944364183"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Logical\version.txt"
+    LogicalPath="version.txt"
+    Type="File"
+    LastWriteTime="133231979944374169"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\Config.pkg"
+    LogicalPath="PP500_15"
+    Type="Configuration.ParentUnknown"
+    LastWriteTime="133231982473651337" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\Hardware.hw"
+    LogicalPath="PP500_15.Hardware.hw"
+    Type="File"
+    LastWriteTime="133240508445056150"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\Hardware.hwl"
+    LogicalPath="PP500_15.Hardware.hwl"
+    Type="File"
+    LastWriteTime="133233636112534532"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\Cpu.pkg"
+    LogicalPath="PP500_15.PLC1"
+    Type="Cpu"
+    LastWriteTime="133240511939719401" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\Cpu.sw"
+    LogicalPath="PP500_15.PLC1.Cpu.sw"
+    Type="File"
+    LastWriteTime="133233615455398975"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\Cpu.per"
+    LogicalPath="PP500_15.PLC1.Cpu.per"
+    Type="File"
+    LastWriteTime="133231979944384161"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\IoMap.iom"
+    LogicalPath="PP500_15.PLC1.IoMap.iom"
+    Type="File"
+    LastWriteTime="133231979944394157"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\PvMap.vvm"
+    LogicalPath="PP500_15.PLC1.PvMap.vvm"
+    Type="File"
+    LastWriteTime="133231979944394157"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\ExternalHardware\Package.pkg"
+    LogicalPath="PP500_15.PLC1.ExternalHardware"
+    Type="Package"
+    LastWriteTime="133231981145966165" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\ExternalHardware\OAYNE4BZ.ext"
+    LogicalPath="PP500_15.PLC1.ExternalHardware.OAYNE4BZ.ext"
+    Type="File"
+    LastWriteTime="133231938958140578"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\ExternalHardware\ExternalHardwareDevices.xml"
+    LogicalPath="PP500_15.PLC1.ExternalHardware.ExternalHardwareDevices.xml"
+    Type="File"
+    LastWriteTime="133231981145966165"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\VC\Package.pkg"
+    LogicalPath="PP500_15.PLC1.VC"
+    Type="Package"
+    LastWriteTime="133233615457429947" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\PLC1\VC\PS2-Keyboard.dis"
+    LogicalPath="PP500_15.PLC1.VC.PS2-Keyboard.dis"
+    Type="File"
+    LastWriteTime="133233615457586203"
+    Private="false" />
+  <Object
+    Path="C:\Users\hugo.pageaux\Documents\GitHub\SN2_SFL3_Deboxeur_23\Ressource_sfl3\Cognex_23\CognexBRinsight7000\DemoV1_5\Cognex_V1_5\Physical\PP500_15\Hardware.jpg"
+    LogicalPath="PP500_15.Hardware.jpg"
+    Type="File"
+    LastWriteTime="133240512003282231"
+    Private="false" />
+</Objects>

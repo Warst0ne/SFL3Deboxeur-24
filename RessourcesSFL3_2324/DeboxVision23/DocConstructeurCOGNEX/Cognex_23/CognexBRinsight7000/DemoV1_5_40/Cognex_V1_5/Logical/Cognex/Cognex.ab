@@ -1,0 +1,166 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: NewProgram
+ * File: NewProgram.ab
+ * Author: strickers
+ * Version: 1.0
+ * This task has the following purpose
+ * - Transfer text string from sample into PLC variable
+ * - Transfer barcode string from sample into PLC variable
+ * - Transfer compare string to Cognex variable
+ * - Transfer add on data (pass, angle, time) into PLC variables
+ * - Transfer camera status into bool structure
+ * - Transfer camera commands from PLC structure to camera
+ ********************************************************************)
+
+PROGRAM _INIT
+		strcpy(ADR(strBarcodeWrite), ADR("ABA122"))
+END_PROGRAM
+
+PROGRAM _CYCLIC
+	(* -------------------------------------------------------------------- *)
+	(* Send ping to camera			 										*)
+	IF (cognex_1.cmd.ping_camera) THEN
+		ICMPping_0.enable 	= 1 
+		ICMPping_0.pHost 	= adr(CognexEthIP)
+		ICMPping_0.timeout 	= 20
+		ICMPping_0 FUB IcmpPing()
+		IF(ICMPping_0.status <> 65535) THEN
+			cognex_1.cmd.ping_camera = 0
+			IF(ICMPping_0.status = 0) THEN 
+				cognex_1.sta.connected_eth = 1
+			ELSE
+				cognex_1.sta.connected_eth = 0
+			ENDIF
+		ENDIF
+	ENDIF
+
+	IF(cognex_1.sta.online) THEN
+	(* -------------------------------------------------------------------- *)
+	(* Transfer text string			 										*)
+	memcpy(ADR(strTextRead)+0,ADR(tmpTextRead1), 4)
+	memcpy(ADR(strTextRead)+4,ADR(tmpTextRead2), 4)
+	memcpy(ADR(strTextRead)+8,ADR(tmpTextRead3), 4)
+
+	(* -------------------------------------------------------------------- *)
+	(* Transfer barcode string			 									*)
+	memcpy(ADR(strBarcodeRead)+0,ADR(tmpBarcodeRead1), 4)
+	memcpy(ADR(strBarcodeRead)+4,ADR(tmpBarcodeRead2), 4)
+	memcpy(ADR(strBarcodeRead)+8,ADR(tmpBarcodeRead3), 4)
+	
+	memcpy(ADR(tmpBarcodeWrite1), ADR(strBarcodeWrite)+0, 4)
+	memcpy(ADR(tmpBarcodeWrite2), ADR(strBarcodeWrite)+4, 4)
+	memcpy(ADR(tmpBarcodeWrite3), ADR(strBarcodeWrite)+8, 4)
+	IF(strcmp(ADR(strBarcodeWrite), ADR(strBarcodeWriteOld)) <> 0) THEN
+		cognex_1.cmd.set_user_data = 1
+		strcpy(ADR(strBarcodeWriteOld), ADR(strBarcodeWrite))
+	ELSE
+		cognex_1.cmd.set_user_data = 0
+	ENDIF
+	ENDIF
+
+	(* -------------------------------------------------------------------- *)
+	(* Transfer additonal data			 									*)
+	memcpy(ADR(FixturePass),ADR(tmpData1)+0, 1)
+	memcpy(ADR(BarcodePass),ADR(tmpData1)+1, 1)
+	memcpy(ADR(TextPass),ADR(tmpData1)+2, 1)
+	memcpy(ADR(ComparePass),ADR(tmpData1)+3, 1)
+	memcpy(ADR(TextExecutionTime),ADR(tmpData2), 4)
+	memcpy(ADR(BarcodeFixtureAngle),ADR(tmpData3), 4)
+	memcpy(ADR(JobExecutionTime),ADR(tmpData4), 4)
+	memcpy(ADR(JobPass),ADR(tmpData5)+0, 1)
+	
+	(* -------------------------------------------------------------------- *)
+	(* Copy status data into structure 										*)
+	cognex_1.sta.trigger_ready 			= cognex1sta.0
+	cognex_1.sta.trigger_ack 			= cognex1sta.1
+	cognex_1.sta.acquiring 				= cognex1sta.2
+	cognex_1.sta.missed_acq 			= cognex1sta.3
+	cognex_1.sta.offline_reason.0 		= cognex1sta.4
+	cognex_1.sta.offline_reason.1 		= cognex1sta.5
+	cognex_1.sta.offline_reason.2 		= cognex1sta.6
+	cognex_1.sta.online 				= cognex1sta.7
+	cognex_1.sta.inspecting 			= cognex1sta.8
+	cognex_1.sta.inspecting_complete	= cognex1sta.9
+	cognex_1.sta.results_buffer_overrun = cognex1sta.10
+	cognex_1.sta.results_valid 			= cognex1sta.11
+	cognex_1.sta.job_loading 			= cognex1sta.12
+	cognex_1.sta.job_load_complete 		= cognex1sta.13
+	cognex_1.sta.job_load_failed 		= cognex1sta.14
+	cognex_1.sta.set_user_data_ack 		= cognex1sta.16
+	cognex_1.sta.exposure_complete 		= cognex1sta.19
+	cognex_1.sta.soft_event_ack.0 		= cognex1sta.24
+	cognex_1.sta.soft_event_ack.1 		= cognex1sta.25
+	cognex_1.sta.soft_event_ack.2 		= cognex1sta.26
+	cognex_1.sta.soft_event_ack.3 		= cognex1sta.27
+	cognex_1.sta.soft_event_ack.4 		= cognex1sta.28
+	cognex_1.sta.soft_event_ack.5 		= cognex1sta.29
+	cognex_1.sta.soft_event_ack.6 		= cognex1sta.30
+	cognex_1.sta.soft_event_ack.7 		= cognex1sta.31
+
+	(* -------------------------------------------------------------------- *)
+	(* Copy command data from structure 									*)
+	cognex1cmd.0 = cognex_1.cmd.trigger_enable
+	cognex1cmd.1 = cognex_1.cmd.trigger
+	cognex1cmd.2 = cognex_1.cmd.buffer_result_enable
+	cognex1cmd.3 = cognex_1.cmd.inspection_result_ack
+	cognex1cmd.4 = cognex_1.cmd.init_job_load
+	cognex1cmd.7 = cognex_1.cmd.set_offline
+	cognex1cmd.16 = cognex_1.cmd.set_user_data
+	cognex1cmd.19 = cognex_1.cmd.clr_exposure_complete
+	cognex1cmd.24 = cognex_1.cmd.soft_event.0
+	cognex1cmd.25 = cognex_1.cmd.soft_event.1
+	cognex1cmd.26 = cognex_1.cmd.soft_event.2
+	cognex1cmd.27 = cognex_1.cmd.soft_event.3
+	cognex1cmd.28 = cognex_1.cmd.soft_event.4
+	cognex1cmd.29 = cognex_1.cmd.soft_event.5
+	cognex1cmd.30 = cognex_1.cmd.soft_event.6
+	cognex1cmd.31 = cognex_1.cmd.soft_event.7
+
+	(* -------------------------------------------------------------------- *)
+	(* Generate logbook entries for camera events 							*)
+	IF(EDGEPOS(cognex_1.sta.trigger_ready)) THEN
+		NewLogEntry("Trigger is ready", ADR(logbook), 20)
+	ENDIF
+	IF(EDGEPOS(cognex_1.sta.inspecting)) THEN
+		NewLogEntry("Trigger was acknowledged", ADR(logbook), 20)
+	ENDIF
+	IF(EDGEPOS(cognex_1.sta.acquiring)) THEN
+		NewLogEntry("-----------------------------------------------------", ADR(logbook), 20)
+		NewLogEntry("Aquiring new picture", ADR(logbook), 20)
+	ENDIF
+	IF(EDGEPOS(cognex_1.sta.missed_acq)) THEN
+		NewLogEntry("Aquiring new picture missed", ADR(logbook), 20)
+	ENDIF
+	IF(EDGEPOS(cognex_1.sta.online)) THEN
+		NewLogEntry("Camera is online", ADR(logbook), 20)
+	ENDIF
+	IF(EDGENEG(cognex_1.sta.online)) THEN
+		NewLogEntry("Camera is offline", ADR(logbook), 20)
+	ENDIF
+	IF(EDGEPOS(cognex_1.sta.inspecting)) THEN
+		NewLogEntry("Starting inspecting picture", ADR(logbook), 20)
+	ENDIF	
+	IF(cognex_1.sta.inspecting_complete <> tmp_inspecting_complete) THEN
+		NewLogEntry("Completed inspecting picture", ADR(logbook), 20)
+		tmp_inspecting_complete = cognex_1.sta.inspecting_complete
+	ENDIF	
+	IF(EDGEPOS(cognex_1.sta.results_buffer_overrun)) THEN
+		NewLogEntry("Results buffer overrun", ADR(logbook), 20)
+	ENDIF	
+	IF(EDGEPOS(cognex_1.sta.results_valid)) THEN
+		NewLogEntry("Results is valid", ADR(logbook), 20)
+	ENDIF	
+	IF(EDGEPOS(cognex_1.sta.job_loading)) THEN
+		NewLogEntry("Loading new job", ADR(logbook), 20)
+	ENDIF	
+	IF(cognex_1.sta.job_load_complete <> tmp_job_complete) THEN
+		NewLogEntry("Loading new job complete", ADR(logbook), 20)
+		tmp_job_complete = cognex_1.sta.job_load_complete
+		IF(cognex_1.sta.job_load_failed) THEN
+			NewLogEntry("Loading new job failed", ADR(logbook), 20)
+		ENDIF	
+	ENDIF	
+
+END_PROGRAM

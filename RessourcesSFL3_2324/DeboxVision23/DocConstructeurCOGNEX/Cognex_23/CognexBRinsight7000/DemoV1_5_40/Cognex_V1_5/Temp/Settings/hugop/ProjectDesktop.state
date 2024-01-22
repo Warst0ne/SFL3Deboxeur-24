@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<?AutomationStudio Version=3.0?>
+<Project xmlns="http://br-automation.co.at/AS/Project"><Active ID="0"/><Configuration Name="PP500_15"/><ConfigurationFiles ConfigurationName="PP500_15" ActiveConfigurationFile="\Virtual\In-Sight.iom"><ConfigurationFile Placement="\Virtual\In-Sight.iom,,1,44,0,1,-1,-1,-1,-1,2,24,1448,685"/><ConfigurationFile Placement="\Physical\PP500_15\Hardware.hwl,,3,44,0,1,-1,-1,-1,-1,2,24,1448,685"/><ConfigurationFile Placement="\Virtual\Cognex_V1_5.ose,,0,44,0,1,-1,-1,-1,-1,2,24,1448,685"/></ConfigurationFiles></Project>

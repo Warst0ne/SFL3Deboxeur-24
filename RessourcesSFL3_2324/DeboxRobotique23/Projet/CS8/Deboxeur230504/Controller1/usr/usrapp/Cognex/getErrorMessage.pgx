@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getErrorMessage" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nErrorCode" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sErrorMsg" type="string" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Get error message from error message table (sMsgError).
+  //
+  //Input parameters
+  //  num x_nErrorNum :
+  //    role : Link the array element which contains the error message (string)
+  //
+  //Output parameters
+  //  string x_sMsg :
+  //    role : returns the error message
+  //
+  //Examples
+  //  call getErrorMessage(14,l_sMsgError) //returns "Set Online> Sensor is set
+  //                                         Offline manually" in l_sMsgError
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //  Modification 06-2012 - T.Caille - C.Rocchini
+  //Header end
+  //-----------------------------------------------------------------------
+
+  //Test if cCamera.nErrorCode correct ( 0<cCamera.nErrorCode of array)
+  //Test if x_nErrorNum correct ( 0<x_nErrorNum<size of array)
+  if (x_nErrorCode>=0) and (x_nErrorCode<size(cCamera[nCamID].sErrorMsg))
+    //Recovery error message
+    x_sErrorMsg=cCamera[nCamID].sErrorMsg[x_nErrorCode]
+    //Unknown error : Element linked by x_nErrorNum
+    //no contains error message
+    if len(x_sErrorMsg)<1
+      x_sErrorMsg="Unknown error"
+    endIf
+  else
+    if x_nErrorCode>=size(cCamera[nCamID].sErrorMsg)
+      x_sErrorMsg=sLibError[x_nErrorCode]
+    endIf
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

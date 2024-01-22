@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.3.55?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="24PortHub" Type="24PortHub" Version="1.0.0.1">
+    <Connection Connector="ETH1" TargetModule="5PP5IF.FPLM-00" TargetConnector="IF1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connection Connector="ETH2" TargetModule="In-Sight" TargetConnector="PLK1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+  </Module>
+  <Module Name="5PP520.1043-00" Type="5PP520.1043-00" Version="2.0.3.1">
+    <Connector Name="IF3">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="SubnetMask" Value="255.255.0.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncAuthentication1" Value="1" />
+      <Parameter ID="VncPasswordViewOnly1" Value="r" />
+      <Parameter ID="VncPasswordViewControl1" Value="w" />
+    </Connector>
+    <Parameter ID="VcObjectName" Value="Visu1" />
+  </Module>
+  <Module Name="5PP5IF.FPLM-00" Type="5PP5IF.FPLM-00" Version="2.4.0.0">
+    <Connection Connector="SL" TargetModule="5PP520.1043-00" TargetConnector="SL1" />
+    <Connector Name="IF1">
+      <Parameter ID="MtuSize" Value="1500" />
+      <Parameter ID="CycleTime" Value="400" />
+      <Parameter ID="InternetAddress" Value="10.16.7.34" />
+      <Parameter ID="SubnetMask" Value="255.255.0.0" />
+    </Connector>
+  </Module>
+  <Module Name="In-Sight" Type="FBE.0000031D_In-Sight-7000" Version="4.7.1" OrderNumber="In-Sight">
+    <Connection Connector="PLK1" TargetModule="24PortHub" TargetConnector="ETH2" NodeNumber="1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="p2000s01_direction" Value="wo" />
+    <Parameter ID="p2000s02_direction" Value="wo" />
+    <Parameter ID="p2001s01_direction" Value="ro" />
+    <Parameter ID="p2001s02_direction" Value="ro" />
+    <Parameter ID="p2010s01_direction" Value="ro" />
+    <Parameter ID="p2011s01_direction" Value="ro" />
+    <Parameter ID="p2011s02_direction" Value="ro" />
+    <Parameter ID="p2011s03_direction" Value="ro" />
+    <Parameter ID="p2011s04_direction" Value="ro" />
+    <Parameter ID="p2011s05_direction" Value="ro" />
+    <Parameter ID="p2011s06_direction" Value="ro" />
+    <Parameter ID="p2011s07_direction" Value="ro" />
+    <Parameter ID="p2011s08_direction" Value="ro" />
+    <Parameter ID="p2011s09_direction" Value="ro" />
+    <Parameter ID="p2011s0A_direction" Value="ro" />
+    <Parameter ID="p2011s0B_direction" Value="ro" />
+    <Parameter ID="p2021s01_direction" Value="wo" />
+    <Parameter ID="p2021s02_direction" Value="wo" />
+    <Parameter ID="p2021s03_direction" Value="wo" />
+  </Module>
+  <Module Name="PLC1" Type="5PP5CP.US15-02" Version="2.0.6.0">
+    <Connection Connector="SY" TargetModule="5PP520.1043-00" TargetConnector="SY1" />
+    <Parameter ID="PreserveNonVolatileSystemSettings" Value="0" />
+    <Parameter ID="Connections" Value="8" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="5PP5IF.FPLM-00.IF1" />
+    <Parameter ID="TaskClassIdleTime" Value="800" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="2000" />
+    <Parameter ID="Cyclic1Stack" Value="65535" />
+    <Parameter ID="Cyclic2Stack" Value="65535" />
+    <Parameter ID="Cyclic3Stack" Value="65535" />
+    <Parameter ID="Cyclic4Stack" Value="65535" />
+    <Parameter ID="Cyclic5Stack" Value="65535" />
+    <Parameter ID="Cyclic6Stack" Value="65535" />
+    <Parameter ID="Cyclic7Stack" Value="65535" />
+    <Parameter ID="Cyclic8Duration" Value="4000" />
+    <Parameter ID="Cyclic8Stack" Value="65535" />
+  </Module>
+</Hardware>

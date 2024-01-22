@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBE.0000031D_In-Sight-7000" Version="4.7.1" OrderNumber="In-Sight">
+      <SourceFile OriginalFile="0000031D_In-Sight-7000.xdd" TranslationFile="5DBKDQ1R.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

@@ -1,0 +1,13 @@
+Chose a faire :
+
+Schema cablage \O/
+Config Vision AS \O/
+Config Vision Cognex \O/
+recuération fichier EDS chez Cognex \O/
+
+Ne pas oublier de dire pour l'oral :
+-Pb avec l'EIP et comment j'ai pu resoudre ce problème.
+J'ai configurer l'adresse IP de la passerelle
+pour ne pas créer de problème d'adressage.
+-Lorsque je passe sur la partie mise en place (donc la seconde partie), je n'oublie pas de leur présenter les différents problèmes et leurs montrer comment j'ai pu les résoudre. Ne pas oublier de montrer des conversation email que j'ai eu avec des entreprises.
+Montrer également les annexes récemment créées après le rendu du rapport du projet, dire que cela sera utile pour les prochains élèves et que cela leur permettra une meilleure compréhension du projet.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.0.14.207"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="TriggerReady">
+  <Property Name="Description" Value=""/>
+  <Property Name="Index" Value="2"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en">
+    <Text ID="95371" Value="Disable Trigger"/>
+    <Text ID="95372" Value="Enable Trigger"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="95371" Value="1"/>
+    <Index ID="95372" Value="0"/>
+  </IndexMap>
+</TextGroup>
