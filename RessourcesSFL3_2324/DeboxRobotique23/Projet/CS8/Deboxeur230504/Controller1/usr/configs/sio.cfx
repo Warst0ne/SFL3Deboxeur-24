@@ -24,4 +24,22 @@
     <String name="comMode" value="RS232" />
     <String name="flowControl" value="none" />
   </serialPort>
+  <socketClt>
+    <String name="name" value="siSocketTCP" />
+    <String name="desc" value="requete données" />
+    <Inet name="serverIp" value="10.16.0.32" />
+    <Uint name="portNumber" value="30000" />
+    <Int name="endOfString" value="13" />
+    <Float name="timeOut" value="1" />
+    <Bool name="nagle" value="true" />
+  </socketClt>
+  <udpSocket>
+    <String name="name" value="siSocketUDP" />
+    <String name="desc" value="" />
+    <Inet name="connectIp" value="10.16.7.32" />
+    <Uint name="portNumber" value="30000" />
+    <Int name="endOfString" value="13" />
+    <Float name="timeOut" value="1" />
+    <Bool name="broadcast" value="true" />
+  </udpSocket>
 </sio>

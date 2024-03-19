@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="test_ventouse">
+    <Code><![CDATA[begin
+  open(ventouse)
+  movej(jP1, ventouse, mNomSpeed)
+  movej(jP2, ventouse, mNomSpeed)
+  close(ventouse)
+  movej(jP4, ventouse, mNomSpeed)
+  movej(jP5, ventouse, mNomSpeed)
+  movej(jP3, ventouse, mNomSpeed)
+  open(ventouse)
+  movej(jP1, ventouse, mNomSpeed)
+  movej(jP3, ventouse, mNomSpeed)
+  close(ventouse)
+  movej(jP5, ventouse, mNomSpeed)
+  movej(jP4, ventouse, mNomSpeed)
+  movej(jP2, ventouse, mNomSpeed)
+  open(ventouse)
+  waitEndMove()
+end]]></Code>
+  </Program>
+</Programs>
