@@ -15,11 +15,11 @@
       Source="Robot"
       Language="IEC">
       <InternalFile
-        Path="C:\projects\DeboxPP70\Temp\Objects\Config230524\4PPC70_0702_20B\Robot\Main.st.var" />
+        Path="C:\Users\lois.lemaitre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxRobotique23\Projet\DeboxPP70\Temp\Objects\Config230524\4PPC70_0702_20B\Robot\Main.st.var" />
       <File
-        Path="C:\projects\DeboxPP70\Logical\Robot\Types.typ" />
+        Path="C:\Users\lois.lemaitre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxRobotique23\Projet\DeboxPP70\Logical\Robot\Types.typ" />
       <File
-        Path="C:\projects\DeboxPP70\Logical\Robot\Variables.var" />
+        Path="C:\Users\lois.lemaitre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxRobotique23\Projet\DeboxPP70\Logical\Robot\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

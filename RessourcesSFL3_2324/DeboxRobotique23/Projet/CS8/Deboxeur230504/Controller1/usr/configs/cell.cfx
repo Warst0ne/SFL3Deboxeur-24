@@ -54,7 +54,7 @@
   <Bool name="parkCheckInAutoMode" value="false" />
   <String name="robotName" value="" />
   <autoStart name="" location="" />
-  <String name="initWorkingMode" value="manual" />
+  <String name="initWorkingMode" value="local" />
   <Bool name="payloadDefined" value="false" />
   <Float name="payloadMass" value="0" />
   <VectCart name="payloadGravityCenter" x="0" y="0" z="0" />

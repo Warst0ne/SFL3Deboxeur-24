@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Data/2">
+  <Datas>
+    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="1">
+      <Value key="0" accel="150" vel="2000" decel="150" blend="off" />
+    </Data>
+    <Data name="jP1" access="private" xsi:type="array" type="jointRx" size="1" />
+    <Data name="jP2" access="private" xsi:type="array" type="jointRx" size="1">
+      <Value key="0" j1="67.72" j2="50.87" j3="100.24" j5="28.89" j6="-112.28" />
+    </Data>
+    <Data name="jP3" access="private" xsi:type="array" type="jointRx" size="1">
+      <Value key="0" j1="-83.94" j2="66.93" j3="62.59" j5="50.48" j6="-263.94" />
+    </Data>
+    <Data name="ventouse" access="private" xsi:type="array" type="tool" size="1">
+      <Value key="0" z="50" fatherId="flange[0]" ioLink="valve1" />
+    </Data>
+    <Data name="jP4" access="private" xsi:type="array" type="jointRx" size="1">
+      <Value key="0" j1="67.72" j2="17.89" j3="90" j5="72.11" j6="-112.28" />
+    </Data>
+    <Data name="jP5" access="private" xsi:type="array" type="jointRx" size="1">
+      <Value key="0" j1="-84.94" j2="43.97" j3="50.35" j5="58.68" j6="-263.94" />
+    </Data>
+    <Data name="siSocketTCP" access="public" xsi:type="array" type="sio" size="1">
+      <Value key="0" link="Socket\siSocketTCP" />
+    </Data>
+    <Data name="bOverRun" access="private" xsi:type="array" type="bool" size="1" />
+    <Data name="siSocketUDP" access="public" xsi:type="array" type="sio" size="1">
+      <Value key="0" link="UdpSocket\siSocketUDP" />
+    </Data>
+  </Datas>
+</Database>

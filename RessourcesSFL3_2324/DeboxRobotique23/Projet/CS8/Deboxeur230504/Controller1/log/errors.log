@@ -2718,3 +2718,1668 @@
 [06/02/23 15:08:51]: COM-PC: create session 127.0.0.1 on port 56016 id=#50369656
 [06/02/23 15:09:03]: Deadman enabled.
 [06/02/23 15:09:15]: Deb2304 application stopped
+[01/25/24 16:56:10]: -----------------------------------------------
+[01/25/24 16:56:10]: Logger started
+[01/25/24 16:56:16]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/25/24 16:56:16]: Cycle time set to 0.004s
+[01/25/24 16:56:16]: Simulation cycle time set to 0.1s
+[01/25/24 16:56:16]: Controller IP address could not be updated
+[01/25/24 16:56:16]: STARC : No STARC board detected on PCI.
+[01/25/24 16:56:16]: Mcp = TSimulated
+[01/25/24 16:56:16]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/25/24 16:56:16]: Mcp communication established
+[01/25/24 16:56:16]: Power hour count = 1:42:14
+[01/25/24 16:56:16]: Mac Address = fc-aa-14-6f-b2-24
+[01/25/24 16:56:16]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/25/24 16:56:16]: Error when starting: fieldbus IO
+[01/25/24 16:56:16]: Working mode:invalid.
+[01/25/24 16:56:16]: End of arm power shutdown phase.
+[01/25/24 16:56:16]: COM-PC: server created on all interfaces [5653]
+[01/25/24 16:56:16]: System: s7.4 Jul  4 2012
+[01/25/24 16:56:16]: Configuration Version: c1.010 
+[01/25/24 16:56:16]: Option testMode: enabled 
+[01/25/24 16:56:16]: Option VAL 3: enabled 
+[01/25/24 16:56:16]: Machine Number: ? 
+[01/25/24 16:56:16]: Arm: tx40-S2-R2 floor
+[01/25/24 16:56:16]: Arm serial number: F12_5M1XA1_A_01 
+[01/25/24 16:56:16]: Robot name:  
+[01/25/24 16:56:16]: Powerlink: s7.4 Jul  4 2012
+[01/25/24 16:56:16]: EP: s7.4 Jul  4 2012
+[01/25/24 16:56:16]: SCA: s7.4 Jul  4 2012
+[01/25/24 16:56:16]: PLC: s7.4 Jul  4 2012
+[01/25/24 16:56:16]: New profile : default
+[01/25/24 16:56:16]: End of controller initialization
+[01/25/24 16:56:16]: System event INTERFACE-Stopped  (Main menu)
+[01/25/24 16:56:16]: System event INTERFACE-Stopped  (Main menu). 9 events lost.
+[01/25/24 16:56:16]: Working mode:manual.
+[01/25/24 16:56:17]: COM-PC: create session 127.0.0.1 on port 57578 id=#49780832
+[01/25/24 17:01:37]: Working mode:test.
+[01/25/24 17:01:40]: Deadman validated
+[01/25/24 17:01:40]: Settling arm power...
+[01/25/24 17:01:41]: Arm power settled.
+[01/25/24 17:01:55]: ex12 application started
+[01/25/24 17:01:55]: Deadman enabled.
+[01/25/24 17:03:14]: ex12 application stopped
+[01/25/24 17:03:20]: ex12 application started
+[01/25/24 17:03:40]: Arm power shutdown...
+[01/25/24 17:03:41]: End of arm power shutdown phase.
+[01/25/24 17:03:42]: Saving controller context...
+[01/25/24 17:03:42]: Controller temperature: 28°C
+[01/25/24 17:03:42]: CPU temperature: 28°C
+[01/25/24 17:03:46]: Deadman disabled.
+[01/25/24 17:03:46]: Deadman validated
+[01/25/24 17:03:46]: Settling arm power...
+[01/25/24 17:03:47]: Arm power settled.
+[01/25/24 17:03:47]: Manual motion mode:Connect
+[01/25/24 17:03:51]: Manual motion mode:Disabled
+[01/25/24 17:03:51]: End of connection move.
+[01/25/24 17:03:58]: ex12 application stopped
+[01/25/24 17:04:01]: Deadman enabled.
+[01/25/24 17:04:08]: Arm power shutdown...
+[01/25/24 17:04:09]: End of arm power shutdown phase.
+[01/25/24 17:04:12]: Saving controller context...
+[01/25/24 17:04:12]: Deadman disabled.
+[01/25/24 17:04:13]: Working mode:remote.
+[01/25/24 17:04:15]: Working mode:automatic.
+[01/25/24 17:04:16]: Working mode:manual.
+[01/25/24 17:04:19]: Deadman validated
+[01/25/24 17:04:19]: Settling arm power...
+[01/25/24 17:04:19]: Arm power settled.
+[01/25/24 17:04:20]: Saving controller context...
+[01/25/24 17:04:24]: ex12 application started
+[01/25/24 17:04:34]: Deadman enabled.
+[01/25/24 17:04:40]: ex12 application stopped
+[01/25/24 17:05:28]: Manual motion mode:Point
+[01/25/24 17:07:36]: ex12 application started
+[01/25/24 17:07:37]: Cannot complete move: destination is out of reach.(out of arm workspace)
+[01/25/24 17:07:42]: Manual motion mode:Disabled
+[01/25/24 17:07:54]: ex12 application stopped
+[01/25/24 17:08:02]: ex12 application started
+[01/25/24 17:08:13]: ex12 application stopped
+[01/25/24 17:10:02]: ex12 application started
+[01/25/24 17:10:15]: ex12 application stopped
+[01/25/24 17:10:18]: Manual motion mode:Point
+[01/25/24 17:10:24]: Point  test  modified
+[01/25/24 17:10:57]: Point  test  modified (1)
+[01/25/24 17:11:27]: ex12 application started
+[01/25/24 17:11:56]: Manual motion mode:Disabled
+[01/25/24 17:12:15]: ex12 application stopped
+[01/25/24 17:28:41]: COM-PC: destroy session 127.0.0.1 on port 57578 id=#49780832
+[01/26/24 09:11:09]: -----------------------------------------------
+[01/26/24 09:11:09]: Logger started
+[01/26/24 09:11:15]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 09:11:15]: Cycle time set to 0.004s
+[01/26/24 09:11:15]: Simulation cycle time set to 0.1s
+[01/26/24 09:11:15]: Controller IP address could not be updated
+[01/26/24 09:11:15]: STARC : No STARC board detected on PCI.
+[01/26/24 09:11:15]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 09:11:15]: Power hour count = 1:44:34
+[01/26/24 09:11:15]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 09:11:15]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 09:11:15]: Error when starting: fieldbus IO
+[01/26/24 09:11:15]: COM-PC: server created on all interfaces [5653]
+[01/26/24 09:11:15]: End of arm power shutdown phase.
+[01/26/24 09:11:15]: System: s7.4 Jul  4 2012
+[01/26/24 09:11:15]: Configuration Version: c1.010 
+[01/26/24 09:11:15]: Option testMode: enabled 
+[01/26/24 09:11:15]: Option VAL 3: enabled 
+[01/26/24 09:11:15]: Machine Number: ? 
+[01/26/24 09:11:15]: Arm: tx40-S2-R2 floor
+[01/26/24 09:11:15]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 09:11:15]: Robot name:  
+[01/26/24 09:11:15]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 09:11:15]: EP: s7.4 Jul  4 2012
+[01/26/24 09:11:15]: SCA: s7.4 Jul  4 2012
+[01/26/24 09:11:15]: PLC: s7.4 Jul  4 2012
+[01/26/24 09:11:15]: New profile : default
+[01/26/24 09:11:15]: End of controller initialization
+[01/26/24 09:11:15]: COM-PC: create session 127.0.0.1 on port 50976 id=#44256288
+[01/26/24 09:11:17]: Internal error MCP-NoAnswer: char 1
+[01/26/24 09:11:17]: COM-CLIENT: Connected to http://127.0.0.1:5656
+[01/26/24 09:11:21]: COM-PC: create session 127.0.0.1 on port 50983 id=#44256080
+[01/26/24 09:11:23]: MCP communication disconnected
+[01/26/24 09:11:25]: Mcp = TSimulated
+[01/26/24 09:11:25]: Mcp communication established
+[01/26/24 09:11:25]: Working mode:manual.
+[01/26/24 09:12:19]: Working mode:test.
+[01/26/24 09:12:20]: Working mode:remote.
+[01/26/24 09:12:21]: Working mode:automatic.
+[01/26/24 09:12:24]: Saving controller context...
+[01/26/24 09:12:25]: Controller temperature: 28°C
+[01/26/24 09:12:25]: CPU temperature: 28°C
+[01/26/24 09:12:32]: Deadman validated
+[01/26/24 09:12:32]: Settling arm power...
+[01/26/24 09:12:33]: Arm power settled.
+[01/26/24 09:12:47]: Deadman enabled.
+[01/26/24 09:14:05]: ex12 application started
+[01/26/24 09:14:05]: Cannot move: destination is out of software axis limits
+[01/26/24 09:14:05]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[01/26/24 09:15:14]: ex12 application stopped
+[01/26/24 09:15:29]: test_ventouse application started
+[01/26/24 09:15:29]: test_ventouse application stopped
+[01/26/24 09:16:20]: Arm power shutdown...
+[01/26/24 09:16:21]: End of arm power shutdown phase.
+[01/26/24 09:16:21]: COM-PC: destroy session 127.0.0.1 on port 50976 id=#44256288
+[01/26/24 09:34:24]: -----------------------------------------------
+[01/26/24 09:34:24]: Logger started
+[01/26/24 09:34:29]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 09:34:29]: Cycle time set to 0.004s
+[01/26/24 09:34:29]: Simulation cycle time set to 0.1s
+[01/26/24 09:34:29]: Controller IP address could not be updated
+[01/26/24 09:34:29]: STARC : No STARC board detected on PCI.
+[01/26/24 09:34:29]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 09:34:29]: Power hour count = 1:44:34
+[01/26/24 09:34:29]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 09:34:29]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 09:34:29]: Error when starting: fieldbus IO
+[01/26/24 09:34:29]: COM-PC: server created on all interfaces [5653]
+[01/26/24 09:34:29]: System: s7.4 Jul  4 2012
+[01/26/24 09:34:29]: Configuration Version: c1.010 
+[01/26/24 09:34:29]: Option testMode: enabled 
+[01/26/24 09:34:29]: Option VAL 3: enabled 
+[01/26/24 09:34:29]: Machine Number: ? 
+[01/26/24 09:34:29]: Arm: tx40-S2-R2 floor
+[01/26/24 09:34:29]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 09:34:29]: Robot name:  
+[01/26/24 09:34:29]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 09:34:29]: EP: s7.4 Jul  4 2012
+[01/26/24 09:34:29]: SCA: s7.4 Jul  4 2012
+[01/26/24 09:34:29]: PLC: s7.4 Jul  4 2012
+[01/26/24 09:34:29]: New profile : default
+[01/26/24 09:34:29]: End of controller initialization
+[01/26/24 09:34:29]: End of arm power shutdown phase.
+[01/26/24 09:34:31]: Mcp = TSimulated
+[01/26/24 09:34:31]: Mcp communication established
+[01/26/24 09:34:31]: Working mode:automatic.
+[01/26/24 09:54:50]: Deadman validated
+[01/26/24 09:54:51]: Settling arm power...
+[01/26/24 09:54:51]: Arm power settled.
+[01/26/24 09:54:53]: COM-PC: create session 127.0.0.1 on port 51747 id=#44125064
+[01/26/24 09:55:05]: Deadman enabled.
+[01/26/24 09:55:09]: test_ventouse application started
+[01/26/24 09:55:09]: test_ventouse application stopped
+[01/26/24 09:55:14]: test_ventouse application started
+[01/26/24 09:55:14]: test_ventouse application stopped
+[01/26/24 09:55:24]: ex12 application started
+[01/26/24 09:55:24]: Cannot move: destination is out of software axis limits
+[01/26/24 09:55:24]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[01/26/24 09:56:12]: -----------------------------------------------
+[01/26/24 09:56:12]: Logger started
+[01/26/24 09:56:16]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 09:56:16]: Cycle time set to 0.004s
+[01/26/24 09:56:16]: Simulation cycle time set to 0.1s
+[01/26/24 09:56:16]: Controller IP address could not be updated
+[01/26/24 09:56:16]: STARC : No STARC board detected on PCI.
+[01/26/24 09:56:16]: Mcp = TSimulated
+[01/26/24 09:56:16]: Mcp communication established
+[01/26/24 09:56:16]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 09:56:16]: Power hour count = 1:44:34
+[01/26/24 09:56:16]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 09:56:16]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 09:56:16]: Error when starting: fieldbus IO
+[01/26/24 09:56:16]: COM-PC: server created on all interfaces [5653]
+[01/26/24 09:56:16]: System: s7.4 Jul  4 2012
+[01/26/24 09:56:16]: Configuration Version: c1.010 
+[01/26/24 09:56:16]: Option testMode: enabled 
+[01/26/24 09:56:16]: Option VAL 3: enabled 
+[01/26/24 09:56:16]: Machine Number: ? 
+[01/26/24 09:56:16]: Arm: tx40-S2-R2 floor
+[01/26/24 09:56:16]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 09:56:16]: Robot name:  
+[01/26/24 09:56:16]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 09:56:16]: EP: s7.4 Jul  4 2012
+[01/26/24 09:56:16]: SCA: s7.4 Jul  4 2012
+[01/26/24 09:56:16]: PLC: s7.4 Jul  4 2012
+[01/26/24 09:56:16]: New profile : default
+[01/26/24 09:56:16]: End of controller initialization
+[01/26/24 09:56:16]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 09:56:16]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 09:56:17]: COM-PC: create session 127.0.0.1 on port 52076 id=#51551448
+[01/26/24 09:56:17]: Working mode:automatic.
+[01/26/24 09:56:17]: End of arm power shutdown phase.
+[01/26/24 09:56:28]: Working mode:manual.
+[01/26/24 09:56:32]: Saving controller context...
+[01/26/24 09:56:32]: Controller temperature: 28°C
+[01/26/24 09:56:32]: CPU temperature: 28°C
+[01/26/24 09:56:34]: ex12 application started
+[01/26/24 09:56:37]: Jog mode cannot be selected: first enable arm power.
+[01/26/24 09:56:40]: Deadman validated
+[01/26/24 09:56:41]: Settling arm power...
+[01/26/24 09:56:41]: Arm power settled.
+[01/26/24 09:56:55]: Deadman enabled.
+[01/26/24 09:56:58]: Deadman disabled.
+[01/26/24 09:56:58]: Arm power shutdown: working mode change.
+[01/26/24 09:56:58]: Arm power shutdown...
+[01/26/24 09:56:59]: Working mode:test.
+[01/26/24 09:57:00]: End of arm power shutdown phase.
+[01/26/24 09:57:05]: Saving controller context...
+[01/26/24 09:57:07]: ex12 application stopped
+[01/26/24 09:57:12]: ex12 application started
+[01/26/24 09:57:13]: Jog mode cannot be selected: first enable arm power.
+[01/26/24 09:57:16]: Deadman validated
+[01/26/24 09:57:16]: Settling arm power...
+[01/26/24 09:57:17]: Arm power settled.
+[01/26/24 09:57:21]: Arm power shutdown...
+[01/26/24 09:57:22]: End of arm power shutdown phase.
+[01/26/24 09:57:23]: Deadman disabled.
+[01/26/24 09:57:23]: Working mode:remote.
+[01/26/24 09:57:25]: Working mode:automatic.
+[01/26/24 09:57:27]: ex12 application stopped
+[01/26/24 09:57:28]: Saving controller context...
+[01/26/24 09:57:40]: Deadman validated
+[01/26/24 09:57:40]: Settling arm power...
+[01/26/24 09:57:41]: Arm power settled.
+[01/26/24 09:57:42]: test_ventouse application started
+[01/26/24 09:57:42]: test_ventouse application stopped
+[01/26/24 09:57:55]: Deadman enabled.
+[01/26/24 09:58:17]: test_ventouse application started
+[01/26/24 09:58:17]: test_ventouse application stopped
+[01/26/24 09:58:28]: Deadman disabled.
+[01/26/24 09:58:28]: Arm power shutdown: working mode change.
+[01/26/24 09:58:28]: Arm power shutdown...
+[01/26/24 09:58:28]: Working mode:manual.
+[01/26/24 09:58:29]: End of arm power shutdown phase.
+[01/26/24 09:58:32]: ex12 application started
+[01/26/24 09:58:33]: Saving controller context...
+[01/26/24 09:58:35]: Deadman validated
+[01/26/24 09:58:36]: Settling arm power...
+[01/26/24 09:58:36]: Arm power settled.
+[01/26/24 09:58:43]: Deadman disabled.
+[01/26/24 09:58:43]: Arm power shutdown: working mode change.
+[01/26/24 09:58:43]: Arm power shutdown...
+[01/26/24 09:58:43]: Working mode:test.
+[01/26/24 09:58:44]: Working mode:remote.
+[01/26/24 09:58:44]: End of arm power shutdown phase.
+[01/26/24 09:58:45]: Working mode:automatic.
+[01/26/24 09:58:48]: ex12 application stopped
+[01/26/24 09:58:48]: Saving controller context...
+[01/26/24 09:58:52]: test_ventouse application started
+[01/26/24 09:58:52]: test_ventouse application stopped
+[01/26/24 09:58:55]: Deadman validated
+[01/26/24 09:58:55]: Settling arm power...
+[01/26/24 09:58:55]: Arm power settled.
+[01/26/24 09:58:57]: test_ventouse application started
+[01/26/24 09:58:57]: test_ventouse application stopped
+[01/26/24 09:59:08]: ex12 application started
+[01/26/24 09:59:10]: Deadman enabled.
+[01/26/24 09:59:16]: ex12 application stopped
+[01/26/24 09:59:30]: ex12 application started
+[01/26/24 09:59:38]: ex12 application stopped
+[01/26/24 09:59:41]: test_ventouse application started
+[01/26/24 09:59:41]: test_ventouse application stopped
+[01/26/24 09:59:46]: Arm power shutdown...
+[01/26/24 09:59:47]: End of arm power shutdown phase.
+[01/26/24 09:59:49]: Saving controller context...
+[01/26/24 10:00:13]: -----------------------------------------------
+[01/26/24 10:00:13]: Logger started
+[01/26/24 10:00:17]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:00:17]: Cycle time set to 0.004s
+[01/26/24 10:00:17]: Simulation cycle time set to 0.1s
+[01/26/24 10:00:17]: Controller IP address could not be updated
+[01/26/24 10:00:17]: STARC : No STARC board detected on PCI.
+[01/26/24 10:00:17]: Mcp = TSimulated
+[01/26/24 10:00:17]: Mcp communication established
+[01/26/24 10:00:17]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:00:17]: Power hour count = 1:46:40
+[01/26/24 10:00:17]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:00:17]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:00:17]: Error when starting: fieldbus IO
+[01/26/24 10:00:17]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:00:17]: System: s7.4 Jul  4 2012
+[01/26/24 10:00:17]: Configuration Version: c1.010 
+[01/26/24 10:00:17]: Option testMode: enabled 
+[01/26/24 10:00:17]: Option VAL 3: enabled 
+[01/26/24 10:00:17]: Machine Number: ? 
+[01/26/24 10:00:17]: Arm: tx40-S2-R2 floor
+[01/26/24 10:00:17]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:00:17]: Robot name:  
+[01/26/24 10:00:17]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:00:17]: EP: s7.4 Jul  4 2012
+[01/26/24 10:00:17]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:00:17]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:00:17]: New profile : default
+[01/26/24 10:00:17]: End of controller initialization
+[01/26/24 10:00:17]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:00:17]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:00:17]: COM-PC: create session 127.0.0.1 on port 52411 id=#45062656
+[01/26/24 10:00:18]: Working mode:automatic.
+[01/26/24 10:00:18]: End of arm power shutdown phase.
+[01/26/24 10:00:42]: Deadman validated
+[01/26/24 10:00:42]: Settling arm power...
+[01/26/24 10:00:43]: Arm power settled.
+[01/26/24 10:00:45]: ex12 application started
+[01/26/24 10:00:45]: Cannot move: destination is out of software axis limits
+[01/26/24 10:00:45]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex12~. 
+[01/26/24 10:01:07]: -----------------------------------------------
+[01/26/24 10:01:07]: Logger started
+[01/26/24 10:01:11]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:01:11]: Cycle time set to 0.004s
+[01/26/24 10:01:11]: Simulation cycle time set to 0.1s
+[01/26/24 10:01:11]: Controller IP address could not be updated
+[01/26/24 10:01:11]: STARC : No STARC board detected on PCI.
+[01/26/24 10:01:11]: Mcp = TSimulated
+[01/26/24 10:01:11]: Mcp communication established
+[01/26/24 10:01:11]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:01:11]: Power hour count = 1:46:40
+[01/26/24 10:01:11]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:01:11]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:01:11]: Error when starting: fieldbus IO
+[01/26/24 10:01:11]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:01:11]: System: s7.4 Jul  4 2012
+[01/26/24 10:01:11]: Configuration Version: c1.010 
+[01/26/24 10:01:11]: Option testMode: enabled 
+[01/26/24 10:01:11]: Option VAL 3: enabled 
+[01/26/24 10:01:11]: Machine Number: ? 
+[01/26/24 10:01:11]: Arm: tx40-S2-R2 floor
+[01/26/24 10:01:11]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:01:11]: Robot name:  
+[01/26/24 10:01:11]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:01:11]: EP: s7.4 Jul  4 2012
+[01/26/24 10:01:11]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:01:11]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:01:11]: New profile : default
+[01/26/24 10:01:11]: End of controller initialization
+[01/26/24 10:01:11]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:01:11]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:01:12]: COM-PC: create session 127.0.0.1 on port 52434 id=#49781144
+[01/26/24 10:01:12]: Working mode:automatic.
+[01/26/24 10:01:12]: End of arm power shutdown phase.
+[01/26/24 10:01:29]: Deadman validated
+[01/26/24 10:01:30]: Settling arm power...
+[01/26/24 10:01:30]: Arm power settled.
+[01/26/24 10:01:45]: Deadman enabled.
+[01/26/24 10:01:47]: ex12 application started
+[01/26/24 10:01:51]: Arm power shutdown...
+[01/26/24 10:02:18]: -----------------------------------------------
+[01/26/24 10:02:18]: Logger started
+[01/26/24 10:02:22]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:02:22]: Cycle time set to 0.004s
+[01/26/24 10:02:22]: Simulation cycle time set to 0.1s
+[01/26/24 10:02:22]: Controller IP address could not be updated
+[01/26/24 10:02:22]: STARC : No STARC board detected on PCI.
+[01/26/24 10:02:22]: Mcp = TSimulated
+[01/26/24 10:02:22]: Mcp communication established
+[01/26/24 10:02:22]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:02:22]: Power hour count = 1:46:40
+[01/26/24 10:02:22]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:02:22]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:02:22]: Error when starting: fieldbus IO
+[01/26/24 10:02:22]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:02:22]: System: s7.4 Jul  4 2012
+[01/26/24 10:02:22]: Configuration Version: c1.010 
+[01/26/24 10:02:22]: Option testMode: enabled 
+[01/26/24 10:02:22]: Option VAL 3: enabled 
+[01/26/24 10:02:22]: Machine Number: ? 
+[01/26/24 10:02:22]: Arm: tx40-S2-R2 floor
+[01/26/24 10:02:22]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:02:22]: Robot name:  
+[01/26/24 10:02:22]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:02:22]: EP: s7.4 Jul  4 2012
+[01/26/24 10:02:22]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:02:22]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:02:22]: New profile : default
+[01/26/24 10:02:22]: End of controller initialization
+[01/26/24 10:02:22]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:02:22]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:02:23]: Working mode:automatic.
+[01/26/24 10:02:23]: End of arm power shutdown phase.
+[01/26/24 10:02:24]: COM-PC: create session 127.0.0.1 on port 52465 id=#42047792
+[01/26/24 10:02:42]: (File new.pgx-line 2) 'jP1' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 3) 'jP2' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 4) 'ventouse' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 5) 'jP3' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 6) 'ventouse' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 7) 'jP1' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 8) 'jP3' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 9) 'ventouse' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 10) 'jP2' : invalid name
+[01/26/24 10:02:42]: (File new.pgx-line 11) 'ventouse' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 2) 'jP1' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 3) 'jP2' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 4) 'ventouse' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 5) 'jP3' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 6) 'ventouse' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 7) 'jP1' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 8) 'jP3' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 9) 'ventouse' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 10) 'jP2' : invalid name
+[01/26/24 10:23:16]: (File new.pgx-line 11) 'ventouse' : invalid name
+[01/26/24 10:25:21]: -----------------------------------------------
+[01/26/24 10:25:21]: Logger started
+[01/26/24 10:25:26]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:25:26]: Cycle time set to 0.004s
+[01/26/24 10:25:26]: Simulation cycle time set to 0.1s
+[01/26/24 10:25:26]: Controller IP address could not be updated
+[01/26/24 10:25:26]: STARC : No STARC board detected on PCI.
+[01/26/24 10:25:26]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:25:26]: Power hour count = 1:46:40
+[01/26/24 10:25:26]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:25:26]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:25:26]: Error when starting: fieldbus IO
+[01/26/24 10:25:26]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:25:26]: COM-PC: create session 127.0.0.1 on port 52845 id=#47756240
+[01/26/24 10:25:26]: System: s7.4 Jul  4 2012
+[01/26/24 10:25:26]: Configuration Version: c1.010 
+[01/26/24 10:25:26]: Option testMode: enabled 
+[01/26/24 10:25:26]: Option VAL 3: enabled 
+[01/26/24 10:25:26]: Machine Number: ? 
+[01/26/24 10:25:26]: Arm: tx40-S2-R2 floor
+[01/26/24 10:25:26]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:25:26]: Robot name:  
+[01/26/24 10:25:26]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:25:26]: EP: s7.4 Jul  4 2012
+[01/26/24 10:25:26]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:25:26]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:25:26]: New profile : default
+[01/26/24 10:25:26]: End of controller initialization
+[01/26/24 10:25:26]: Mcp = TSimulated
+[01/26/24 10:25:26]: Mcp communication established
+[01/26/24 10:25:26]: End of arm power shutdown phase.
+[01/26/24 10:25:26]: Working mode:automatic.
+[01/26/24 10:25:40]: (File new.pgx-line 2) 'jP1' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 3) 'jP2' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 4) 'ventouse' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 5) 'jP3' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 6) 'ventouse' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 7) 'jP1' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 8) 'jP3' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 9) 'ventouse' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 10) 'jP2' : invalid name
+[01/26/24 10:25:40]: (File new.pgx-line 11) 'ventouse' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 2) 'jP1' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 3) 'jP2' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 4) 'ventouse' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 5) 'jP3' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 6) 'ventouse' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 7) 'jP1' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 8) 'jP3' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 9) 'ventouse' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 10) 'jP2' : invalid name
+[01/26/24 10:26:12]: (File new.pgx-line 11) 'ventouse' : invalid name
+[01/26/24 10:29:47]: -----------------------------------------------
+[01/26/24 10:29:47]: Logger started
+[01/26/24 10:29:51]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:29:51]: Cycle time set to 0.004s
+[01/26/24 10:29:51]: Simulation cycle time set to 0.1s
+[01/26/24 10:29:51]: Controller IP address could not be updated
+[01/26/24 10:29:51]: STARC : No STARC board detected on PCI.
+[01/26/24 10:29:51]: Mcp = TSimulated
+[01/26/24 10:29:51]: Mcp communication established
+[01/26/24 10:29:51]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:29:51]: Power hour count = 1:46:40
+[01/26/24 10:29:51]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:29:51]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:29:51]: Error when starting: fieldbus IO
+[01/26/24 10:29:51]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:29:51]: System: s7.4 Jul  4 2012
+[01/26/24 10:29:51]: Configuration Version: c1.010 
+[01/26/24 10:29:51]: Option testMode: enabled 
+[01/26/24 10:29:51]: Option VAL 3: enabled 
+[01/26/24 10:29:51]: Machine Number: ? 
+[01/26/24 10:29:51]: Arm: tx40-S2-R2 floor
+[01/26/24 10:29:51]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:29:51]: Robot name:  
+[01/26/24 10:29:51]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:29:51]: EP: s7.4 Jul  4 2012
+[01/26/24 10:29:51]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:29:51]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:29:51]: New profile : default
+[01/26/24 10:29:51]: End of controller initialization
+[01/26/24 10:29:51]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:29:51]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:29:51]: COM-PC: create session 127.0.0.1 on port 52926 id=#40408664
+[01/26/24 10:29:51]: Working mode:automatic.
+[01/26/24 10:29:52]: End of arm power shutdown phase.
+[01/26/24 10:30:08]: Deadman validated
+[01/26/24 10:30:08]: Settling arm power...
+[01/26/24 10:30:09]: Arm power settled.
+[01/26/24 10:30:12]: test_ventouse application started
+[01/26/24 10:30:12]: test_ventouse application stopped
+[01/26/24 10:30:23]: Deadman enabled.
+[01/26/24 10:30:26]: test_ventouse application started
+[01/26/24 10:30:26]: test_ventouse application stopped
+[01/26/24 10:31:15]: MCP communication disconnected
+[01/26/24 10:31:15]: Arm power shutdown: working mode change.
+[01/26/24 10:31:15]: Arm power shutdown...
+[01/26/24 10:31:30]: -----------------------------------------------
+[01/26/24 10:31:30]: Logger started
+[01/26/24 10:31:35]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:31:35]: Cycle time set to 0.004s
+[01/26/24 10:31:35]: Simulation cycle time set to 0.1s
+[01/26/24 10:31:35]: Controller IP address could not be updated
+[01/26/24 10:31:35]: STARC : No STARC board detected on PCI.
+[01/26/24 10:31:35]: Mcp = TSimulated
+[01/26/24 10:31:35]: Mcp communication established
+[01/26/24 10:31:35]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:31:35]: Power hour count = 1:46:40
+[01/26/24 10:31:35]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:31:35]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:31:35]: Error when starting: fieldbus IO
+[01/26/24 10:31:35]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:31:35]: System: s7.4 Jul  4 2012
+[01/26/24 10:31:35]: Configuration Version: c1.010 
+[01/26/24 10:31:35]: Option testMode: enabled 
+[01/26/24 10:31:35]: Option VAL 3: enabled 
+[01/26/24 10:31:35]: Machine Number: ? 
+[01/26/24 10:31:35]: Arm: tx40-S2-R2 floor
+[01/26/24 10:31:35]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:31:35]: Robot name:  
+[01/26/24 10:31:35]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:31:35]: EP: s7.4 Jul  4 2012
+[01/26/24 10:31:35]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:31:35]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:31:35]: New profile : default
+[01/26/24 10:31:35]: End of controller initialization
+[01/26/24 10:31:35]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:31:35]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:31:35]: COM-PC: create session 127.0.0.1 on port 52964 id=#40410952
+[01/26/24 10:31:35]: Working mode:automatic.
+[01/26/24 10:31:35]: End of arm power shutdown phase.
+[01/26/24 10:31:48]: Deadman validated
+[01/26/24 10:31:48]: Settling arm power...
+[01/26/24 10:31:49]: Arm power settled.
+[01/26/24 10:31:52]: test_ventouse application started
+[01/26/24 10:32:03]: Deadman enabled.
+[01/26/24 10:32:03]: test_ventouse application stopped
+[01/26/24 10:32:10]: test_ventouse application started
+[01/26/24 10:32:25]: test_ventouse application stopped
+[01/26/24 10:32:28]: test_ventouse application started
+[01/26/24 10:32:41]: test_ventouse application stopped
+[01/26/24 10:33:04]: Arm power shutdown...
+[01/26/24 10:33:05]: End of arm power shutdown phase.
+[01/26/24 10:33:07]: Saving controller context...
+[01/26/24 10:33:07]: Controller temperature: 28°C
+[01/26/24 10:33:07]: CPU temperature: 28°C
+[01/26/24 10:36:49]: -----------------------------------------------
+[01/26/24 10:36:49]: Logger started
+[01/26/24 10:36:53]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:36:53]: Cycle time set to 0.004s
+[01/26/24 10:36:53]: Simulation cycle time set to 0.1s
+[01/26/24 10:36:53]: Controller IP address could not be updated
+[01/26/24 10:36:53]: STARC : No STARC board detected on PCI.
+[01/26/24 10:36:53]: Mcp = TSimulated
+[01/26/24 10:36:53]: Mcp communication established
+[01/26/24 10:36:53]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:36:53]: Power hour count = 1:47:55
+[01/26/24 10:36:53]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:36:53]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:36:53]: Error when starting: fieldbus IO
+[01/26/24 10:36:53]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:36:53]: System: s7.4 Jul  4 2012
+[01/26/24 10:36:53]: Configuration Version: c1.010 
+[01/26/24 10:36:53]: Option testMode: enabled 
+[01/26/24 10:36:53]: Option VAL 3: enabled 
+[01/26/24 10:36:53]: Machine Number: ? 
+[01/26/24 10:36:53]: Arm: tx40-S2-R2 floor
+[01/26/24 10:36:53]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:36:53]: Robot name:  
+[01/26/24 10:36:53]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:36:53]: EP: s7.4 Jul  4 2012
+[01/26/24 10:36:53]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:36:53]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:36:53]: New profile : default
+[01/26/24 10:36:53]: End of controller initialization
+[01/26/24 10:36:53]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:36:53]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:36:53]: COM-PC: create session 127.0.0.1 on port 53045 id=#46241264
+[01/26/24 10:36:53]: Working mode:automatic.
+[01/26/24 10:36:54]: End of arm power shutdown phase.
+[01/26/24 10:37:09]: Deadman validated
+[01/26/24 10:37:09]: Settling arm power...
+[01/26/24 10:37:10]: Arm power settled.
+[01/26/24 10:37:12]: test_ventouse application started
+[01/26/24 10:37:24]: Deadman enabled.
+[01/26/24 10:37:25]: test_ventouse application stopped
+[01/26/24 10:39:08]: test_ventouse application started
+[01/26/24 10:39:24]: test_ventouse application stopped
+[01/26/24 10:39:29]: Arm power shutdown...
+[01/26/24 10:39:30]: End of arm power shutdown phase.
+[01/26/24 10:39:33]: Saving controller context...
+[01/26/24 10:39:33]: Controller temperature: 28°C
+[01/26/24 10:39:33]: CPU temperature: 28°C
+[01/26/24 10:40:06]: Deadman disabled.
+[01/26/24 10:40:06]: Deadman validated
+[01/26/24 10:40:07]: Settling arm power...
+[01/26/24 10:40:07]: Arm power settled.
+[01/26/24 10:40:09]: test_ventouse application started
+[01/26/24 10:40:15]: Arm power shutdown...
+[01/26/24 10:40:16]: End of arm power shutdown phase.
+[01/26/24 10:40:19]: Saving controller context...
+[01/26/24 10:40:22]: Deadman enabled.
+[01/26/24 10:40:24]: Deadman disabled.
+[01/26/24 10:40:24]: Deadman validated
+[01/26/24 10:40:25]: Settling arm power...
+[01/26/24 10:40:25]: Arm power settled.
+[01/26/24 10:40:25]: Manual motion mode:Connect
+[01/26/24 10:40:27]: test_ventouse application stopped
+[01/26/24 10:40:27]: Manual motion mode:Disabled
+[01/26/24 10:40:27]: End of connection move.
+[01/26/24 10:40:29]: test_ventouse application started
+[01/26/24 10:40:39]: Deadman enabled.
+[01/26/24 10:40:41]: test_ventouse application stopped
+[01/26/24 10:40:44]: test_ventouse application started
+[01/26/24 10:41:00]: test_ventouse application stopped
+[01/26/24 10:41:05]: Arm power shutdown...
+[01/26/24 10:41:06]: End of arm power shutdown phase.
+[01/26/24 10:41:07]: Saving controller context...
+[01/26/24 10:41:07]: MCP communication disconnected
+[01/26/24 10:41:54]: -----------------------------------------------
+[01/26/24 10:41:54]: Logger started
+[01/26/24 10:41:58]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:41:58]: Cycle time set to 0.004s
+[01/26/24 10:41:58]: Simulation cycle time set to 0.1s
+[01/26/24 10:41:58]: Controller IP address could not be updated
+[01/26/24 10:41:58]: STARC : No STARC board detected on PCI.
+[01/26/24 10:41:58]: Mcp = TSimulated
+[01/26/24 10:41:58]: Mcp communication established
+[01/26/24 10:41:58]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:41:58]: Power hour count = 1:51:00
+[01/26/24 10:41:58]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:41:58]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:41:58]: Error when starting: fieldbus IO
+[01/26/24 10:41:58]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:41:58]: System: s7.4 Jul  4 2012
+[01/26/24 10:41:58]: Configuration Version: c1.010 
+[01/26/24 10:41:58]: Option testMode: enabled 
+[01/26/24 10:41:58]: Option VAL 3: enabled 
+[01/26/24 10:41:58]: Machine Number: ? 
+[01/26/24 10:41:58]: Arm: tx40-S2-R2 floor
+[01/26/24 10:41:58]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:41:58]: Robot name:  
+[01/26/24 10:41:58]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:41:58]: EP: s7.4 Jul  4 2012
+[01/26/24 10:41:58]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:41:58]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:41:58]: New profile : default
+[01/26/24 10:41:58]: End of controller initialization
+[01/26/24 10:41:58]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:41:58]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:41:58]: COM-PC: create session 127.0.0.1 on port 53885 id=#48143616
+[01/26/24 10:41:58]: Working mode:automatic.
+[01/26/24 10:41:59]: End of arm power shutdown phase.
+[01/26/24 10:42:05]: Deadman validated
+[01/26/24 10:42:06]: Settling arm power...
+[01/26/24 10:42:06]: Arm power settled.
+[01/26/24 10:42:14]: test_ventouse application started
+[01/26/24 10:42:21]: Deadman enabled.
+[01/26/24 10:42:25]: test_ventouse application stopped
+[01/26/24 10:42:31]: test_ventouse application started
+[01/26/24 10:42:44]: test_ventouse application stopped
+[01/26/24 10:42:50]: test_ventouse application started
+[01/26/24 10:43:03]: test_ventouse application stopped
+[01/26/24 10:43:08]: Deadman disabled.
+[01/26/24 10:43:08]: Arm power shutdown: working mode change.
+[01/26/24 10:43:08]: Arm power shutdown...
+[01/26/24 10:43:09]: Working mode:manual.
+[01/26/24 10:43:09]: End of arm power shutdown phase.
+[01/26/24 10:43:10]: Working mode:test.
+[01/26/24 10:43:12]: Deadman validated
+[01/26/24 10:43:13]: Settling arm power...
+[01/26/24 10:43:13]: Arm power settled.
+[01/26/24 10:43:13]: Saving controller context...
+[01/26/24 10:43:13]: Controller temperature: 28°C
+[01/26/24 10:43:13]: CPU temperature: 28°C
+[01/26/24 10:43:14]: test_ventouse application started
+[01/26/24 10:43:27]: Deadman enabled.
+[01/26/24 10:43:34]: MCP communication disconnected
+[01/26/24 10:43:49]: -----------------------------------------------
+[01/26/24 10:43:49]: Logger started
+[01/26/24 10:43:53]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:43:53]: Cycle time set to 0.004s
+[01/26/24 10:43:53]: Simulation cycle time set to 0.1s
+[01/26/24 10:43:53]: Controller IP address could not be updated
+[01/26/24 10:43:53]: STARC : No STARC board detected on PCI.
+[01/26/24 10:43:53]: Mcp = TSimulated
+[01/26/24 10:43:53]: Mcp communication established
+[01/26/24 10:43:53]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:43:53]: Power hour count = 1:52:02
+[01/26/24 10:43:53]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:43:53]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:43:53]: Error when starting: fieldbus IO
+[01/26/24 10:43:53]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:43:53]: System: s7.4 Jul  4 2012
+[01/26/24 10:43:53]: Configuration Version: c1.010 
+[01/26/24 10:43:53]: Option testMode: enabled 
+[01/26/24 10:43:53]: Option VAL 3: enabled 
+[01/26/24 10:43:53]: Machine Number: ? 
+[01/26/24 10:43:53]: Arm: tx40-S2-R2 floor
+[01/26/24 10:43:53]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:43:53]: Robot name:  
+[01/26/24 10:43:53]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:43:53]: EP: s7.4 Jul  4 2012
+[01/26/24 10:43:53]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:43:53]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:43:53]: New profile : default
+[01/26/24 10:43:53]: End of controller initialization
+[01/26/24 10:43:53]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:43:53]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:43:53]: COM-PC: create session 127.0.0.1 on port 53923 id=#42245856
+[01/26/24 10:43:54]: Working mode:test.
+[01/26/24 10:43:54]: End of arm power shutdown phase.
+[01/26/24 10:43:58]: Working mode:remote.
+[01/26/24 10:44:03]: Saving controller context...
+[01/26/24 10:44:04]: Controller temperature: 28°C
+[01/26/24 10:44:04]: CPU temperature: 28°C
+[01/26/24 10:44:10]: Deadman validated
+[01/26/24 10:44:10]: Arm power enable request refused: cabinet working mode is remote or invalid.
+[01/26/24 10:44:22]: Deadman disabled.
+[01/26/24 10:44:22]: Deadman validated
+[01/26/24 10:44:22]: Arm power enable request refused: cabinet working mode is remote or invalid.
+[01/26/24 10:44:26]: Deadman disabled.
+[01/26/24 10:44:26]: Deadman validated
+[01/26/24 10:44:26]: Arm power enable request refused: cabinet working mode is remote or invalid.
+[01/26/24 10:44:30]: Deadman disabled.
+[01/26/24 10:44:31]: Working mode:automatic.
+[01/26/24 10:44:33]: Deadman validated
+[01/26/24 10:44:33]: Settling arm power...
+[01/26/24 10:44:33]: Arm power settled.
+[01/26/24 10:44:34]: Saving controller context...
+[01/26/24 10:44:39]: Deadman disabled.
+[01/26/24 10:44:39]: Arm power shutdown: working mode change.
+[01/26/24 10:44:39]: Arm power shutdown...
+[01/26/24 10:44:40]: Working mode:manual.
+[01/26/24 10:44:40]: End of arm power shutdown phase.
+[01/26/24 10:44:42]: Deadman validated
+[01/26/24 10:44:42]: Settling arm power...
+[01/26/24 10:44:42]: Arm power settled.
+[01/26/24 10:44:43]: test_ventouse application started
+[01/26/24 10:44:52]: Arm power shutdown...
+[01/26/24 10:44:53]: End of arm power shutdown phase.
+[01/26/24 10:46:11]: -----------------------------------------------
+[01/26/24 10:46:11]: Logger started
+[01/26/24 10:46:15]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:46:15]: Cycle time set to 0.004s
+[01/26/24 10:46:15]: Simulation cycle time set to 0.1s
+[01/26/24 10:46:15]: Controller IP address could not be updated
+[01/26/24 10:46:15]: STARC : No STARC board detected on PCI.
+[01/26/24 10:46:15]: Mcp = TSimulated
+[01/26/24 10:46:15]: Mcp communication established
+[01/26/24 10:46:15]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:46:15]: Power hour count = 1:52:02
+[01/26/24 10:46:15]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:46:15]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:46:15]: Error when starting: fieldbus IO
+[01/26/24 10:46:15]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:46:15]: System: s7.4 Jul  4 2012
+[01/26/24 10:46:15]: Configuration Version: c1.010 
+[01/26/24 10:46:15]: Option testMode: enabled 
+[01/26/24 10:46:15]: Option VAL 3: enabled 
+[01/26/24 10:46:15]: Machine Number: ? 
+[01/26/24 10:46:15]: Arm: tx40-S2-R2 floor
+[01/26/24 10:46:15]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:46:15]: Robot name:  
+[01/26/24 10:46:15]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:46:15]: EP: s7.4 Jul  4 2012
+[01/26/24 10:46:15]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:46:15]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:46:15]: New profile : default
+[01/26/24 10:46:15]: End of controller initialization
+[01/26/24 10:46:15]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:46:15]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:46:16]: COM-PC: create session 127.0.0.1 on port 53968 id=#45717704
+[01/26/24 10:46:16]: Working mode:automatic.
+[01/26/24 10:46:16]: End of arm power shutdown phase.
+[01/26/24 10:46:30]: Deadman validated
+[01/26/24 10:46:30]: Settling arm power...
+[01/26/24 10:46:31]: Arm power settled.
+[01/26/24 10:46:32]: test_ventouse application started
+[01/26/24 10:46:43]: test_ventouse application stopped
+[01/26/24 10:46:45]: Deadman enabled.
+[01/26/24 10:46:45]: Arm power shutdown...
+[01/26/24 10:46:46]: End of arm power shutdown phase.
+[01/26/24 10:46:48]: Saving controller context...
+[01/26/24 10:46:48]: Controller temperature: 28°C
+[01/26/24 10:46:48]: CPU temperature: 28°C
+[01/26/24 10:47:19]: test_ventouse application started
+[01/26/24 10:47:20]: Deadman disabled.
+[01/26/24 10:47:20]: Deadman validated
+[01/26/24 10:47:20]: Settling arm power...
+[01/26/24 10:47:20]: Arm power settled.
+[01/26/24 10:47:32]: test_ventouse application stopped
+[01/26/24 10:47:33]: Arm power shutdown...
+[01/26/24 10:47:57]: -----------------------------------------------
+[01/26/24 10:47:57]: Logger started
+[01/26/24 10:48:01]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 10:48:01]: Cycle time set to 0.004s
+[01/26/24 10:48:01]: Simulation cycle time set to 0.1s
+[01/26/24 10:48:01]: Controller IP address could not be updated
+[01/26/24 10:48:01]: STARC : No STARC board detected on PCI.
+[01/26/24 10:48:01]: Mcp = TSimulated
+[01/26/24 10:48:01]: Mcp communication established
+[01/26/24 10:48:01]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 10:48:01]: Power hour count = 1:52:16
+[01/26/24 10:48:01]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 10:48:01]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 10:48:01]: Error when starting: fieldbus IO
+[01/26/24 10:48:01]: COM-PC: server created on all interfaces [5653]
+[01/26/24 10:48:01]: System: s7.4 Jul  4 2012
+[01/26/24 10:48:01]: Configuration Version: c1.010 
+[01/26/24 10:48:01]: Option testMode: enabled 
+[01/26/24 10:48:01]: Option VAL 3: enabled 
+[01/26/24 10:48:01]: Machine Number: ? 
+[01/26/24 10:48:01]: Arm: tx40-S2-R2 floor
+[01/26/24 10:48:01]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 10:48:01]: Robot name:  
+[01/26/24 10:48:01]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 10:48:01]: EP: s7.4 Jul  4 2012
+[01/26/24 10:48:01]: SCA: s7.4 Jul  4 2012
+[01/26/24 10:48:01]: PLC: s7.4 Jul  4 2012
+[01/26/24 10:48:01]: New profile : default
+[01/26/24 10:48:01]: End of controller initialization
+[01/26/24 10:48:01]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 10:48:01]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 10:48:01]: COM-PC: create session 127.0.0.1 on port 54007 id=#44734248
+[01/26/24 10:48:01]: Working mode:automatic.
+[01/26/24 10:48:02]: End of arm power shutdown phase.
+[01/26/24 10:48:18]: Deadman validated
+[01/26/24 10:48:18]: Settling arm power...
+[01/26/24 10:48:19]: Arm power settled.
+[01/26/24 10:48:21]: test_ventouse application started
+[01/26/24 10:48:33]: test_ventouse application stopped
+[01/26/24 10:48:33]: Deadman enabled.
+[01/26/24 10:48:38]: test_ventouse application started
+[01/26/24 10:48:52]: test_ventouse application stopped
+[01/26/24 10:49:10]: test_ventouse application started
+[01/26/24 10:49:23]: test_ventouse application stopped
+[01/26/24 11:04:24]: -----------------------------------------------
+[01/26/24 11:04:24]: Logger started
+[01/26/24 11:04:29]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 11:04:29]: Cycle time set to 0.004s
+[01/26/24 11:04:29]: Simulation cycle time set to 0.1s
+[01/26/24 11:04:29]: Controller IP address could not be updated
+[01/26/24 11:04:29]: STARC : No STARC board detected on PCI.
+[01/26/24 11:04:29]: Mcp = TSimulated
+[01/26/24 11:04:29]: Mcp communication established
+[01/26/24 11:04:29]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 11:04:29]: Power hour count = 1:52:16
+[01/26/24 11:04:29]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 11:04:29]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 11:04:29]: Error when starting: fieldbus IO
+[01/26/24 11:04:29]: COM-PC: server created on all interfaces [5653]
+[01/26/24 11:04:29]: System: s7.4 Jul  4 2012
+[01/26/24 11:04:29]: Configuration Version: c1.010 
+[01/26/24 11:04:29]: Option testMode: enabled 
+[01/26/24 11:04:29]: Option VAL 3: enabled 
+[01/26/24 11:04:29]: Machine Number: ? 
+[01/26/24 11:04:29]: Arm: tx40-S2-R2 floor
+[01/26/24 11:04:29]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 11:04:29]: Robot name:  
+[01/26/24 11:04:29]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 11:04:29]: EP: s7.4 Jul  4 2012
+[01/26/24 11:04:29]: SCA: s7.4 Jul  4 2012
+[01/26/24 11:04:29]: PLC: s7.4 Jul  4 2012
+[01/26/24 11:04:29]: New profile : default
+[01/26/24 11:04:29]: End of controller initialization
+[01/26/24 11:04:29]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 11:04:29]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 11:04:29]: COM-PC: create session 127.0.0.1 on port 54270 id=#40410120
+[01/26/24 11:04:29]: Working mode:automatic.
+[01/26/24 11:04:30]: End of arm power shutdown phase.
+[01/26/24 11:10:57]: (File test_ventouse.pgx-line 6) 'jP4' : invalid name
+[01/26/24 11:10:57]: (File test_ventouse.pgx-line 7) 'jP5' : invalid name
+[01/26/24 11:10:57]: (File test_ventouse.pgx-line 12) 'jP5' : invalid name
+[01/26/24 11:10:57]: (File test_ventouse.pgx-line 14) 'jP4' : invalid name
+[01/26/24 11:11:07]: (File test_ventouse.pgx-line 6) 'jP4' : invalid name
+[01/26/24 11:11:07]: (File test_ventouse.pgx-line 7) 'jP5' : invalid name
+[01/26/24 11:11:07]: (File test_ventouse.pgx-line 12) 'jP5' : invalid name
+[01/26/24 11:11:07]: (File test_ventouse.pgx-line 14) 'jP4' : invalid name
+[01/26/24 11:11:57]: -----------------------------------------------
+[01/26/24 11:11:57]: Logger started
+[01/26/24 11:12:01]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 11:12:01]: Cycle time set to 0.004s
+[01/26/24 11:12:01]: Simulation cycle time set to 0.1s
+[01/26/24 11:12:01]: Controller IP address could not be updated
+[01/26/24 11:12:01]: STARC : No STARC board detected on PCI.
+[01/26/24 11:12:01]: Mcp = TSimulated
+[01/26/24 11:12:01]: Mcp communication established
+[01/26/24 11:12:01]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 11:12:01]: Power hour count = 1:52:16
+[01/26/24 11:12:01]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 11:12:01]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 11:12:01]: Error when starting: fieldbus IO
+[01/26/24 11:12:01]: COM-PC: server created on all interfaces [5653]
+[01/26/24 11:12:01]: System: s7.4 Jul  4 2012
+[01/26/24 11:12:01]: Configuration Version: c1.010 
+[01/26/24 11:12:01]: Option testMode: enabled 
+[01/26/24 11:12:01]: Option VAL 3: enabled 
+[01/26/24 11:12:01]: Machine Number: ? 
+[01/26/24 11:12:01]: Arm: tx40-S2-R2 floor
+[01/26/24 11:12:01]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 11:12:01]: Robot name:  
+[01/26/24 11:12:01]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 11:12:01]: EP: s7.4 Jul  4 2012
+[01/26/24 11:12:01]: SCA: s7.4 Jul  4 2012
+[01/26/24 11:12:01]: PLC: s7.4 Jul  4 2012
+[01/26/24 11:12:01]: New profile : default
+[01/26/24 11:12:01]: End of controller initialization
+[01/26/24 11:12:01]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 11:12:01]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 11:12:01]: COM-PC: create session 127.0.0.1 on port 54387 id=#55025480
+[01/26/24 11:12:01]: Working mode:automatic.
+[01/26/24 11:12:02]: End of arm power shutdown phase.
+[01/26/24 11:12:17]: (File test_ventouse.pgx-line 6) 'jP4' : invalid name
+[01/26/24 11:12:17]: (File test_ventouse.pgx-line 7) 'jP5' : invalid name
+[01/26/24 11:12:17]: (File test_ventouse.pgx-line 12) 'jP5' : invalid name
+[01/26/24 11:12:17]: (File test_ventouse.pgx-line 14) 'jP4' : invalid name
+[01/26/24 11:13:43]: -----------------------------------------------
+[01/26/24 11:13:43]: Logger started
+[01/26/24 11:13:48]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 11:13:48]: Cycle time set to 0.004s
+[01/26/24 11:13:48]: Simulation cycle time set to 0.1s
+[01/26/24 11:13:48]: Controller IP address could not be updated
+[01/26/24 11:13:48]: STARC : No STARC board detected on PCI.
+[01/26/24 11:13:48]: Mcp = TSimulated
+[01/26/24 11:13:48]: Mcp communication established
+[01/26/24 11:13:48]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 11:13:48]: Power hour count = 1:52:16
+[01/26/24 11:13:48]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 11:13:48]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 11:13:48]: Error when starting: fieldbus IO
+[01/26/24 11:13:48]: COM-PC: server created on all interfaces [5653]
+[01/26/24 11:13:48]: System: s7.4 Jul  4 2012
+[01/26/24 11:13:48]: Configuration Version: c1.010 
+[01/26/24 11:13:48]: Option testMode: enabled 
+[01/26/24 11:13:48]: Option VAL 3: enabled 
+[01/26/24 11:13:48]: Machine Number: ? 
+[01/26/24 11:13:48]: Arm: tx40-S2-R2 floor
+[01/26/24 11:13:48]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 11:13:48]: Robot name:  
+[01/26/24 11:13:48]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 11:13:48]: EP: s7.4 Jul  4 2012
+[01/26/24 11:13:48]: SCA: s7.4 Jul  4 2012
+[01/26/24 11:13:48]: PLC: s7.4 Jul  4 2012
+[01/26/24 11:13:48]: New profile : default
+[01/26/24 11:13:48]: End of controller initialization
+[01/26/24 11:13:48]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 11:13:48]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 11:13:48]: COM-PC: create session 127.0.0.1 on port 54428 id=#44078304
+[01/26/24 11:13:48]: Working mode:automatic.
+[01/26/24 11:13:49]: End of arm power shutdown phase.
+[01/26/24 11:15:54]: (File test_ventouse.pgx-line 6) 'jP4' : invalid name
+[01/26/24 11:15:54]: (File test_ventouse.pgx-line 7) 'jP5' : invalid name
+[01/26/24 11:15:54]: (File test_ventouse.pgx-line 13) 'jP5' : invalid name
+[01/26/24 11:15:54]: (File test_ventouse.pgx-line 14) 'jP4' : invalid name
+[01/26/24 11:16:32]: (File test_ventouse.pgx-line 6) 'jP4' : invalid name
+[01/26/24 11:16:32]: (File test_ventouse.pgx-line 12) 'jP4' : invalid name
+[01/26/24 11:16:40]: (File test_ventouse.pgx-line 6) 'jP4' : invalid name
+[01/26/24 11:16:40]: (File test_ventouse.pgx-line 12) 'jP4' : invalid name
+[01/26/24 11:16:57]: (File test_ventouse.pgx-line 6) 'jP5' : invalid name
+[01/26/24 11:16:57]: (File test_ventouse.pgx-line 12) 'jP5' : invalid name
+[01/26/24 11:23:27]: Deadman validated
+[01/26/24 11:23:27]: Settling arm power...
+[01/26/24 11:23:28]: Arm power settled.
+[01/26/24 11:23:30]: test_ventouse application started
+[01/26/24 11:23:42]: Deadman enabled.
+[01/26/24 11:23:46]: test_ventouse application stopped
+[01/26/24 11:24:04]: test_ventouse application started
+[01/26/24 11:24:22]: test_ventouse application stopped
+[01/26/24 11:24:40]: test_ventouse application started
+[01/26/24 11:24:57]: test_ventouse application stopped
+[01/26/24 11:34:07]: -----------------------------------------------
+[01/26/24 11:34:07]: Logger started
+[01/26/24 11:34:12]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 11:34:12]: Cycle time set to 0.004s
+[01/26/24 11:34:12]: Simulation cycle time set to 0.1s
+[01/26/24 11:34:12]: Controller IP address could not be updated
+[01/26/24 11:34:12]: STARC : No STARC board detected on PCI.
+[01/26/24 11:34:12]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 11:34:12]: Power hour count = 1:52:16
+[01/26/24 11:34:12]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 11:34:12]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 11:34:12]: Error when starting: fieldbus IO
+[01/26/24 11:34:12]: COM-PC: server created on all interfaces [5653]
+[01/26/24 11:34:12]: System: s7.4 Jul  4 2012
+[01/26/24 11:34:12]: Configuration Version: c1.010 
+[01/26/24 11:34:12]: Option testMode: enabled 
+[01/26/24 11:34:12]: Option VAL 3: enabled 
+[01/26/24 11:34:12]: Machine Number: ? 
+[01/26/24 11:34:12]: Arm: tx40-S2-R2 floor
+[01/26/24 11:34:12]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 11:34:12]: Robot name:  
+[01/26/24 11:34:12]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 11:34:12]: EP: s7.4 Jul  4 2012
+[01/26/24 11:34:12]: SCA: s7.4 Jul  4 2012
+[01/26/24 11:34:12]: PLC: s7.4 Jul  4 2012
+[01/26/24 11:34:12]: New profile : default
+[01/26/24 11:34:12]: End of controller initialization
+[01/26/24 11:34:12]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 11:34:12]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[01/26/24 11:34:12]: COM-PC: create session 127.0.0.1 on port 54853 id=#51139808
+[01/26/24 11:34:12]: Mcp = TSimulated
+[01/26/24 11:34:12]: Mcp communication established
+[01/26/24 11:34:12]: End of arm power shutdown phase.
+[01/26/24 11:34:13]: Working mode:automatic.
+[01/26/24 11:34:21]: Deadman validated
+[01/26/24 11:34:21]: Settling arm power...
+[01/26/24 11:34:22]: Arm power settled.
+[01/26/24 11:34:33]: test_ventouse application started
+[01/26/24 11:34:33]: Cannot move: destination is out of software axis limits
+[01/26/24 11:34:36]: Deadman enabled.
+[01/26/24 11:35:11]: -----------------------------------------------
+[01/26/24 11:35:11]: Logger started
+[01/26/24 11:35:15]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 11:35:15]: Cycle time set to 0.004s
+[01/26/24 11:35:15]: Simulation cycle time set to 0.1s
+[01/26/24 11:35:15]: Controller IP address could not be updated
+[01/26/24 11:35:15]: STARC : No STARC board detected on PCI.
+[01/26/24 11:35:15]: Mcp = TSimulated
+[01/26/24 11:35:15]: Mcp communication established
+[01/26/24 11:35:15]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 11:35:15]: Power hour count = 1:52:16
+[01/26/24 11:35:15]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 11:35:15]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 11:35:15]: Error when starting: fieldbus IO
+[01/26/24 11:35:15]: COM-PC: server created on all interfaces [5653]
+[01/26/24 11:35:15]: System: s7.4 Jul  4 2012
+[01/26/24 11:35:15]: Configuration Version: c1.010 
+[01/26/24 11:35:15]: Option testMode: enabled 
+[01/26/24 11:35:15]: Option VAL 3: enabled 
+[01/26/24 11:35:15]: Machine Number: ? 
+[01/26/24 11:35:15]: Arm: tx40-S2-R2 floor
+[01/26/24 11:35:15]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 11:35:15]: Robot name:  
+[01/26/24 11:35:15]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 11:35:15]: EP: s7.4 Jul  4 2012
+[01/26/24 11:35:15]: SCA: s7.4 Jul  4 2012
+[01/26/24 11:35:15]: PLC: s7.4 Jul  4 2012
+[01/26/24 11:35:15]: New profile : default
+[01/26/24 11:35:15]: End of controller initialization
+[01/26/24 11:35:15]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 11:35:15]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 11:35:15]: COM-PC: create session 127.0.0.1 on port 54984 id=#41260984
+[01/26/24 11:35:16]: Working mode:automatic.
+[01/26/24 11:35:16]: End of arm power shutdown phase.
+[01/26/24 11:35:29]: test_ventouse application started
+[01/26/24 11:35:32]: Deadman validated
+[01/26/24 11:35:32]: Settling arm power...
+[01/26/24 11:35:33]: Arm power settled.
+[01/26/24 11:35:47]: Deadman enabled.
+[01/26/24 11:35:57]: test_ventouse application stopped
+[01/26/24 11:36:49]: Arm power shutdown...
+[01/26/24 11:36:50]: End of arm power shutdown phase.
+[01/26/24 11:39:20]: -----------------------------------------------
+[01/26/24 11:39:20]: Logger started
+[01/26/24 11:39:24]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/26/24 11:39:24]: Cycle time set to 0.004s
+[01/26/24 11:39:24]: Simulation cycle time set to 0.1s
+[01/26/24 11:39:24]: Controller IP address could not be updated
+[01/26/24 11:39:24]: STARC : No STARC board detected on PCI.
+[01/26/24 11:39:24]: Mcp = TSimulated
+[01/26/24 11:39:24]: Mcp communication established
+[01/26/24 11:39:24]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/26/24 11:39:24]: Power hour count = 1:52:16
+[01/26/24 11:39:24]: Mac Address = fc-aa-14-6f-b2-24
+[01/26/24 11:39:24]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/26/24 11:39:24]: Error when starting: fieldbus IO
+[01/26/24 11:39:24]: COM-PC: server created on all interfaces [5653]
+[01/26/24 11:39:24]: System: s7.4 Jul  4 2012
+[01/26/24 11:39:24]: Configuration Version: c1.010 
+[01/26/24 11:39:24]: Option testMode: enabled 
+[01/26/24 11:39:24]: Option VAL 3: enabled 
+[01/26/24 11:39:24]: Machine Number: ? 
+[01/26/24 11:39:24]: Arm: tx40-S2-R2 floor
+[01/26/24 11:39:24]: Arm serial number: F12_5M1XA1_A_01 
+[01/26/24 11:39:24]: Robot name:  
+[01/26/24 11:39:24]: Powerlink: s7.4 Jul  4 2012
+[01/26/24 11:39:24]: EP: s7.4 Jul  4 2012
+[01/26/24 11:39:24]: SCA: s7.4 Jul  4 2012
+[01/26/24 11:39:24]: PLC: s7.4 Jul  4 2012
+[01/26/24 11:39:24]: New profile : default
+[01/26/24 11:39:24]: End of controller initialization
+[01/26/24 11:39:24]: System event INTERFACE-Stopped  (Main menu)
+[01/26/24 11:39:24]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[01/26/24 11:39:24]: COM-PC: create session 127.0.0.1 on port 55055 id=#52993656
+[01/26/24 11:39:25]: Working mode:automatic.
+[01/26/24 11:39:25]: End of arm power shutdown phase.
+[01/26/24 11:39:39]: Deadman validated
+[01/26/24 11:39:39]: Settling arm power...
+[01/26/24 11:39:39]: Arm power settled.
+[01/26/24 11:39:41]: test_ventouse application started
+[01/26/24 11:39:54]: Deadman enabled.
+[01/26/24 11:39:59]: test_ventouse application stopped
+[01/29/24 08:28:50]: -----------------------------------------------
+[01/29/24 08:28:50]: Logger started
+[01/29/24 08:28:58]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/29/24 08:28:58]: Cycle time set to 0.004s
+[01/29/24 08:28:58]: Simulation cycle time set to 0.1s
+[01/29/24 08:28:58]: Controller IP address could not be updated
+[01/29/24 08:28:58]: STARC : No STARC board detected on PCI.
+[01/29/24 08:28:58]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/29/24 08:28:58]: Power hour count = 1:52:16
+[01/29/24 08:28:58]: Mac Address = fc-aa-14-6f-b2-24
+[01/29/24 08:28:58]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/29/24 08:28:58]: Error when starting: fieldbus IO
+[01/29/24 08:28:58]: End of arm power shutdown phase.
+[01/29/24 08:28:58]: COM-PC: server created on all interfaces [5653]
+[01/29/24 08:28:58]: System: s7.4 Jul  4 2012
+[01/29/24 08:28:58]: Configuration Version: c1.010 
+[01/29/24 08:28:58]: Option testMode: enabled 
+[01/29/24 08:28:58]: Option VAL 3: enabled 
+[01/29/24 08:28:58]: Machine Number: ? 
+[01/29/24 08:28:58]: Arm: tx40-S2-R2 floor
+[01/29/24 08:28:58]: Arm serial number: F12_5M1XA1_A_01 
+[01/29/24 08:28:58]: Robot name:  
+[01/29/24 08:28:58]: Powerlink: s7.4 Jul  4 2012
+[01/29/24 08:28:58]: EP: s7.4 Jul  4 2012
+[01/29/24 08:28:58]: SCA: s7.4 Jul  4 2012
+[01/29/24 08:28:58]: PLC: s7.4 Jul  4 2012
+[01/29/24 08:28:58]: New profile : default
+[01/29/24 08:28:58]: End of controller initialization
+[01/29/24 08:28:58]: System event INTERFACE-Stopped  (Main menu)
+[01/29/24 08:28:58]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[01/29/24 08:28:59]: COM-PC: create session 127.0.0.1 on port 50407 id=#48836736
+[01/29/24 08:29:07]: Mcp = TSimulated
+[01/29/24 08:29:07]: Mcp communication established
+[01/29/24 08:29:07]: Working mode:automatic.
+[01/29/24 08:29:16]: Deadman validated
+[01/29/24 08:29:16]: Settling arm power...
+[01/29/24 08:29:17]: Arm power settled.
+[01/29/24 08:29:24]: test_ventouse application started
+[01/29/24 08:29:31]: Deadman enabled.
+[01/29/24 08:29:43]: test_ventouse application stopped
+[01/29/24 08:30:05]: Arm power shutdown...
+[01/29/24 08:30:06]: End of arm power shutdown phase.
+[01/29/24 08:30:07]: MCP communication disconnected
+[01/29/24 10:39:36]: -----------------------------------------------
+[01/29/24 10:39:36]: Logger started
+[01/29/24 10:39:44]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[01/29/24 10:39:44]: Cycle time set to 0.004s
+[01/29/24 10:39:44]: Simulation cycle time set to 0.1s
+[01/29/24 10:39:44]: Controller IP address could not be updated
+[01/29/24 10:39:44]: STARC : No STARC board detected on PCI.
+[01/29/24 10:39:44]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[01/29/24 10:39:44]: Power hour count = 1:52:16
+[01/29/24 10:39:44]: Mac Address = fc-aa-14-6f-b2-24
+[01/29/24 10:39:44]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[01/29/24 10:39:44]: Error when starting: fieldbus IO
+[01/29/24 10:39:44]: End of arm power shutdown phase.
+[01/29/24 10:39:44]: COM-PC: server created on all interfaces [5653]
+[01/29/24 10:39:44]: System: s7.4 Jul  4 2012
+[01/29/24 10:39:44]: Configuration Version: c1.010 
+[01/29/24 10:39:44]: Option testMode: enabled 
+[01/29/24 10:39:44]: Option VAL 3: enabled 
+[01/29/24 10:39:44]: Machine Number: ? 
+[01/29/24 10:39:44]: Arm: tx40-S2-R2 floor
+[01/29/24 10:39:44]: Arm serial number: F12_5M1XA1_A_01 
+[01/29/24 10:39:44]: Robot name:  
+[01/29/24 10:39:44]: Powerlink: s7.4 Jul  4 2012
+[01/29/24 10:39:44]: EP: s7.4 Jul  4 2012
+[01/29/24 10:39:44]: SCA: s7.4 Jul  4 2012
+[01/29/24 10:39:44]: PLC: s7.4 Jul  4 2012
+[01/29/24 10:39:44]: New profile : default
+[01/29/24 10:39:44]: End of controller initialization
+[01/29/24 10:39:44]: System event INTERFACE-Stopped  (Main menu)
+[01/29/24 10:39:44]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[01/29/24 10:39:45]: COM-PC: create session 127.0.0.1 on port 52783 id=#53898056
+[01/29/24 10:39:51]: Mcp = TSimulated
+[01/29/24 10:39:51]: Mcp communication established
+[01/29/24 10:39:52]: Working mode:automatic.
+[01/29/24 10:39:59]: Deadman validated
+[01/29/24 10:39:59]: Settling arm power...
+[01/29/24 10:40:00]: Arm power settled.
+[01/29/24 10:40:09]: test_ventouse application started
+[01/29/24 10:40:14]: Deadman enabled.
+[01/29/24 10:40:18]: test_ventouse application stopped
+[01/29/24 10:40:54]: test_ventouse application started
+[01/29/24 10:41:00]: test_ventouse application stopped
+[01/29/24 10:41:04]: test_ventouse application started
+[01/29/24 10:41:09]: test_ventouse application stopped
+[01/29/24 10:41:21]: test_ventouse application started
+[01/29/24 10:41:31]: test_ventouse application stopped
+[01/29/24 10:41:59]: test_ventouse application started
+[01/29/24 10:42:05]: test_ventouse application stopped
+[01/29/24 10:42:07]: test_ventouse application started
+[01/29/24 10:42:13]: test_ventouse application stopped
+[01/29/24 10:43:52]: test_ventouse application started
+[01/29/24 10:43:58]: test_ventouse application stopped
+[01/29/24 10:44:00]: test_ventouse application started
+[01/29/24 10:44:06]: test_ventouse application stopped
+[01/29/24 10:44:14]: test_ventouse application started
+[01/29/24 10:44:19]: test_ventouse application stopped
+[01/29/24 10:52:12]: test_ventouse application started
+[01/29/24 10:52:17]: test_ventouse application stopped
+[01/29/24 10:54:18]: Arm power shutdown...
+[01/29/24 10:54:19]: End of arm power shutdown phase.
+[01/29/24 10:54:20]: Saving controller context...
+[01/29/24 10:54:20]: Controller temperature: 28°C
+[01/29/24 10:54:20]: CPU temperature: 28°C
+[01/29/24 10:54:30]: MCP communication disconnected
+[02/02/24 10:40:46]: -----------------------------------------------
+[02/02/24 10:40:47]: Logger started
+[02/02/24 10:40:56]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 10:40:56]: Cycle time set to 0.004s
+[02/02/24 10:40:56]: Simulation cycle time set to 0.1s
+[02/02/24 10:40:56]: Controller IP address could not be updated
+[02/02/24 10:40:56]: STARC : No STARC board detected on PCI.
+[02/02/24 10:40:56]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 10:40:56]: Power hour count = 2:06:30
+[02/02/24 10:40:56]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 10:40:56]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 10:40:56]: Error when starting: fieldbus IO
+[02/02/24 10:40:56]: End of arm power shutdown phase.
+[02/02/24 10:40:56]: COM-PC: server created on all interfaces [5653]
+[02/02/24 10:40:56]: System: s7.4 Jul  4 2012
+[02/02/24 10:40:56]: Configuration Version: c1.010 
+[02/02/24 10:40:56]: Option testMode: enabled 
+[02/02/24 10:40:56]: Option VAL 3: enabled 
+[02/02/24 10:40:56]: Machine Number: ? 
+[02/02/24 10:40:56]: Arm: tx40-S2-R2 floor
+[02/02/24 10:40:56]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 10:40:56]: Robot name:  
+[02/02/24 10:40:56]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 10:40:56]: EP: s7.4 Jul  4 2012
+[02/02/24 10:40:56]: SCA: s7.4 Jul  4 2012
+[02/02/24 10:40:56]: PLC: s7.4 Jul  4 2012
+[02/02/24 10:40:56]: New profile : default
+[02/02/24 10:40:56]: End of controller initialization
+[02/02/24 10:40:56]: System event INTERFACE-Stopped  (Main menu)
+[02/02/24 10:40:56]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[02/02/24 10:40:56]: COM-PC: create session 127.0.0.1 on port 60366 id=#54346960
+[02/02/24 10:41:08]: Mcp = TSimulated
+[02/02/24 10:41:08]: Mcp communication established
+[02/02/24 10:41:09]: Working mode:automatic.
+[02/02/24 10:41:26]: Deadman validated
+[02/02/24 10:41:26]: Settling arm power...
+[02/02/24 10:41:26]: Arm power settled.
+[02/02/24 10:41:41]: Deadman enabled.
+[02/02/24 10:56:20]: -----------------------------------------------
+[02/02/24 10:56:20]: Logger started
+[02/02/24 10:56:25]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 10:56:25]: Cycle time set to 0.004s
+[02/02/24 10:56:25]: Simulation cycle time set to 0.1s
+[02/02/24 10:56:25]: Controller IP address could not be updated
+[02/02/24 10:56:25]: STARC : No STARC board detected on PCI.
+[02/02/24 10:56:25]: Mcp = TSimulated
+[02/02/24 10:56:25]: Mcp communication established
+[02/02/24 10:56:25]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 10:56:25]: Power hour count = 2:06:30
+[02/02/24 10:56:25]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 10:56:25]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 10:56:25]: Error when starting: fieldbus IO
+[02/02/24 10:56:25]: Working mode:invalid.
+[02/02/24 10:56:25]: COM-PC: server created on all interfaces [5653]
+[02/02/24 10:56:25]: COM-PC: create session 127.0.0.1 on port 52200 id=#51493592
+[02/02/24 10:56:25]: System: s7.4 Jul  4 2012
+[02/02/24 10:56:25]: Configuration Version: c1.010 
+[02/02/24 10:56:25]: Option testMode: enabled 
+[02/02/24 10:56:25]: Option VAL 3: enabled 
+[02/02/24 10:56:25]: Machine Number: ? 
+[02/02/24 10:56:25]: Arm: tx40-S2-R2 floor
+[02/02/24 10:56:25]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 10:56:25]: Robot name:  
+[02/02/24 10:56:25]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 10:56:25]: EP: s7.4 Jul  4 2012
+[02/02/24 10:56:25]: SCA: s7.4 Jul  4 2012
+[02/02/24 10:56:25]: PLC: s7.4 Jul  4 2012
+[02/02/24 10:56:25]: New profile : default
+[02/02/24 10:56:25]: End of controller initialization
+[02/02/24 10:56:25]: System event INTERFACE-Stopped  (Main menu)
+[02/02/24 10:56:25]: System event INTERFACE-Stopped  (Main menu). 9 events lost.
+[02/02/24 10:56:25]: Working mode:automatic.
+[02/02/24 10:56:25]: End of arm power shutdown phase.
+[02/02/24 11:01:59]: -----------------------------------------------
+[02/02/24 11:01:59]: Logger started
+[02/02/24 11:02:03]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 11:02:03]: Cycle time set to 0.004s
+[02/02/24 11:02:03]: Simulation cycle time set to 0.1s
+[02/02/24 11:02:03]: Controller IP address could not be updated
+[02/02/24 11:02:03]: STARC : No STARC board detected on PCI.
+[02/02/24 11:02:03]: Mcp = TSimulated
+[02/02/24 11:02:03]: Mcp communication established
+[02/02/24 11:02:03]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 11:02:03]: Power hour count = 2:06:30
+[02/02/24 11:02:03]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 11:02:03]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 11:02:03]: Error when starting: fieldbus IO
+[02/02/24 11:02:03]: COM-PC: server created on all interfaces [5653]
+[02/02/24 11:02:03]: System: s7.4 Jul  4 2012
+[02/02/24 11:02:03]: Configuration Version: c1.010 
+[02/02/24 11:02:03]: Option testMode: enabled 
+[02/02/24 11:02:03]: Option VAL 3: enabled 
+[02/02/24 11:02:03]: Machine Number: ? 
+[02/02/24 11:02:03]: Arm: tx40-S2-R2 floor
+[02/02/24 11:02:03]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 11:02:03]: Robot name:  
+[02/02/24 11:02:03]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 11:02:03]: EP: s7.4 Jul  4 2012
+[02/02/24 11:02:03]: SCA: s7.4 Jul  4 2012
+[02/02/24 11:02:03]: PLC: s7.4 Jul  4 2012
+[02/02/24 11:02:03]: New profile : default
+[02/02/24 11:02:03]: End of controller initialization
+[02/02/24 11:02:03]: System event INTERFACE-Stopped  (Main menu)
+[02/02/24 11:02:03]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[02/02/24 11:02:03]: COM-PC: create session 127.0.0.1 on port 52350 id=#48209776
+[02/02/24 11:02:03]: Working mode:automatic.
+[02/02/24 11:02:04]: End of arm power shutdown phase.
+[02/02/24 11:03:02]: Saving controller context...
+[02/02/24 11:03:02]: Controller temperature: 28°C
+[02/02/24 11:03:02]: CPU temperature: 28°C
+[02/02/24 11:09:42]: Saving controller context...
+[02/02/24 11:13:15]: -----------------------------------------------
+[02/02/24 11:13:15]: Logger started
+[02/02/24 11:13:20]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 11:13:20]: Cycle time set to 0.004s
+[02/02/24 11:13:20]: Simulation cycle time set to 0.1s
+[02/02/24 11:13:20]: Controller IP address could not be updated
+[02/02/24 11:13:20]: STARC : No STARC board detected on PCI.
+[02/02/24 11:13:20]: Mcp = TSimulated
+[02/02/24 11:13:20]: Mcp communication established
+[02/02/24 11:13:20]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 11:13:20]: Power hour count = 2:06:30
+[02/02/24 11:13:20]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 11:13:20]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 11:13:20]: Error when starting: fieldbus IO
+[02/02/24 11:13:20]: COM-PC: server created on all interfaces [5653]
+[02/02/24 11:13:20]: System: s7.4 Jul  4 2012
+[02/02/24 11:13:20]: Configuration Version: c1.010 
+[02/02/24 11:13:20]: Option testMode: enabled 
+[02/02/24 11:13:20]: Option VAL 3: enabled 
+[02/02/24 11:13:20]: Machine Number: ? 
+[02/02/24 11:13:20]: Arm: tx40-S2-R2 floor
+[02/02/24 11:13:20]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 11:13:20]: Robot name:  
+[02/02/24 11:13:20]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 11:13:20]: EP: s7.4 Jul  4 2012
+[02/02/24 11:13:20]: SCA: s7.4 Jul  4 2012
+[02/02/24 11:13:20]: PLC: s7.4 Jul  4 2012
+[02/02/24 11:13:20]: New profile : default
+[02/02/24 11:13:20]: End of controller initialization
+[02/02/24 11:13:20]: System event INTERFACE-Stopped  (Main menu)
+[02/02/24 11:13:20]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[02/02/24 11:13:20]: COM-PC: create session 127.0.0.1 on port 52720 id=#47101744
+[02/02/24 11:13:20]: Working mode:automatic.
+[02/02/24 11:13:21]: End of arm power shutdown phase.
+[02/02/24 11:29:47]: -----------------------------------------------
+[02/02/24 11:29:47]: Logger started
+[02/02/24 11:29:52]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 11:29:52]: Cycle time set to 0.004s
+[02/02/24 11:29:52]: Simulation cycle time set to 0.1s
+[02/02/24 11:29:52]: Controller IP address could not be updated
+[02/02/24 11:29:52]: STARC : No STARC board detected on PCI.
+[02/02/24 11:29:52]: Mcp = TSimulated
+[02/02/24 11:29:52]: Mcp communication established
+[02/02/24 11:29:52]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 11:29:52]: Power hour count = 2:06:30
+[02/02/24 11:29:52]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 11:29:52]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 11:29:52]: Error when starting: fieldbus IO
+[02/02/24 11:29:52]: COM-PC: server created on all interfaces [5653]
+[02/02/24 11:29:52]: Deadman enabled.
+[02/02/24 11:29:52]: System: s7.4 Jul  4 2012
+[02/02/24 11:29:52]: Configuration Version: c1.010 
+[02/02/24 11:29:52]: Option testMode: enabled 
+[02/02/24 11:29:52]: Option VAL 3: enabled 
+[02/02/24 11:29:52]: Machine Number: ? 
+[02/02/24 11:29:52]: Arm: tx40-S2-R2 floor
+[02/02/24 11:29:52]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 11:29:52]: Robot name:  
+[02/02/24 11:29:52]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 11:29:52]: EP: s7.4 Jul  4 2012
+[02/02/24 11:29:52]: SCA: s7.4 Jul  4 2012
+[02/02/24 11:29:52]: PLC: s7.4 Jul  4 2012
+[02/02/24 11:29:52]: New profile : default
+[02/02/24 11:29:52]: End of controller initialization
+[02/02/24 11:29:52]: System event INTERFACE-Stopped  (Main menu)
+[02/02/24 11:29:52]: System event INTERFACE-Stopped  (Main menu). 8 events lost.
+[02/02/24 11:29:52]: Working mode:automatic.
+[02/02/24 11:29:52]: Deadman disabled.
+[02/02/24 11:29:53]: End of arm power shutdown phase.
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 4) 'l_pHereEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 5) 'l_jHereEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 9) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 10) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 11) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 12) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 13) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 14) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 15) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 18) 'siSocketUDP' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 23) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 24) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 25) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 26) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 27) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 28) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 29) 'l_sEtat' : invalid name
+[02/02/24 11:30:04]: (File emissionEtat.pgx-line 30) 'siSocketUDP' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 4) 'l_pHereEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 5) 'l_jHereEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 9) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 10) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 11) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 12) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 13) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 14) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 15) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 18) 'siSocketUDP' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 23) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 24) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 25) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 26) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 27) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 28) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 29) 'l_sEtat' : invalid name
+[02/02/24 11:44:29]: (File emissionEtat.pgx-line 30) 'siSocketUDP' : invalid name
+[02/02/24 11:47:41]: Saving controller context...
+[02/02/24 11:47:41]: Controller temperature: 28°C
+[02/02/24 11:47:41]: CPU temperature: 28°C
+[02/02/24 11:49:16]: -----------------------------------------------
+[02/02/24 11:49:16]: Logger started
+[02/02/24 11:49:21]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 11:49:21]: Cycle time set to 0.004s
+[02/02/24 11:49:21]: Simulation cycle time set to 0.1s
+[02/02/24 11:49:21]: Controller IP address could not be updated
+[02/02/24 11:49:21]: STARC : No STARC board detected on PCI.
+[02/02/24 11:49:21]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 11:49:21]: Power hour count = 2:06:30
+[02/02/24 11:49:21]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 11:49:21]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 11:49:21]: Error when starting: fieldbus IO
+[02/02/24 11:49:21]: COM-PC: server created on all interfaces [5653]
+[02/02/24 11:49:21]: System: s7.4 Jul  4 2012
+[02/02/24 11:49:21]: Configuration Version: c1.010 
+[02/02/24 11:49:21]: Option testMode: enabled 
+[02/02/24 11:49:21]: Option VAL 3: enabled 
+[02/02/24 11:49:21]: Machine Number: ? 
+[02/02/24 11:49:21]: Arm: tx40-S2-R2 floor
+[02/02/24 11:49:21]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 11:49:21]: Robot name:  
+[02/02/24 11:49:21]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 11:49:21]: EP: s7.4 Jul  4 2012
+[02/02/24 11:49:21]: SCA: s7.4 Jul  4 2012
+[02/02/24 11:49:21]: PLC: s7.4 Jul  4 2012
+[02/02/24 11:49:21]: New profile : default
+[02/02/24 11:49:21]: End of controller initialization
+[02/02/24 11:49:21]: Mcp = TSimulated
+[02/02/24 11:49:21]: End of arm power shutdown phase.
+[02/02/24 11:49:21]: Mcp communication established
+[02/02/24 11:49:22]: Working mode:automatic.
+[02/02/24 11:50:20]: Saving controller context...
+[02/02/24 11:50:20]: Controller temperature: 28°C
+[02/02/24 11:50:20]: CPU temperature: 28°C
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 4) 'l_pHereEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 5) 'l_jHereEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 9) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 10) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 11) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 12) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 13) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 14) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 15) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 18) 'siSocketUDP' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 23) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 24) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 25) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 26) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 27) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 28) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 29) 'l_sEtat' : invalid name
+[02/02/24 11:51:25]: (File emissionEtat.pgx-line 30) 'siSocketUDP' : invalid name
+[02/02/24 11:54:51]: -----------------------------------------------
+[02/02/24 11:54:51]: Logger started
+[02/02/24 11:54:56]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/02/24 11:54:56]: Cycle time set to 0.004s
+[02/02/24 11:54:56]: Simulation cycle time set to 0.1s
+[02/02/24 11:54:56]: Controller IP address could not be updated
+[02/02/24 11:54:56]: STARC : No STARC board detected on PCI.
+[02/02/24 11:54:56]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/02/24 11:54:56]: Power hour count = 2:06:30
+[02/02/24 11:54:56]: Mac Address = fc-aa-14-6f-b2-24
+[02/02/24 11:54:56]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/02/24 11:54:56]: Error when starting: fieldbus IO
+[02/02/24 11:54:56]: COM-PC: server created on all interfaces [5653]
+[02/02/24 11:54:56]: System: s7.4 Jul  4 2012
+[02/02/24 11:54:56]: Configuration Version: c1.010 
+[02/02/24 11:54:56]: Option testMode: enabled 
+[02/02/24 11:54:56]: Option VAL 3: enabled 
+[02/02/24 11:54:56]: Machine Number: ? 
+[02/02/24 11:54:56]: Arm: tx40-S2-R2 floor
+[02/02/24 11:54:56]: Arm serial number: F12_5M1XA1_A_01 
+[02/02/24 11:54:56]: Robot name:  
+[02/02/24 11:54:56]: Powerlink: s7.4 Jul  4 2012
+[02/02/24 11:54:56]: EP: s7.4 Jul  4 2012
+[02/02/24 11:54:56]: SCA: s7.4 Jul  4 2012
+[02/02/24 11:54:56]: PLC: s7.4 Jul  4 2012
+[02/02/24 11:54:56]: New profile : default
+[02/02/24 11:54:56]: End of controller initialization
+[02/02/24 11:54:56]: End of arm power shutdown phase.
+[02/02/24 11:54:57]: Mcp = TSimulated
+[02/02/24 11:54:57]: Mcp communication established
+[02/02/24 11:54:57]: Working mode:automatic.
+[02/02/24 11:55:01]: (File start.pgx-line 5) 'logMsgBlock' : undefined program
+[02/02/24 11:58:09]: (File logMsgBlock.pgx-line 3) 'x_bBool' : invalid name
+[02/02/24 11:58:09]: (File logMsgBlock.pgx-line 5) endIf does not match if else
+[02/02/24 11:58:09]: (File logMsgBlock.pgx-line 7) 'x_sString' : invalid name
+[02/02/24 11:58:09]: (File logMsgBlock.pgx-line 9) endWhile does not match while
+[02/02/24 11:59:03]: (File logMsgBlock.pgx-line 3) 'x_bBool' : invalid name
+[02/02/24 11:59:03]: (File logMsgBlock.pgx-line 5) endIf does not match if else
+[02/02/24 11:59:03]: (File logMsgBlock.pgx-line 7) 'x_sString' : invalid name
+[02/02/24 11:59:03]: (File logMsgBlock.pgx-line 9) endWhile does not match while
+[02/02/24 11:59:51]: (File logMsgBlock.pgx-line 3) 'x_bBool' : invalid name
+[02/02/24 11:59:51]: (File logMsgBlock.pgx-line 5) endIf does not match if else
+[02/02/24 11:59:51]: (File logMsgBlock.pgx-line 7) 'x_sString' : invalid name
+[02/02/24 11:59:51]: (File logMsgBlock.pgx-line 9) endWhile does not match while
+[02/02/24 12:00:12]: Deadman validated
+[02/02/24 12:00:12]: Settling arm power...
+[02/02/24 12:00:13]: Arm power settled.
+[02/02/24 12:00:15]: test_ventouse application started
+[02/02/24 12:00:27]: Deadman enabled.
+[02/02/24 12:00:49]: test_ventouse application stopped
+[02/02/24 12:04:46]: test_ventouse application started
+[02/02/24 12:07:22]: test_ventouse application stopped
+[02/02/24 12:07:32]: test_ventouse application started
+[02/02/24 12:07:59]: test_ventouse application stopped
+[02/02/24 12:08:01]: test_ventouse application started
+[02/16/24 08:24:43]: -----------------------------------------------
+[02/16/24 08:24:43]: Logger started
+[02/16/24 08:24:49]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/16/24 08:24:49]: Cycle time set to 0.004s
+[02/16/24 08:24:49]: Simulation cycle time set to 0.1s
+[02/16/24 08:24:49]: Controller IP address could not be updated
+[02/16/24 08:24:49]: STARC : No STARC board detected on PCI.
+[02/16/24 08:24:49]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/16/24 08:24:49]: Power hour count = 2:06:30
+[02/16/24 08:24:49]: Mac Address = fc-aa-14-6f-b2-24
+[02/16/24 08:24:49]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/16/24 08:24:49]: Error when starting: fieldbus IO
+[02/16/24 08:24:49]: End of arm power shutdown phase.
+[02/16/24 08:24:49]: COM-PC: server created on all interfaces [5653]
+[02/16/24 08:24:49]: System: s7.4 Jul  4 2012
+[02/16/24 08:24:49]: Configuration Version: c1.010 
+[02/16/24 08:24:49]: Option testMode: enabled 
+[02/16/24 08:24:49]: Option VAL 3: enabled 
+[02/16/24 08:24:49]: Machine Number: ? 
+[02/16/24 08:24:49]: Arm: tx40-S2-R2 floor
+[02/16/24 08:24:49]: Arm serial number: F12_5M1XA1_A_01 
+[02/16/24 08:24:49]: Robot name:  
+[02/16/24 08:24:49]: Powerlink: s7.4 Jul  4 2012
+[02/16/24 08:24:49]: EP: s7.4 Jul  4 2012
+[02/16/24 08:24:49]: SCA: s7.4 Jul  4 2012
+[02/16/24 08:24:49]: PLC: s7.4 Jul  4 2012
+[02/16/24 08:24:49]: New profile : default
+[02/16/24 08:24:49]: End of controller initialization
+[02/16/24 08:24:49]: COM-PC: create session 127.0.0.1 on port 50205 id=#43104832
+[02/16/24 08:24:51]: Internal error MCP-NoAnswer: char 1
+[02/16/24 08:24:57]: MCP communication disconnected
+[02/16/24 08:24:59]: Mcp = TSimulated
+[02/16/24 08:24:59]: Mcp communication established
+[02/16/24 08:25:00]: Working mode:automatic.
+[02/16/24 08:25:08]: Deadman validated
+[02/16/24 08:25:09]: Settling arm power...
+[02/16/24 08:25:09]: Arm power settled.
+[02/16/24 08:25:24]: Deadman enabled.
+[02/16/24 08:26:22]: test_ventouse application started
+[02/16/24 08:26:22]: test_ventouse application stopped
+[02/16/24 08:52:18]: test_ventouse application started
+[02/16/24 08:52:32]: test_ventouse application stopped
+[02/16/24 08:55:12]: Saving controller context...
+[02/16/24 08:55:12]: Controller temperature: 28°C
+[02/16/24 08:55:12]: CPU temperature: 28°C
+[02/16/24 09:25:15]: Saving controller context...
+[02/16/24 09:30:09]: Arm power shutdown...
+[02/16/24 09:30:09]: Cannot apply arm power: arm power is still in disabling phase.
+[02/16/24 09:30:10]: End of arm power shutdown phase.
+[02/16/24 09:30:11]: test_ventouse application started
+[02/16/24 09:30:13]: Saving controller context...
+[02/16/24 09:30:15]: test_ventouse application stopped
+[02/16/24 09:30:18]: test_ventouse application started
+[02/16/24 09:30:19]: Deadman disabled.
+[02/16/24 09:30:20]: Deadman validated
+[02/16/24 09:30:20]: Settling arm power...
+[02/16/24 09:30:20]: Arm power settled.
+[02/16/24 09:30:26]: test_ventouse application stopped
+[02/16/24 09:30:34]: test_ventouse application started
+[02/16/24 09:30:35]: Deadman enabled.
+[02/16/24 09:30:39]: test_ventouse application stopped
+[02/16/24 09:56:02]: test_ventouse application started
+[02/16/24 09:56:09]: test_ventouse application stopped
+[02/16/24 10:00:21]: Saving controller context...
+[02/16/24 10:30:24]: Saving controller context... (1)
+[02/16/24 10:42:29]: test_ventouse application started
+[02/16/24 10:42:35]: test_ventouse application stopped
+[02/16/24 10:57:15]: test_ventouse application started
+[02/16/24 10:57:20]: test_ventouse application stopped
+[02/16/24 11:00:27]: Saving controller context...
+[02/16/24 11:18:28]: test_ventouse application started
+[02/16/24 11:18:33]: test_ventouse application stopped
+[02/16/24 11:27:53]: test_ventouse application started
+[02/16/24 11:27:59]: test_ventouse application stopped
+[02/16/24 11:30:30]: Saving controller context...
+[02/16/24 11:32:12]: test_ventouse application started
+[02/16/24 11:32:18]: test_ventouse application stopped
+[02/16/24 11:46:51]: test_ventouse application started
+[02/16/24 11:46:57]: test_ventouse application stopped
+[02/16/24 11:51:35]: test_ventouse application started
+[02/16/24 11:51:40]: test_ventouse application stopped
+[02/22/24 17:00:56]: -----------------------------------------------
+[02/22/24 17:00:56]: Logger started
+[02/22/24 17:01:03]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[02/22/24 17:01:03]: Cycle time set to 0.004s
+[02/22/24 17:01:03]: Simulation cycle time set to 0.1s
+[02/22/24 17:01:03]: Controller IP address could not be updated
+[02/22/24 17:01:03]: STARC : No STARC board detected on PCI.
+[02/22/24 17:01:03]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[02/22/24 17:01:03]: Power hour count = 5:10:43
+[02/22/24 17:01:03]: Mac Address = fc-aa-14-6f-b2-24
+[02/22/24 17:01:03]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[02/22/24 17:01:03]: Error when starting: fieldbus IO
+[02/22/24 17:01:03]: End of arm power shutdown phase.
+[02/22/24 17:01:03]: COM-PC: server created on all interfaces [5653]
+[02/22/24 17:01:03]: System: s7.4 Jul  4 2012
+[02/22/24 17:01:03]: Configuration Version: c1.010 
+[02/22/24 17:01:03]: Option testMode: enabled 
+[02/22/24 17:01:03]: Option VAL 3: enabled 
+[02/22/24 17:01:03]: Machine Number: ? 
+[02/22/24 17:01:03]: Arm: tx40-S2-R2 floor
+[02/22/24 17:01:03]: Arm serial number: F12_5M1XA1_A_01 
+[02/22/24 17:01:03]: Robot name:  
+[02/22/24 17:01:03]: Powerlink: s7.4 Jul  4 2012
+[02/22/24 17:01:03]: EP: s7.4 Jul  4 2012
+[02/22/24 17:01:03]: SCA: s7.4 Jul  4 2012
+[02/22/24 17:01:03]: PLC: s7.4 Jul  4 2012
+[02/22/24 17:01:03]: New profile : default
+[02/22/24 17:01:03]: End of controller initialization
+[02/22/24 17:01:09]: COM-PC: create session 127.0.0.1 on port 57093 id=#45769944
+[02/22/24 17:01:20]: Mcp = TSimulated
+[02/22/24 17:01:20]: Mcp communication established
+[02/22/24 17:01:20]: Working mode:automatic.

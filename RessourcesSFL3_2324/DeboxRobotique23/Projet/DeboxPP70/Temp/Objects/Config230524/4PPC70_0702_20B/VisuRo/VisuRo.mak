@@ -57,7 +57,7 @@ LIB_LOCAL_OBJ_VisuRo=$(TEMP_PATH_VisuRo)/localobj.vca
 # Hardware sources
 PANEL_HW_OBJECT_VisuRo=$(TEMP_PATH_ROOT_VisuRo)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/VisuRo/dis.Hardware.vco
 PANEL_HW_VCI_VisuRo=$(TEMP_PATH_ROOT_VisuRo)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/VisuRo/dis.Hardware.vci
-PANEL_HW_SOURCE_VisuRo=C:/projects/DeboxPP70/Physical/Config230524/Hardware.hw 
+PANEL_HW_SOURCE_VisuRo=C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Physical/Config230524/Hardware.hw 
 DIS_OBJECTS_VisuRo=$(PANEL_HW_OBJECT_VisuRo) $(KEYMAP_OBJECTS_VisuRo)
 
 # KeyMapping flags
@@ -277,27 +277,27 @@ $(VCVK_OBJECTS_VisuRo): $(VC_LANGUAGES_VisuRo)
 TPR_OBJECTS_VisuRo = $(addprefix $(TEMP_PATH_VisuRo)/tpr., $(notdir $(TPR_SOURCES_VisuRo:.tpr=.vco)))
 
 $(TEMP_PATH_VisuRo)/tpr.NumPad.vco: $(AS_PROJECT_PATH)/Logical/VisuRobot/TouchPads/NumPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/projects/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
 
 
 $(TEMP_PATH_VisuRo)/tpr.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/VisuRobot/TouchPads/AlphaPadQVGA.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/projects/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
 
 
 $(TEMP_PATH_VisuRo)/tpr.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/VisuRobot/TouchPads/AlphaPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/projects/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
 
 
 $(TEMP_PATH_VisuRo)/tpr.NavigationPad_ver.vco: $(AS_PROJECT_PATH)/Logical/VisuRobot/TouchPads/NavigationPad_ver.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/projects/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
 
 
 $(TEMP_PATH_VisuRo)/tpr.NavigationPad_hor.vco: $(AS_PROJECT_PATH)/Logical/VisuRobot/TouchPads/NavigationPad_hor.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/projects/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
 
 
 $(TEMP_PATH_VisuRo)/tpr.EditPad.vco: $(AS_PROJECT_PATH)/Logical/VisuRobot/TouchPads/EditPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/projects/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_VisuRo)' $(VCCFLAGS_VisuRo) -prj 'C:/Users/lois.lemaitre/Documents/GitHub/SFL3Deboxeur-24/RessourcesSFL3_2324/DeboxRobotique23/Projet/DeboxPP70/Logical/VisuRobot' -p VisuRo -so $(VC_STATIC_OPTIONS_VisuRo) -vcr 4620 -sfas
 
 
 #Touch Pads END
