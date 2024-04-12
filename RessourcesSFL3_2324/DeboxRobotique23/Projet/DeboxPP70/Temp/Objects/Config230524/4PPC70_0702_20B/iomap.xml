@@ -392,6 +392,9 @@
 <LN ID="%IX.IF1.ST1.BasicIO_1_I15" Type="BOOL">
 <Prod Device="IF1.ST1" DPName="BasicIO_1_I15" Kind="io"/>
 </LN>
+<LN ID="%IX.IF1.ST1.ModbusSrv_0_Modbus_Bit_mbItem1" Type="BOOL">
+<Prod Device="IF1.ST1" DPName="ModbusSrv_0_Modbus_Bit_mbItem1" Kind="io"/>
+</LN>
 <LN ID="%IX.IF1.ST1.POWERLINK_1_I0" Type="BOOL">
 <Prod Device="IF1.ST1" DPName="POWERLINK_1_I0" Kind="io"/>
 </LN>
@@ -407,17 +410,14 @@
 <LN ID="%IX.IF1.ST1.POWERLINK_1_I4" Type="BOOL">
 <Prod Device="IF1.ST1" DPName="POWERLINK_1_I4" Kind="io"/>
 </LN>
-<LN ID="%IX.IF1.ST1.POWERLINK_1_I5" Type="BOOL">
-<Prod Device="IF1.ST1" DPName="POWERLINK_1_I5" Kind="io"/>
+<LN ID="%IX.IF1.ST1.padding0" Type="BOOL">
+<Prod Device="IF1.ST1" DPName="padding0" Kind="io"/>
 </LN>
-<LN ID="%IX.IF1.ST1.POWERLINK_1_I6" Type="BOOL">
-<Prod Device="IF1.ST1" DPName="POWERLINK_1_I6" Kind="io"/>
+<LN ID="%IX.IF1.ST1.padding1" Type="BOOL">
+<Prod Device="IF1.ST1" DPName="padding1" Kind="io"/>
 </LN>
-<LN ID="%IX.IF1.ST1.POWERLINK_1_I7" Type="BOOL">
-<Prod Device="IF1.ST1" DPName="POWERLINK_1_I7" Kind="io"/>
-</LN>
-<LN ID="%IX.IF1.ST1.padding" Type="BOOL">
-<Prod Device="IF1.ST1" DPName="padding" Kind="io"/>
+<LN ID="%IX.IF1.ST1.padding2" Type="BOOL">
+<Prod Device="IF1.ST1" DPName="padding2" Kind="io"/>
 </LN>
 <LN ID="%QX.IF1.ST1.valve1Out" Type="BOOL">
 <Cons Device="IF1.ST1" DPName="valve1Out" Kind="io"/>
@@ -477,7 +477,6 @@
 <Cons Device="IF1.ST1" DPName="BasicIO_1_Q15Out" Kind="io"/>
 </LN>
 <LN ID="%QX.IF1.ST1.POWERLINK_1_Q0Out" Type="BOOL">
-<Prod Device="TC#4-CPYDEV" DPName="::Robot:BOOL_Bouteille_1" Kind="pv"/>
 <Cons Device="IF1.ST1" DPName="POWERLINK_1_Q0Out" Kind="io"/>
 </LN>
 <LN ID="%QX.IF1.ST1.POWERLINK_1_Q1Out" Type="BOOL">
@@ -491,30 +490,6 @@
 </LN>
 <LN ID="%QX.IF1.ST1.POWERLINK_1_Q4Out" Type="BOOL">
 <Cons Device="IF1.ST1" DPName="POWERLINK_1_Q4Out" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.POWERLINK_1_Q5Out" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="POWERLINK_1_Q5Out" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.POWERLINK_1_Q6Out" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="POWERLINK_1_Q6Out" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.POWERLINK_1_Q7Out" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="POWERLINK_1_Q7Out" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.paddingOut0" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="paddingOut0" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.paddingOut1" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="paddingOut1" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.paddingOut2" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="paddingOut2" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.paddingOut3" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="paddingOut3" Kind="io"/>
-</LN>
-<LN ID="%QX.IF1.ST1.paddingOut4" Type="BOOL">
-<Cons Device="IF1.ST1" DPName="paddingOut4" Kind="io"/>
 </LN>
 <LN ID="%ID.IF1.ST1.CBT_TEMP_I6403_S01" Type="REAL">
 <Prod Device="IF1.ST1" DPName="CBT_TEMP_I6403_S01" Kind="io"/>

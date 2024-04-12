@@ -1,23 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Hilscher fieldbus="powerlink" hideOtherBoards="false" >
-  <Board name="POWERLINK-1" description="" >
+<?xml version="1.0" encoding="utf-8"?>
+<Hilscher fieldbus="powerlink" hideOtherBoards="false">
+  <Board name="POWERLINK-1">
     <DInputs>
       <Dio description="" channel="0" mode="notInverted" />
       <Dio description="" channel="1" mode="notInverted" />
       <Dio description="" channel="2" mode="notInverted" />
       <Dio description="" channel="3" mode="notInverted" />
       <Dio description="" channel="4" mode="notInverted" />
+      <Dio description="" channel="5" mode="notInverted" />
+      <Dio description="" channel="6" mode="notInverted" />
+      <Dio description="" channel="7" mode="notInverted" />
+      <Dio description="" channel="8" mode="notInverted" />
+      <Dio description="" channel="9" mode="notInverted" />
+      <Dio description="" channel="10" mode="notInverted" />
+      <Dio description="" channel="11" mode="notInverted" />
+      <Dio description="" channel="12" mode="notInverted" />
+      <Dio description="" channel="13" mode="notInverted" />
+      <Dio description="" channel="14" mode="notInverted" />
+      <Dio description="" channel="15" mode="notInverted" />
+      <Dio description="" channel="16" mode="notInverted" />
     </DInputs>
     <DOutputs>
       <Dio description="" channel="0" mode="notInverted" />
       <Dio description="" channel="1" mode="notInverted" />
-      <Dio description="" channel="2" mode="notInverted" />
-      <Dio description="" channel="3" mode="notInverted" />
-      <Dio description="" channel="4" mode="notInverted" />
     </DOutputs>
-    <AInputs>
-    </AInputs>
-    <AOutputs>
-    </AOutputs>
+    <AInputs />
+    <AOutputs />
   </Board>
 </Hilscher>

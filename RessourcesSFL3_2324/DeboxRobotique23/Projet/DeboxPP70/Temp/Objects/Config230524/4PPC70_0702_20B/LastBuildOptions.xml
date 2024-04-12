@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RuleSetOptions>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\ashwac.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-14 16:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-19 10:54:44" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config230524\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ashwac.br&quot; -L &quot;AsIecCon: V*, astime: V*, operator: V*, runtime: V*&quot; -c &quot;Config230524&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -M IA32 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config230524&quot; -T SG4 " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\sysconf.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-14 16:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-19 10:54:44" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config230524\Hardware.hw&quot;  -c &quot;Config230524&quot; -sysconf -S &quot;4PPC70_0702_20B&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\sysconf.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config230524&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\asfw.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-14 16:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-19 10:54:44" />
     <Prerequisite ID="c:\brautomation\as46\upgrades\modified.txt" LastWriteTime="2019-06-24 12:47:14" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config230524\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PPC70_0702_20B&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\asfw.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config230524&quot; -zip -s &quot;Config230524&quot; -firmware -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\ashwd.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-14 16:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-19 10:54:44" />
     <Prerequisite ID="c:\brautomation\as46\upgrades\modified.txt" LastWriteTime="2019-06-24 12:47:14" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config230524\Hardware.hw&quot;  -v V1.00.0 -S &quot;4PPC70_0702_20B&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ashwd.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config230524&quot; -zip -s &quot;Config230524&quot; -hwd -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\arconfig.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-14 16:00:38" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\iomap.iom" LastWriteTime="2024-01-22 11:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-19 10:54:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\iomap.iom" LastWriteTime="2024-03-19 10:42:08" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config230524\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config230524\4PPC70_0702_20B\IoMap.iom&quot;  -arconfig -C &quot;/RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config230524&quot; -v V1.00.0 -S &quot;4PPC70_0702_20B&quot; -Z &quot;Connectivity: n.d, UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config230524&quot; " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\udbdef.br">
@@ -28,12 +28,11 @@
     <CommandLine Parameter="C:\BrAutomation\AS46\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\udbdef.br" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\iomap.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\iomap.iom" LastWriteTime="2024-01-22 11:40:08" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\iomap.iom" LastWriteTime="2024-03-19 10:42:08" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\pvmap.vvm" LastWriteTime="2024-01-22 11:40:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-14 16:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\hardware.hw" LastWriteTime="2024-03-19 10:54:44" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config230524\4ppc70_0702_20b\cpu.sw" LastWriteTime="2024-01-22 11:40:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\channelconfiguration.xml" LastWriteTime="2024-01-22 11:40:08" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\robot\variables.var" LastWriteTime="2024-01-22 11:40:06" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\channelconfiguration.xml" LastWriteTime="2024-03-19 10:54:58" />
     <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config230524\4PPC70_0702_20B\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config230524\4PPC70_0702_20B\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\iomap.br&quot; -T SG4 -B B4.62 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config230524.4PPC70_0702_20B&quot;" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\tcdata\tcdata.imx">
@@ -98,7 +97,7 @@
     <CommandLine Parameter="&quot;VisuRobot&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\VisuRo.br&quot; -T SG4 -B B4.62 -c &quot;Config230524&quot; -S &quot;4PPC70_0702_20B&quot; -P &quot;$(AS_PROJECT_PATH)&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -H &quot;$(AS_PROJECT_PATH)\Physical\Config230524\Hardware.hw&quot; -V &quot;V4.62.0&quot; -apj &quot;DeboxPP70&quot; -v V1.00.0 -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -w2 -sfas" />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\visuro.br">
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\visuro\visuro.mak" LastWriteTime="2024-03-14 16:02:56" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\visuro\visuro.mak" LastWriteTime="2024-03-19 10:54:56" />
     <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config230524\4PPC70_0702_20B\#cpu_vc.mak&quot; -k" />
   </Rule>
   <Rule ID="#cpu_tp.mak">
@@ -109,9 +108,9 @@
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\sysconf.br" LastWriteTime="2024-01-22 11:40:10" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\asfw.br" LastWriteTime="2024-01-22 11:40:10" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\ashwd.br" LastWriteTime="2024-01-22 11:40:10" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\arconfig.br" LastWriteTime="2024-01-22 11:40:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\arconfig.br" LastWriteTime="2024-03-19 10:54:58" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\udbdef.br" LastWriteTime="2024-01-22 11:40:10" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\iomap.br" LastWriteTime="2024-01-22 11:40:10" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\iomap.br" LastWriteTime="2024-03-19 10:54:58" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\tcdata.br" LastWriteTime="2024-02-08 16:39:06" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\role.br" LastWriteTime="2024-01-22 11:40:08" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config230524\4ppc70_0702_20b\user.br" LastWriteTime="2024-01-22 11:40:08" />

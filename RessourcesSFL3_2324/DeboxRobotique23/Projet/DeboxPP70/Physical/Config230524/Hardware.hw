@@ -21,5 +21,6 @@
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
     </Connection>
     <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="p6220_blocked" Value="FALSE" />
   </Module>
 </Hardware>

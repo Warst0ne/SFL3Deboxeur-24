@@ -1,0 +1,41 @@
+﻿{
+  "programs": [
+    {
+      "mode": 3,
+      "name": "prgm1",
+      "nodes": [
+        {
+          "start": 8,
+          "end": 527,
+          "isCollapsed": false
+        },
+        {
+          "start": 23,
+          "end": 516,
+          "isCollapsed": false
+        }
+      ]
+    },
+    {
+      "mode": 3,
+      "name": "start",
+      "nodes": []
+    },
+    {
+      "mode": 3,
+      "name": "main",
+      "nodes": [
+        {
+          "start": 8,
+          "end": 1215,
+          "isCollapsed": false
+        },
+        {
+          "start": 49,
+          "end": 1204,
+          "isCollapsed": false
+        }
+      ]
+    }
+  ]
+}

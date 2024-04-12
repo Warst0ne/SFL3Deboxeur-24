@@ -1,0 +1,19 @@
+cam envoie données
+AS stocke dans tableau
+robot envoie quand il est pret sur powerlink
+si robot pret convertir coordonnées en bool et envoyer msg trame finie
+enlever le robot de pret
+execution du robot
+attendre que le robot soit re prèt
+
+------entrées------
+new cam
+end cam
+robot ready
+co x
+co y
+
+------Sorties---------
+X x8
+Y x8
+fin envoi

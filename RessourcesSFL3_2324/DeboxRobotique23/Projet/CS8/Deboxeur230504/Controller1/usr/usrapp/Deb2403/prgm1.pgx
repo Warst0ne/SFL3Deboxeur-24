@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="prgm1">
+    <Code><![CDATA[begin
+  while true
+    if(EntreePwrl0==true)
+      open(tTool)
+      movej(jP1, tTool, mNomSpeed)
+      movej(jP2, tTool, mNomSpeed)
+      close(tTool)
+      movej(jP4, tTool, mNomSpeed)
+      movej(jP5, tTool, mNomSpeed)
+      movej(jP3, tTool, mNomSpeed)
+      open(tTool)
+      movej(jP1, tTool, mNomSpeed)
+      movej(jP3, tTool, mNomSpeed)
+      close(tTool)
+      movej(jP5, tTool, mNomSpeed)
+      movej(jP4, tTool, mNomSpeed)
+      movej(jP2, tTool, mNomSpeed)
+      open(tTool)
+      waitEndMove()
+    endIf
+  endWhile
+end]]></Code>
+  </Program>
+</Programs>

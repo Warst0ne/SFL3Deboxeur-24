@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
-  <TreeView ID="BR.AS.SystemConfiguration.Presentation-4PPC70_0702_20B.IF2" EditColumn="3" TopRow="4" HorizontalScrollOffset="0" SortedColumn="0">
+  <TreeView ID="BR.AS.SystemConfiguration.Presentation-staubli_io" EditColumn="1" TopRow="0" HorizontalScrollOffset="0" SortedColumn="0">
     <Columns>
-      <Column Index="0" Width="100" Position="0" />
+      <Column Index="0" Width="167" Position="0" />
       <Column Index="1" Width="100" Position="1" />
       <Column Index="2" Width="100" Position="2" />
       <Column Index="3" Width="100" Position="3" />
@@ -11,25 +11,15 @@
     <ExpandedNodes>
       <ExpandedNode Row="0" />
       <ExpandedNode Row="1" />
-      <ExpandedNode Row="2" />
-      <ExpandedNode Row="5" />
-      <ExpandedNode Row="8" />
-      <ExpandedNode Row="12" />
-      <ExpandedNode Row="14" />
+      <ExpandedNode Row="3" />
+      <ExpandedNode Row="4" />
+      <ExpandedNode Row="6" />
       <ExpandedNode Row="15" />
-      <ExpandedNode Row="16" />
-      <ExpandedNode Row="19" />
       <ExpandedNode Row="20" />
-      <ExpandedNode Row="28" />
-      <ExpandedNode Row="29" />
       <ExpandedNode Row="32" />
-      <ExpandedNode Row="39" />
-      <ExpandedNode Row="41" />
-      <ExpandedNode Row="43" />
-      <ExpandedNode Row="45" />
     </ExpandedNodes>
     <SelectedNodes>
-      <SelectedNode Row="6" />
+      <SelectedNode Row="21" />
     </SelectedNodes>
     <ZoomIndices />
   </TreeView>

@@ -134,15 +134,15 @@
     <Channel ID="BasicIO_1_I13" Description="BasicIO-1\%I13" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
     <Channel ID="BasicIO_1_I14" Description="BasicIO-1\%I14" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
     <Channel ID="BasicIO_1_I15" Description="BasicIO-1\%I15" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I0" Description="POWERLINK-1\%I0" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I1" Description="POWERLINK-1\%I1" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I2" Description="POWERLINK-1\%I2" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I3" Description="POWERLINK-1\%I3" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I4" Description="POWERLINK-1\%I4" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I5" Description="POWERLINK-1\%I5" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I6" Description="POWERLINK-1\%I6" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_I7" Description="POWERLINK-1\%I7" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="padding" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="ModbusSrv_0_Modbus_Bit_mbItem1" Description="ModbusSrv-0\Modbus-Bit\mbItem1" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="9" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I0" Description="POWERLINK-1\%I0" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="0" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I1" Description="POWERLINK-1\%I1" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="1" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I2" Description="POWERLINK-1\%I2" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="2" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I3" Description="POWERLINK-1\%I3" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="3" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="POWERLINK_1_I4" Description="POWERLINK-1\%I4" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="4" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="padding0" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="5" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="padding1" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="6" Direction="IN" Type="BOOL" ArConfig="Copy" />
+    <Channel ID="padding2" Description="" Ext="/SUB=_1_ReadDigitalInput1_bit_I6020" Address="10" BitOffset="7" Direction="IN" Type="BOOL" ArConfig="Copy" />
     <Channel ID="valve1Out" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="0" Direction="OUT" Type="BOOL" ArConfig="Copy" />
     <Channel ID="valve2Out" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="1" Direction="OUT" Type="BOOL" ArConfig="Copy" />
     <Channel ID="fOut0Out" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="0" BitOffset="2" Direction="OUT" Type="BOOL" ArConfig="Copy" />
@@ -167,14 +167,6 @@
     <Channel ID="POWERLINK_1_Q2Out" Description="POWERLINK-1\%Q2Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="5" Direction="OUT" Type="BOOL" ArConfig="Copy" />
     <Channel ID="POWERLINK_1_Q3Out" Description="POWERLINK-1\%Q3Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="6" Direction="OUT" Type="BOOL" ArConfig="Copy" />
     <Channel ID="POWERLINK_1_Q4Out" Description="POWERLINK-1\%Q4Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="2" BitOffset="7" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_Q5Out" Description="POWERLINK-1\%Q5Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="0" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_Q6Out" Description="POWERLINK-1\%Q6Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="1" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="POWERLINK_1_Q7Out" Description="POWERLINK-1\%Q7Out" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="2" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="paddingOut0" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="3" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="paddingOut1" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="4" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="paddingOut2" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="5" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="paddingOut3" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="6" Direction="OUT" Type="BOOL" ArConfig="Copy" />
-    <Channel ID="paddingOut4" Description="" Ext="/SUB=_1_WriteDigitalOutput1_bit_I6220Out" Address="3" BitOffset="7" Direction="OUT" Type="BOOL" ArConfig="Copy" />
     <Channel ID="CBT_TEMP_I6403_S01" Description="" Ext="/FIXED" Address="0xB" Direction="IN" Type="REAL" ArConfig="Copy" />
     <Channel ID="CPU_TEMP_I6403_S02" Description="" Ext="/FIXED" Address="0xF" Direction="IN" Type="REAL" ArConfig="Copy" />
   </Module>

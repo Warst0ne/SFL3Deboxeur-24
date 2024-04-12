@@ -4383,3 +4383,126 @@
 [02/22/24 17:01:20]: Mcp = TSimulated
 [02/22/24 17:01:20]: Mcp communication established
 [02/22/24 17:01:20]: Working mode:automatic.
+[03/19/24 09:18:02]: -----------------------------------------------
+[03/19/24 09:18:02]: Logger started
+[03/19/24 09:18:09]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[03/19/24 09:18:09]: Cycle time set to 0.004s
+[03/19/24 09:18:09]: Simulation cycle time set to 0.1s
+[03/19/24 09:18:09]: Controller IP address could not be updated
+[03/19/24 09:18:09]: STARC : No STARC board detected on PCI.
+[03/19/24 09:18:09]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[03/19/24 09:18:09]: Power hour count = 5:10:43
+[03/19/24 09:18:09]: Mac Address = fc-aa-14-6f-b2-24
+[03/19/24 09:18:09]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[03/19/24 09:18:09]: Error when starting: fieldbus IO
+[03/19/24 09:18:09]: End of arm power shutdown phase.
+[03/19/24 09:18:09]: COM-PC: server created on all interfaces [5653]
+[03/19/24 09:18:09]: System: s7.4 Jul  4 2012
+[03/19/24 09:18:09]: Configuration Version: c1.010 
+[03/19/24 09:18:09]: Option testMode: enabled 
+[03/19/24 09:18:09]: Option VAL 3: enabled 
+[03/19/24 09:18:09]: Machine Number: ? 
+[03/19/24 09:18:09]: Arm: tx40-S2-R2 floor
+[03/19/24 09:18:09]: Arm serial number: F12_5M1XA1_A_01 
+[03/19/24 09:18:09]: Robot name:  
+[03/19/24 09:18:09]: Powerlink: s7.4 Jul  4 2012
+[03/19/24 09:18:09]: EP: s7.4 Jul  4 2012
+[03/19/24 09:18:09]: SCA: s7.4 Jul  4 2012
+[03/19/24 09:18:09]: PLC: s7.4 Jul  4 2012
+[03/19/24 09:18:09]: New profile : default
+[03/19/24 09:18:09]: End of controller initialization
+[03/19/24 09:18:09]: System event INTERFACE-Stopped  (Main menu)
+[03/19/24 09:18:09]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[03/19/24 09:18:59]: Internal error MCP-NoAnswer: char 1
+[03/19/24 09:19:05]: MCP communication disconnected
+[03/19/24 09:19:07]: COM-PC: create session 127.0.0.1 on port 63928 id=#43154536
+[03/19/24 09:19:07]: Mcp = TSimulated
+[03/19/24 09:19:07]: Mcp communication established
+[03/19/24 09:19:08]: Working mode:automatic.
+[03/19/24 09:19:31]: Deadman validated
+[03/19/24 09:19:31]: Settling arm power...
+[03/19/24 09:19:31]: Arm power settled.
+[03/19/24 09:19:35]: ex11 application started
+[03/19/24 09:19:35]: Cannot complete move: destination is out of reach.(out of arm workspace)
+[03/19/24 09:19:35]: ERR 150 Robot stopped on a previous impossible movement (target out of reach, incorrect arm configuration, or singularity). ex11~. 
+[03/19/24 09:19:46]: Deadman enabled.
+[03/19/24 09:19:56]: ex11 application stopped
+[03/19/24 09:20:02]: test_ventouse application started
+[03/19/24 09:20:10]: test_ventouse application stopped
+[03/19/24 09:20:15]: test_ventouse application started
+[03/19/24 09:20:21]: test_ventouse application stopped
+[03/19/24 09:20:43]: Deb2304 application started
+[03/19/24 09:20:59]: Deadman disabled.
+[03/19/24 09:20:59]: Arm power shutdown: working mode change.
+[03/19/24 09:20:59]: Arm power shutdown...
+[03/19/24 09:21:00]: Working mode:manual.
+[03/19/24 09:21:01]: End of arm power shutdown phase.
+[03/19/24 09:21:03]: Jog mode cannot be selected: first enable arm power.
+[03/19/24 09:21:06]: Saving controller context...
+[03/19/24 09:21:06]: Controller temperature: 28°C
+[03/19/24 09:21:06]: CPU temperature: 28°C
+[03/19/24 09:21:06]: Jog mode cannot be selected: first enable arm power.
+[03/19/24 09:21:09]: Deadman validated
+[03/19/24 09:21:09]: Settling arm power...
+[03/19/24 09:21:10]: Arm power settled.
+[03/19/24 09:21:10]: Manual motion mode:Connect
+[03/19/24 09:21:17]: MCP communication disconnected
+[03/19/24 09:21:17]: Arm power shutdown: working mode change.
+[03/19/24 09:21:17]: Arm power shutdown...
+[03/19/24 09:21:17]: Manual motion mode:Disabled
+[03/19/24 09:22:09]: -----------------------------------------------
+[03/19/24 09:22:09]: Logger started
+[03/19/24 09:22:13]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[03/19/24 09:22:13]: Cycle time set to 0.004s
+[03/19/24 09:22:13]: Simulation cycle time set to 0.1s
+[03/19/24 09:22:13]: Controller IP address could not be updated
+[03/19/24 09:22:13]: STARC : No STARC board detected on PCI.
+[03/19/24 09:22:13]: Mcp = TSimulated
+[03/19/24 09:22:13]: Mcp communication established
+[03/19/24 09:22:13]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[03/19/24 09:22:13]: Power hour count = 5:12:10
+[03/19/24 09:22:13]: Mac Address = fc-aa-14-6f-b2-24
+[03/19/24 09:22:13]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[03/19/24 09:22:13]: Error when starting: fieldbus IO
+[03/19/24 09:22:13]: COM-PC: server created on all interfaces [5653]
+[03/19/24 09:22:13]: System: s7.4 Jul  4 2012
+[03/19/24 09:22:13]: Configuration Version: c1.010 
+[03/19/24 09:22:13]: Option testMode: enabled 
+[03/19/24 09:22:13]: Option VAL 3: enabled 
+[03/19/24 09:22:13]: Machine Number: ? 
+[03/19/24 09:22:13]: Arm: tx40-S2-R2 floor
+[03/19/24 09:22:13]: Arm serial number: F12_5M1XA1_A_01 
+[03/19/24 09:22:13]: Robot name:  
+[03/19/24 09:22:13]: Powerlink: s7.4 Jul  4 2012
+[03/19/24 09:22:13]: EP: s7.4 Jul  4 2012
+[03/19/24 09:22:13]: SCA: s7.4 Jul  4 2012
+[03/19/24 09:22:13]: PLC: s7.4 Jul  4 2012
+[03/19/24 09:22:13]: New profile : default
+[03/19/24 09:22:13]: End of controller initialization
+[03/19/24 09:22:13]: System event INTERFACE-Stopped  (Main menu)
+[03/19/24 09:22:13]: System event INTERFACE-Stopped  (Main menu). 7 events lost.
+[03/19/24 09:22:13]: COM-PC: create session 127.0.0.1 on port 64935 id=#51295840
+[03/19/24 09:22:13]: Working mode:manual.
+[03/19/24 09:22:14]: End of arm power shutdown phase.
+[03/19/24 09:22:15]: Deadman validated
+[03/19/24 09:22:15]: Settling arm power...
+[03/19/24 09:22:16]: Arm power settled.
+[03/19/24 09:22:17]: Arm power shutdown...
+[03/19/24 09:22:18]: Deadman disabled.
+[03/19/24 09:22:18]: End of arm power shutdown phase.
+[03/19/24 09:22:18]: Working mode:test.
+[03/19/24 09:22:19]: Working mode:remote.
+[03/19/24 09:22:20]: Working mode:automatic.
+[03/19/24 09:22:21]: Deadman validated
+[03/19/24 09:22:21]: Settling arm power...
+[03/19/24 09:22:22]: Arm power settled.
+[03/19/24 09:22:34]: test_ventouse application started
+[03/19/24 09:22:36]: Deadman enabled.
+[03/19/24 09:22:40]: test_ventouse application stopped
+[03/19/24 09:22:54]: test_ventouse application started
+[03/19/24 09:23:00]: test_ventouse application stopped
+[03/19/24 09:24:36]: Deb2304 application started
+[03/19/24 09:24:51]: Deb2304 application stopped
+[03/19/24 09:26:02]: test_ventouse application started
+[03/19/24 09:26:14]: test_ventouse application stopped
+[03/19/24 09:26:46]: test_ventouse application started
