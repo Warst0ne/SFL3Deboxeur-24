@@ -17,3 +17,7 @@ co y
 X x8
 Y x8
 fin envoi
+
+_____________
+faire comment prendre fichier xdd et comment actualiser
+refaire schéma cablage

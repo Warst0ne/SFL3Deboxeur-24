@@ -6,7 +6,6 @@
   dPowerlinkSorti[0]=true
 
   waitEndMove()
-  mov
   movej(ja[0],tstylo,mlent)
   waitEndMove()
   movej(ja[1],tstylo,mlent)

@@ -2,8 +2,8 @@
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
   <Program name="prgm1">
     <Code><![CDATA[begin
-  while true
-    if(EntreePwrl0==true)
+  //while true
+    //if(EntreePwrl0==true)
       open(tTool)
       movej(jP1, tTool, mNomSpeed)
       movej(jP2, tTool, mNomSpeed)
@@ -20,8 +20,8 @@
       movej(jP2, tTool, mNomSpeed)
       open(tTool)
       waitEndMove()
-    endIf
-  endWhile
+    //endIf
+ // endWhile
 end]]></Code>
   </Program>
 </Programs>

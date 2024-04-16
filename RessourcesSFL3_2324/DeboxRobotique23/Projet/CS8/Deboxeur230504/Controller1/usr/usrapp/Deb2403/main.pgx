@@ -9,25 +9,89 @@
       
       doECAT1_0 = false
       
-      x[0] = diECAT1_1
-      x[1] = diECAT1_2
-      x[2] = diECAT1_3
-      x[3] = diECAT1_4
-      x[4] = diECAT1_5
-      x[5] = diECAT1_6
-      x[6] = diECAT1_7
-      x[7] = diECAT1_8
+      if(diECAT1_1 == true)
+        x[0] = 1
+      else
+        x[0] = 0
+      endIf
+      if(diECAT1_2 == true)
+        x[1] = 1
+      else
+        x[1] = 0
+      endIf
+      if(diECAT1_3 == true)
+        x[2] = 1
+      else
+        x[2] = 0
+      endIf
+      if(diECAT1_4 == true)
+        x[3] = 1
+      else
+        x[3] = 0
+      endIf
+      if(diECAT1_5 == true)
+        x[4] = 1
+      else
+        x[4] = 0
+      endIf
+      if(diECAT1_6 == true)
+        x[5] = 1
+      else
+        x[5] = 0
+      endIf
+      if(diECAT1_7 == true)
+        x[6] = 1
+      else
+        x[6] = 0
+      endIf
+      if(diECAT1_8 == true)
+        x[7] = 1
+      else
+        x[7] = 0
+      endIf
       
       co_x = x[0] * 1 + x[1] * 2 + x[2] * 4 + x[3] * 8 + x[4] * 16 + x[5] * 32 + x[6] * 64 + x[7] * 128 
       
-      y[0] = diECAT1_9
-      y[1] = diECAT1_10
-      y[2] = diECAT1_11
-      y[3] = diECAT1_12
-      y[4] = diECAT1_13
-      y[5] = diECAT1_14
-      y[6] = diECAT1_15
-      y[7] = diECAT1_16
+      if(diECAT1_9 == true)
+        y[0] = 1
+      else
+        y[0] = 0
+      endIf
+      if(diECAT1_10 == true)
+        y[1] = 1
+      else
+        y[1] = 0
+      endIf
+      if(diECAT1_11 == true)
+        y[2] = 1
+      else
+        y[2] = 0
+      endIf
+      if(diECAT1_12 == true)
+        y[3] = 1
+      else
+        y[3] = 0
+      endIf
+      if(diECAT1_13 == true)
+        y[4] = 1
+      else
+        y[4] = 0
+      endIf
+      if(diECAT1_14 == true)
+        y[5] = 1
+      else
+        y[5] = 0
+      endIf
+      if(diECAT1_15 == true)
+        y[6] = 1
+      else
+        y[6] = 0
+      endIf
+      if(diECAT1_16 == true)
+        y[7] = 1
+      else
+        y[7] = 0
+      endIf
       
       co_y = y[0] * 1 + y[1] * 2 + y[2] * 4 + y[3] * 8 + y[4] * 16 + y[5] * 32 + y[6] * 64 + y[7] * 128 
 
