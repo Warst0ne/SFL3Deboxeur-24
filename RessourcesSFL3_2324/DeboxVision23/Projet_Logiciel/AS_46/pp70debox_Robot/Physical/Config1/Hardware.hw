@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.3.55?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="4PPC70_0702_20B" Type="4PPC70.0702-20B" Version="1.4.0.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="10.16.7.36" />
+      <Parameter ID="SubnetMask" Value="255.255.0.0" />
+      <Parameter ID="DeviceParam" Value="/EDDN=gei" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="pp500_Config1" />
+    <Parameter ID="ActivateOpcUa" Value="1" />
+    <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
+    <Parameter ID="VcObjectName" Value="VisuPP" />
+    <Parameter ID="KeyMappingFile" Value="VC\4PPC70_0702_20B.dis" />
+  </Module>
+  <Module Name="VS70_Series_V11_1" Type="FBD.Hilscher.EIGenEDSAdapterDTM.VS70 Series V11.1" Version="11.1" OrderNumber="VS70 Series V11.1" VendorAddress="192.168.10.2">
+    <Connection Connector="EIP1" TargetModule="X20IF10D1_1" TargetConnector="IF1" />
+    <Parameter ID="DtmId" Value="6f05449d-88db-4399-ac96-feab6093c4e0" />
+    <Group ID="ChannelBlocks_4b4b5f3d-aef6-4330-98f3-b7c28e4e6291" Description="Module 0" />
+    <Group ID="IO_InputImage_4b4b5f3d-aef6-4330-98f3-b7c28e4e6291" Description="496 Byte(s)" />
+    <Group ID="IO_OutputImage_4b4b5f3d-aef6-4330-98f3-b7c28e4e6291" Description="496 Byte(s)" />
+  </Module>
+  <Module Name="X20BC1083" Type="X20BC1083" Version="2.7.0.0">
+    <Connection Connector="PLK2" TargetModule="4PPC70_0702_20B" TargetConnector="IF1">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+    </Connection>
+    <Connection Connector="SL" TargetModule="X20cBB81" TargetConnector="SL1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20IF10D1_1" Type="X20IF10D1-1" Version="1.3.1.0">
+    <Connection Connector="SS" TargetModule="X20cBB81" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="DtmRef" Value="FBDIF.Hilscher.ENIPScannerDTM.NETX 100 RE/EIM" />
+      <Parameter ID="DtmId" Value="ff88a3d9-25be-4a21-a04e-17ce51bc7424" />
+    </Connector>
+    <Parameter ID="ConfigFile" Value="X20IF10D1_1.dtm" />
+    <Parameter ID="ConfigModule" Value="asnxdb1" />
+  </Module>
+  <Module Name="X20PS9400a" Type="X20PS9400" Version="1.0.2.4">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="PS" TargetModule="X20cBB81" TargetConnector="PS1" />
+    <Parameter ID="Supervision" Value="off" />
+  </Module>
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20cBB81" Type="X20cBB81" Version="1.0.2.0" />
+</Hardware>
