@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="example" access="private" >
+    <Locals>
+      <Local name="l_bError" type="bool" xsi:type="array" size="1" />
+      <Local name="l_sMsg" type="string" xsi:type="array" size="1" />
+      <Local name="l_sRead" type="string" xsi:type="array" size="1" />
+      <Local name="l_nValue" type="num" xsi:type="array" size="1" />
+      <Local name="l_nIndexF" type="num" xsi:type="array" size="1" />
+      <Local name="l_nIndexI" type="num" xsi:type="array" size="1" />
+      <Local name="l_nError" type="num" xsi:type="array" size="1" />
+      <Local name="l_bOnline" type="bool" xsi:type="array" size="1" />
+      <Local name="l_nCamID" type="num" xsi:type="array" size="1" />
+      <Local name="nGetLogin" type="num" xsi:type="array" size="1" />
+      <Local name="l_nI" type="num" xsi:type="array" size="1" />
+      <Local name="l_bLoggedIn" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  This is an example for use this library.
+  //  This example writes two numerical values (int num and float num) and
+  //  reads a string value to/from three cells:
+  //    - writes integer into cell A12
+  //    - reads string from cell A13
+  //    - writes float into cell B12
+  //  The two values (integer and float) that are written are incremented between each
+  //  write operation.
+  //  You can choose the camera's ID or let the library give you an ID (see functions isIDAvailable()
+  //  and getNextID())
+
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //  Modification : 15-05-12 t.Caille
+  //
+  //Header end
+  //-----------------------------------------------------------------------
+  //Turn on automatic ID managment mechanism
+
+  setFrame(Origine,AxeX,AxeY,fcamera)
+  call setIDAutoMgt(true)
+  //bGetID is set to true if user chose to let the library manage IDs automatically
+  if bGetID==true
+    //Get next available ID
+    call getNextID(l_nCamID,l_bError)
+  else
+    //Insert here your own ID managment logic
+    l_nCamID=0
+    //Check available ID
+    call isIDAvailable(l_nCamID,l_bError)
+  endIf
+  if l_bError==true
+    call getFullError(l_nCamID,l_nError,l_sMsg)
+    popUpMsg(l_sMsg)
+  else
+    call init()
+    cls()
+    userPage()
+    //Enable debug messages for programs
+    //Disable debug messages for reading/writing of socket
+    call debugMsg(1)
+    //Enable checking row number against upper limit (400)
+    call setCheckRow(true)
+    //Login to camera   
+    call login(sCognex,"admin","password",l_nCamID,l_bError)
+    if l_bError==true
+      //Displays errors messages
+      //getFullError() replaces getErrorCode() and getErrorMessage()   
+      call getFullError(l_nCamID,l_nError,l_sMsg)
+      popUpMsg(l_sMsg)
+    else
+      //Displays camera's ID
+      //First camera : nCamID=0
+      //Second camera : nCamID=1
+      ///...
+      put("Camera's ID : ")
+      putln(l_nCamID)
+      l_nIndexI=0
+      l_nIndexF=0
+
+      // CONNEXION ETABLIE RENVOI LE NUMERO D'ID DE LA CAMERA
+
+      // ON BASCULE SUR LE PROGRAMME PUPITRE
+
+      call initPUPITRE()
+
+      call stop()
+    endIf
+  endIf
+  // Création de point sur le frame caméra pour utiliser dans le frame caméra sinon frame de réference
+end]]></Code>
+  </Program>
+</Programs>

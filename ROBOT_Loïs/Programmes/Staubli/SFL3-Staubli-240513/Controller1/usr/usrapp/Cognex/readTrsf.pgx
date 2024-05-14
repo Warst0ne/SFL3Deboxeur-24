@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="readTrsf" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sCellNumber" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_trPos" type="trsf" use="reference" xsi:type="array" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_bColOk" type="bool" xsi:type="array" size="1" />
+      <Local name="l_nColAsciiCode" type="num" xsi:type="array" size="1" />
+      <Local name="l_sColumn" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Read x, y, rz values cells addressed by x_sCellNumber from camera's ID.
+  //  x, y and rz must be stored in three consecutive cells starting from
+  //  x_sCellNumber.
+  //  Exemple : x in B2, y in C2 and rz in D2
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  string x_sCellNumber :
+  //    role : The column letter and the row number of the cell value to get.
+  //    possible values : - column letter : (A to Z)
+  //                      - row number : (000 to 399)
+  //
+  //Output parameters
+  //  trsf trPos :
+  //    role :
+  //  bool x_bError :
+  //    role : returns false if operation succeeded and true otherwise
+  //
+  //Examples
+  //  call readTrsf(nCamID,"D5",l_trPos,x_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  x_bError=true
+  // Read X coordinate from spreadsheet
+  call readNumValue(x_nCamID,x_sCellNumber,x_trPos.x,x_bError)
+  if !x_bError
+    // Increment column number
+    call incrementCol(x_sCellNumber,l_bColOk)
+    if l_bColOk
+      // Read Y coordinate from spreadsheet
+      call readNumValue(x_nCamID,x_sCellNumber,x_trPos.y,x_bError)
+      if !x_bError
+        // Increment column number
+        call incrementCol(x_sCellNumber,l_bColOk)
+        if l_bColOk
+          // Read RZ coordinate from spreadsheet
+          call readNumValue(x_nCamID,x_sCellNumber,x_trPos.rz,x_bError)
+        endIf
+      endIf
+    endIf
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

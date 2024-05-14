@@ -4506,3 +4506,106 @@
 [03/19/24 09:26:02]: test_ventouse application started
 [03/19/24 09:26:14]: test_ventouse application stopped
 [03/19/24 09:26:46]: test_ventouse application started
+[04/18/24 14:18:57]: -----------------------------------------------
+[04/18/24 14:18:57]: Logger started
+[04/18/24 14:19:04]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[04/18/24 14:19:04]: Cycle time set to 0.004s
+[04/18/24 14:19:04]: Simulation cycle time set to 0.1s
+[04/18/24 14:19:04]: Controller IP address could not be updated
+[04/18/24 14:19:04]: STARC : No STARC board detected on PCI.
+[04/18/24 14:19:04]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[04/18/24 14:19:04]: Power hour count = 5:12:10
+[04/18/24 14:19:04]: Mac Address = fc-aa-14-6f-b2-24
+[04/18/24 14:19:04]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[04/18/24 14:19:04]: Error when starting: fieldbus IO
+[04/18/24 14:19:04]: End of arm power shutdown phase.
+[04/18/24 14:19:04]: COM-PC: server created on all interfaces [5653]
+[04/18/24 14:19:04]: System: s7.4 Jul  4 2012
+[04/18/24 14:19:04]: Configuration Version: c1.010 
+[04/18/24 14:19:04]: Option testMode: enabled 
+[04/18/24 14:19:04]: Option VAL 3: enabled 
+[04/18/24 14:19:04]: Machine Number: ? 
+[04/18/24 14:19:04]: Arm: tx40-S2-R2 floor
+[04/18/24 14:19:04]: Arm serial number: F12_5M1XA1_A_01 
+[04/18/24 14:19:04]: Robot name:  
+[04/18/24 14:19:04]: Powerlink: s7.4 Jul  4 2012
+[04/18/24 14:19:04]: EP: s7.4 Jul  4 2012
+[04/18/24 14:19:04]: SCA: s7.4 Jul  4 2012
+[04/18/24 14:19:04]: PLC: s7.4 Jul  4 2012
+[04/18/24 14:19:04]: New profile : default
+[04/18/24 14:19:04]: End of controller initialization
+[04/18/24 14:19:04]: System event INTERFACE-Stopped  (Main menu)
+[04/18/24 14:19:04]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[04/18/24 14:19:06]: COM-PC: create session 127.0.0.1 on port 51184 id=#44678856
+[04/18/24 14:19:15]: Mcp = TSimulated
+[04/18/24 14:19:15]: Mcp communication established
+[04/18/24 14:19:15]: Working mode:manual.
+[04/18/24 14:20:35]: MCP communication disconnected
+[05/07/24 11:05:26]: -----------------------------------------------
+[05/07/24 11:05:26]: Logger started
+[05/07/24 11:05:34]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/07/24 11:05:34]: Cycle time set to 0.004s
+[05/07/24 11:05:34]: Simulation cycle time set to 0.1s
+[05/07/24 11:05:34]: Controller IP address could not be updated
+[05/07/24 11:05:34]: STARC : No STARC board detected on PCI.
+[05/07/24 11:05:34]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/07/24 11:05:34]: Power hour count = 5:12:10
+[05/07/24 11:05:34]: Mac Address = fc-aa-14-6f-b2-24
+[05/07/24 11:05:34]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/07/24 11:05:34]: Error when starting: fieldbus IO
+[05/07/24 11:05:34]: End of arm power shutdown phase.
+[05/07/24 11:05:34]: COM-PC: server created on all interfaces [5653]
+[05/07/24 11:05:34]: COM-PC: create session 127.0.0.1 on port 61620 id=#41574256
+[05/07/24 11:05:34]: System: s7.4 Jul  4 2012
+[05/07/24 11:05:34]: Configuration Version: c1.010 
+[05/07/24 11:05:34]: Option testMode: enabled 
+[05/07/24 11:05:34]: Option VAL 3: enabled 
+[05/07/24 11:05:34]: Machine Number: ? 
+[05/07/24 11:05:34]: Arm: tx40-S2-R2 floor
+[05/07/24 11:05:34]: Arm serial number: F12_5M1XA1_A_01 
+[05/07/24 11:05:34]: Robot name:  
+[05/07/24 11:05:34]: Powerlink: s7.4 Jul  4 2012
+[05/07/24 11:05:34]: EP: s7.4 Jul  4 2012
+[05/07/24 11:05:34]: SCA: s7.4 Jul  4 2012
+[05/07/24 11:05:34]: PLC: s7.4 Jul  4 2012
+[05/07/24 11:05:34]: New profile : default
+[05/07/24 11:05:34]: End of controller initialization
+[05/07/24 11:05:45]: Mcp = TSimulated
+[05/07/24 11:05:45]: Mcp communication established
+[05/07/24 11:05:46]: Working mode:manual.
+[05/13/24 11:36:04]: -----------------------------------------------
+[05/13/24 11:36:04]: Logger started
+[05/13/24 11:36:12]: CPU board: TEKNOR ?Mhz; ?Mb RAM; ?Mb disk; bios: ?; fpga: ?; ataIde: ?
+[05/13/24 11:36:12]: Cycle time set to 0.004s
+[05/13/24 11:36:12]: Simulation cycle time set to 0.1s
+[05/13/24 11:36:12]: Controller IP address could not be updated
+[05/13/24 11:36:12]: STARC : No STARC board detected on PCI.
+[05/13/24 11:36:12]: Internal error MODBUS-StartServer Channel=0 Status=65534
+[05/13/24 11:36:12]: Power hour count = 5:12:10
+[05/13/24 11:36:12]: Mac Address = fc-aa-14-6f-b2-24
+[05/13/24 11:36:12]: Hilscher device ret: 0x800b0030<CIFx driver is not running>
+[05/13/24 11:36:12]: Error when starting: fieldbus IO
+[05/13/24 11:36:12]: End of arm power shutdown phase.
+[05/13/24 11:36:12]: COM-PC: server created on all interfaces [5653]
+[05/13/24 11:36:12]: System: s7.4 Jul  4 2012
+[05/13/24 11:36:12]: Configuration Version: c1.010 
+[05/13/24 11:36:12]: Option testMode: enabled 
+[05/13/24 11:36:12]: Option VAL 3: enabled 
+[05/13/24 11:36:12]: Machine Number: ? 
+[05/13/24 11:36:12]: Arm: tx40-S2-R2 floor
+[05/13/24 11:36:12]: Arm serial number: F12_5M1XA1_A_01 
+[05/13/24 11:36:12]: Robot name:  
+[05/13/24 11:36:12]: Powerlink: s7.4 Jul  4 2012
+[05/13/24 11:36:12]: EP: s7.4 Jul  4 2012
+[05/13/24 11:36:12]: SCA: s7.4 Jul  4 2012
+[05/13/24 11:36:12]: PLC: s7.4 Jul  4 2012
+[05/13/24 11:36:12]: New profile : default
+[05/13/24 11:36:12]: End of controller initialization
+[05/13/24 11:36:12]: System event INTERFACE-Stopped  (Main menu)
+[05/13/24 11:36:12]: System event INTERFACE-Stopped  (Main menu). 5 events lost.
+[05/13/24 11:36:12]: COM-PC: create session 127.0.0.1 on port 56818 id=#47233120
+[05/13/24 11:36:15]: Mcp = TSimulated
+[05/13/24 11:36:15]: Mcp communication established
+[05/13/24 11:36:16]: Working mode:manual.
+[05/13/24 12:01:56]: Deb2403 application started
+[05/13/24 12:05:52]: COM-PC: destroy session 127.0.0.1 on port 56818 id=#47233120

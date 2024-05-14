@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="isLoggedIn" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bLoggedIn" type="bool" use="reference" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_nError" type="num" xsi:type="array" size="1" />
+      <Local name="l_bOnline" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  // This routines checks wether or not we are still logged into the camera.
+  // Please note that this function should not be called before loging in.
+  // It is only designed to report a connection loss during read/write operations.
+  //
+  // Input Parameters
+  //  x_nCamID :
+  //    role : camera's ID
+  //
+  // Output Parameteres
+  //  x_bLoggedIn  :
+  //    role : returns true if we are logged in and false otherwise.
+  //
+  //Examples
+  //  call isLoggedIn(nCamID,l_bLoggedIn)
+  //
+  //Header end
+  //History
+  //  Creation : 06-2012 - T.Caille - C.Rocchini
+  //Header end
+  //-----------------------------------------------------------------------
+  call getOnline(x_nCamID,l_bOnline)
+  call getErrorCode(x_nCamID,l_nError)
+  x_bLoggedIn=l_nError!=202
+  if !x_bLoggedIn
+    cCamera[x_nCamID].bConnected=false
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

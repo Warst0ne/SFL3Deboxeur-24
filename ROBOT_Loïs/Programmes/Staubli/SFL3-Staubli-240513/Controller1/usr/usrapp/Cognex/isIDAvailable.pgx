@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="isIDAvailable" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="reference" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Verify wether an ID is available or not.
+  //Input parameters :
+  //  num x_nCamID :
+  //    role: ID to check the availability of
+  //Output parameters
+  //  bool x_bError :
+  //    role : true if x_nCamID available, false otherwise
+  //
+  //Examples
+  //    call isIDAvailable(l_nCamID,l_bError)
+  //
+  //History
+  //  Creation : 25-05-12 - t.caille - c.rocchini
+  //Header end
+  //-----------------------------------------------------------------------
+  if x_nCamID<size(cCamera)-1 and cCamera[x_nCamID].bConnected==false
+    x_bError=false
+  else
+    x_bError=true
+    nLibErrorCode=200
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

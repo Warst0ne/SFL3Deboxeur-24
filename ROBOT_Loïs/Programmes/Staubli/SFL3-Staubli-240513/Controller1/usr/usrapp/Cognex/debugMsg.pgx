@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="debugMsg" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nDebug" type="num" use="value" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Enable/Disable debug : displays error messages when an error occurs.
+  //
+  //Input parameters
+  //  num x_nDebug : enable/disable errors messages
+  //    possible values : 0 -> Disable errors messages
+  //                      1 -> Enable Socket errors messages
+  //                      2 -> Enable Programs errors messages
+  //                      3 -> Enable Socket/Programs errors messages
+  //
+  //Examples
+  //  call debugMsg(1)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  switch x_nDebug
+    //Disable errors messages
+    case 0
+      bDebugProgram=bDebugSocket=false
+    break
+    //Enable Socket errors messages
+    case 1
+      bDebugProgram=true
+      bDebugSocket=false
+    break
+    //Enable Programs errors messages
+    case 2
+      bDebugProgram=false
+      bDebugSocket=true
+    break
+    //Enable Socket/Programs errors messages
+    case 3
+      bDebugProgram=bDebugSocket=true
+    break
+  endSwitch
+end]]></Code>
+  </Program>
+</Programs>

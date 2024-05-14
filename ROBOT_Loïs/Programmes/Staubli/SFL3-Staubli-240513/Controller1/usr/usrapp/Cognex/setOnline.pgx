@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="setOnline" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bOnline" type="bool" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Sets the In-Sight sensor into Online or Offline mode.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role :
+  //  bool x_bOnline  :
+  //    role : if true put camera online otherwise put camera to offline.
+  //
+  //Output parameters
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call setOnline(nCamID,"true",l_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  nProgram[x_nCamID]=2
+  if x_bOnline
+    //Sets the In-Sight sensor Online.
+    call sendCommand(x_nCamID,"SO1",x_bError)
+  else
+    //Sets the In-Sight sensor Offline.
+    call sendCommand(x_nCamID,"SO0",x_bError)
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

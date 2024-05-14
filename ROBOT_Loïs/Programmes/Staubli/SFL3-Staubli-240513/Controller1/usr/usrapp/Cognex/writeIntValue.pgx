@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="writeIntValue" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sCellNumber" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_nValue" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_sCell" type="string" xsi:type="array" size="1" />
+      <Local name="l_bIsOk" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Sets the control contained in a cell (x_sCellNumber) to the specified
+  //  integer value (x_nValue).
+  //  The target cell of the writing operation in the Cognex spreadsheet must 
+  //  be of the EditInt type.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  string x_sCellNumber :
+  //    role : The column letter and the row number of the cell value to get.
+  //    possible values : - column letter : (A to Z)
+  //                      - row number : (000 to 399)
+  //  num x_nValue :
+  //    role : value to writing in the cell
+  //
+  //Output parameters
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call writeIntValue(nCamID,"C6",8,l_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  x_bError=true
+  call checkCellFormat(x_nCamID,x_sCellNumber,l_bIsOk)
+  if l_bIsOk
+    nProgram[x_nCamID]=10
+    call sendCommand(x_nCamID,"SI"+x_sCellNumber+toString("0.0",roundDown(x_nValue)),x_bError)
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

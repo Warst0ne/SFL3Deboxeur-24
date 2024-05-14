@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="setEventAndWait" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_nEvent" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Set event and wait until spreadsheet has been updated
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  num x_nEvent  :
+  //    role : The Event code to set
+  //    possible values : (0 to 7), Specifies a soft trigger (Soft 0, Soft 1, ... Soft 7).
+  //
+  //Output parameters
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call setEventAndWait(nCamID,nEvent,l_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  nProgram[x_nCamID]=7
+  call sendCommand(x_nCamID,"SW"+toString("0.0",x_nEvent),x_bError)
+end]]></Code>
+  </Program>
+</Programs>
