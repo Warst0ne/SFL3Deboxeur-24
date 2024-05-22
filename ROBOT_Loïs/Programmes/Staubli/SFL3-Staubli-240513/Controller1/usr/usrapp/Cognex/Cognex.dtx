@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Data/2">
+  <Datas>
+    <Data name="bCheckRowUpLim" access="private" xsi:type="array" type="bool" size="1">
+      <Value key="0" value="true" />
+    </Data>
+    <Data name="bDebugProgram" access="private" xsi:type="array" type="bool" size="1">
+      <Value key="0" value="true" />
+    </Data>
+    <Data name="bDebugSocket" access="private" xsi:type="array" type="bool" size="1">
+    </Data>
+    <Data name="bGetID" access="private" xsi:type="array" type="bool" size="1">
+    </Data>
+    <Data name="bSafe" access="private" xsi:type="array" type="bool" size="1">
+    </Data>
+    <Data name="l_bError" access="private" xsi:type="array" type="bool" size="1">
+    </Data>
+    <Data name="resultTrigger" access="private" xsi:type="array" type="bool" size="1">
+      <Value key="0" value="true" />
+    </Data>
+    <Data name="cCamera" access="private" xsi:type="array" type="camera" size="11">
+      <Value key="0">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+          <Value key="0" value="70" />
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="121">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfull" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfull" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfull" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfull" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfull" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfull" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfull" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfull" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfull" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+          <Value key="0" link="Socket\sCognex1" />
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="1">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+          <Value key="0" value="70" />
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+          <Value key="0" link="Socket\sCognex1" />
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="2">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="3">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="4">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="5">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="6">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="7">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="8">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="9">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="120">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+      <Value key="10">
+        <Field name="nErrorCode" xsi:type="array" type="num" size="1">
+        </Field>
+        <Field name="sErrorMsg" xsi:type="array" type="string" size="121">
+          <Value key="0" value="Login&gt; Unrecognized command" />
+          <Value key="1" value="Login&gt; Wrong user name or password" />
+          <Value key="2" value="Login&gt; Communication Error" />
+          <Value key="10" value="Set Online&gt; Command successfully" />
+          <Value key="11" value="Set Online&gt; Unrecognized command" />
+          <Value key="12" value="Set Online&gt; The value given for Int is either out of range, or is not a valid integer" />
+          <Value key="13" value="Set Online&gt; The command could not be executed" />
+          <Value key="14" value="Set Online&gt; Sensor is set Offline manually " />
+          <Value key="15" value="Set Online&gt; User does not have Full Access to execute the command." />
+          <Value key="20" value="Get Online&gt; The In-Sight sensor is currently Offline" />
+          <Value key="21" value="Get Online&gt; The In-Sight sensor is currently Online" />
+          <Value key="30" value="Load File&gt; Command successfully" />
+          <Value key="31" value="Load File&gt; Unrecognized command" />
+          <Value key="32" value="Load File&gt; The filename is missing" />
+          <Value key="33" value="Load File&gt; The job failed to load, the sensor is Online, or the file was not found" />
+          <Value key="34" value="Load File&gt; The job to be loaded was not found, or the sensor is out of memory" />
+          <Value key="35" value="Load File&gt; User does not have Full Access" />
+          <Value key="40" value="get File&gt; Command successfully" />
+          <Value key="41" value="get File&gt; Unrecognized command" />
+          <Value key="42" value="get File&gt; The active job has not been saved" />
+          <Value key="50" value="Save file&gt; Command successfully" />
+          <Value key="51" value="Save file&gt; Unrecognized command" />
+          <Value key="52" value="Save file&gt; The filename is missing" />
+          <Value key="53" value="Save file&gt;The job failed to save, the sensor is Online or the file was not found" />
+          <Value key="54" value="Save file&gt; User does not have Full Access " />
+          <Value key="60" value="Set Event&gt; Command successfully" />
+          <Value key="61" value="Set Event&gt; Unrecognized command" />
+          <Value key="62" value="Set Event&gt; The number is either out of range or not an integer" />
+          <Value key="63" value="Set Event&gt;The command could not be executed, or the sensor is Offline" />
+          <Value key="64" value="Set Event&gt; User does not have Full Access " />
+          <Value key="70" value="Get Value&gt; Command successfully" />
+          <Value key="71" value="Get Value&gt; Unrecognized command" />
+          <Value key="72" value="Get Value&gt; Cell ID is invalid" />
+          <Value key="73" value="Get Value&gt; The command could not be executed" />
+          <Value key="80" value="Set Float&gt; Command successfully" />
+          <Value key="81" value="Set Float&gt; Unrecognized command" />
+          <Value key="82" value="Set Float&gt; Cell ID is invalid, or not a float" />
+          <Value key="83" value="Set Float&gt; Cell was not created by the EditFloat function" />
+          <Value key="84" value="Set Float&gt; User does not have Full Access " />
+          <Value key="90" value="Set Integer&gt; Command successfully" />
+          <Value key="91" value="Set Integer&gt;Unrecognized command" />
+          <Value key="92" value="Set Integer&gt;Cell ID invalid, or not an integer" />
+          <Value key="93" value="Set Integer&gt; Integer value is outside of the control&apos;s valid range or cell was not created by the EditInt function" />
+          <Value key="94" value="Set Integer&gt; User does not have Full Access" />
+          <Value key="100" value="Set String&gt; Command successfully" />
+          <Value key="101" value="Set String&gt; Unrecognized command" />
+          <Value key="102" value="Set String&gt; Cell ID invalid" />
+          <Value key="103" value="Set String&gt; String is too longer or the cell does not contain an EditString function" />
+          <Value key="104" value="Set String&gt; User does not have Full Access" />
+          <Value key="110" value="Cell Format&gt; OK" />
+          <Value key="111" value="Cell Format&gt; Invalid column" />
+          <Value key="112" value="Cell Format&gt; Invalid row" />
+          <Value key="113" value="Cell Format&gt; Row number out of range" />
+        </Field>
+        <Field name="sSocket" xsi:type="array" type="sio" size="1">
+        </Field>
+        <Field name="bConnected" xsi:type="array" type="bool" size="1">
+        </Field>
+      </Value>
+    </Data>
+    <Data name="bbleu" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%I6" />
+    </Data>
+    <Data name="borange" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%I1" />
+    </Data>
+    <Data name="brouge" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%I2" />
+    </Data>
+    <Data name="bvert" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%I3" />
+    </Data>
+    <Data name="safe3" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%Q4" />
+    </Data>
+    <Data name="vbleu" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%Q0" />
+    </Data>
+    <Data name="vorange" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%Q1" />
+    </Data>
+    <Data name="vrouge" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%Q2" />
+    </Data>
+    <Data name="vvert" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="BasicIO-1\%Q3" />
+    </Data>
+    <Data name="fcamera" access="private" xsi:type="array" type="frame" size="1">
+      <Value key="0" x="-304.013827" y="-243.818264" z="-221.906385" rx="-0.002067" ry="-0.000266" rz="-92.308469" fatherId="world[0]" />
+    </Data>
+    <Data name="lent" access="private" xsi:type="array" type="mdesc" size="1">
+      <Value key="0" accel="2.25" vel="15" decel="2.25" />
+    </Data>
+    <Data name="rapide" access="private" xsi:type="array" type="mdesc" size="1">
+    </Data>
+    <Data name="nCamID" access="private" xsi:type="array" type="num" size="1">
+    </Data>
+    <Data name="nLibErrorCode" access="private" xsi:type="array" type="num" size="1">
+    </Data>
+    <Data name="nProgram" access="private" xsi:type="array" type="num" size="10">
+      <Value key="0" value="8" />
+      <Value key="1" value="1" />
+    </Data>
+    <Data name="nbPoint" access="private" xsi:type="array" type="num" size="1">
+    </Data>
+    <Data name="resultx" access="private" xsi:type="array" type="num" size="1">
+      <Value key="0" value="-4.409" />
+    </Data>
+    <Data name="resulty" access="private" xsi:type="array" type="num" size="1">
+      <Value key="0" value="7.256" />
+    </Data>
+    <Data name="resultz" access="private" xsi:type="array" type="num" size="1">
+      <Value key="0" value="3.056" />
+    </Data>
+    <Data name="AxeX" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="-305.715465" y="-286.02975" z="-221.90487" rx="-0.188763" ry="179.501609" rz="-1.345575" fatherId="world[0]" />
+    </Data>
+    <Data name="AxeY" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="-257.758895" y="-245.465285" z="-221.906111" rx="-0.187758" ry="179.500593" rz="-1.345622" fatherId="world[0]" />
+    </Data>
+    <Data name="Origine" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="-304.013827" y="-243.818264" z="-221.906385" rx="-0.188173" ry="179.50125" rz="-1.345489" fatherId="world[0]" />
+    </Data>
+    <Data name="PointCamera" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="-4.409" y="7.256" z="55.5" rx="180" rz="90" fatherId="fcamera[0]" />
+    </Data>
+    <Data name="PointDePassage" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="46.369415" y="-346.332649" z="138.873975" rx="0.118221" ry="178.943897" rz="-76.444907" fatherId="world[0]" />
+    </Data>
+    <Data name="PointDePause" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" fatherId="world[0]" />
+    </Data>
+    <Data name="PointDePose" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="431.860377" y="24.045354" z="-29.900035" rx="-179.634859" ry="0.400912" rz="18.010944" fatherId="world[0]" />
+    </Data>
+    <Data name="PointDePoseHaut" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="431.86073" y="24.045369" z="65.602019" rx="-179.63482" ry="0.401543" rz="18.010937" fatherId="world[0]" />
+    </Data>
+    <Data name="sCognex" access="private" xsi:type="array" type="sio" size="1">
+      <Value key="0" link="Socket\sCognex1" />
+    </Data>
+    <Data name="Prisephoto" access="private" xsi:type="array" type="string" size="1">
+    </Data>
+    <Data name="result" access="private" xsi:type="array" type="string" size="1">
+    </Data>
+    <Data name="sLibError" access="private" xsi:type="array" type="string" size="300">
+      <Value key="200" value="isIDAvailable&gt; ID not available" />
+      <Value key="201" value="getNextID&gt; No more IDs available" />
+      <Value key="202" value="checkErrFormat&gt; Not logged into camera" />
+      <Value key="203" value="login&gt; ID not available (already tied to a camera)" />
+    </Data>
+    <Data name="strVersion" access="private" xsi:type="array" type="string" size="1">
+      <Value key="0" value="7.3.1.0" />
+    </Data>
+    <Data name="pince" access="private" xsi:type="array" type="tool" size="1">
+      <Value key="0" fatherId="flange[0]" ioLink="valve1" />
+    </Data>
+  </Datas>
+</Database>

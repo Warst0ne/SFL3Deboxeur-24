@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="readme" access="private" >
+    <Code><![CDATA[begin
+  //Title : Cognex Native mode communication
+  //
+  //General description :
+  //
+  //  This library enables communication with a cognex camera through TCP/IP
+  //  using native cognex commands.
+  //  The In-Sight Native Mode protocol is an ASCII protocol that allows an In-Sight
+  //  sensor to be controlled.
+  //  This library (to be considered as a template to show how tocommunicate
+  //  with an Insight 5000 series camera), requires the declaration of a client
+  //  socket called "sCognex1".
+  //  You must declare this socket in the control panel of the controller as
+  //  followed :
+  //    - a client socket for each camera with
+  //    - IP address of camera
+  //    - Port : 1023
+  //    - time out = 0
+  //    - line end char = 13
+  //
+  //  Every listed routine has at least a Boolean parameter which indicates if
+  //  the operation was successful.
+  //  If the boolean value (x_bError) returns true the operation has failed.
+  //  Check the errorcode stored in errorCode[num x_nCamID] and use
+  //  getErrorMessage(...) to get a clear text message.
+  //
+  //MINOR CHANGES IN THIS VERSION (7.3.1.2):
+  //
+  //  - Bug correction in program checkCellFormat: It wasn't possible to access the first row of the Cognex spreadsheet.
+  //
+  //MINOR CHANGES IN THIS VERSION (7.3.1.1):
+  //
+  //  - corrected bug in example() program: l_nIndexF and l_nIndexI were not incremented because
+  //  they were reset at the beginning of each loop
+  //  - implemented and made public stop() program to release all camera IDs
+  //  - added setIDAutoMgt() program to turn on or off automatic ID managment
+  //  - change in login() program: now ID availability check is only done if 
+  //  user turned on automatic ID managment (by calling setIDAutoMgt(true))
+  //
+  //MAJOR CHANGES IN PREVIOUS VERSION (7.3.1.0):  
+  //  
+  //  - Switched to version 7, io library removed.
+  //  - A type 'camera' has been created to collect camera infomations.(see description below)
+  //  - Added function returnNextID(...) (see function description for more details).
+  //  - Added function getFullError(...). It puts getErrorCode() and getErrorMessage() together.
+  //  - Added function isIDAvailable(...) (see function description for more details).
+  //  - Added function isLoggedIn(...) (see function description for more details).
+  //  - Forward compatibility should be respected (from previous version 6.8.1.1).
+  //  - Modified example() program to illustrate new functions
+  //
+  //CAMERA TYPE DETAILS
+  //
+  //  This type "camera" has been created to collect information about the Cognex camera. An array of 10 camera-type variables
+  //  is available in the library, add elements to it if you need to connect to more than 10 cameras.
+  //  It contains :
+  //    - num nErrorCode: latest read/write/access operation's error code
+  //    - sio sSocket: the Socket for communication with camera cognex
+  //    - string sErrorMsg[]: list of possible camera error messages (see list of error codes/messages below)
+  //    - bool bConnected: a boolean variable which enables to know if camera is connected or not
+  //
+  //MAJOR CHANGES IN PREVIOUS VERSION (6.8.1.1):
+  //
+  //  - the column and row is no longer passed as two numbers to the functions
+  //    (such as 3,6 for cell C3) but as a string (ex "C3" or "c3")
+  //  - the boolean parameter returned by most functions for the error feedback
+  //    now works the other way around: true means that there was an error (it is
+  //    now called bError and not bResult)
+  //  - the error codes returned by getErrorCode(...) may be different than before:
+  //    in the past, the error feedback was incomplete (lots of the camera errors
+  //    were ignored, the error feedback structure was hard to understand,...), now it
+  //    is fully working in regards to internal errors of the library itself, or to the
+  //    camera's error feedback (the function getErrorMessage(...) returns the error message
+  //    corresponding to an error code)
+  //  - for a full list of error codes, see comments of function getErrorCode(...)
+  //
+  //LIST OF ERROR CODES/MESSAGES
+  //
+  //  0  Login> Unrecognized command
+  //  1  Login> Wrong user name or password
+  //  2  Login> Communication Error
+  //  10  Set Online> Command successfull
+  //  11  Set Online> Unrecognized command
+  //  12  Set Online> The value given for Int is either out of range, or is not a valid integer
+  //  13  Set Online> The command could not be executed
+  //  14  Set Online> Sensor is set Offline manually
+  //  15  Set Online> User does not have Full Access to execute the command.
+  //  20  Get Online> The In-Sight sensor is currently Offline
+  //  21  Get Online> The In-Sight sensor is currently Online
+  //  30  Load File> Command successfull
+  //  31  Load File> Unrecognized command
+  //  32  Load File> The filename is missing
+  //  33  Load File> The job failed to load, the sensor is Online, or the file was not found
+  //  34  Load File> The job to be loaded was not found, or the sensor is out of memory
+  //  35  Load File> User does not have Full Access
+  //  40  get File> Command successfull
+  //  41  get File> Unrecognized command
+  //  42  get File> The active job has not been saved
+  //  50  Save file> Command successfull
+  //  51  Save file> Unrecognized command
+  //  52  Save file> The filename is missing
+  //  53  Save file>The job failed to save, the sensor is Online or the file was not found
+  //  54  Save file> User does not have Full Access
+  //  60  Set Event> Command successfull
+  //  61  Set Event> Unrecognized command
+  //  62  Set Event> The number is either out of range or not an integer
+  //  63  Set Event>The command could not be executed, or the sensor is Offline
+  //  64  Set Event> User does not have Full Access
+  //  70  Get Value> Command successfull
+  //  71  Get Value> Unrecognized command
+  //  72  Get Value> Cell ID is invalid
+  //  73  Get Value> The command could not be executed
+  //  80  Set Float> Command successfull
+  //  81  Set Float> Unrecognized command
+  //  82  Set Float> Cell ID is invalid, or not a float
+  //  83  Set Float> Cell was not created by the EditFloat function
+  //  84  Set Float> User does not have Full Access
+  //  90  Set Integer> Command successfull
+  //  91  Set Integer>Unrecognized command
+  //  92  Set Integer>Cell ID invalid, or not an integer
+  //  93  Set Integer> Integer value is outside of the control's valid range or cell was not created by the EditInt function
+  //  94  Set Integer> User does not have Full Access
+  //  100  Set String> Command successfull
+  //  101  Set String> Unrecognized command
+  //  102  Set String> Cell ID invalid
+  //  103  Set String> String is too longer or the cell does not contain an EditString function
+  //  104  Set String> User does not have Full Access
+  //  110  Cell Format> OK
+  //  111  Cell Format> Invalid column
+  //  112  Cell Format> Invalid row
+  //  113  Cell Format> Row number out of range
+  //  120  Init Single> Command successfull
+  //  200  isIDAvailable> ID not available
+  //  201  getNextID> No more IDs available
+  //  202  checkErrFormat> Not logged into camera
+  //  203  login> ID not available (already tied to a camera)
+  //
+  //HISTORY;
+  //  - May 2011: added function setCheckRow(...) (see function description for more details)
+  //  - May 2012: switched to version 7.3.1, io lybrary removed, (see readme for more details) 
+  //
+  //Hardware required :
+  //  - Robot system    : any Staubli robot
+  //  - Peripherals     : no peripherals required
+  //
+  //VAL3 options :
+  //  - VAL3 version    : 7.3
+  //  - VAL3 licenses   : no licenses required
+  //  - VAL3 add-ons    : none
+  //
+  //Library version     : 7.3.1.0
+  //
+  //Public variables    : none
+  //
+  //Included libraries  : none
+  //
+  //Miscellaneous       : WARNING - although named the same, this library is not backwards-compatible
+  //                      with versions of the same library earlier than may 23rd, 2008.
+  //
+  //Keywords            : TCP, IP, socket, communcication, cognex, vision, camera
+  //
+  //
+  //
+
+end]]></Code>
+  </Program>
+</Programs>

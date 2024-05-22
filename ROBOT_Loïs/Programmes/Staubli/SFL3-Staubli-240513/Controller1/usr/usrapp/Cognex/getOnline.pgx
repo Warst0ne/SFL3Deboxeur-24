@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getOnline" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bOnlineState" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_bError" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Returns the Online state of the In-Sight sensor.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //
+  //Output parameters
+  //  bool x_bOnlineState :
+  //    role : mode  of camera
+  //    possible values : true  -> The In-Sight sensor is currently Online
+  //                      false -> The In-Sight sensor is currently Offline
+  //Examples
+  //
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  nProgram[x_nCamID]=3
+  call sendCommand(x_nCamID,"GO",l_bError)
+  x_bOnlineState=true
+  //No errors
+  if !l_bError
+    //The In-Sight sensor is currently Online
+    if cCamera[x_nCamID].nErrorCode==21
+      x_bOnlineState=true
+    else
+      //The In-Sight sensor is currently Offline
+      x_bOnlineState=false
+    endIf
+  else
+    x_bOnlineState=false
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

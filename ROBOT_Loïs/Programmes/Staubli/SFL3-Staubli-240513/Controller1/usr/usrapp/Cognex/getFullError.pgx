@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getFullError" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_nErrorCode" type="num" use="reference" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sErrorMsg" type="string" use="reference" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_nErrorCode" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Get error code of last executed command.
+  //  Get error message from error message table (sMsgError).
+  //  
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //
+  //Output parameters
+  //  string x_sMsgError :
+  //    role : returns the error message
+  //  
+  //  num x_nErrorCode:
+  //    role : error code of the last executed command
+  //
+  //Examples
+  //  call getFullError(l_nCamID,l_nError,l_sMsg)
+  //                                         
+  //
+  //History
+  //  Creation : 17-04-12 - t.cail
+  //  
+  //Header end
+  //-----------------------------------------------------------------------
+  //Read error code
+  call getErrorCode(x_nCamID,x_nErrorCode)
+  //Get corresponding error message
+  call getErrorMessage(x_nErrorCode,x_sErrorMsg)
+end]]></Code>
+  </Program>
+</Programs>

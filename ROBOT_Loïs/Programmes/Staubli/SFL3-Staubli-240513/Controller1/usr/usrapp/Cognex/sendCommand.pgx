@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="sendCommand" access="private" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sCmd" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_sMsgError" type="string" xsi:type="array" size="1" />
+      <Local name="l_bError" type="bool" xsi:type="array" size="1" />
+      <Local name="l_nErrorCode" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Send native command to camera and read command execution error.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  string x_sCmd :
+  //    role : native command
+  //
+  //Output parameters
+  //  bool x_bError :
+  //    role : returns true if operation suceeded and false otherwise
+  //
+  //Examples
+  //  call sendCommand(l_nCamID,"tf"+x_sJob,l_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  call writeSocket(x_nCamID,x_sCmd)
+  call readSocket(x_nCamID,l_sMsgError,x_bError)
+  call checkErrFormat(x_nCamID,l_sMsgError,l_bError)
+  x_bError=l_bError
+  if bDebugProgram
+    //Displays error message
+    //getFullError() replace getErrorCode() and getErrorMessage()
+    call getFullError(x_nCamID,l_nErrorCode,l_sMsgError)
+    ? "Cmd> "+l_sMsgError
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

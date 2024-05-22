@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="checkErrFormat" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sErrorMsg" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bMsgError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_bCodeOK" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  This program checks errors provided by x_sMsgError.
+  //  When the program finds the error code contained in x_sMsgError a link
+  //  is created to the element of error message table (sErrorMsg).
+  //  It returns the status of message : error message or success message.
+  //
+  // Input Parameters
+  //  x_nCamID :
+  //    role : camera's ID
+  //   x_sMsgError  :
+  //     role : contains the number which defines the code error.
+  //
+  // Output Parameteres
+  //  x_bMsgError  :
+  //    role : returns true if the message contained in x_sMsgError is an error
+  //    message and false if is a succes message
+  //
+  //Examples
+  //  call checkCellFormat(nCamID,l_sMsgError,l_bMsgError)
+  //
+  //Header end
+  //-----------------------------------------------------------------------
+
+  x_bMsgError=true
+  //Convert x_sMsgError in num format : this num value contains the error code
+  toNum(x_sErrorMsg,cCamera[x_nCamID].nErrorCode,l_bCodeOK)
+  if l_bCodeOK
+    //Check error
+    //Find the last executed program with nCommand[x_nCamID]
+    switch (nProgram[x_nCamID])
+      //--------------
+      //2. Set Online
+      //--------------
+      case 2
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=10
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=11
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=12
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=13
+          break
+          case -5
+            cCamera[x_nCamID].nErrorCode=14
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=15
+          break
+        endSwitch
+      break
+      //--------------
+      //3. Get Online
+      //--------------
+      case 3
+        x_bMsgError=false
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 0
+            cCamera[x_nCamID].nErrorCode=20
+          break
+          case 1
+            cCamera[x_nCamID].nErrorCode=21
+          break
+        endSwitch
+      break
+      //-------------
+      //4. Load File
+      //-------------
+      case 4
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=30
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=31
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=32
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=33
+          break
+          case -4
+            cCamera[x_nCamID].nErrorCode=34
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=35
+          break
+        endSwitch
+      break
+      //------------
+      //5. Get File
+      //------------
+      case 5
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=40
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=41
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=42
+          break
+        endSwitch
+      break
+      //--------------
+      //6. Store File
+      //--------------
+      case 6
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=50
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=51
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=52
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=53
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=54
+          break
+        endSwitch
+      break
+      //------------------------------
+      //7. Set Event and Wait/no Wait
+      //------------------------------
+      case 7
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=60
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=61
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=62
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=63
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=64
+          break
+        endSwitch
+      break
+      //-------------
+      //8. Get Value
+      //-------------
+      case 8
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=70
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=71
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=72
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=73
+          break
+        endSwitch
+      break
+      //-------------
+      //9. Set Float
+      //-------------
+      case 9
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=80
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=81
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=82
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=83
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=84
+          break
+        endSwitch
+      break
+      //----------------
+      //10. Set Integer
+      //----------------
+      case 10
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=90
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=91
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=92
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=93
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=94
+          break
+        endSwitch
+      break
+      //---------------
+      //11. Set String
+      //---------------
+      case 11
+        //Status code
+        switch cCamera[x_nCamID].nErrorCode
+          case 1
+            cCamera[x_nCamID].nErrorCode=100
+            x_bMsgError=false
+          break
+          case 0
+            cCamera[x_nCamID].nErrorCode=101
+          break
+          case -1
+            cCamera[x_nCamID].nErrorCode=102
+          break
+          case -2
+            cCamera[x_nCamID].nErrorCode=103
+          break
+          case -6
+            cCamera[x_nCamID].nErrorCode=104
+          break
+        endSwitch
+      break
+    endSwitch
+  else
+    cCamera[x_nCamID].nErrorCode=202
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

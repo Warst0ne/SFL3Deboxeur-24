@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version="4.6.3.55 SP"?>
+<ProjectOptions
+  IecNamingConventions="true"
+  IecKeywordsAsStructureMembers="false"
+  IecExtendedConstants="true"
+  LogicalDirectory="C:\Users\timothee.lelievre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxVision23\Projet_Logiciel\AS_46\pp70debox_Robot\Logical\"
+  TempDirectory="C:\Users\timothee.lelievre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxVision23\Projet_Logiciel\AS_46\pp70debox_Robot\Temp\"
+  AutomationStudioVersion="4.6.3.55 SP"
+  AutomationStudioEdition="Standard"
+  BuildCrossReference="false"
+  ActiveConfiguration="Config1"
+  CreateAnsiCDeclarations="false" />

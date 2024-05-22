@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>C:\Users\timothee.lelievre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxVision23\Projet_Logiciel\AS_46\pp70debox_Robot\pp70debox.apj</ApjFullFileName>
+    <ProjectName>pp70debox</ProjectName>
+    <ActiveConfigurationName>Config1</ActiveConfigurationName>
+    <LicenseDataFolder>C:\Users\timothee.lelievre\Documents\GitHub\SFL3Deboxeur-24\RessourcesSFL3_2324\DeboxVision23\Projet_Logiciel\AS_46\pp70debox_Robot\Temp\Objects\Config1\4PPC70_0702_20B</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

@@ -1,0 +1,7 @@
+VAR
+	tmpVar : INT;
+	X : INT;
+	Y : INT;
+	Z : INT;
+	Angle : INT;
+END_VAR

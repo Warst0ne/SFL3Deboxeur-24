@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="4PPC70_0702_20B" Type="4PPC70.0702-20B" X="100" Y="100" />
+    <Module Name="VS70_Series_V11_1" Type="FBD.Hilscher.EIGenEDSAdapterDTM.VS70 Series V11.1" X="719" Y="251" />
+    <Module Name="X20cBB81" Type="X20cBB81" X="466" Y="274" />
+    <Module Name="X20IF10D1_1" Type="X20IF10D1-1" X="466" Y="274" />
+    <Module Name="X20PS9400a" Type="X20PS9400" X="516" Y="274" />
+    <Module Name="X20TB12a" Type="X20TB12" X="516" Y="301" />
+    <Module Name="X20BC1083" Type="X20BC1083" X="491" Y="274" />
+  </Modules>
+  <Links>
+    <Link From="4PPC70_0702_20B" To="X20BC1083" FromPort="IF1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="505.5" Y="364.5" />
+      <Point X="505.5" Y="364.5" />
+      <Point X="505.5" Y="374.5" />
+      <Point X="505.5" Y="385" />
+      <Point X="145.299988" Y="385" />
+      <Point X="145.299988" Y="207" />
+      <Point X="145.299988" Y="202" />
+      <Point X="145.299988" Y="202" />
+    </Link>
+    <Link From="VS70_Series_V11_1" To="X20IF10D1_1" FromPort="EIP1" ToPort="IF1" IsRoutedByUser="False">
+      <Point X="480.5" Y="365.5" />
+      <Point X="480.5" Y="365.5" />
+      <Point X="480.5" Y="374.5" />
+      <Point X="480.5" Y="392" />
+      <Point X="535" Y="392" />
+      <Point X="535" Y="290" />
+      <Point X="718" Y="290" />
+      <Point X="738" Y="290" />
+      <Point X="738" Y="290" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

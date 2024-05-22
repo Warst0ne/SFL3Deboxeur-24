@@ -1,0 +1,696 @@
+$ EZ-EDS Version 3.9 Generated Electronic Data Sheet
+
+[File]
+        DescText = "In-Sight 7000 Vision System";
+        CreateDate = 10-27-2011;
+        CreateTime = 08:55:05;
+        ModDate = 11-10-2016;
+        ModTime = 13:38:16;
+        Revision = 10.5;
+        HomeURL = "http://www.cognex.com/";
+
+[Device]
+        VendCode = 678;
+        VendName = "Cognex";
+        ProdType = 100;
+        ProdTypeStr = "In-Sight Vision System";
+        ProdCode = 265;
+        MajRev = 12;
+        MinRev = 1;
+        ProdName = "In-Sight 7000 Series";
+        Catalog = "IS7XXX";
+        Icon = "In-Sight 7000 Sensor.ico";
+
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Params]
+        Param2 =
+                0,
+                ,,
+                0x0000,
+                0xC7,
+                2,
+                "Input Size",
+                "Bytes",
+                "",
+                2,500,496,
+                ,,,,
+                ,,,,
+                ;
+        Param3 =
+                0,
+                ,,
+                0x0000,
+                0xC7,
+                2,
+                "Output Size",
+                "Bytes",
+                "",
+                2,496,496,
+                ,,,,
+                ,,,,
+                ;
+
+        Param4 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Trigger Enable",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param5 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Trigger",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param6 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Buffer Results Enable",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param7 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Inspection Results Ack",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param8 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Execute Command",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param9 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Set Offline",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param10 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 0",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param11 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 1",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param12 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 2",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param13 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 3",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param14 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 4",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param15 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 5",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param16 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 6",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param17 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Soft Event 7",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param18 =
+                0,
+                ,,
+                0x0000,
+                0xC7,
+                2,
+                "Command",
+                "",
+                "",
+                0,32767,0,
+                ,,,,
+                ,,,,
+                ;
+        Param19 =
+                0,
+                ,,
+                0x0000,
+                0xD1,
+                1,
+                "User Data",
+                "",
+                "",
+                ,,0,
+                ,,,,
+                ,,,,
+                ;
+
+        Param20 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Trigger Ready",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param21 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Trigger Ack",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param22 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Acquiring",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param23 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Missed Acq",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param24 =
+                0,
+                ,,
+                0x0000,
+                0xC6,
+                1,
+                "Offline Reason",
+                "",
+                "",
+                0,7,0,
+                ,,,,
+                ,,,,
+                ;
+        Param25 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Online",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param26 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Inspecting",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param27 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Inspection Complete",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param28 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Results Buffer Overrun",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param29 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Results Valid",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param30 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Command Executing",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param31 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Command Complete",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param32 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Command Failed",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param33 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Exposure Complete",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param34 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Job Pass",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+        Param35 =
+                0,
+                ,,
+                0x0000,
+                0xC7,
+                2,
+                "Current Job ID",
+                "",
+                "",
+                0,32767,0,
+                ,,,,
+                ,,,,
+                ;
+        Param36 =
+                0,
+                ,,
+                0x0000,
+                0xC7,
+                2,
+                "Acquisition ID",
+                "",
+                "",
+                0,32767,0,
+                ,,,,
+                ,,,,
+                ;
+        Param37 =
+                0,
+                ,,
+                0x0000,
+                0xC7,
+                2,
+                "Inspection ID",
+                "",
+                "",
+                0,32767,0,
+                ,,,,
+                ,,,,
+                ;
+        Param38 =
+                0,
+                ,,
+                0x0000,
+                0xC3,
+                2,
+                "Inspection Result Code",
+                "",
+                "",
+                -32768,32767,0,
+                ,,,,
+                ,,,,
+                ;
+        Param39 =
+                0,
+                ,,
+                0x0000,
+                0xD1,
+                1,
+                "Inspection Results",
+                "",
+                "",
+                ,,0,
+                ,,,,
+                ,,,,
+                ;
+        Param40 =
+                0,
+                ,,
+                0x0000,
+                0xC1,
+                1,
+                "Test Run Ready",
+                "",
+                "",
+                0,1,0,
+                ,,,,
+                ,,,,
+                ;
+
+[Assembly]
+
+        Assem12 =
+                "input format",
+                ,
+                ,
+                0x0000,
+                ,,
+                1,Param20,              $ Trigger Ready
+                1,Param21,              $ Trigger Ack
+                1,Param22,              $ Acquiring
+                1,Param23,              $ Missed Acq
+                3,Param24,              $ Offline Reason
+                1,Param25,              $ Online
+
+                1,Param26,              $ Inspecting
+                1,Param27,              $ Inpsection Complete
+                1,Param28,              $ Results Buffer Overrun
+                1,Param29,              $ Results Valid
+                1,Param30,              $ Command Executing
+                1,Param31,              $ Command Complete
+                1,Param32,              $ Command Failed
+                12,,                    $ Reserved
+                1,Param33,              $ Exposure Complete
+                1,Param34,              $ Job Pass
+                1,Param40,              $ Test Run Ready
+                2,,                     $ Reserved
+
+                16,Param35,             $ Current Job ID
+                16,Param36,             $ Acquisition ID
+                16,Param37,             $ Inspection ID
+                16,Param38,             $ Inspection Result Code
+                3904,Param39;           $ Inpsection Results
+        Assem21 =
+                "output format",
+                ,
+                ,
+                0x0000,
+                ,,
+                1,Param4,               $ Trigger Enable
+                1,Param5,               $ Trigger
+                1,Param6,               $ Buffer Results Enable
+                1,Param7,               $ Inspection Results Ack
+                1,Param8,               $ Execute Command
+                2,,                     $ Reserved
+                1,Param9,               $ Set Offline
+                1,Param10,              $ Soft Event 0
+                1,Param11,              $ Soft Event 1
+                1,Param12,              $ Soft Event 2
+                1,Param13,              $ Soft Event 3
+                1,Param14,              $ Soft Event 4
+                1,Param15,              $ Soft Event 5
+                1,Param16,              $ Soft Event 6
+                1,Param17,              $ Soft Event 7
+
+                16,Param18,             $ Command
+
+                3936,Param19;           $ User Data
+
+[Connection Manager]
+        Connection1 =
+                0x02010002,             $ trigger & transport
+                                        $  0-15  = supported transport classes (class 1)
+                                        $  16 = cyclic (1 = supported)
+                                        $  17 = change of state (0 = not supported)
+                                        $  18 = on demand (0 = not supported)
+                                        $  19-23 = reserved (must be zero)
+                                        $  24-27 = input only
+                                        $  28-30 = reserved (must be zero)
+                                        $  31 = client 0 (don't care for classes 0 and 1)
+                0x44640305,             $ connection parameters
+                                        $  0 = O=>T fixed (1 = supported)
+                                        $  1 = O=>T variable (0 = not supported)
+                                        $  2 = T=>O fixed (1 = supported)
+                                        $  3 = T=>O variable (0 = not supported)
+                                        $  4-7 = reserved (must be zero)
+                                        $  8-11  = O=>T header (0 byte heartbeat)
+                                        $  12-15 = T=>O header (no header)
+                                        $  16-19 = O=>T connection type (point-to-point)
+                                        $  20-23 = T=>O connection type (multicast,point-to-point)
+                                        $  24-27 = O=>T priority (scheduled)
+                                        $  28-31 = T=>O priority (scheduled)
+                ,0,,                    $ O=>T RPI,Size,Format
+                ,Param2,Assem12,        $ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (not used)
+                ,,                      $ config part 2 (not used)
+                "Consume Data From",    $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C FE 2C 0C";    $ inputs only path
+
+        Connection2 =
+                0x04010002,             $ trigger & transport
+                                        $  0-15  = supported transport classes (class 1)
+                                        $  16 = cyclic (1 = supported)
+                                        $  17 = change of state (0 = not supported)
+                                        $  18 = on demand (0 = not supported)
+                                        $  19-23 = reserved (must be zero)
+                                        $  24-27 = exclusive owner
+                                        $  28-30 = reserved (must be zero)
+                                        $  31 = client 0 (don't care for classes 0 and 1)
+                0x44443405,             $ connection parameters
+                                        $  0 = O=>T fixed (1 = supported)
+                                        $  1 = O=>T variable (0 = not supported)
+                                        $  2 = T=>O fixed (1 = supported)
+                                        $  3 = T=>O variable (0 = not supported)
+                                        $  4-7 = reserved (must be zero)
+                                        $  8-10 = O=>T header (4 byte run/idle)
+                                        $  11	= reserved (must be zero)
+                                        $  12-14 = T=>O header  (0 byte heartbeat)
+                                        $  15	= reserved (must be zero)
+                                        $  16-19 = O=>T connection type (point-to-point)
+                                        $  20-23 = T=>O connection type (point-to-point)
+                                        $  24-27 = O=>T priority (scheduled)
+                                        $  28-31 = T=>O priority (scheduled)
+                ,Param3,Assem21,        $ O=>T RPI,Size,Format
+                ,0,,                    $ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (not used)
+                ,,                      $ config part 2 (not used)
+                "Produce Data To",      $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C 15 2C FE";    $ outputs only path
+
+        Connection3 =
+                0x04010002,             $ trigger & transport
+                                        $ 	0-15	= supported transport classes (class 1)
+                                        $ 	16	= cyclic (1 = supported)
+                                        $ 	17	= change of state (0 = not supported)
+                                        $ 	18	= on demand (0 = not supported)
+                                        $ 	19-23	= reserved (must be zero)
+                                        $ 	24-27	= exclusive owner
+                                        $ 	28-30	= reserved (must be zero)
+                                        $ 	31	= client 0 (don't care for classes 0 and 1)
+                0x44640405,             $ connection parameters
+                                        $ 	0	= O=>T fixed (1 = supported)
+                                        $ 	1	= O=>T variable (0 = not supported)
+                                        $ 	2	= T=>O fixed (1 = supported)
+                                        $ 	3	= T=>O variable (0 = not supported)
+                                        $ 	4-7	= reserved (must be zero)
+                                        $ 	8-11	= O=>T header (4 byte run/idle)
+                                        $ 	12-15	= T=>O header (no header)
+                                        $ 16-19	= O=>T connection type (point-to-point)
+                                        $ 20-23	= T=>O connection type (multicast, point-to-point)
+                                        $ 24-27	= O=>T priority (scheduled)
+                                        $ 28-31	= T=>O priority (scheduled)
+                ,Param3,Assem21,        $ O=>T RPI,Size,Format
+                ,Param2,Assem12,        $ T=>O RPI,Size,Format
+                ,,                      $ config part 1 (not used)
+                ,,                      $ config part 2 (not used)
+                "Consume Data From/Produce Data To",    $ connection name
+                "",                     $ Help string
+                "20 04 24 01 2C 15 2C 0C";
+
+[Port]
+        Port1 =
+                TCP,
+                "EtherNet/IP port",
+                "20 F5 24 01",
+                1;
+
