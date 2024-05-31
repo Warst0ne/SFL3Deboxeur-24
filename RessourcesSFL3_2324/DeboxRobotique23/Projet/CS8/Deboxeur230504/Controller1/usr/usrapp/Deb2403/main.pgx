@@ -50,7 +50,7 @@
         x[7] = 0
       endIf
       
-      co_x =  x[0] * 1 + x[1] * 2 + x[2] * 4 + x[3] * 8 + x[4] * 16 + x[5] * 32 + x[6] * 64 + x[7] * 128
+      co_x =  (x[0] * 1 + x[1] * 2 + x[2] * 4 + x[3] * 8 + x[4] * 16 + x[5] * 32 + x[6] * 64 + x[7] * 128)
       
       if(diECAT1_9 == true)
         y[0] = 1
@@ -93,14 +93,19 @@
         y[7] = 0
       endIf
       
-      co_y = -(y[0] * 1 + y[1] * 2 + y[2] * 4 + y[3] * 8 + y[4] * 16 + y[5] * 32 + y[6] * 64 + y[7] * 128)
+      co_y = (y[0] * 1 + y[1] * 2 + y[2] * 4 + y[3] * 8 + y[4] * 16 + y[5] * 32 + y[6] * 64 + y[7] * 128)
       
-      open(tTool)
-      movel(appro(pPointRx,{co_x,co_y,0,0,0,0}), tTool, mNomSpeed)
-      close(tTool)
-      movel(pPoint1[0],tTool,mNomSpeed)
+      //open(tTool)
+      //movel(appro(pPointRx,{co_x,co_y,0,0,0,0}), tTool, mNomSpeed[0])
+      //waitEndMove()
+      //movel(appro(pPointRx,{co_x,co_y,25.46,0,0,0}), tTool, mNomSpeed[1])
+      //waitEndMove()
+      //movel(appro(pPointRx,{co_x,co_y,0,0,0,0}), tTool, mNomSpeed[0])
+      //waitEndMove()
+      //close(tTool)
+      //movel(pPoint1[0],tTool,mNomSpeed)
       movel(pPoint1[1],tTool,mNomSpeed)
-      movel(pPoint1[0],tTool,mNomSpeed)
+      //movel(pPoint1[0],tTool,mNomSpeed)
       waitEndMove()
 
       doECAT1_0 = true

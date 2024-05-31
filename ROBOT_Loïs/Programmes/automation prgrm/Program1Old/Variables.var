@@ -1,0 +1,37 @@
+VAR
+	BinCo_x : ARRAY[0..7] OF BOOL;
+	BinCo_y : ARRAY[0..7] OF BOOL;
+	CO_x : INT;
+	CO_y : INT;
+	end_cam : BOOL;
+	finEnvoi : BOOL := FALSE;
+	InputCO_x : INT;
+	InputCO_y : INT;
+	Input_cam : BOOL := FALSE;
+	Input_end : BOOL := FALSE;
+	reset_tab : BOOL;
+	Input_robot : BOOL;
+	new_cam : BOOL;
+	reset : BOOL := FALSE;
+	robot_ready : BOOL;
+	tabCO_x : ARRAY[0..6] OF INT;
+	tabCO_y : ARRAY[0..6] OF INT;
+	temp_array : INT := 0;
+	x1 : BOOL;
+	x2 : BOOL;
+	temp : INT := 0;
+	x3 : BOOL;
+	x4 : BOOL;
+	x5 : BOOL;
+	x6 : BOOL;
+	x7 : BOOL;
+	x8 : BOOL;
+	y1 : BOOL;
+	y2 : BOOL;
+	y3 : BOOL;
+	y4 : BOOL;
+	y5 : BOOL;
+	y6 : BOOL;
+	y7 : BOOL;
+	y8 : BOOL;
+END_VAR

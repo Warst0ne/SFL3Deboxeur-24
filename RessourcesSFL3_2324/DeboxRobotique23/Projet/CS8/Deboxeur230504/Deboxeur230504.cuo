@@ -10,10 +10,11 @@
       <Node Path="Deboxeur230504" IsExpanded="true" />
       <Node Path="Deboxeur230504\Controller1" IsExpanded="true" />
       <Node Path="Deboxeur230504\Controller1\Disk:##Deb2304#Deb2304.pjx\bool" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Disk:##Deb2403#Deb2403.pjx" IsExpanded="true" />
+      <Node Path="Deboxeur230504\Controller1\Disk:##Deb2403#Deb2403.pjx\mdesc" IsExpanded="true" />
       <Node Path="Deboxeur230504\Controller1\Disk:##Deb2403#Deb2403.pjx\pointRx" IsExpanded="true" />
       <Node Path="Deboxeur230504\Controller1\Disk:##Deb2403#Deb2403.pjx\tool" IsExpanded="true" />
       <Node Path="Deboxeur230504\Controller1\Disk:##Deb2403#Deb2403.pjx\trsf" IsExpanded="true" />
-      <Node Path="Deboxeur230504\Controller1\Disk:##test_ventouse#test_ventouse.pjx" IsExpanded="true" />
       <Node Path="Deboxeur230504\Controller1\Disk:##test_ventouse#test_ventouse.pjx\dio" IsExpanded="true" />
     </Nodes>
   </Option>

@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Data/2">
   <Datas>
-    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="1">
-      <Value key="0" accel="200" vel="400" decel="200" blend="cartesian" />
+    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="2">
+      <Value key="0" accel="200" vel="200" decel="200" blend="cartesian" />
+      <Value key="1" blend="cartesian" />
     </Data>
     <Data name="tTool" access="private" xsi:type="array" type="tool" size="1">
-      <Value key="0" z="67" fatherId="flange[0]" ioLink="valve1" />
+      <Value key="0" z="67" fatherId="flange[0]" ioLink="valve1" ioOpen="1" ioClose="1" />
     </Data>
     <Data name="jP1" access="private" xsi:type="array" type="jointRx" size="1" />
     <Data name="jP2" access="private" xsi:type="array" type="jointRx" size="1">
@@ -87,12 +88,13 @@
     <Data name="y" access="private" xsi:type="array" type="num" size="8" />
     <Data name="x" access="private" xsi:type="array" type="num" size="8" />
     <Data name="pPointRx" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="-421.67" y="-92.07" z="-232.31" rx="0.62" ry="178.2" rz="-83.18" fatherId="world[0]" />
+      <Value key="0" x="-203.1" y="-91.7" z="-202.86" ry="180" rz="-87.6" fatherId="world[0]" />
     </Data>
     <Data name="trTrsf" access="private" xsi:type="array" type="trsf" size="1" />
-    <Data name="pPoint1" access="private" xsi:type="array" type="pointRx" size="2">
-      <Value key="0" x="86.09" y="-273.22" z="67.88" rx="179.43" ry="-0.9" rz="19.53" fatherId="world[0]" />
-      <Value key="1" x="261.8" y="34.46" z="106.21" rx="179.25" ry="0.27" rz="-60" fatherId="world[0]" />
+    <Data name="pPoint1" access="private" xsi:type="array" type="pointRx" size="3">
+      <Value key="0" x="86.09" y="-273.22" z="67.88" rx="180" fatherId="world[0]" />
+      <Value key="1" x="261.8" y="34.46" z="106.21" rx="180" fatherId="world[0]" />
+      <Value key="2" fatherId="world[0]" />
     </Data>
   </Datas>
 </Database>
