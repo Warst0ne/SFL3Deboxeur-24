@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://www.staubli.com/robotics/VAL3/Project/3" >
+  <Parameters version="s7.4" stackSize="5000" millimeterUnit="true" />
+  <Programs>
+    <Program file="checkCellFormat.pgx" />
+    <Program file="checkColValue.pgx" />
+    <Program file="checkErrFormat.pgx" />
+    <Program file="debugMsg.pgx" />
+    <Program file="example.pgx" />
+    <Program file="getErrorCode.pgx" />
+    <Program file="getErrorMessage.pgx" />
+    <Program file="getFile.pgx" />
+    <Program file="getFullError.pgx" />
+    <Program file="getLibVersion.pgx" />
+    <Program file="getNextID.pgx" />
+    <Program file="getOnline.pgx" />
+    <Program file="incrementCol.pgx" />
+    <Program file="init.pgx" />
+    <Program file="initPUPITRE.pgx" />
+    <Program file="isIDAvailable.pgx" />
+    <Program file="isLoggedIn.pgx" />
+    <Program file="loadFile.pgx" />
+    <Program file="login.pgx" />
+    <Program file="programmeMOVE.pgx" />
+    <Program file="readLogin.pgx" />
+    <Program file="readNumValue.pgx" />
+    <Program file="readRect.pgx" />
+    <Program file="readSocket.pgx" />
+    <Program file="readStrValue.pgx" />
+    <Program file="readTrsf.pgx" />
+    <Program file="readme.pgx" />
+    <Program file="safety.pgx" />
+    <Program file="saveFile.pgx" />
+    <Program file="sendCommand.pgx" />
+    <Program file="setCheckRow.pgx" />
+    <Program file="setEventAndWait.pgx" />
+    <Program file="setEventNoWait.pgx" />
+    <Program file="setIDAutoMgt.pgx" />
+    <Program file="setOnline.pgx" />
+    <Program file="start.pgx" />
+    <Program file="stop.pgx" />
+    <Program file="trigger.pgx" />
+    <Program file="writeFloatValue.pgx" />
+    <Program file="writeIntValue.pgx" />
+    <Program file="writeSocket.pgx" />
+    <Program file="writeStrValue.pgx" />
+  </Programs>
+  <Database>
+    <Data file="Cognex.dtx" />
+  </Database>
+  <Libraries>
+  </Libraries>
+  <Types>
+    <Type name="camera" path="./camera/camera.pjx" />
+  </Types>
+</Project>

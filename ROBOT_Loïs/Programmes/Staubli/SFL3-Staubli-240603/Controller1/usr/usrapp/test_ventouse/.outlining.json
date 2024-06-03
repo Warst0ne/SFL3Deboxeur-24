@@ -1,0 +1,25 @@
+﻿{
+  "programs": [
+    {
+      "mode": 3,
+      "name": "emissionEtat",
+      "nodes": [
+        {
+          "start": 123,
+          "end": 1929,
+          "isCollapsed": false
+        }
+      ]
+    },
+    {
+      "mode": 3,
+      "name": "start",
+      "nodes": []
+    },
+    {
+      "mode": 3,
+      "name": "test_ventouse",
+      "nodes": []
+    }
+  ]
+}

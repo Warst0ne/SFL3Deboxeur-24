@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="setIDAutoMgt" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_bAutoOn" type="bool" use="value" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Turn on/off automatic ID managment
+  //  This routine should be called once when starting main application.
+  //
+  //Input parameters
+  //  bool x_bAutoOn : enable/disable automatic ID managment
+  //
+  //Examples
+  //  call setIDAutoMgt(true)
+  //
+  //History
+  //  Creation : 12-12 - CROC
+  //Header end
+  //-----------------------------------------------------------------------
+  bGetID=x_bAutoOn
+end]]></Code>
+  </Program>
+</Programs>

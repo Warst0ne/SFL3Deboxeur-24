@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="loadFile" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sNameJob" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Loads the specified job from flash memory on the In-Sight sensor,
+  //  making it the active job.
+  //
+  //!!! The In-Sight sensor must be OFFLINE !!!
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //
+  //Output parameters
+  //  string x_sNameJob :
+  //    role : The name of the job.
+  //           The command will execute with or without the .JOB extension.
+  //
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //   call loadFile(nCamID,"Camera1.job",x_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  nProgram[x_nCamID]=4
+  call sendCommand(x_nCamID,"LF"+x_sNameJob,x_bError)
+end]]></Code>
+  </Program>
+</Programs>

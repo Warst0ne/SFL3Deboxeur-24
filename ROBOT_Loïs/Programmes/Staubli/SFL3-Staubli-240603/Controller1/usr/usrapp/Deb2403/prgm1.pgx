@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="prgm1">
+    <Code><![CDATA[begin
+  co_x = 20
+  co_y = -20
+  movel(appro(pPointRx,{co_x,co_y,0,0,0,0}), tTool, mNomSpeed)
+  waitEndMove()
+
+end]]></Code>
+  </Program>
+</Programs>

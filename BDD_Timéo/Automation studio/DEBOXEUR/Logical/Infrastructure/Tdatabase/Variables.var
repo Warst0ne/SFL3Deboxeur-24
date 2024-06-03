@@ -1,0 +1,12 @@
+VAR
+	MpDatabaseCore_0 : MpDatabaseCore;
+	MpDatabaseQuery_ : MpDatabaseQuery;
+	gDataBaseCore : BOOL;
+	nb_article : INT;
+	ref_article : STRING[80];
+	SetDataArticle : gDatabaseArticle_typ;
+	GetDataArticle : gDatabaseArticle_typ;
+	MpDatabaseQuery_0 : MpDatabaseQuery;
+	MpDatabaseQuery_1 : MpDatabaseQuery;
+	MpDatabaseQuery_2 : MpDatabaseQuery;
+END_VAR

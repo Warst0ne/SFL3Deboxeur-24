@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="start" access="private" >
+    <Code><![CDATA[begin
+  do
+    for i=0 to 4
+      movej(a[i],flange,vit)
+    endFor
+    movej(s,flange,vitesse)
+    movel(w,flange,vitesse)
+    waitEndMove()
+  until (false)
+end]]></Code>
+  </Program>
+</Programs>

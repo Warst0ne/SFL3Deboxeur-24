@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="emissionEtat">
+    <Locals>
+      <Local name="l_sEtat" type="string" xsi:type="array" size="1" />
+      <Local name="l_pHereEtat" type="pointRx" xsi:type="array" size="1" />
+      <Local name="l_jHereEtat" type="jointRx" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //il faut une boucle car taskCreateSync ne réappelle pas le programme, juste il lui donne la main périodiquement
+  while true
+    l_pHereEtat=here(ventouse,world)
+    l_jHereEtat=herej()
+ 
+    //déclarer une variable string et utiliser la fonction tostring pour formater
+    //adresse mac puis numéro de la première donnée capteur émise 
+    l_sEtat="DC:4F:22:00:00:00 50"
+    l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].trsf.x)
+    l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].trsf.y)
+    l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].trsf.z)
+    l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].trsf.rx)
+    l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].trsf.ry)
+    l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].trsf.rz)
+    //l_sEtat=l_sEtat+" "+toString(".6",l_pHereEtat[0].config.shoulder) 
+    //shoulder n'est pas un numero, si je veux l'envoyer il faut faire une correspondante avec numéros
+    siSocketUDP=l_sEtat
+ 
+    //envoi en 2 temps de la config du robot, car sinon la chaine est tronquée car trop longue (>128 octets)
+    //envoyer les paramètres suivants avec un offset par rapport aux précédents
+    //adresse mac puis numéro de la première donnée capteur émise 
+    l_sEtat="DC:4F:22:00:00:00 56"
+    l_sEtat=l_sEtat+" "+toString(".6",l_jHereEtat[0].j1)
+    l_sEtat=l_sEtat+" "+toString(".6",l_jHereEtat[0].j2)
+    l_sEtat=l_sEtat+" "+toString(".6",l_jHereEtat[0].j3)
+    l_sEtat=l_sEtat+" "+toString(".6",l_jHereEtat[0].j4)
+    l_sEtat=l_sEtat+" "+toString(".6",l_jHereEtat[0].j5)
+    l_sEtat=l_sEtat+" "+toString(".6",l_jHereEtat[0].j6)
+    siSocketUDP=l_sEtat
+ 
+    //en cas de doute décommenter la ligne suivante pour afficher des messages indiquant l'exécution de la tache periodique
+    //popUpMsg("emissionEtat") 
+ 
+    //Il faut un delay de la periodicité de la tâche sinon les données s'accumulent dans la variable l_sEtat et le controleur plante
+    delay(0.1)  
+  endWhile
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="writeSocket" access="private" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sMsg" type="string" use="value" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="i" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Write string to socket character by character.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  string x_sMsg :
+  //    role : native command
+  //
+  //Examples
+  //  call sendCommand(nCamID,sCmd)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  for i=0 to (len(x_sMsg)-1)
+    sioSet(cCamera[x_nCamID].sSocket,asc(x_sMsg,i))
+  endFor
+  sioSet(cCamera[x_nCamID].sSocket,13)
+  sioSet(cCamera[x_nCamID].sSocket,10)
+  if bDebugSocket
+    ? "W Status code: "+x_sMsg
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

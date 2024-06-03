@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="readLogin" access="private" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sMsg" type="string" use="reference" xsi:type="array" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_nChar" type="num" xsi:type="array" size="1" />
+      <Local name="l_nCount" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  // Read characters from socket until ":" is received
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //
+  //Output parameters
+  //  string x_sMsg:
+  //    role : returns the error message
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call readLogin(nCamID,"D5",l_nValue,x_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  x_sMsg=""
+  do
+    l_nCount=sioGet(cCamera[x_nCamID].sSocket,l_nChar)
+    //-1 : timeout for input communication has been reached
+    if (l_nCount>-1) and (l_nChar>=32)
+      x_sMsg=x_sMsg+chr(l_nChar)
+    endIf
+    x_bError=l_nCount<=-1
+  until (chr(l_nChar)==":") or x_bError
+  //Communication Error
+  if x_bError
+    cCamera[x_nCamID].nErrorCode=2
+  endIf
+  //Displays error message
+  if bDebugProgram
+    putln("ReadLogin : "+x_sMsg)
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

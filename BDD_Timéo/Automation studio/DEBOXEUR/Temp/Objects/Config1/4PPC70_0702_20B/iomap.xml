@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationRuntimeIOSystem Version="1.0"?>
+<IO xmlns="http://www.br-automation.com/AR/IO">
+<Links>
+<LN ID="%ID.SerialNumber" Type="UDINT">
+<Prod Device="$root" DPName="SerialNumber" Kind="io"/>
+</LN>
+<LN ID="%IW.ModuleID" Type="UINT">
+<Prod Device="$root" DPName="ModuleID" Kind="io"/>
+</LN>
+<LN ID="%IW.HardwareVariant" Type="UINT">
+<Prod Device="$root" DPName="HardwareVariant" Kind="io"/>
+</LN>
+<LN ID="%IW.FirmwareVersion" Type="UINT">
+<Prod Device="$root" DPName="FirmwareVersion" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureCPU" Type="UINT">
+<Prod Device="$root" DPName="TemperatureCPU" Kind="io"/>
+</LN>
+<LN ID="%IW.TemperatureENV" Type="UINT">
+<Prod Device="$root" DPName="TemperatureENV" Kind="io"/>
+</LN>
+<LN ID="%ID.SystemTime" Type="DINT">
+<Prod Device="$root" DPName="SystemTime" Kind="io"/>
+</LN>
+<LN ID="%IX.IF1.LinkOk" Type="BOOL">
+<Prod Device="$root" DPName="IF1.LinkOk" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.OutputDMAMargin" Type="DINT">
+<Prod Device="$root" DPName="IF1.OutputDMAMargin" Kind="io"/>
+</LN>
+<LN ID="%IB.IF1.NodeNumber" Type="USINT">
+<Prod Device="$root" DPName="IF1.NodeNumber" Kind="io"/>
+</LN>
+<LN ID="%IX.IF1.CycleOk" Type="BOOL">
+<Prod Device="$root" DPName="IF1.CycleOk" Kind="io"/>
+</LN>
+<LN ID="%IX.IF1.SyncOk" Type="BOOL">
+<Prod Device="$root" DPName="IF1.SyncOk" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.TimeSeconds" Type="UDINT">
+<Prod Device="$root" DPName="IF1.TimeSeconds" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.TimeNanoseconds" Type="UDINT">
+<Prod Device="$root" DPName="IF1.TimeNanoseconds" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.NettimeSoC" Type="DINT">
+<Prod Device="$root" DPName="IF1.NettimeSoC" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.NettimeOffset" Type="DINT">
+<Prod Device="$root" DPName="IF1.NettimeOffset" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.CycleCount" Type="UDINT">
+<Prod Device="$root" DPName="IF1.CycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.FailedCycleCount" Type="UDINT">
+<Prod Device="$root" DPName="IF1.FailedCycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.CycleTimeViolationCount" Type="UDINT">
+<Prod Device="$root" DPName="IF1.CycleTimeViolationCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.CycleIdleTime" Type="UDINT">
+<Prod Device="$root" DPName="IF1.CycleIdleTime" Kind="io"/>
+</LN>
+<LN ID="%ID.IF1.CycleCongestionCount" Type="UDINT">
+<Prod Device="$root" DPName="IF1.CycleCongestionCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.CycleCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.CycleCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.BreakCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.BreakCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.Nettime" Type="DINT">
+<Prod Device="$root" DPName="IF5.Nettime" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncSramErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncSramErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncBusyErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncBusyErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncNoRxErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncNoRxErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncFormatErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncFormatErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncPendingErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncPendingErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncSramErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncSramErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncBusyErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncBusyErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncNoRxErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncNoRxErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncFormatErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncFormatErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncPendingErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncPendingErrorCount" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.DMALateOutputErrorCount" Type="DINT">
+<Prod Device="$root" DPName="IF5.DMALateOutputErrorCount" Kind="io"/>
+</LN>
+<LN ID="%IB.IF5.NrOfStationsMax" Type="USINT">
+<Prod Device="$root" DPName="IF5.NrOfStationsMax" Kind="io"/>
+</LN>
+<LN ID="%IB.IF5.NrOfStationsConfigured" Type="USINT">
+<Prod Device="$root" DPName="IF5.NrOfStationsConfigured" Kind="io"/>
+</LN>
+<LN ID="%IB.IF5.StationAtBusEnd" Type="USINT">
+<Prod Device="$root" DPName="IF5.StationAtBusEnd" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.StationAtBusEndChangeTime" Type="DATE_AND_TIME">
+<Prod Device="$root" DPName="IF5.StationAtBusEndChangeTime" Kind="io"/>
+</LN>
+<LN ID="%IB.IF5.StationPastOutFrameError" Type="USINT">
+<Prod Device="$root" DPName="IF5.StationPastOutFrameError" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.StationPastOutFrameErrorChangeTime" Type="DATE_AND_TIME">
+<Prod Device="$root" DPName="IF5.StationPastOutFrameErrorChangeTime" Kind="io"/>
+</LN>
+<LN ID="%IB.IF5.StationPastInFrameError" Type="USINT">
+<Prod Device="$root" DPName="IF5.StationPastInFrameError" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.StationPastInFrameErrorChangeTime" Type="DATE_AND_TIME">
+<Prod Device="$root" DPName="IF5.StationPastInFrameErrorChangeTime" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncInFrameSize" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncInFrameSize" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.SyncOutFrameSize" Type="DINT">
+<Prod Device="$root" DPName="IF5.SyncOutFrameSize" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncFrameSize" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncFrameSize" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.AsyncFrameSpareSize" Type="DINT">
+<Prod Device="$root" DPName="IF5.AsyncFrameSpareSize" Kind="io"/>
+</LN>
+<LN ID="%ID.IF5.BusLengthConfigured" Type="DINT">
+<Prod Device="$root" DPName="IF5.BusLengthConfigured" Kind="io"/>
+</LN>
+</Links></IO>

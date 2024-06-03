@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="main">
+    <Code><![CDATA[begin
+  while true
+    doECAT1_0 = true
+    
+    if(diECAT1_0 == true)
+      
+      doECAT1_0 = false
+      
+      x[0] = diECAT1_1
+      x[1] = diECAT1_2
+      x[2] = diECAT1_3
+      x[3] = diECAT1_4
+      x[4] = diECAT1_5
+      x[5] = diECAT1_6
+      x[6] = diECAT1_7
+      x[7] = diECAT1_8
+      
+   
+      
+      y[0] = diECAT1_9
+      y[1] = diECAT1_10
+      y[2] = diECAT1_11
+      y[3] = diECAT1_12
+      y[4] = diECAT1_13
+      y[5] = diECAT1_14
+      y[6] = diECAT1_15
+      y[7] = diECAT1_16
+      
+    
+
+      
+      doECAT1_0 = true
+      
+    endIf
+  endWhile
+end]]></Code>
+  </Program>
+</Programs>

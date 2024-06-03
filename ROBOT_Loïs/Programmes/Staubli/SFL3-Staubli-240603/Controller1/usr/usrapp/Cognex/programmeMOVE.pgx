@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="programmeMOVE" access="private" >
+    <Code><![CDATA[begin
+  while true
+
+    // boucle infini
+
+    while (borange==true)
+      // BOUCLE DE DEBOXAGE
+
+      // DEMANDE UNE MISE EN LIGNE DE LA CAMERA SI CELLE SI EST ETEINTE
+      call getOnline(nCamID,resultTrigger)
+      //APPEL UNE CAPURE DE PHOTO
+      call trigger(nCamID,l_bError)
+
+      delay(1.5)
+
+
+
+      // RECUPERATION DONNE DANS LE TABLEUR COGNEX DANS LES CELLULE CC36/D36/E36
+      call readNumValue(nCamID,"C36",resultx,l_bError)
+      call readNumValue(nCamID,"D36",resulty,l_bError)
+      call readNumValue(nCamID,"E36",resultz,l_bError)
+
+
+      nbPoint=nbPoint+1
+      putln("COORDONNEE DU POINT :")
+      putln(nbPoint)
+      putln("Coordonnée X:")
+      putln(resultx)
+      putln("Coordonnée Y:")
+      putln(resulty)
+      putln("Coordonnée Z:")
+      putln(resultz)
+
+
+      // AFFECTATION DES VALEUR DE X Y Z DU POINT CAMERA QUI EST DANS LE FRAME CAMERA 
+      PointCamera.trsf.x=resultx
+      PointCamera.trsf.y=resulty
+      PointCamera.trsf.z=55.5
+      PointCamera.trsf.rx=180
+      PointCamera.trsf.ry=0
+      PointCamera.trsf.rz=90
+
+
+
+      close(pince)
+
+
+
+      movej(appro(PointCamera,{0,0,-100,0,0,0}),pince,rapide)
+      movel(PointCamera,pince,lent)
+
+
+
+
+      delay(1)
+
+      open(pince)
+
+      delay(1)
+
+
+      movel(appro(PointCamera,{0,0,-100,0,0,0}),pince,rapide)
+      movej(PointDePassage,pince,rapide)
+
+
+      movej(PointDePoseHaut,pince,rapide)
+
+
+      // attendre de fin de mouvement avant l'instruction suivante
+      vvert=true
+
+      //voyant vert passe a vrai
+      wait(bvert!=false)
+
+      // attend que bouton vert passe a vrai
+      vvert=false
+      movel(PointDePose,pince,lent)
+
+      delay(1)
+      close(pince)
+      delay(1)
+
+      movel(PointDePoseHaut,pince,lent)
+      waitEndMove()
+
+
+    endWhile
+    call initPUPITRE()
+    // appel le programme Init pour changement de rack.
+
+  endWhile
+end]]></Code>
+  </Program>
+</Programs>

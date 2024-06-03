@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="login" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_sioSocket" type="sio" use="reference" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sUser" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sPassword" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_nCamID" type="num" use="reference" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_sMsg" type="string" xsi:type="array" size="1" />
+      <Local name="l_bError" type="bool" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Login to camera via TCP/IP socket port 1023, password pair
+  // (usually "admin" and "").
+  //  Returns camera's ID of type num for further communication with the camera.
+  //
+  //Input parameters
+  //  string x_sUser :
+  //    role : user name
+  //  string x_sPassword :
+  //    role : password for the user x_sUser
+  //
+  //Output parameters
+  //  sio x_sioSocket :
+  //    role : CS8 client socket
+  //  num x_nCamID :
+  //    role : returns camera's ID for further operations as the lib can
+  //          communicate with more that 1 camera.
+  //    posssible values : - first camera (first login)  : x_nCamID=1
+  //                       - second camera (second login): x_nCamID=2
+  //                       - ...
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call login(cognex1,"admin","",nCamID,x_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+  if bDebugProgram
+    putln("Cognex login")
+  endIf
+  // Check available ID
+  l_bError=false
+  if bGetID==true
+    call isIDAvailable(x_nCamID,l_bError)
+  endIf
+  if l_bError==false
+    nProgram[x_nCamID]=1
+    sioLink(cCamera[x_nCamID].sSocket,x_sioSocket)
+    // Read welcome string
+    call readSocket(x_nCamID,l_sMsg,x_bError)
+    // Send user name
+    call readLogin(x_nCamID,l_sMsg,x_bError)
+    call writeSocket(x_nCamID,x_sUser)
+    // Send password
+    call readLogin(x_nCamID,l_sMsg,x_bError)
+    call writeSocket(x_nCamID,x_sPassword)
+    // Read login result
+    call readSocket(x_nCamID,l_sMsg,x_bError)
+    x_bError=find(l_sMsg,"User Logged In")==-1
+    if x_bError
+      cCamera[x_nCamID].nErrorCode=1
+      cCamera[x_nCamID].bConnected=false
+      if bDebugProgram
+        putln("Login : failed")
+      endIf
+    else
+      cCamera[x_nCamID].bConnected=true
+    endIf
+  else
+    x_bError=true
+    nLibErrorCode=203
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

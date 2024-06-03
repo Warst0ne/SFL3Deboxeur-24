@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="setCheckRow" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_bCheckUpLim" type="bool" use="value" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  // This routines activates of de-activates the row number checking parameter
+  // This parameter determines wether or not the row number will be checked against
+  // the upper limit (400). The check against the lower limit (0) always remains active.
+  //
+  // Input Parameters
+  //  x_bCheckUpLim :
+  //    role : set to true to check row number against upper limit of 400 or to false otherwise
+  //
+  //Examples
+  //  call setCheckRow(true)
+  //
+  //History
+  //  Creation : 03-05-11 - CROC
+  //Header end
+  //-----------------------------------------------------------------------
+  bCheckRowUpLim=x_bCheckUpLim
+end]]></Code>
+  </Program>
+</Programs>
