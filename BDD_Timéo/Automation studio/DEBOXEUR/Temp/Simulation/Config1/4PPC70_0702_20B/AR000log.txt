@@ -1,0 +1,21 @@
+Tue May 21 15:42:22 2024
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Tue May 21 15:42:22 2024
+No ARsim registration found!
+
+Tue May 21 15:42:22 2024
+InstanceName: 01daab84b55b8e40
+
+Tue May 21 15:42:22 2024
+WorkingDirectory: C:\projects\pjafag\AfagP70\Temp\Simulation\Config1\4PPC70_0702_20B\
+
+Tue May 21 15:42:22 2024
+COMMAND_COLDSTART
+
+Tue May 21 15:42:25 2024
+Version: B4.62
+
+Tue May 21 15:43:31 2024
+COMMAND_TERMINATE
+

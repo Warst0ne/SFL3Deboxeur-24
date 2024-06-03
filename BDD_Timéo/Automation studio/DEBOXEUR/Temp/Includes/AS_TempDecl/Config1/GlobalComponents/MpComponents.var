@@ -1,0 +1,3 @@
+VAR
+	gDatabaseCore : {REDUND_UNREPLICABLE} MpComIdentType; (*#1"C:\projects\pjafag\AfagP70\Physical\Config1\4PPC70_0702_20B\mappServices\Config.mpdatabasecore" #2"1" #3"1"*)
+END_VAR

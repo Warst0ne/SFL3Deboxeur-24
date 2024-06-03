@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gDatabaseCore" Type="mpdatabasecore">
+    <Group ID="mapp.Database.Core">
+      <Property ID="Name" Value="sfl3test" />
+      <Property ID="UserName" Value="sfl3br" />
+      <Property ID="Password" Value="123456" />
+      <Property ID="IPAddress" Value="10.16.3.17" />
+      <Property ID="PortNumber" Value="86" />
+      <Group ID="DBQueries">
+        <Group ID="[0]">
+          <Property ID="Name" Value="SetData" />
+          <Selector ID="Type" Value="INSERT">
+            <Property ID="Into" Value="Article" />
+            <Selector ID="Columns" Value="SingleColumns">
+              <Group ID="[0]">
+                <Property ID="Column" Value="nb_article" />
+                <Property ID="PV" Value="::Tdatabase:SetDataArticle.nb_article" />
+              </Group>
+              <Group ID="[1]">
+                <Property ID="Column" Value="ref_article" />
+                <Property ID="PV" Value="::Tdatabase:SetDataArticle.ref_article" />
+              </Group>
+            </Selector>
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="GetData" />
+          <Selector ID="Type">
+            <Group ID="Select">
+              <Selector ID="Columns" Value="SingleColumns">
+                <Group ID="[0]">
+                  <Property ID="Column" Value="nb_article" />
+                  <Property ID="PV" Value="::Tdatabase:nb_article" />
+                </Group>
+                <Group ID="[1]">
+                  <Property ID="Column" Value="ref_article" />
+                  <Property ID="PV" Value="::Tdatabase:ref_article" />
+                </Group>
+              </Selector>
+            </Group>
+            <Property ID="From" Value="Article" />
+            <Group ID="Where">
+              <Property ID="Connect" Value="" />
+              <Group ID="[0]">
+                <Property ID="Column" Value="nb_article" />
+                <Property ID="Operator" Value="le" />
+                <Selector ID="CompareTo">
+                  <Property ID="Value" Value="20" />
+                </Selector>
+              </Group>
+              <Group ID="[1]">
+                <Property ID="Column" Value="ref_article" />
+                <Property ID="Operator" Value="le" />
+                <Selector ID="CompareTo">
+                  <Property ID="Value" Value="20" />
+                </Selector>
+              </Group>
+            </Group>
+          </Selector>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>
