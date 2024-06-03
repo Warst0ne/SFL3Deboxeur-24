@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="readNumValue" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sCellNumber" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_nValue" type="num" use="reference" xsi:type="array" dimensions="1" />
+      <Parameter name="x_bError" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_bIsOk" type="bool" xsi:type="array" size="1" />
+      <Local name="l_sValue" type="string" xsi:type="array" size="1" />
+      <Local name="l_sMsgError" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Read contents of a cell adressed by x_sCellNumber from camera's ID
+  //  and convert it in numerical value.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //  string x_sCellNumber :
+  //    role : The column letter and the row number of the cell value to get.
+  //    possible values : - column letter : (A to Z)
+  //                      - row number : (000 to 399)
+  //
+  //Output parameters
+  //  num x_nValue :
+  //    role : contents of cell convert in numerical
+  //  bool x_bError :
+  //    role : returns true if an error occurred and false otherwise
+  //
+  //Examples
+  //  call readNumValue(nCamID,"D5",l_nValue,x_bError)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //  Modification : 10-07-08 - CROC
+  //    inversion of returned error boolean, it was backwards (x_bError was
+  //    set as the third param of the toNum(...) which is set to true when
+  //    the toNum(...) worked OK, however x_bError needed to be true when
+  //    the toNum(...) did not work OK.
+  //Header end
+  //-----------------------------------------------------------------------
+
+  // Read contents of cell and transform it to a numerical value
+  call readStrValue(x_nCamID,x_sCellNumber,l_sValue,x_bError)
+  if !x_bError
+    toNum(l_sValue,x_nValue,l_bIsOk)
+    x_bError=!l_bIsOk
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

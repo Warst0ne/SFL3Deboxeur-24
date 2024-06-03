@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="start">
+    <Locals>
+      <Local name="l_nReturn" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  cls()
+  userPage()
+  call lib:unprotect(l_nReturn)
+  put("Tool return: ")
+  putln(l_nReturn)
+  putln("0: no error, reboot the controller without any 'uniVAL' license in controller.cfx")
+  putln("-1: VAL 3 license not enabled")
+  putln("Other negative values: R&D meaning")
+end]]></Code>
+  </Program>
+</Programs>

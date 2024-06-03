@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="incrementCol" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_sCellNumber" type="string" use="reference" xsi:type="array" dimensions="1" />
+      <Parameter name="x_bColumnOK" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_sColCharac" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Increment the column number of the x_sCellNumber.
+  //
+  // Input Parameters
+  //   x_sCellNumber  :
+  //     role : Cell number in string format.
+  //            Must be : - First digit is a letter (A-Z) for Column number
+  //                      - 3 next digits is a number for Row number
+  //
+  // Output Parameteres
+  //  x_bColumnOK  :
+  //    role : returns true if the increment column is succeeded and false
+  //          otherwise
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //  Modification : 10-07-08 - CROC
+  //    correction of bug in the line that rebuilds the new incremented cell
+  //    number, the line "right(x_sCellNumber,3)" has been replaced by
+  //    "right(x_sCellNumber,len(x_sCellNumber)-1)" to be more flexible in
+  //    regards to cell number format (before that the cell number had to be
+  //    composed of one letter and 3 numbers, now the only restriction is that
+  //    the first character has to be a letter). This modification was triggered
+  //    by the fact that this procedure is used by readRect() that passes the
+  //    cell numbers as 2 char only (one letter, one number), thus it wasn't
+  //    working properly.
+  //Header end
+  //-----------------------------------------------------------------------
+
+  //Get the number column
+  l_sColCharac=left(x_sCellNumber,1)
+  //Increment the number column
+  l_sColCharac=chr((asc(l_sColCharac,0)+1))
+  //Checks the number column ( A<Column<Z)
+  call checkColValue(l_sColCharac,x_bColumnOK)
+  if x_bColumnOK
+    //Modify x_sCellNumber
+    x_sCellNumber=l_sColCharac+right(x_sCellNumber,len(x_sCellNumber)-1)
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

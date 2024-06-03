@@ -1,0 +1,51 @@
+VAR
+	y8 : BOOL;
+	y7 : BOOL;
+	y6 : BOOL;
+	y5 : BOOL;
+	y4 : BOOL;
+	y3 : BOOL;
+	y2 : BOOL;
+	y1 : BOOL;
+	x8 : BOOL;
+	x7 : BOOL;
+	x6 : BOOL;
+	x5 : BOOL;
+	x4 : BOOL;
+	x3 : BOOL;
+	x2 : BOOL;
+	x1 : BOOL;
+	TypeArticles : WSTRING[80] := "gabarit";
+	nbArticles : INT := 0;
+	temp_array : INT := 0;
+	temp : INT := 0;
+	tabCO_y : ARRAY[0..6] OF INT := [7(999)];
+	tabCO_x : ARRAY[0..6] OF INT := [7(999)];
+	t : INT := 0;
+	robot_ready : BOOL;
+	reset_tab : BOOL;
+	reset : BOOL := FALSE;
+	new_cam : BOOL;
+	Input_robot : BOOL;
+END_VAR
+VAR RETAIN
+	Input_end : BOOL := FALSE;
+END_VAR
+VAR
+	Input_cam : BOOL := FALSE;
+	InputCO_y : ARRAY[0..2] OF USINT := [0];
+	InputCO_x : ARRAY[0..2] OF USINT := [0];
+	r : INT := 0;
+	i : INT := 0;
+	finEnvoi : BOOL := FALSE;
+END_VAR
+VAR RETAIN
+	end_cam : BOOL;
+END_VAR
+VAR
+	CO_y : INT;
+	CO_x : INT;
+	BinCo_x : ARRAY[0..8] OF BOOL := [9(0)];
+	BinCo_y : ARRAY[0..8] OF BOOL := [9(0)];
+	Boucle : BOOL := FALSE;
+END_VAR

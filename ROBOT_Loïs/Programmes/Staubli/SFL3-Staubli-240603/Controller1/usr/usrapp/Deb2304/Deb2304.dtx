@@ -1,29 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Data/2">
   <Datas>
-    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="2">
-      <Value key="0" blend="cartesian" />
-      <Value key="1" accel="50" vel="50" decel="50" blend="cartesian" />
+    <Data name="dPowerlinkSorti" access="private" xsi:type="array" type="dio" size="1">
+      <Value key="0" link="POWERLINK-1\%Q0" />
     </Data>
-    <Data name="tTool" access="private" xsi:type="array" type="tool" size="1">
-      <Value key="0" z="67" fatherId="flange[0]" ioLink="valve1" />
+    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="1" />
+    <Data name="mlent" access="private" xsi:type="array" type="mdesc" size="1">
+      <Value key="0" accel="9" vel="30" decel="9" blend="off" />
     </Data>
-    <Data name="jP1" access="private" xsi:type="array" type="jointRx" size="1" />
-    <Data name="jP2" access="private" xsi:type="array" type="jointRx" size="1">
-      <Value key="0" j1="67.72" j2="50.87" j3="100.24" j5="28.89" j6="-112.28" />
+    <Data name="tstylo" access="private" xsi:type="array" type="tool" size="1">
+      <Value key="0" z="100" fatherId="flange[0]" ioLink="valve1" />
     </Data>
-    <Data name="jP3" access="private" xsi:type="array" type="jointRx" size="1">
-      <Value key="0" j1="-83.94" j2="66.93" j3="62.59" j5="50.48" j6="-263.94" />
+    <Data name="ja" access="private" xsi:type="array" type="jointRx" size="5">
+      <Value key="0" j1="-141.592538" j2="84.02454" j3="39.666751" j4="0.388019" j5="55.73836" j6="91.723919" />
+      <Value key="1" j1="-141.797065" j2="55.548957" j3="26.304021" j4="0.325386" j5="97.577607" j6="91.780733" />
+      <Value key="2" j1="-1.061441" j2="69.857939" j3="0.585564" j4="-0.646318" j5="109.792733" j6="232.256985" />
+      <Value key="3" j1="-1.782017" j2="63.511465" j3="34.980386" j4="-0.618292" j5="81.739303" j6="231.843932" />
+      <Value key="4" j1="-1.782031" j2="69.640192" j3="39.18089" j4="-0.645507" j5="71.410438" j6="231.960844" />
     </Data>
-    <Data name="jP4" access="private" xsi:type="array" type="jointRx" size="1">
-      <Value key="0" j1="67.72" j2="17.89" j3="90" j5="72.11" j6="-112.28" />
-    </Data>
-    <Data name="jP5" access="private" xsi:type="array" type="jointRx" size="1">
-      <Value key="0" j1="-84.94" j2="43.97" j3="50.35" j5="58.68" j6="-263.94" />
-    </Data>
-    <Data name="fFrame" access="private" xsi:type="array" type="frame" size="1">
-      <Value key="0" x="-421.67" y="-92.07" z="-232.31" rx="0.62" ry="178.2" rz="-83.18" fatherId="world[0]" />
-    </Data>
+    <Data name="nPowerlink" access="private" xsi:type="array" type="num" size="1" />
     <Data name="diECAT1_0" access="public" xsi:type="array" type="dio" size="1">
       <Value key="0" link="POWERLINK-1\%I0" />
     </Data>
@@ -81,24 +76,10 @@
     <Data name="doECAT1_1" access="public" xsi:type="array" type="dio" size="1">
       <Value key="0" link="POWERLINK-1\%Q1" />
     </Data>
+    <Data name="x" access="private" xsi:type="array" type="bool" size="8" />
     <Data name="rbt_ready" access="private" xsi:type="array" type="bool" size="1" />
     <Data name="co_x" access="private" xsi:type="array" type="num" size="1" />
     <Data name="co_y" access="private" xsi:type="array" type="num" size="1" />
-    <Data name="nPowerlink" access="private" xsi:type="array" type="num" size="1" />
-    <Data name="y" access="private" xsi:type="array" type="num" size="8" />
-    <Data name="x" access="private" xsi:type="array" type="num" size="8" />
-    <Data name="pPointRx" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="-203.1" y="-91.7" z="-202.86" ry="180" rz="-87.6" fatherId="world[0]" />
-    </Data>
-    <Data name="trTrsf" access="private" xsi:type="array" type="trsf" size="1" />
-    <Data name="pPoint1" access="private" xsi:type="array" type="pointRx" size="4">
-      <Value key="0" x="86.09" y="-273.22" z="67.88" rx="180" fatherId="world[0]" />
-      <Value key="1" x="261.8" y="34.46" z="106.21" rx="180" fatherId="world[0]" />
-      <Value key="2" x="415.89" y="34.86" z="0.1" rx="180" fatherId="world[0]" />
-      <Value key="3" x="415.89" y="34.97" z="-112.94" rx="180" fatherId="world[0]" />
-    </Data>
-    <Data name="valve" access="private" xsi:type="array" type="dio" size="1">
-      <Value key="0" link="valve1" />
-    </Data>
+    <Data name="y" access="private" xsi:type="array" type="bool" size="8" />
   </Datas>
 </Database>

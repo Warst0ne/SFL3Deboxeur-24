@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="checkCellFormat" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_sCellNumber" type="string" use="reference" xsi:type="array" dimensions="1" />
+      <Parameter name="x_bMatchOk" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_i" type="num" xsi:type="array" size="1" />
+      <Local name="l_bColOk" type="bool" xsi:type="array" size="1" />
+      <Local name="l_bRowOk" type="bool" xsi:type="array" size="1" />
+      <Local name="l_sColumn" type="string" xsi:type="array" size="1" />
+      <Local name="l_sRow" type="string" xsi:type="array" size="1" />
+      <Local name="l_nRow" type="num" xsi:type="array" size="1" />
+      <Local name="l_nError" type="num" xsi:type="array" size="1" />
+      <Local name="l_sMsgError" type="string" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  // This routines checks if the format of the string used to point on a cell
+  // of the cognex speadsheet matches the format of native command.
+  //
+  // Input Parameters
+  //  x_nCamID :
+  //    role : camera's ID
+  //   x_sCellNumber  :
+  //     role : Cell number in string format.
+  //            Must be : - First digit is a letter (A-Z) for Column number
+  //                      - 3 next digits is a number for Row number
+  //
+  // Output Parameteres
+  //  x_bMatchOK  :
+  //    role : retruns true if format of the string x_sCellNumber is correct
+  //          and false otherwise.
+  //
+  //Examples
+  //  call checkCellFormat(nCamID,"A3",l_bCellOk)
+  //
+  //Header end
+  //-----------------------------------------------------------------------
+
+  //Init
+  x_bMatchOk=false
+  //Verify length of the string (minimum 2 digit, ex : "A1")
+  if len(x_sCellNumber)>=2
+    //Column of the CellNumber
+    l_sColumn=left(x_sCellNumber,1)
+    //Verify first digit (column)
+    //First digit must be in range 'A-Z' or 'a-z'
+    call checkColValue(l_sColumn,l_bColOk)
+    if l_bColOk
+      //First digit OK
+      //Row of the CellNumber
+      l_sRow=right(x_sCellNumber,len(x_sCellNumber)-1)
+      toNum(l_sRow,l_nRow,l_bRowOk)
+      if l_bRowOk
+        //l_sRow is a numercial value
+        //Verify the row number
+        if l_nRow>=0 and (l_nRow<=400 or !bCheckRowUpLim)
+          if len(l_sRow)<3
+            //Add digits (there is always 3 digits)
+            l_sRow=left("000",3-len(l_sRow))+l_sRow
+            //Update CellNumber
+            x_sCellNumber=l_sColumn+l_sRow
+          endIf
+          //Cell Format OK
+          x_bMatchOk=true
+          cCamera[x_nCamID].nErrorCode=110
+        else
+          //Row number out of range
+          cCamera[x_nCamID].nErrorCode=113
+          cCamera[x_nCamID].sErrorMsg[cCamera[x_nCamID].nErrorCode]="Cell Format> "+l_sRow+" row number out of range"
+        endIf
+      else
+        //Invalid row (not a numerical value)
+        cCamera[x_nCamID].nErrorCode=112
+        cCamera[x_nCamID].sErrorMsg[cCamera[x_nCamID].nErrorCode]="Cell Format> "+l_sRow+" invalid row"
+      endIf
+    else
+      //Invalid column
+      cCamera[x_nCamID].nErrorCode=111
+      cCamera[x_nCamID].sErrorMsg[cCamera[x_nCamID].nErrorCode]="Cell Format> "+l_sColumn+" invalid column"
+    endIf
+  endIf
+  if bDebugProgram
+    //Displays error message    
+    call getFullError(x_nCamID,l_nError,l_sMsgError)
+    ? l_sMsgError
+  endIf
+end]]></Code>
+  </Program>
+</Programs>

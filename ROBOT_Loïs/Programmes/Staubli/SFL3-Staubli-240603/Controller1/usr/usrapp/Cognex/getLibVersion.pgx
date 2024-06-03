@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getLibVersion" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_sVersion" type="string" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Retrieve version of the library.
+  //
+  //Output parameters
+  //  string x_sVersion :
+  //    role : version of the library
+  //
+  //Examples
+  //  call getLibVersion(l_sLibVersion)
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //Header end
+  //-----------------------------------------------------------------------
+
+  x_sVersion=strVersion
+end]]></Code>
+  </Program>
+</Programs>

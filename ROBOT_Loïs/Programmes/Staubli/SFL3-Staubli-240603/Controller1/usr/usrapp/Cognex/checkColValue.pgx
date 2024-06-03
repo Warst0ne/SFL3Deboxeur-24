@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="checkColValue" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_sColCharac" type="string" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bColOk" type="bool" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Check the column number of the x_sCellNumber.
+  //
+  // Input Parameters
+  //   x_sCellNumber  :
+  //     role : cell number in string format.
+  //            Must be : - First digit is a letter (A-Z) for Column number
+  //                      - 3 next digits is a number for Row number
+  //
+  // Output Parameteres
+  //  x_bColOk  :
+  //    role : returns true if the operation succeeded and false
+  //          otherwise
+  //
+  //Header end
+  //-----------------------------------------------------------------------
+
+  //Verify column character (between "A" to "Z" or "a" to "z")
+  x_bColOk=(asc(x_sColCharac,0)>=asc("a",0)) and (asc(x_sColCharac,0)<=asc("z",0))
+  x_bColOk=x_bColOk or (asc(x_sColCharac,0)>=asc("A",0)) and (asc(x_sColCharac,0)<=asc("Z",0))
+end]]></Code>
+  </Program>
+</Programs>

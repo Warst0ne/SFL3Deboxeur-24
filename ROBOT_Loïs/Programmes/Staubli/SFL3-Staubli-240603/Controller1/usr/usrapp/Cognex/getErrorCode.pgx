@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="getErrorCode" access="public" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_nCamID" type="num" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_nErrorCode" type="num" use="reference" xsi:type="array" dimensions="1" />
+    </Parameters>
+    <Code><![CDATA[begin
+  //-----------------------------------------------------------------------
+  //Header begin
+  //Description of program
+  //  Get error code of last executed command.
+  //
+  //Input parameters
+  //  num x_nCamID :
+  //    role : camera's ID
+  //
+  //Output parameters
+  //  num x_nErrorCode :
+  //    role : error code of the last executed command
+  //
+  //Examples
+  //  call getErrorCode(nCamID,l_nErrorCode)  
+  //
+  //History
+  //  Creation : 19-05-08 - f.Rob
+  //  Modification 06-2012 - T.Caille - C.Rocchini
+  //Header end
+  //-----------------------------------------------------------------------
+  if nLibErrorCode==0
+    x_nErrorCode=cCamera[x_nCamID].nErrorCode
+  else
+    x_nErrorCode=nLibErrorCode
+    nLibErrorCode=0
+  endIf
+  nCamID=x_nCamID
+end]]></Code>
+  </Program>
+</Programs>
