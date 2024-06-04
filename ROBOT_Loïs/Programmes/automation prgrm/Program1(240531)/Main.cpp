@@ -9,8 +9,10 @@
 // amount of memory to be allocated for heap storage must be specified for every ANSI C++ program with the bur_heap_size variable
 unsigned long bur_heap_size = 0xFFFF; 
 
+
+//fonction arondissant un nombre en entier
 int arrondirEnEntier(double nombre) {
-	// Ajouter 0.5 si positif, soustraire 0.5 si nÈgatif, puis convertir en entier
+	// Ajouter 0.5 si positif, soustraire 0.5 si nÔøΩgatif, puis convertir en entier
 	if (nombre > 0) {
 		return static_cast<int>(nombre + 0.5);
 	} else {
@@ -18,11 +20,14 @@ int arrondirEnEntier(double nombre) {
 	}
 }
 
+
+//fonction transformant un nombre d√©cimal en binaire afin de l'envoyer au robot
 void decToBinary(int x, int y)
 {
 	int X = x;
 	int Y = y;
-	// remise a 0 des varibales
+	// remise a 0 des varibales stockant les valeurs en binaire
+	//**note** 8 variables pour 8 bits de 1 a 128
 	BinCo_x[7] = false; 
 	BinCo_x[6] = false;
 	BinCo_x[5] = false; 
@@ -55,7 +60,7 @@ void decToBinary(int x, int y)
 		Y = Y / 2;
 		t++;
 	}
-	//assignation des variables de x en binaire
+	//assignation des variables converties (x1 est le bit de poid fort)
 	x8 = BinCo_x[7];
 	x7 = BinCo_x[6];
 	x6 = BinCo_x[5];
@@ -66,7 +71,7 @@ void decToBinary(int x, int y)
 	x2 = BinCo_x[1];
 	x1 = BinCo_x[0];
 	
-	//assignation des variables de y en binaire
+	//assignation des variables converties (y1 est le bit de poid fort)
 	y8 = BinCo_y[7];
 	y7 = BinCo_y[6];
 	y6 = BinCo_y[5];
@@ -79,88 +84,24 @@ void decToBinary(int x, int y)
 }
 
 void _INIT ProgramInit(void)
-{
-	// Insert code here 
+{}
 
-}
-
+//main
 void _CYCLIC ProgramCyclic(void)
 {
-	new_cam = Input_cam; //variable en boolÈen qui est true quand la cam a envoyÈe ses deux donnÈs
-	end_cam = Input_end; //variable en boolÈen qui est true quand la cam a envoyÈe toutes les coordonnÈes
-	
-	if (new_cam == true && end_cam != true ){ // si des valeurs sont recues	
-		ConnexionBDD = true;
-		while(InputCO_x[r] != 0){
-			
-			if(InputCO_x[r] > 190){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.94); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_x[r] > 150){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.94); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_x[r] > 125){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.939); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_x[r] > 100){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.943); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_x[r] > 75){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.94); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_x[r] > 50){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.965); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_x[r] > 25){
-				CO_x = arrondirEnEntier(InputCO_x[r]*0.975); //variable stockant la valeur de y recue
-			}
-			else{
-				CO_x = InputCO_x[r]; //variable stockant la valeur de y recue
-			}
-			if(InputCO_y[r] > 190){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.94); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 170){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.94); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 150){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.944); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 125){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.95); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 100){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.955); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 75){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.955); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 50){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.96); //variable stockant la valeur de y recue
-			}
-			else if(InputCO_y[r] > 25){
-				CO_y = arrondirEnEntier(InputCO_y[r]*0.975); //variable stockant la valeur de y recue
-			}
-			else{
-				CO_y = InputCO_y[r]*1.1; //variable stockant la valeur de y recue
-			}
-			
-			
-			
-			tabCO_x[temp_array] = CO_x; //mettre la valeur x a l'emplacement donnÈ du tableau	
-			tabCO_y[temp_array] = CO_y; //mettre la valeur y a l'emplacement donnÈ du tableau
-			temp_array = temp_array + 1; //ajouter 1 a temp_array
-			r++;
-		}
-	}
-	robot_ready = Input_robot;
-	
-	
+	new_cam = Input_cam; //variable permettant de lancer la r√©cup√®ration des coordonn√©es envoy√©es par la cam√©ra
+	end_cam = Input_end; //variable lancant le cycle de d√©boxage
+	robot_ready = Input_robot; // Variable v√©rifiant si le robot est pret a effectuer un movement
+
+
+	//reset les boutons
 	if(reset == true){
 		Input_cam = false;
 		Input_end = false;
 	}
 	
+	//reset toutes les variables et les tableaux pour permettre de lancer un autre deboxage
+	//**note** possibilit√© de merger ce code avec l'autre variable de reset pour simplifier l'IHM et le code
 	if(reset_tab == true){
 		for(int k=0;k<=6;k++){
 			tabCO_x[k]=999;
@@ -172,20 +113,89 @@ void _CYCLIC ProgramCyclic(void)
 			ConnexionBDD=0;
 		}
 	}
+
+	if (new_cam == true && end_cam != true ){ // si des valeurs sont recues	
+		ConnexionBDD = true;
+		while(InputCO_x[r] != 0){
+
+			//NE PAS TOUCHER 
+			//LE CODE CI DESSOUS PERMET DE CORRIGER LA MARGE D'ERREUR DE LA CAMERA
+			//VALEURS TROUVEES GRACE A LA METHODE EMPYRIQUE
+			if(InputCO_x[r] > 190){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.94); 
+			}
+			else if(InputCO_x[r] > 150){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.94); 
+			}
+			else if(InputCO_x[r] > 125){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.939); 
+			}
+			else if(InputCO_x[r] > 100){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.943); 
+			}
+			else if(InputCO_x[r] > 75){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.94); 
+			}
+			else if(InputCO_x[r] > 50){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.965); 
+			}
+			else if(InputCO_x[r] > 25){
+				CO_x = arrondirEnEntier(InputCO_x[r]*0.975); 
+			}
+			else{
+				CO_x = InputCO_x[r]; 
+			}
+
+
+			if(InputCO_y[r] > 190){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.94); 
+			}
+			else if(InputCO_y[r] > 170){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.94);
+			}
+			else if(InputCO_y[r] > 150){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.944); 
+			}
+			else if(InputCO_y[r] > 125){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.95); 
+			}
+			else if(InputCO_y[r] > 100){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.955); 
+			}
+			else if(InputCO_y[r] > 75){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.955);
+			}
+			else if(InputCO_y[r] > 50){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.96); 
+			}
+			else if(InputCO_y[r] > 25){
+				CO_y = arrondirEnEntier(InputCO_y[r]*0.975); 
+			else{
+				CO_y = InputCO_y[r]*1.1; 
+			}
+			
+			//met les valuers arrondies dans un tableau
+			tabCO_x[temp_array] = CO_x; 	
+			tabCO_y[temp_array] = CO_y; 
+			temp_array = temp_array + 1; 
+			r++;
+		}
+	}	
 	
-	if (end_cam == true){ //si la camÈra ‡ finie d'envoyer ses valeurs
+	
+	//se lance quand le cycle de d√©boxage est lanc√© et que des valeurs ont √©t√© r√©cup√©r√©es
+	if (end_cam == true){ 
 		if(temp < temp_array && robot_ready == true){
 			ExecQuery = true;
 			Boucle = false;
 			decToBinary(tabCO_x[temp],tabCO_y[temp]);
 			finEnvoi = true;
 			temp ++;
-			//sleep(1);
 		}
 		else{
 			finEnvoi=false;
 			ExecQuery = false;
-			if(Boucle == false){
+			if(Boucle == false){// permet de stopper l'incr√©mentation automatique de la variable en mde cyclic
 				nbArticles++;
 				Boucle = true;
 			}
@@ -197,7 +207,4 @@ void _CYCLIC ProgramCyclic(void)
 
 
 void _EXIT ProgramExit(void)
-{
-	// Insert code here 
-
-}
+{}
